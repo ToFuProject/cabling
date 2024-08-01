@@ -132,6 +132,6 @@ def get_connector_kwdargs():
         'model': {
             'types': str,
             'can_be_None': False,
-            'which': 'connector_model',
+            'which': ('connector_model', 'connector_type'),
         },
     }

@@ -102,6 +102,28 @@ def connector_type(
     )
 
     # ---------------------
+    # connections
+    # ---------------------
+
+    wcontion = coll._which_connection_type
+    kk = 'connections'
+    c0 = (
+        isinstance(kwdargs.get(kk), dict)
+        and all([
+            isinstance(kwdargs[kk].get(pt), dict)
+            and kwdargs[kk][pt]['type'] in coll.dobj[wcontion].keys()
+            for pt in ['ptA', 'ptB']
+        ])
+    )
+    if not c0:
+        msg = (
+            f"{wcont} '{key}' must be provided with a 'connections' dict:\n"
+            "\t- 'ptA': {'type': <a known connection type>}\n"
+            "\t- 'ptB': {'type': <a known connection type>}\n"
+        )
+        raise Exception(msg)
+
+    # ---------------------
     # store
     # ---------------------
 
@@ -339,20 +361,27 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
         # ---------------
         # refer to other which
 
-        if v0.get('unique_all') is not None:
+        w2 = v0.get('which')
+        if w2 is not None:
 
-            w2 = v0.get('unique_all')
-            if w2 not in coll.dobj.keys():
-                msg = (
-                    "Unknow which: {w2}\n"
-                )
-                warnings.warn(msg)
+            if isinstance(w2, str):
+                w2 = (w2,)
 
-            else:
-                if kwdargs[k0] not in coll.dobj[w2].keys():
+            for ww in w2:
+                if ww not in coll.dobj.keys():
                     msg = (
-                        f"{which} '{key}' refers to unknwown {w2}: {kwdargs[k0]}\n"
+                        "Unknow which: {ww}\n"
                     )
-                    raise Exception(msg)
+                    warnings.warn(msg)
+
+                else:
+                    kwdargs[ww] = kwdargs.get(ww)
+                    if kwdargs[ww] is not None:
+                        if kwdargs[ww] not in coll.dobj[ww].keys():
+                            msg = (
+                                f"{which} '{key}' refers to unknwown {ww}: "
+                                f"{kwdargs[k0]}\n"
+                            )
+                            raise Exception(msg)
 
     return kwdargs

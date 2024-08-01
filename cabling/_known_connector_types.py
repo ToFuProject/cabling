@@ -58,6 +58,22 @@ def get():
         },
     }
 
+    dout['MI_twist'] = {
+        'description': 'Mineral insulated twisted pair',
+        'connections': {
+            'ptA': {'type': "MI_Term"},
+            'ptB': {'type': "MI_Term"},
+        },
+    }
+
+    dout['beaded_pair'] = {
+        'description': 'pair of naked wired with ceramic beads',
+        'connections': {
+            'ptA': {'type': "wire_bond"},
+            'ptB': {'type': "wire_bond"},
+        },
+    }
+
     # -------------
     # Lemo cables
     # -------------
