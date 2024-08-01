@@ -17,6 +17,56 @@ from . import _class00_def_dict as _def_dict
 
 #############################################
 #############################################
+#       connection type
+#############################################
+
+
+def connection_type(
+    coll=None,
+    key=None,
+    **kwdargs,
+):
+
+    # ---------------------
+    # check key
+    # ---------------------
+
+    wcont = coll._which_connection_type
+    lout = list(coll.dobj.get(wcont, {}).keys())
+    key = ds._generic_check._check_var(
+        key, 'key',
+        types=str,
+        excluded=lout,
+    )
+
+    # ---------------------
+    # kwdargs
+    # ---------------------
+
+    kwdargs = _kwdargs(
+        coll=coll,
+        which=wcont,
+        key=key,
+        kwdargs=kwdargs,
+        defdict=_def_dict.get_connection_type_kwdargs(),
+    )
+
+    # ---------------------
+    # store
+    # ---------------------
+
+    coll.add_obj(
+        which=wcont,
+        key=key,
+        harmonize=True,
+        **kwdargs,
+    )
+
+    return
+
+
+#############################################
+#############################################
 #       connector type
 #############################################
 
@@ -44,9 +94,10 @@ def connector_type(
     # ---------------------
 
     kwdargs = _kwdargs(
-        coll,
-        key,
-        kwdargs,
+        coll=coll,
+        which=wcont,
+        key=key,
+        kwdargs=kwdargs,
         defdict=_def_dict.get_connector_type_kwdargs(),
     )
 
@@ -80,7 +131,7 @@ def connector_model(
     # check key
     # ---------------------
 
-    wcont = coll._which_connector_type
+    wcont = coll._which_connector_model
     lout = list(coll.dobj.get(wcont, {}).keys())
     key = ds._generic_check._check_var(
         key, 'key',
@@ -93,9 +144,10 @@ def connector_model(
     # ---------------------
 
     kwdargs = _kwdargs(
-        coll,
-        key,
-        kwdargs,
+        coll=coll,
+        which=wcont,
+        key=key,
+        kwdargs=kwdargs,
         defdict=_def_dict.get_connector_model_kwdargs(),
     )
 
@@ -150,11 +202,11 @@ def connector(
     # ---------------------
 
     kwdargs = _kwdargs(
-        coll,
+        coll=coll,
         which=wcon,
         key=key,
         kwdargs=kwdargs,
-        defdict=_def_dict.get_kwdargs(),
+        defdict=_def_dict.get_connector_kwdargs(),
     )
 
     # ---------------------
@@ -213,6 +265,9 @@ def _ptAB(coll, key, ptA, ptB):
 
 def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
 
+    if kwdargs is None:
+        kwdargs = {}
+
     # -----------------------
     # loop on default kwdargs
     # -----------------------
@@ -232,7 +287,7 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
         # as type
 
         if v0.get('astype') is not None:
-            kwdargs[k0] = eval(f"{v0['astype']}({kwdargs[k0]})")
+            kwdargs[k0] = v0['astype'].__class__({kwdargs[k0]})
 
         # -----------------
         # can be None ?

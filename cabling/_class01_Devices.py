@@ -8,7 +8,7 @@ Created on Thu Aug  1 09:27:03 2024
 import copy
 
 
-from . import _class00_Connectors as Previous
+from ._class00_Connectors import Connectors as Previous
 from . import _class01_check as _check
 from . import _consistency
 

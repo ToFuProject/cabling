@@ -13,6 +13,7 @@ import datastock as ds
 
 
 from . import _class00_check as _check
+from . import _known_connections
 
 
 __all__ = ['Connectors']
@@ -37,6 +38,7 @@ class Connectors(ds.DataStock):
 
     _ddef = copy.deepcopy(ds.DataStock._ddef)
     _dshow = dict(ds.DataStock._dshow)
+
     _ddef['params']['dobj'] = {
         # 'lines': {
         #     'lambda0': {'cls': float, 'def': 0.},
@@ -50,16 +52,33 @@ class Connectors(ds.DataStock):
     }
 
     _which_connection_type = 'connection_type'
+    _which_connector_type = 'connector_type'
     _which_connector_model = 'connector_model'
     _which_connector = 'connector'
     _which_device_model = 'device_model'
     _which_device = 'device'
 
     # -------------------
+    # add knowns
+    # -------------------
+
+    def add_known(self):
+        for k0, v0 in _known_connections.get().items():
+            self.add_connection_type(k0, **v0)
+
+    # -------------------
     # add connection type
     # -------------------
 
-    def add_connection_type(self, key=None, **kwdargs):
+    def add_connection_type(self, key, **kwdargs):
+        # add obj
+        _check.connection_type(self, key, **kwdargs)
+
+    # -------------------
+    # add connector type
+    # -------------------
+
+    def add_connector_type(self, key=None, **kwdargs):
         # add obj
         _check.connector_type(self, key, **kwdargs)
 
