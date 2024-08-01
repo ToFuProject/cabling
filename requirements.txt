@@ -1,0 +1,7 @@
+####### Requirements without Version Specifiers #######
+numpy
+scipy
+matplotlib
+pandas
+requests
+datastock>=0.0.39
