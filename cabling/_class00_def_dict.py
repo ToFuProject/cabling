@@ -8,71 +8,121 @@ Created on Thu Aug  1 09:41:53 2024
 
 #############################################
 #############################################
+#       DEFAULT KWDARGS for Connectors types
+#############################################
+
+
+def get_connector_type_kwdargs():
+
+    return {
+        'PN': {
+            'types': (int, str),
+            'astype': str,
+            'unique_all': True,
+            # 'can_be_None': False,
+        },
+        'PN_vendor': {
+            'types': (int, str),
+            'astype': str,
+            'unique_all': True,
+        },
+        'description': {
+            'def': '',
+            'types': str,
+        },
+        'cost': {
+            'types': (int, float),
+            'astype': float,
+        },
+        'url': {
+            'types': str,
+            'astype': str,
+        },
+    }
+
+
+#############################################
+#############################################
+#       DEFAULT KWDARGS for Connectors models
+#############################################
+
+
+def get_connector_model_kwdargs():
+
+    return {
+        'PN': {
+            'types': (int, str),
+            'astype': str,
+            'unique_all': True,
+            # 'can_be_None': False,
+        },
+        'PN_vendor': {
+            'types': (int, str),
+            'astype': str,
+            'unique_all': True,
+        },
+        'description': {
+            'def': '',
+            'types': str,
+        },
+        'cost': {
+            'types': (int, float),
+            'astype': float,
+        },
+        'url': {
+            'types': str,
+            'astype': str,
+        },
+        'type': {
+            'types': str,
+            'can_be_None': False,
+            'which': 'connector_type',
+        },
+    }
+
+
+#############################################
+#############################################
 #       DEFAULT KWDARGS for Connectors
 #############################################
 
 
-def get_def():
+def get_connector_kwdargs():
 
     return {
         'tag': {
-            'def': None,
             'types': (int, str),
             'astype': str,
-            'unique': True,
-            'can_be_None': False,
+            'unique_all': True,
         },
         'PID': {
-            'def': None,
             'types': (int, str),
             'astype': str,
-            'unique': False,
-            'can_be_None': True,
-        },
-        'PN': {
-            'def': None,
-            'types': (int, str),
-            'astype': str,
-            'unique': True,
-            'can_be_None': False,
-        },
-        'PN_vendor': {
-            'def': None,
-            'types': (int, str),
-            'astype': str,
-            'unique': False,
-            'can_be_None': True,
-        },
-        'prov_with': {
-            'def': '',
-            'types': str,
-            'unique': False,
-            'can_be_None': True,
         },
         'comments': {
             'def': '',
             'types': str,
             'unique': False,
-            'can_be_None': True,
         },
-        'cost': {
-            'def': None,
+        'length': {
             'types': (int, float),
-            'unique': False,
-            'can_be_None': True,
+            'astype': float,
+        },
+        'System': {
+            'types': (str, list, tuple),
+            'astype': tuple,
         },
         'due_date': {
-            'def': None,
             'types': str,
             'astype': str,
-            'unique': False,
-            'can_be_None': True,
         },
         'contact': {
-            'def': None,
             'types': str,
             'astype': str,
-            'unique': False,
-            'can_be_None': True,
+        },
+        'model': {
+            'types': str,
+            'can_be_None': False,
+            'which': 'connector_model',
         },
     }
