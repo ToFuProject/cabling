@@ -5,7 +5,19 @@ Created on Thu Aug  1 13:24:57 2024
 @author: dvezinet
 """
 
-from . import _known_connections
+
+import os
+import json
+
+
+#############################################
+#############################################
+#        DEFAULTS
+#############################################
+
+
+_PATH_HERE = os.path.dirname(__file__)
+
 
 #############################################
 #############################################
@@ -13,7 +25,7 @@ from . import _known_connections
 #############################################
 
 
-def get():
+def get(path=None):
 
     dout = {}
 
@@ -296,7 +308,7 @@ def get():
     # vacuum control, INFICON
     dout['ColdCathode'] = {
         'description': 'Cold cathode gauge heads MAG084 for VGC094, DN 40 CF-F',
-        'options': ('CP 300 C9', 'IF 500 PN')
+        'options': ('CP 300 C9', 'IF 500 PN'),
         'PN_vendor': '398-401',
         'Bmax': 0.150,
         'Prange': [1e-6, 5e-1],
@@ -331,6 +343,29 @@ def get():
         ),
     }
 
+    # ---------------
+    # save to json
+    # ---------------
 
+    if path is None:
+        path = os.path.abspath(_PATH_HERE)
+
+    pfe = os.path.join(path, 'device_models.json')
+
+    with open(pfe, "w") as outfile:
+        json.dump(dout, outfile, indent=4)
+
+    msg = f"Saved in:\n\t{pfe}"
+    print(msg)
 
     return dout
+
+
+#############################################
+#############################################
+#    __main__
+#############################################
+
+
+if __name__ == '__main__':
+    get()

@@ -8,35 +8,19 @@ Created on Thu Aug  1 09:41:53 2024
 
 #############################################
 #############################################
-#       DEFAULT KWDARGS for Connectors types
+#         Device_type kwdargs
 #############################################
 
 
-def get_connector_type_kwdargs():
+def get_device_type_kwdargs():
 
     return {
-        'PN': {
-            'types': (int, str),
-            'astype': str,
-            'unique_all': True,
-            # 'can_be_None': False,
-        },
-        'PN_vendor': {
-            'types': (int, str),
-            'astype': str,
-            'unique_all': True,
-        },
         'description': {
-            'def': '',
             'types': str,
-        },
-        'cost': {
-            'types': (int, float),
-            'astype': float,
         },
         'url': {
-            'types': str,
-            'astype': str,
+            'types': (str, tuple, list),
+            'astype': tuple,
         },
     }
 
@@ -70,8 +54,8 @@ def get_connector_model_kwdargs():
             'astype': float,
         },
         'url': {
-            'types': str,
-            'astype': str,
+            'types': (str, tuple, list),
+            'astype': tuple,
         },
         'type': {
             'types': str,

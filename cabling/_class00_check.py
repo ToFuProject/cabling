@@ -299,17 +299,20 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
         # -----------------------
         # type checking + default
 
-        kwdargs[k0] = ds._generic_check._check_var(
-            kwdargs.get(k0), k0,
-            types=v0.get('types'),
-            default=v0.get('def'),
-        )
+        if v0.get('can_be_None') is False:
+            kwdargs[k0] = ds._generic_check._check_var(
+                kwdargs.get(k0), k0,
+                types=v0.get('types'),
+                default=v0.get('def'),
+            )
+        elif kwdargs.get(k0) is None:
+            continue
 
         # -----------
         # as type
 
         if v0.get('astype') is not None:
-            kwdargs[k0] = v0['astype'].__class__({kwdargs[k0]})
+            kwdargs[k0] = v0['astype'].__class__(kwdargs[k0])
 
         # -----------------
         # can be None ?

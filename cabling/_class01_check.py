@@ -15,11 +15,60 @@ from . import _class01_def_dict as _def_dict
 
 #############################################
 #############################################
-#       main
+#       device_type
 #############################################
 
 
-def main(
+def device_type(
+    coll=None,
+    key=None,
+    **kwdargs,
+):
+
+    # ---------------------
+    # check key
+    # ---------------------
+
+    wdev = coll._which_device_type
+    lout = list(coll.dobj.get(wdev, {}).keys())
+    key = ds._generic_check._check_var(
+        key, 'key',
+        types=str,
+        excluded=lout,
+    )
+
+    # ---------------------
+    # kwdargs
+    # ---------------------
+
+    kwdargs = _class00_check._kwdargs(
+        coll,
+        key,
+        kwdargs,
+        defdict=_def_dict.get_device_type_kwdargs(),
+    )
+
+    # ---------------------
+    # store
+    # ---------------------
+
+    coll.add_obj(
+        which=wdev,
+        key=key,
+        harmonize=True,
+        **kwdargs,
+    )
+
+    return
+
+
+#############################################
+#############################################
+#       device_model
+#############################################
+
+
+def device_model(
     coll=None,
     key=None,
     connections=None,
@@ -68,6 +117,64 @@ def main(
     )
 
     return
+
+
+#############################################
+#############################################
+#       device
+#############################################
+
+
+def device(
+    coll=None,
+    key=None,
+    connections=None,
+    **kwdargs,
+):
+
+    # ---------------------
+    # check key
+    # ---------------------
+
+    wdev = coll._which_device
+    lout = list(coll.dobj.get(wdev, {}).keys())
+    key = ds._generic_check._check_var(
+        key, 'key',
+        types=str,
+        excluded=lout,
+    )
+
+    # ---------------------
+    # ptA, ptB
+    # ---------------------
+
+    connections = _connections(coll, key, connections)
+
+    # ---------------------
+    # kwdargs
+    # ---------------------
+
+    kwdargs = _class00_check._kwdargs(
+        coll,
+        key,
+        kwdargs,
+        defdict=_def_dict.get_kwdargs(),
+    )
+
+    # ---------------------
+    # store
+    # ---------------------
+
+    coll.add_obj(
+        which=wdev,
+        key=key,
+        connections=connections,
+        harmonize=True,
+        **kwdargs,
+    )
+
+    return
+
 
 
 #############################################

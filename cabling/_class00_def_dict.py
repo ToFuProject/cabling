@@ -15,20 +15,16 @@ def get_connection_type_kwdargs():
 
     return {
         'description': {
-            'def': '',
             'types': str,
         },
         'specs': {
-            'def': '',
             'types': str,
         },
         'ref': {
-            'def': '',
             'types': str,
         },
         'url': {
-            'def': '',
-            'types': (str, tuple),
+            'types': (str, tuple, list),
             'astype': tuple,
         },
     }
@@ -44,8 +40,11 @@ def get_connector_type_kwdargs():
 
     return {
         'description': {
-            'def': '',
             'types': str,
+        },
+        'url': {
+            'types': (str, tuple, list),
+            'astype': tuple,
         },
     }
 
@@ -71,7 +70,6 @@ def get_connector_model_kwdargs():
             'unique_all': True,
         },
         'description': {
-            'def': '',
             'types': str,
         },
         'cost': {
@@ -79,8 +77,8 @@ def get_connector_model_kwdargs():
             'astype': float,
         },
         'url': {
-            'types': str,
-            'astype': str,
+            'types': (str, tuple, list),
+            'astype': tuple,
         },
         'type': {
             'types': str,
@@ -109,7 +107,6 @@ def get_connector_kwdargs():
             'astype': str,
         },
         'comments': {
-            'def': '',
             'types': str,
             'unique': False,
         },

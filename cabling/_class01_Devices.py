@@ -42,14 +42,14 @@ class Devices(Previous):
     # -------------------
 
     def add_device_type(self, key=None, **kwdargs):
-        _check.type(coll=self, jey=key, **kwdargs)
+        _check.device_type(coll=self, key=key, **kwdargs)
 
     # -------------------
     # add Device model
     # -------------------
 
     def add_device_model(self, key=None, **kwdargs):
-        _check.model(coll=self, jey=key, **kwdargs)
+        _check.device_model(coll=self, key=key, **kwdargs)
 
     # -------------------
     # add Device
@@ -67,8 +67,8 @@ class Devices(Previous):
     # add from json
     # ----------------------
 
-    def add_connetors_devices_from_json(self, pfe=None):
-        return _add_from_json.main(coll=self, pfe=pfe)
+    def add_connectors_devices_from_json(self, pfe=None, verb=None):
+        return _add_from_json.main(coll=self, pfe=pfe, verb=verb)
 
     # -------------------
     # check consistency

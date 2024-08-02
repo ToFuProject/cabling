@@ -5,13 +5,27 @@ Created on Thu Aug  1 13:24:57 2024
 @author: dvezinet
 """
 
+
+import os
+import json
+
+
+#############################################
+#############################################
+#        DEFAULTS
+#############################################
+
+
+_PATH_HERE = os.path.dirname(__file__)
+
+
 #############################################
 #############################################
 #    Connection types
 #############################################
 
 
-def get():
+def get(path=None):
 
     dout = {}
 
@@ -142,6 +156,29 @@ def get():
     })
 
 
+    # ---------------
+    # save to json
+    # ---------------
 
+    if path is None:
+        path = os.path.abspath(_PATH_HERE)
+
+    pfe = os.path.join(path, 'connection_types.json')
+
+    with open(pfe, "w") as outfile:
+        json.dump(dout, outfile, indent=4)
+
+    msg = f"Saved in:\n\t{pfe}"
+    print(msg)
 
     return dout
+
+
+#############################################
+#############################################
+#    __main__
+#############################################
+
+
+if __name__ == '__main__':
+    get()
