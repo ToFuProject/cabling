@@ -10,6 +10,7 @@ import copy
 
 from ._class00_Connectors import Connectors as Previous
 from . import _class01_check as _check
+from . import _add_from_json
 from . import _consistency
 
 
@@ -61,6 +62,13 @@ class Devices(Previous):
 
         # double-check connections
         self.check_connections()
+
+    # ----------------------
+    # add from json
+    # ----------------------
+
+    def add_connetors_devices_from_json(self, pfe=None):
+        return _add_from_json.main(coll=self, pfe=pfe)
 
     # -------------------
     # check consistency

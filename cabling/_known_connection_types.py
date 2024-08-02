@@ -87,6 +87,28 @@ def get():
     })
 
     # -------------
+    # RJ45
+    # -------------
+
+    dout.update({
+        # RJ45 ethernet
+        'RJ45_F': {
+            'description': 'standard ethernet RJ45, female',
+            'specs': '',
+            'url': (
+
+            ),
+        },
+        'RJ45_M': {
+            'description': 'standard ethernet RJ45, male',
+            'specs': '',
+            'url': (
+
+            ),
+        },
+    })
+
+    # -------------
     # tubes
     # -------------
 
@@ -97,6 +119,29 @@ def get():
             'specs': '1/8 inch ISO parallel thread',
         },
     })
+
+    # ----------------------
+    #  standard power chord
+    # -----------------------
+
+    dout.update({
+        'power_AC_US_F': {
+            'description': 'standard US AC detachable power chord, female',
+            'specs': 'NEMA 5-15P, IEC 60320 C-13',
+            'url': (
+                'https://internationalconfig.com/power-cords-for-united-states-ac-power-cords.asp',
+            ),
+        },
+        'power_AC_US_M': {
+            'description': 'standard US AC detachable power chord, male',
+            'specs': 'NEMA 5-15P, IEC 60320 C-13',
+            'url': (
+                'https://internationalconfig.com/power-cords-for-united-states-ac-power-cords.asp',
+            ),
+        }
+    })
+
+
 
 
     return dout

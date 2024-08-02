@@ -260,23 +260,74 @@ def get():
     # Pressure transducers
     # -------------
 
-    # Hamamatsu PMT
+    # Pirani gauges, INFICON
     dout['Pirani'] = {
-        'description': 'Pirani passive gauge heads for VGC094, 	DN 40 CF-F',
+        'description': 'Pirani passive gauge heads for VGC094, DN 40 CF-F',
         'PN_vendor': '350-423',
         'Prange': [8e-2, 1e5],
         'connections': {
-            'data': {
-                'type': "BNC_50H_M",
-                'nb': 1,
-            },
-            'power': {
-                'type': "SHV_M",
+            'all': {
+                'type': "",
                 'nb': 1,
             },
         },
         'url': (
             'https://www.inficon.com/en/products/vacuum-gauge-and-controller/psg01x',
+        ),
+    }
+
+    # Cold cathod gauges, INFICON
+    dout['ColdCathode'] = {
+        'description': 'Cold cathode gauge heads MAG084 for VGC094, DN 40 CF-F',
+        'PN_vendor': '399-850',
+        'Bmax': 0.150,
+        'Prange': [1e-6, 5e-1],
+        'connections': {
+            'all': {
+                'type': "",
+                'nb': 1,
+            },
+        },
+        'url': (
+            'https://www.inficon.com/en/products/vacuum-gauge-and-controller/mag084',
+        ),
+    }
+
+    # vacuum control, INFICON
+    dout['ColdCathode'] = {
+        'description': 'Cold cathode gauge heads MAG084 for VGC094, DN 40 CF-F',
+        'options': ('CP 300 C9', 'IF 500 PN')
+        'PN_vendor': '398-401',
+        'Bmax': 0.150,
+        'Prange': [1e-6, 5e-1],
+        'connections': {
+            'board1_gauge1': {
+                'type': "",
+                'nb': 1,
+            },
+            'board1_gauge2': {
+                'type': "",
+                'nb': 1,
+            },
+            'board2_gauge1': {
+                'type': "",
+                'nb': 1,
+            },
+            'board2_gauge2': {
+                'type': "",
+                'nb': 1,
+            },
+            'Interface': {
+                'type': "RJ45",
+                'nb': 2,
+            },
+            'power': {
+
+            },
+
+        },
+        'url': (
+            'https://www.inficon.com/en/products/vacuum-gauge-and-controller/vgc094',
         ),
     }
 
