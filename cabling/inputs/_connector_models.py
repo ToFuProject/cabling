@@ -14,14 +14,14 @@ from . import _save2json
 
 #############################################
 #############################################
-#    Connection types
+#    Connector models
 #############################################
 
 
 def get(path=None):
 
     wplug = 'plug_type'
-    wfam = 'connector_family'
+    wtype = 'connector_type'
     dout = {}
 
     # -------------
@@ -37,7 +37,7 @@ def get(path=None):
                     'ptA': {wplug: f"BNC_{imp}_{mf[0]}"},
                     'ptB': {wplug: f"BNC_{imp}_{mf[1]}"},
                 },
-                wfam: 'cable_coax',
+                wtype: 'cable_coax',
             }
 
     # -------------
@@ -52,7 +52,7 @@ def get(path=None):
                 'ptA': {wplug: f"SHV_{mf[0]}"},
                 'ptB': {wplug: f"SHV_{mf[1]}"},
             },
-            wfam: 'cable_coax',
+            wtype: 'cable_coax',
         }
 
     # -------------
@@ -65,7 +65,7 @@ def get(path=None):
             'ptA': {wplug: "MI_Term"},
             'ptB': {wplug: "MI_Term"},
         },
-        wfam: 'cable_MI',
+        wtype: 'cable_MI',
     }
 
     dout['MI_twist'] = {
@@ -74,7 +74,7 @@ def get(path=None):
             'ptA': {wplug: "MI_Term"},
             'ptB': {wplug: "MI_Term"},
         },
-        wfam: 'cable_MI',
+        wtype: 'cable_MI',
     }
 
     dout['beaded_pair'] = {
@@ -83,7 +83,7 @@ def get(path=None):
             'ptA': {wplug: "wire_bond"},
             'ptB': {wplug: "wire_bond"},
         },
-        wfam: 'cable_wire',
+        wtype: 'cable_wire',
     }
 
     # -------------
@@ -97,7 +97,7 @@ def get(path=None):
             'ptA': {wplug: "Lemo® Type 00"},
             'ptB': {wplug: "Lemo® Type 00"},
         },
-        wfam: 'cable_coax',
+        wtype: 'cable_coax',
     }
 
     # -------------
@@ -111,7 +111,7 @@ def get(path=None):
             'ptA': {wplug: "power_AC_US_F"},
             'ptB': {wplug: "US_A_M"},
         },
-        wfam: 'power_chord',
+        wtype: 'power_chord',
     }
 
     # standard DECTRIS power chord for EIGER 2 S 500 K
@@ -121,7 +121,7 @@ def get(path=None):
             'ptA': {wplug: "DECTRIS_pow_AC"},
             'ptB': {wplug: "DECTRIS_pow_DC"},
         },
-        wfam: 'power_chord',
+        wtype: 'power_chord',
     }
 
     # -------------
@@ -135,7 +135,7 @@ def get(path=None):
             'ptA': {wplug: "SFP+"},
             'ptB': {wplug: "SFP+"},
         },
-        wfam: 'fiber_optic',
+        wtype: 'fiber_optic',
     }
 
     # -------------
@@ -149,7 +149,7 @@ def get(path=None):
             'ptA': {wplug: "DECTRIS_cool"},
             'ptB': {wplug: "DECTRIS_cool"},
         },
-        wfam: 'cool',
+        wtype: 'cool',
     }
 
     # ---------------

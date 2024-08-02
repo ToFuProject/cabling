@@ -7,7 +7,6 @@ Created on Thu Aug  1 09:27:03 2024
 
 
 from . import _plug_types
-from . import _connector_familyes
 from . import _connector_types
 from . import _connector_models
 from . import _connectors
@@ -26,7 +25,6 @@ def create_all(path=None):
 
     lmod = [
         _plug_types,
-        _connector_familyes,
         _connector_types,
         _connector_models,
         _connectors,
