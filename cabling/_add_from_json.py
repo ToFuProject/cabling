@@ -18,6 +18,15 @@ import datastock as ds
 #############################################
 
 
+_PATH_HERE = os.path.dirname(__file__)
+
+
+#############################################
+#############################################
+#       main
+#############################################
+
+
 def main(coll=None, pfe=None, verb=None):
 
     # -------------
@@ -97,6 +106,11 @@ def _check(pfe=None, verb=None):
     # ------------------
     # preliminary
     # -------------------
+
+    if pfe is None:
+        pfe = {
+            os.path.join(_PATH_HERE, 'inputs'): '.json',
+        }
 
     # ------------
     # files

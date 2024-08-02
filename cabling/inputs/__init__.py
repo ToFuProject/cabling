@@ -11,5 +11,29 @@ from . import _connector_types
 from . import _connector_models
 from . import _connectors
 from . import _device_types
-from . import _device_model
+from . import _device_models
 from . import _devices
+
+
+# ####################################################
+# ####################################################
+#               main
+# ####################################################
+
+
+def create_all(path=None):
+
+    lmod = [
+        _connection_types,
+        _connector_types,
+        _connector_models,
+        _connectors,
+        _device_types,
+        _device_models,
+        _devices,
+    ]
+
+    for mm in lmod:
+        mm.get(path=path)
+
+    return

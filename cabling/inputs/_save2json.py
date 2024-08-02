@@ -24,7 +24,7 @@ _PATH_HERE = os.path.dirname(__file__)
 #    Connection types
 #############################################
 
-def save_to_json(path=None, dout=None):
+def main(path=None, dout=None, which=None):
 
     # ---------------
     # save to json
@@ -33,7 +33,7 @@ def save_to_json(path=None, dout=None):
     if path is None:
         path = os.path.abspath(_PATH_HERE)
 
-    pfe = os.path.join(path, 'device_models.json')
+    pfe = os.path.join(path, f'{which}.json')
 
     with open(pfe, "w") as outfile:
         json.dump(dout, outfile, indent=4)

@@ -7,16 +7,9 @@ Created on Thu Aug  1 13:24:57 2024
 
 
 import os
-import json
 
 
-#############################################
-#############################################
-#        DEFAULTS
-#############################################
-
-
-_PATH_HERE = os.path.dirname(__file__)
+from . import _save2json
 
 
 #############################################
@@ -143,18 +136,8 @@ def get(path=None):
     # save to json
     # ---------------
 
-    if path is None:
-        path = os.path.abspath(_PATH_HERE)
-
-    pfe = os.path.join(path, 'connector_types.json')
-
-    with open(pfe, "w") as outfile:
-        json.dump(dout, outfile, indent=4)
-
-    msg = f"Saved in:\n\t{pfe}"
-    print(msg)
-
-    return dout
+    which = os.path.split(__file__)[-1][1:-3]
+    return _save2json.main(path=path, dout=dout, which=which)
 
 
 #############################################
