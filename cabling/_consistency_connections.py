@@ -107,22 +107,37 @@ def _connections(
                 dout[kflag][key][k0] = True
 
             # -----------------
-            # error (not a str)
+            # error (not a tuple of 2 str)
 
-            elif not isinstance(v0[which1], str):
+            elif not (
+                    isinstance(v0[which1], tuple)
+                    and len(v0[which1]) == 2
+                    and all([isinstance(ss, str) for ss in v0[which1]])
+                ):
                 kflag = 'err'
                 if key not in dout[kflag][key].keys():
                     dout[kflag][key] = {}
                 dout[kflag][key][k0] = v0[which1]
 
             # ------------
-            # unknown end
+            # unknown end - level 1: which
 
-            elif v0[which1] not in lk1:
+            elif v0[which1][0] not in lk1:
                 kflag = 'unknown'
                 if key not in dout[kflag][key].keys():
                     dout[kflag][key] = {}
-                dout[kflag][key][k0] = v0[which1]
+                dout[kflag][key][k0] = "which1}: '{v0[which1][0]}'"
+
+            # ------------
+            # unknown end - level 2: plug
+
+            elif v0[which1][1] not in coll.dobj[which1][v0[which1][0]]['connections'].keys():
+                kflag = "unknown"
+                if key not in dout[kflag][key].keys():
+                    dout[kflag][key] = {}
+                dout[kflag][key][k0] = (
+                    f"plug of {which1} '{v0[which1][0]}': {v0[which1][1]}"
+                )
 
             # -------------
             # redundant end

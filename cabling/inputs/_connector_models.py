@@ -20,6 +20,8 @@ from . import _save2json
 
 def get(path=None):
 
+    wplug = 'plug_type'
+    wfam = 'connector_family'
     dout = {}
 
     # -------------
@@ -28,13 +30,14 @@ def get(path=None):
 
     for imp in ['50Hz', '75Hz']:
         for mf in [('M', 'F'), ('M', 'M'), ('F', 'F')]:
-            key = f"coax_BNC_{imp}_{''.join(mf)}"
+            key = f"BNC_{imp}_{''.join(mf)}"
             dout[key] = {
                 'description': f'coaxial cable with {mf} connections',
                 'connections': {
-                    'ptA': {'type': f"BNC_{imp}_{mf[0]}"},
-                    'ptB': {'type': f"BNC_{imp}_{mf[1]}"},
+                    'ptA': {wplug: f"BNC_{imp}_{mf[0]}"},
+                    'ptB': {wplug: f"BNC_{imp}_{mf[1]}"},
                 },
+                wfam: 'cable_coax',
             }
 
     # -------------
@@ -42,68 +45,83 @@ def get(path=None):
     # -------------
 
     for mf in [('M', 'F'), ('M', 'M'), ('F', 'F')]:
-        key = f"coax_SHV_{imp}_{''.join(mf)}"
+        key = f"SHV_{imp}_{''.join(mf)}"
         dout[key] = {
             'description': f'coaxial cable with {mf} connections',
             'connections': {
-                'ptA': {'type': f"SHV_{mf[0]}"},
-                'ptB': {'type': f"SHV_{mf[1]}"},
+                'ptA': {wplug: f"SHV_{mf[0]}"},
+                'ptB': {wplug: f"SHV_{mf[1]}"},
             },
+            wfam: 'cable_coax',
         }
 
     # -------------
     # MI cables
     # -------------
 
-    dout['MI'] = {
+    dout['MI_single'] = {
         'description': 'Mineral insulated cable',
         'connections': {
-            'ptA': {'type': "MI_Term"},
-            'ptB': {'type': "MI_Term"},
+            'ptA': {wplug: "MI_Term"},
+            'ptB': {wplug: "MI_Term"},
         },
+        wfam: 'cable_MI',
     }
 
     dout['MI_twist'] = {
         'description': 'Mineral insulated twisted pair',
         'connections': {
-            'ptA': {'type': "MI_Term"},
-            'ptB': {'type': "MI_Term"},
+            'ptA': {wplug: "MI_Term"},
+            'ptB': {wplug: "MI_Term"},
         },
+        wfam: 'cable_MI',
     }
 
     dout['beaded_pair'] = {
         'description': 'pair of naked wired with ceramic beads',
         'connections': {
-            'ptA': {'type': "wire_bond"},
-            'ptB': {'type': "wire_bond"},
+            'ptA': {wplug: "wire_bond"},
+            'ptB': {wplug: "wire_bond"},
         },
+        wfam: 'cable_wire',
     }
 
     # -------------
     # Lemo cables
     # -------------
 
-
     # DECTRIS external trigger
     dout['coax_Lemo'] = {
         'description': 'coaxial cable with Lemo® Type 00 (NIM/CAMAC)',
         'connections': {
-            'ptA': {'type': "Lemo® Type 00"},
-            'ptB': {'type': "Lemo® Type 00"},
+            'ptA': {wplug: "Lemo® Type 00"},
+            'ptB': {wplug: "Lemo® Type 00"},
         },
+        wfam: 'cable_coax',
     }
 
     # -------------
     # power cables
     # -------------
 
-    # DECTRIS power
-    dout['DECTRIS_pow'] = {
-        'description': 'power cable for DECTRIS EIGER 2 S 500K',
+    # standard power chord
+    dout['power_F'] = {
+        'description': 'power chord US F',
         'connections': {
-            'ptA': {'type': "DECTRIS_pow"},
-            'ptB': {'type': "DECTRIS_pow"},
+            'ptA': {wplug: "power_AC_US_F"},
+            'ptB': {wplug: "US_A_M"},
         },
+        wfam: 'power_chord',
+    }
+
+    # standard DECTRIS power chord for EIGER 2 S 500 K
+    dout['power_DECTRIS'] = {
+        'description': 'power chord DECTRIS 2 S 500 K',
+        'connections': {
+            'ptA': {wplug: "DECTRIS_pow_AC"},
+            'ptB': {wplug: "DECTRIS_pow_DC"},
+        },
+        wfam: 'power_chord',
     }
 
     # -------------
@@ -114,9 +132,10 @@ def get(path=None):
     dout['10Gb_SM']= {
         'description': '10 GbE-LR single mode optic fiber for DECTRIS EIGER 2',
         'connections': {
-            'ptA': {'type': "SFP+"},
-            'ptB': {'type': "SFP+"},
+            'ptA': {wplug: "SFP+"},
+            'ptB': {wplug: "SFP+"},
         },
+        wfam: 'fiber_optic',
     }
 
     # -------------
@@ -127,9 +146,10 @@ def get(path=None):
     dout['DECTRIS_cool'] = {
         'description': 'cooling pipes connections for DECTRIS cameras',
         'connections': {
-            'ptA': {'type': "DECTRIS_cool"},
-            'ptB': {'type': "DECTRIS_cool"},
+            'ptA': {wplug: "DECTRIS_cool"},
+            'ptB': {wplug: "DECTRIS_cool"},
         },
+        wfam: 'cool',
     }
 
     # ---------------

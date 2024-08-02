@@ -71,8 +71,14 @@ def get(path=None):
         },
 
         # DECTRIS power
-        'DECTRIS_pow': {
+        'DECTRIS_pow_AC': {
             'description': 'IEC-320-C14 input inlet',
+            'specs': '',
+        },
+
+        # DECTRIS power
+        'DECTRIS_pow_DC': {
+            'description': 'round plug',
             'specs': '12 VDC, max. 11.5 A, 138 W (60 W needed)',
         },
     })
@@ -145,7 +151,35 @@ def get(path=None):
             'url': (
                 'https://internationalconfig.com/power-cords-for-united-states-ac-power-cords.asp',
             ),
-        }
+        },
+        'US_A_F': {
+            'description': 'standard US socket, ungrounded, female',
+            'specs': '2 pins, not grounded, female',
+            'url': (
+                'https://www.worldstandards.eu/electricity/plugs-and-sockets/',
+            ),
+        },
+        'US_A_M': {
+            'description': 'standard US socket, male',
+            'specs': '2 pins, not grounded, ungrounded, male',
+            'url': (
+                'https://www.worldstandards.eu/electricity/plugs-and-sockets/',
+            ),
+        },
+        'US_B_F': {
+            'description': 'standard US socket, grounded, female',
+            'specs': '3 pins, grounded, female',
+            'url': (
+                'https://www.worldstandards.eu/electricity/plugs-and-sockets/',
+            ),
+        },
+        'US_B_M': {
+            'description': 'standard US socket, grounded, male',
+            'specs': '3 pins, grounded, male',
+            'url': (
+                'https://www.worldstandards.eu/electricity/plugs-and-sockets/',
+            ),
+        },
     })
 
 

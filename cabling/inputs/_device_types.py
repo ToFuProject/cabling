@@ -26,8 +26,34 @@ def get(path=None):
     # CVD diamonds cameras
     # -------------
 
-    dout['generic'] = {
-        'description': 'any device',
+    dout = {
+        'sensor': {
+            'description': 'device mostly used for sensing',
+        },
+        'actuator': {
+            'description': 'device mostly used for controlled actions',
+        },
+        'digitizer': {
+            'description': 'digitizer',
+        },
+        'amplifier': {
+            'description': 'transimpedance amplifier',
+        },
+        'PLC': {
+            'description': 'part of a PLC controller',
+        },
+        'controller': {
+            'description': 'vendor-specific controller for sensors',
+        },
+        'server': {
+            'description': 'server or computer',
+        },
+        'solenoid': {
+            'description': 'solenoid valve',
+        },
+        'power': {
+            'description': 'power source for another device',
+        },
     }
 
     # ---------------

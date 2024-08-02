@@ -11,7 +11,7 @@ Created on Thu Aug  1 09:41:53 2024
 #############################################
 
 
-def get_connection_type_kwdargs():
+def get_plug_type_kwdargs():
 
     return {
         'description': {
@@ -41,10 +41,6 @@ def get_connector_type_kwdargs():
     return {
         'description': {
             'types': str,
-        },
-        'url': {
-            'types': (str, tuple, list),
-            'astype': tuple,
         },
     }
 
@@ -82,7 +78,7 @@ def get_connector_model_kwdargs():
         },
         'type': {
             'types': str,
-            'can_be_None': False,
+            # 'can_be_None': False,
             'which': 'connector_type',
         },
     }
@@ -128,7 +124,7 @@ def get_connector_kwdargs():
         },
         'model': {
             'types': str,
-            'can_be_None': False,
-            'which': ('connector_model', 'connector_type'),
+            # 'can_be_None': False,
+            'which': 'connector_model',
         },
     }

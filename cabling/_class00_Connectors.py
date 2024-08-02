@@ -50,10 +50,11 @@ class Connectors(ds.DataStock):
         # },
     }
 
-    _which_connection_type = 'connection_type'
+    _which_plug_type = 'plug_type'
     _which_connector_type = 'connector_type'
     _which_connector_model = 'connector_model'
     _which_connector = 'connector'
+    _which_device_type = 'device_type'
     _which_device_model = 'device_model'
     _which_device = 'device'
 
@@ -61,9 +62,9 @@ class Connectors(ds.DataStock):
     # add connection type
     # -------------------
 
-    def add_connection_type(self, key, **kwdargs):
+    def add_plug_type(self, key, **kwdargs):
         # add obj
-        _check.connection_type(self, key, **kwdargs)
+        _check.plug_type(self, key, **kwdargs)
 
     # -------------------
     # add connector type
@@ -77,18 +78,34 @@ class Connectors(ds.DataStock):
     # add Connector model
     # -------------------
 
-    def add_connector_model(self, key=None, **kwdargs):
+    def add_connector_model(self, key=None, connections=None, **kwdargs):
         # add obj
-        _check.connector_model(self, key, **kwdargs)
+        _check.connector_model(
+            self,
+            key=key,
+            connections=connections,
+            **kwdargs,
+        )
 
     # -------------------
     # add Connector
     # -------------------
 
-    def add_connector(self, key=None, ptA=None, ptB=None, **kwdargs):
+    def add_connector(
+        self,
+        key=None,
+        ptA=None,
+        ptB=None,
+        consistency=None,
+        **kwdargs,
+    ):
 
         # add obj
-        _check.connector(self, key, ptA, ptB, **kwdargs)
-
-        # double-check connections
-        self.check_connections()
+        return _check.connector(
+            self,
+            key,
+            ptA,
+            ptB,
+            consistency,
+            **kwdargs,
+        )

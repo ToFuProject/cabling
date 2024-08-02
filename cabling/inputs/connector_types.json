@@ -1,178 +1,206 @@
 {
-    "coax_BNC_50Hz_MF": {
+    "BNC_50Hz_MF": {
         "description": "coaxial cable with ('M', 'F') connections",
         "connections": {
             "ptA": {
-                "type": "BNC_50Hz_M"
+                "plug_type": "BNC_50Hz_M"
             },
             "ptB": {
-                "type": "BNC_50Hz_F"
+                "plug_type": "BNC_50Hz_F"
             }
-        }
+        },
+        "connector_family": "cable_coax"
     },
-    "coax_BNC_50Hz_MM": {
+    "BNC_50Hz_MM": {
         "description": "coaxial cable with ('M', 'M') connections",
         "connections": {
             "ptA": {
-                "type": "BNC_50Hz_M"
+                "plug_type": "BNC_50Hz_M"
             },
             "ptB": {
-                "type": "BNC_50Hz_M"
+                "plug_type": "BNC_50Hz_M"
             }
-        }
+        },
+        "connector_family": "cable_coax"
     },
-    "coax_BNC_50Hz_FF": {
+    "BNC_50Hz_FF": {
         "description": "coaxial cable with ('F', 'F') connections",
         "connections": {
             "ptA": {
-                "type": "BNC_50Hz_F"
+                "plug_type": "BNC_50Hz_F"
             },
             "ptB": {
-                "type": "BNC_50Hz_F"
+                "plug_type": "BNC_50Hz_F"
             }
-        }
+        },
+        "connector_family": "cable_coax"
     },
-    "coax_BNC_75Hz_MF": {
+    "BNC_75Hz_MF": {
         "description": "coaxial cable with ('M', 'F') connections",
         "connections": {
             "ptA": {
-                "type": "BNC_75Hz_M"
+                "plug_type": "BNC_75Hz_M"
             },
             "ptB": {
-                "type": "BNC_75Hz_F"
+                "plug_type": "BNC_75Hz_F"
             }
-        }
+        },
+        "connector_family": "cable_coax"
     },
-    "coax_BNC_75Hz_MM": {
+    "BNC_75Hz_MM": {
         "description": "coaxial cable with ('M', 'M') connections",
         "connections": {
             "ptA": {
-                "type": "BNC_75Hz_M"
+                "plug_type": "BNC_75Hz_M"
             },
             "ptB": {
-                "type": "BNC_75Hz_M"
+                "plug_type": "BNC_75Hz_M"
             }
-        }
+        },
+        "connector_family": "cable_coax"
     },
-    "coax_BNC_75Hz_FF": {
+    "BNC_75Hz_FF": {
         "description": "coaxial cable with ('F', 'F') connections",
         "connections": {
             "ptA": {
-                "type": "BNC_75Hz_F"
+                "plug_type": "BNC_75Hz_F"
             },
             "ptB": {
-                "type": "BNC_75Hz_F"
+                "plug_type": "BNC_75Hz_F"
             }
-        }
+        },
+        "connector_family": "cable_coax"
     },
-    "coax_SHV_75Hz_MF": {
+    "SHV_75Hz_MF": {
         "description": "coaxial cable with ('M', 'F') connections",
         "connections": {
             "ptA": {
-                "type": "SHV_M"
+                "plug_type": "SHV_M"
             },
             "ptB": {
-                "type": "SHV_F"
+                "plug_type": "SHV_F"
             }
-        }
+        },
+        "connector_family": "cable_coax"
     },
-    "coax_SHV_75Hz_MM": {
+    "SHV_75Hz_MM": {
         "description": "coaxial cable with ('M', 'M') connections",
         "connections": {
             "ptA": {
-                "type": "SHV_M"
+                "plug_type": "SHV_M"
             },
             "ptB": {
-                "type": "SHV_M"
+                "plug_type": "SHV_M"
             }
-        }
+        },
+        "connector_family": "cable_coax"
     },
-    "coax_SHV_75Hz_FF": {
+    "SHV_75Hz_FF": {
         "description": "coaxial cable with ('F', 'F') connections",
         "connections": {
             "ptA": {
-                "type": "SHV_F"
+                "plug_type": "SHV_F"
             },
             "ptB": {
-                "type": "SHV_F"
+                "plug_type": "SHV_F"
             }
-        }
+        },
+        "connector_family": "cable_coax"
     },
-    "MI": {
+    "MI_single": {
         "description": "Mineral insulated cable",
         "connections": {
             "ptA": {
-                "type": "MI_Term"
+                "plug_type": "MI_Term"
             },
             "ptB": {
-                "type": "MI_Term"
+                "plug_type": "MI_Term"
             }
-        }
+        },
+        "connector_family": "cable_MI"
     },
     "MI_twist": {
         "description": "Mineral insulated twisted pair",
         "connections": {
             "ptA": {
-                "type": "MI_Term"
+                "plug_type": "MI_Term"
             },
             "ptB": {
-                "type": "MI_Term"
+                "plug_type": "MI_Term"
             }
-        }
+        },
+        "connector_family": "cable_MI"
     },
     "beaded_pair": {
         "description": "pair of naked wired with ceramic beads",
         "connections": {
             "ptA": {
-                "type": "wire_bond"
+                "plug_type": "wire_bond"
             },
             "ptB": {
-                "type": "wire_bond"
+                "plug_type": "wire_bond"
             }
-        }
+        },
+        "connector_family": "cable_wire"
     },
     "coax_Lemo": {
         "description": "coaxial cable with Lemo\u00ae Type 00 (NIM/CAMAC)",
         "connections": {
             "ptA": {
-                "type": "Lemo\u00ae Type 00"
+                "plug_type": "Lemo\u00ae Type 00"
             },
             "ptB": {
-                "type": "Lemo\u00ae Type 00"
+                "plug_type": "Lemo\u00ae Type 00"
             }
-        }
+        },
+        "connector_family": "cable_coax"
     },
-    "DECTRIS_pow": {
-        "description": "power cable for DECTRIS EIGER 2 S 500K",
+    "power_F": {
+        "description": "power chord US F",
         "connections": {
             "ptA": {
-                "type": "DECTRIS_pow"
+                "plug_type": "power_AC_US_F"
             },
             "ptB": {
-                "type": "DECTRIS_pow"
+                "plug_type": "US_A_M"
             }
-        }
+        },
+        "connector_family": "power_chord"
+    },
+    "power_DECTRIS": {
+        "description": "power chord DECTRIS 2 S 500 K",
+        "connections": {
+            "ptA": {
+                "plug_type": "DECTRIS_pow_AC"
+            },
+            "ptB": {
+                "plug_type": "DECTRIS_pow_DC"
+            }
+        },
+        "connector_family": "power_chord"
     },
     "10Gb_SM": {
         "description": "10 GbE-LR single mode optic fiber for DECTRIS EIGER 2",
         "connections": {
             "ptA": {
-                "type": "SFP+"
+                "plug_type": "SFP+"
             },
             "ptB": {
-                "type": "SFP+"
+                "plug_type": "SFP+"
             }
-        }
+        },
+        "connector_family": "fiber_optic"
     },
     "DECTRIS_cool": {
         "description": "cooling pipes connections for DECTRIS cameras",
         "connections": {
             "ptA": {
-                "type": "DECTRIS_cool"
+                "plug_type": "DECTRIS_cool"
             },
             "ptB": {
-                "type": "DECTRIS_cool"
+                "plug_type": "DECTRIS_cool"
             }
-        }
+        },
+        "connector_family": "cool"
     }
 }

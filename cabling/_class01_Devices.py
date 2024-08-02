@@ -48,20 +48,21 @@ class Devices(Previous):
     # add Device model
     # -------------------
 
-    def add_device_model(self, key=None, **kwdargs):
-        _check.device_model(coll=self, key=key, **kwdargs)
+    def add_device_model(self, key=None, connections=None, **kwdargs):
+        _check.device_model(
+            coll=self,
+            key=key,
+            connections=connections,
+            **kwdargs,
+        )
 
     # -------------------
     # add Device
     # -------------------
 
-    def add_device(self, key=None, connections=None, **kwdargs):
-
+    def add_device(self, key=None, **kwdargs):
         # add obj
-        _check.device(self, key, connections, **kwdargs)
-
-        # double-check connections
-        self.check_connections()
+        _check.device(self, key=key, **kwdargs)
 
     # ----------------------
     # add from json

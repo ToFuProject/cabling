@@ -20,6 +20,8 @@ from . import _save2json
 
 def get(path=None):
 
+    wplug = 'plug_type'
+    wtype = 'device_type'
     dout = {}
 
     # -------------
@@ -30,71 +32,76 @@ def get(path=None):
         'description': 'CVD diamond sensor',
         'connections': {
             'all': {
-                'type': "beaded_pair",
-                'nb': 1,
+                wplug: "wire_bond",
+                'nb': 2,
             },
         },
+        wtype: 'sensor',
     }
 
     dout['CVD_MI'] = {
         'description': 'CVD cameras MI adapter plate',
         'connections': {
             'all': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 30,
             },
         },
+        wtype: 'sensor',
     }
 
     dout['CVD_Therm'] = {
         'description': 'Thermocouple inside CVD cameras',
         'connections': {
-            'all': {'type': "MI_Term"},
+            'all': {wplug: "MI_Term"},
         },
+        wtype: 'sensor',
     }
 
     dout['CVD_cam_SXR'] = {
         'description': 'SXR CVD camera',
         'connections': {
             'CVD_in': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 30,
             },
             'Therm_in': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 1,
             },
             'CVD_out': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 30,
             },
             'Therm_out': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 1,
             },
         },
+        wtype: 'sensor',
     }
 
     dout['CVD_cam_HXR'] = {
         'description': 'HXR CVD camera',
         'connections': {
             'CVD_in': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 6,
             },
             'Therm_in': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 1,
             },
             'CVD_out': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 6,
             },
             'Therm_out': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 1,
             },
         },
+        wtype: 'sensor',
     }
 
     # -------------------
@@ -105,18 +112,19 @@ def get(path=None):
         'description': 'CMOD transimpledance preamplifier boards (x4 channels)',
         'connections': {
             'input': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 6,
             },
             'power': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 1,
             },
             'output': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 6,
             },
         },
+        wtype: 'amplifier',
     }
 
     # -------------------
@@ -127,18 +135,19 @@ def get(path=None):
         'description': 'Fast controller DIAG edition',
         'connections': {
             'input': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 6,
             },
             'power': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 1,
             },
             'output': {
-                'type': "MI_Term",
+                wplug: "MI_Term",
                 'nb': 6,
             },
         },
+        wtype: 'digitizer',
     }
 
     # -------------
@@ -150,7 +159,7 @@ def get(path=None):
         'description': 'DECTRIS EIGER 2 S 500K',
         'connections': {
             'power': {
-                'type': "DECTRIS_pow",
+                wplug: "power_AC_US_F",
                 'nb': 1,
             },
             'data': {
@@ -158,18 +167,22 @@ def get(path=None):
                 'nb': 1,
             },
             'ext_in': {
-                'type': "Lemo® Type 00",
+                wplug: "Lemo® Type 00",
                 'nb': 1,
             },
             'ext_out': {
-                'type': "Lemo® Type 00",
+                wplug: "Lemo® Type 00",
                 'nb': 1,
             },
             'cooling': {
-                'type': "DECTRIS_cool",
+                wplug: "DECTRIS_cool",
                 'nb': 2,
             },
         },
+        'url': (
+            'https://media.dectris.com/filer_public/8e/00/8e00d9d4-0de2-4435-b35e-8c07cec5ba38/technicalspecifications_eiger2_s_500k_v182.pdf',
+        ),
+        wtype: 'sensor',
     }
 
     # DECTRIS external trigger
@@ -177,26 +190,30 @@ def get(path=None):
         'description': 'DECTRIS EIGER 2 S 1M',
         'connections': {
             'power': {
-                'type': "DECTRIS_pow",
+                wplug: "power_AC_US_F",
                 'nb': 1,
             },
             'data': {
-                'type': "SFP+",
+                wplug: "SFP+",
                 'nb': 2,
             },
             'ext_in': {
-                'type': "Lemo® Type 00",
+                wplug: "Lemo® Type 00",
                 'nb': 1,
             },
             'ext_out': {
-                'type': "Lemo® Type 00",
+                wplug: "Lemo® Type 00",
                 'nb': 1,
             },
             'cooling': {
-                'type': "DECTRIS_cool",
+                wplug: "DECTRIS_cool",
                 'nb': 2,
             },
         },
+        'url': (
+            '',
+        ),
+        wtype: 'sensor',
     }
 
     # Servers
@@ -205,14 +222,18 @@ def get(path=None):
         'sizeU': 2,
         'connections': {
             'power': {
-                'type': "DECTRIS_pow",
-                'nb': 1,
+                wplug: "power_AC_US_M",
+                'nb': 2,
             },
             'data': {
-                'type': "SFP+",
+                wplug: "SFP+",
                 'nb': 2,
             },
         },
+        'url': (
+            'https://www.dell.com/en-us/shop/dell-poweredge-servers/poweredge-r7615-rack-server/spd/poweredge-r7615/pe_r7615_tm_vi_vp_sb',
+        ),
+        wtype: 'server',
     }
 
 
@@ -220,45 +241,119 @@ def get(path=None):
     # HXR scintillators
     # -------------
 
-    # DECTRIS external trigger
-    dout['HXR_scinctillator'] = {
-        'description': 'DECTRIS EIGER 2 S 1M',
-        'connections': {
-            'data': {
-                'type': "BNC_50H_M",
-                'nb': 1,
-            },
-            'power': {
-                'type': "SHV_M",
-                'nb': 1,
-            },
-            'LED': {
-                'type': 'fiber optic',
-                'nb': 1,
-            },
-        },
-    }
-
-    # -------------
-    # HXR scintillators
-    # -------------
-
-    # Hamamatsu PMT
-    dout['HXR_scint'] = {
+    # Scintillators
+    dout['HXR_scintillator'] = {
         'description': 'HXR scintillators, using Hamamatsu PMT',
         'connections': {
             'data': {
-                'type': "BNC_50H_M",
+                wplug: "BNC_50H_M",
                 'nb': 1,
             },
             'power': {
-                'type': "SHV_M",
+                wplug: "SHV_M",
+                'nb': 1,
+            },
+            'LED': {
+                wplug: 'fiber optic',
+                'nb': 1,
+            },
+        },
+        wtype: 'sensor',
+    }
+
+    # digitizer - fast
+    dout['HXR_digitizer_fast'] = {
+        'description': 'spectroscopy-relevant digitizer',
+        'connections': {
+            'data': {
+                wplug: "",
+                'nb': 1,
+            },
+            'power': {
+                wplug: "",
                 'nb': 1,
             },
         },
         'url': (
-            'https://www.hamamatsu.com/us/en/product/optical-sensors/pmt/pmt_tube-alone/head-on-type/R9420.html',
+            '',
         ),
+        wtype: 'sensor',
+    }
+
+    # digitizer - slow
+    dout['HXR_digitizer_slow'] = {
+        'description': 'current-mode-relevant digitizer',
+        'connections': {
+            'data': {
+                wplug: "",
+                'nb': 1,
+            },
+            'power': {
+                wplug: "",
+                'nb': 1,
+            },
+        },
+        'url': (
+            '',
+        ),
+        wtype: 'sensor',
+    }
+
+    # HV power supply
+    dout['HXR_power_HV'] = {
+        'description': 'high-voltage power supply for PMT',
+        'connections': {
+            'outlet': {
+                wplug: "",
+                'nb': 1,
+            },
+            'power': {
+                wplug: "",
+                'nb': 1,
+            },
+        },
+        'url': (
+            '',
+        ),
+        wtype: 'power',
+    }
+
+    # LED
+    dout['HXR_LED'] = {
+        'description': 'LED for gain monitoring',
+        'connections': {
+            'outlet': {
+                wplug: "",
+                'nb': 1,
+            },
+            'power': {
+                wplug: "",
+                'nb': 1,
+            },
+        },
+        'url': (
+            '',
+        ),
+        wtype: 'power',
+    }
+
+    # Pulse generator for LED
+    dout['HXR_pulse'] = {
+        'description': 'Pulse generator for LED for gain monitoring',
+        'connections': {
+            'outlet': {
+                wplug: "",
+                'nb': 1,
+            },
+            'power': {
+                wplug: "",
+                'nb': 1,
+            },
+        },
+        'url': (
+            '',
+        ),
+        wtype: 'power',
     }
 
     # -------------
@@ -266,13 +361,13 @@ def get(path=None):
     # -------------
 
     # Pirani gauges, INFICON
-    dout['Pirani'] = {
+    dout['Inficon_Pirani'] = {
         'description': 'Pirani passive gauge heads for VGC094, DN 40 CF-F',
         'PN_vendor': '350-423',
         'Prange': [8e-2, 1e5],
         'connections': {
             'all': {
-                'type': "",
+                wplug: "",
                 'nb': 1,
             },
         },
@@ -282,14 +377,14 @@ def get(path=None):
     }
 
     # Cold cathod gauges, INFICON
-    dout['ColdCathode'] = {
+    dout['Inficon_ColdCathode'] = {
         'description': 'Cold cathode gauge heads MAG084 for VGC094, DN 40 CF-F',
         'PN_vendor': '399-850',
         'Bmax': 0.150,
         'Prange': [1e-6, 5e-1],
         'connections': {
             'all': {
-                'type': "",
+                wplug: "",
                 'nb': 1,
             },
         },
@@ -299,7 +394,7 @@ def get(path=None):
     }
 
     # vacuum control, INFICON
-    dout['ColdCathode'] = {
+    dout['Inficon_Control'] = {
         'description': 'Cold cathode gauge heads MAG084 for VGC094, DN 40 CF-F',
         'options': ('CP 300 C9', 'IF 500 PN'),
         'PN_vendor': '398-401',
@@ -307,23 +402,23 @@ def get(path=None):
         'Prange': [1e-6, 5e-1],
         'connections': {
             'board1_gauge1': {
-                'type': "",
+                wplug: "",
                 'nb': 1,
             },
             'board1_gauge2': {
-                'type': "",
+                wplug: "",
                 'nb': 1,
             },
             'board2_gauge1': {
-                'type': "",
+                wplug: "",
                 'nb': 1,
             },
             'board2_gauge2': {
-                'type': "",
+                wplug: "",
                 'nb': 1,
             },
             'Interface': {
-                'type': "RJ45",
+                wplug: "RJ45",
                 'nb': 2,
             },
             'power': {

@@ -42,7 +42,7 @@ def main(coll=None, pfe=None, verb=None):
     if verb >= 1:
         msg = (
             "\n----------------------------------------------------------\n"
-            "Populating with Connections, Connectors, Devices from json"
+            "Populating with plugs, Connectors, Devices from json"
         )
         print(msg)
 
@@ -50,6 +50,7 @@ def main(coll=None, pfe=None, verb=None):
     # loop on files
     # --------------
 
+    consistency = False
     for k0, v0 in dpfe.items():
 
         # ----------
@@ -82,7 +83,14 @@ def main(coll=None, pfe=None, verb=None):
                     print(msg)
 
                 # add to Collection
-                getattr(coll, f"add_{v0['which']}")(k1, **v1)
+                if v0['which'] == 'connector':
+                    coll.add_connector(
+                        k1,
+                        consistency=(ii==ntot-1),
+                        **v1,
+                    )
+                else:
+                    getattr(coll, f"add_{v0['which']}")(k1, **v1)
 
     # --------------
     # verb
@@ -122,12 +130,14 @@ def _check(pfe=None, verb=None):
     # which testing order
 
     lw = [
-        'connection_type',
-        'connection_model',
-        'connection',
+        'plug_type',
+        'connector_family',
+        'connector_type',
+        'connector_model',
         'device_type',
         'device_model',
-        'device'
+        'device',
+        'connector',
     ]
 
 
@@ -137,27 +147,36 @@ def _check(pfe=None, verb=None):
 
     dpfe = {}
     derr = {}
-    for ii, pp in enumerate(pfe):
+    for ii, ww in enumerate(lw):
 
-        key = f"file{ii}"
+        # find files
+        lf = [
+            ff for ff in pfe
+            if ww in ff
+            and not any([wi in ff for wi in lw[:ii]])
+        ]
 
-        # ---------------
-        # check validity
+        print(f"\n{ww}\n{lf}")
 
-        if not os.path.isfile(pp):
-            derr[key] = f'Not valid file: {pp}'
-            continue
+        for jj, pp in enumerate(lf):
 
-        # -------------
-        # extract which
+            key = f"file{ii}{jj}"
 
-        for jj, ww in enumerate(lw):
-            if ww in pp:
-                dpfe[key] = {
-                    'pfe': os.path.abspath(pp),
-                    'which': ww,
-                }
-                break
+            # ---------------
+            # check validity
+
+            if not os.path.isfile(pp):
+                derr[key] = f'Not valid file: {pp}'
+                continue
+
+            # -------------
+            # extract which
+
+            dpfe[key] = {
+                'pfe': os.path.abspath(pp),
+                'which': ww,
+            }
+            break
 
     # ------------------
     # raise exception

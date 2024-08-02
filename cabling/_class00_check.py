@@ -6,6 +6,7 @@ Created on Thu Aug  1 09:31:37 2024
 """
 
 
+import copy
 import warnings
 
 
@@ -17,11 +18,11 @@ from . import _class00_def_dict as _def_dict
 
 #############################################
 #############################################
-#       connection type
+#       plug type
 #############################################
 
 
-def connection_type(
+def plug_type(
     coll=None,
     key=None,
     **kwdargs,
@@ -31,7 +32,7 @@ def connection_type(
     # check key
     # ---------------------
 
-    wcont = coll._which_connection_type
+    wcont = coll._which_plug_type
     lout = list(coll.dobj.get(wcont, {}).keys())
     key = ds._generic_check._check_var(
         key, 'key',
@@ -48,7 +49,7 @@ def connection_type(
         which=wcont,
         key=key,
         kwdargs=kwdargs,
-        defdict=_def_dict.get_connection_type_kwdargs(),
+        defdict=_def_dict.get_plug_type_kwdargs(),
     )
 
     # ---------------------
@@ -63,6 +64,57 @@ def connection_type(
     )
 
     return
+
+
+#############################################
+#############################################
+#       connector family
+#############################################
+
+
+def connector_family(
+    coll=None,
+    key=None,
+    **kwdargs,
+):
+
+    # ---------------------
+    # check key
+    # ---------------------
+
+    wcont = coll._which_connector_family
+    lout = list(coll.dobj.get(wcont, {}).keys())
+    key = ds._generic_check._check_var(
+        key, 'key',
+        types=str,
+        excluded=lout,
+    )
+
+    # ---------------------
+    # kwdargs
+    # ---------------------
+
+    kwdargs = _kwdargs(
+        coll=coll,
+        which=wcont,
+        key=key,
+        kwdargs=kwdargs,
+        defdict=_def_dict.get_connector_family_kwdargs(),
+    )
+
+    # ---------------------
+    # store
+    # ---------------------
+
+    coll.add_obj(
+        which=wcont,
+        key=key,
+        harmonize=True,
+        **kwdargs,
+    )
+
+    return
+
 
 
 #############################################
@@ -74,6 +126,7 @@ def connection_type(
 def connector_type(
     coll=None,
     key=None,
+    connections=None,
     **kwdargs,
 ):
 
@@ -81,8 +134,8 @@ def connector_type(
     # check key
     # ---------------------
 
-    wcont = coll._which_connector_type
-    lout = list(coll.dobj.get(wcont, {}).keys())
+    which = coll._which_connector_type
+    lout = list(coll.dobj.get(which, {}).keys())
     key = ds._generic_check._check_var(
         key, 'key',
         types=str,
@@ -95,46 +148,90 @@ def connector_type(
 
     kwdargs = _kwdargs(
         coll=coll,
-        which=wcont,
+        which=which,
         key=key,
         kwdargs=kwdargs,
         defdict=_def_dict.get_connector_type_kwdargs(),
     )
 
     # ---------------------
-    # connections
+    # connection plug types
     # ---------------------
 
-    wcontion = coll._which_connection_type
-    kk = 'connections'
-    c0 = (
-        isinstance(kwdargs.get(kk), dict)
-        and all([
-            isinstance(kwdargs[kk].get(pt), dict)
-            and kwdargs[kk][pt]['type'] in coll.dobj[wcontion].keys()
-            for pt in ['ptA', 'ptB']
-        ])
+    _check_connections_types(
+        coll=coll,
+        which=which,
+        key=key,
+        connections=connections,
+        lcon=['ptA', 'ptB'],
     )
-    if not c0:
-        msg = (
-            f"{wcont} '{key}' must be provided with a 'connections' dict:\n"
-            "\t- 'ptA': {'type': <a known connection type>}\n"
-            "\t- 'ptB': {'type': <a known connection type>}\n"
-        )
-        raise Exception(msg)
 
     # ---------------------
     # store
     # ---------------------
 
     coll.add_obj(
-        which=wcont,
+        which=which,
         key=key,
         harmonize=True,
         **kwdargs,
     )
 
     return
+
+
+#############################################
+#############################################
+#       connections type
+#############################################
+
+
+def _check_connections_types(
+    coll=None,
+    which=None,
+    key=None,
+    connections=None,
+    lcon=None,
+):
+
+    # ----------------
+    # preliminary
+    # ----------------
+
+    # list of keys
+    wplug = coll._which_plug_type
+    if not isinstance(connections, dict):
+        _err_connections(which, key, connections, wplug)
+
+    if lcon is None:
+        lcon = list(connections.keys())
+
+    # ----------------
+    # plug types
+    # ----------------
+
+    lok = sorted(coll.dobj[wplug].keys())
+    c0 = all([
+        isinstance(connections.get(pt), dict)
+        and connections[pt].get(wplug) in lok
+        for pt in lcon
+    ])
+    if not c0:
+        _err_connections(which, key, connections, wplug, lok, lcon)
+
+    return
+
+
+def _err_connections(which, key, connections, wplug, lok=[], lcon=[]):
+    lstr = [f"\t- '{cc}': '{wplug}': <a known '{wplug}'>\n" for cc in lcon]
+    msg = (
+        f"{which} '{key}' must be provided with a 'connections' dict:\n"
+        + "\n".join(lstr)
+    )
+    if len(lok) > 0:
+        msg += f"Available '{wplug}':\n\t{lok}\n"
+    msg += f"Provided:\n{connections}"
+    raise Exception(msg)
 
 
 #############################################
@@ -198,6 +295,7 @@ def connector(
     key=None,
     ptA=None,
     ptB=None,
+    consistency=None,
     **kwdargs,
 ):
 
@@ -205,6 +303,7 @@ def connector(
     # check key
     # ---------------------
 
+    # key
     wcon = coll._which_connector
     lout = list(coll.dobj.get(wcon, {}).keys())
     key = ds._generic_check._check_var(
@@ -213,11 +312,26 @@ def connector(
         excluded=lout,
     )
 
+    # consistency
+    consistency = ds._generic_check._check_var(
+        consistency, 'consistency',
+        types=bool,
+        default=True,
+    )
+
     # ---------------------
     # ptA, ptB
     # ---------------------
 
-    ptA, ptB = _ptAB(coll, key, ptA, ptB)
+    _ptAB(coll, key, ptA, ptB)
+
+    # update connections
+    wcm = coll._which_connector_model
+    wdev = coll._which_device
+    kcm = kwdargs[wcm]
+    connections = copy.deepcopy(coll.dobj[wcm][kcm]['connections'])
+    connections['ptA'][wdev] = ptA
+    connections['ptB'][wdev] = ptB
 
     # ---------------------
     # kwdargs
@@ -244,6 +358,17 @@ def connector(
         **kwdargs,
     )
 
+    # --------------------
+    # consistency check
+    # --------------------
+
+    if consistency is True:
+
+        coll.check_consistency(
+            verb=None,
+            returnas=None,
+        )
+
     return
 
 
@@ -262,19 +387,24 @@ def _ptAB(coll, key, ptA, ptB):
     wdev = coll._which_device
     lok = list(coll.dobj.get(wdev, {}))
 
-    if ptA is not None:
-        ptA = ds._generic_check._check_var(
-            ptA, 'ptA',
-            types=str,
-            allowed=lok,
-        )
+    din = {'ptA': ptA, 'ptB': ptB}
+    for pt in ['ptA', 'ptB']:
 
-    if ptB is not None:
-        ptB = ds._generic_check._check_var(
-            ptB, 'ptB',
-            types=str,
-            allowed=lok,
-        )
+        if din[pt] is not None:
+
+            c0 = (
+                isinstance(din[pt], tuple)
+                and len(din[pt]) == 2
+                and all([isinstance(ss, str) for ss in din[pt]])
+            )
+
+            if not c0:
+                msg = (
+                    "Arg 'ptA' and 'ptB' must each be tuple of the form:\n"
+                    "(<device name>, <plug name>)\n"
+                    f"Provided '{pt}': {din[pt]}"
+                )
+                raise Exception(msg)
 
     return ptA, ptB
 

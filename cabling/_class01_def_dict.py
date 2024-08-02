@@ -31,7 +31,7 @@ def get_device_type_kwdargs():
 #############################################
 
 
-def get_connector_model_kwdargs():
+def get_device_model_kwdargs():
 
     return {
         'PN': {
@@ -60,7 +60,7 @@ def get_connector_model_kwdargs():
         'type': {
             'types': str,
             'can_be_None': False,
-            'which': 'connector_type',
+            'which': 'device_type',
         },
     }
 
@@ -71,7 +71,7 @@ def get_connector_model_kwdargs():
 #############################################
 
 
-def get_connector_kwdargs():
+def get_device_kwdargs():
 
     return {
         'tag': {
@@ -88,10 +88,6 @@ def get_connector_kwdargs():
             'types': str,
             'unique': False,
         },
-        'length': {
-            'types': (int, float),
-            'astype': float,
-        },
         'System': {
             'types': (str, list, tuple),
             'astype': tuple,
@@ -107,6 +103,6 @@ def get_connector_kwdargs():
         'model': {
             'types': str,
             'can_be_None': False,
-            'which': 'connector_model',
+            'which': 'device_model',
         },
     }
