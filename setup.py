@@ -123,6 +123,7 @@ setup(
         "matplotlib",
         "pandas",
         "requests",
+        "networkx",
         "datastock>=0.0.39",
     ],
     python_requires=">=3.6",

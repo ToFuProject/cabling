@@ -12,6 +12,7 @@ from ._class00_Connectors import Connectors as Previous
 from . import _class01_check as _check
 from . import _add_from_json
 from . import _consistency
+from . import _class01_plot_connections as _plot_connections
 
 
 __all__ = ['Devices']
@@ -101,4 +102,15 @@ class Devices(Previous):
             self,
             verb=verb,
             returnas=returnas,
+        )
+
+    # -------------------
+    # plot
+    # -------------------
+
+    def plot_connections(
+        self
+    ):
+        _plot_connections.main(
+            coll=self,
         )
