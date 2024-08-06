@@ -1,31 +1,88 @@
 {
-    "BNC_50Hz_M": {
-        "description": "M BNC"
+    "BNC": {
+        "description": "BNC plug",
+        "url": "https://en.wikipedia.org/wiki/BNC_connector",
+        "doptions": {
+            "impedance": {
+                "values": [
+                    50,
+                    75
+                ],
+                "units": "Ohms",
+                "description": "impedance of the plug"
+            },
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
     },
-    "BNC_50Hz_F": {
-        "description": "F BNC"
-    },
-    "BNC_75Hz_M": {
-        "description": "M BNC"
-    },
-    "BNC_75Hz_F": {
-        "description": "F BNC"
-    },
-    "SHV_M": {
-        "description": "M Safe High Voltage"
-    },
-    "SHV_F": {
-        "description": "F Safe High Voltage"
+    "SHV": {
+        "description": "Safe High Voltage",
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
     },
     "MI_Term": {
         "description": "Termination for MI cables"
     },
-    "wire_bond": {
+    "MI_Term_pair": {
+        "description": "Termination for a pair of MI cables"
+    },
+    "wire_bond_pair": {
         "description": "micro-wires bonded with ultrasounds"
     },
-    "Lemo\u00ae Type 00": {
-        "description": " Lemo\u00ae Type 00 (NIM/CAMAC) ",
-        "url": "https://media.dectris.com/220921-Technical-specifications-DECTRIS_EIGER2_S_500K-RW.pdf"
+    "MCX": {
+        "description": "micro coaxial connector, CECC 22220",
+        "doptions": {
+            "impedance": {
+                "values": [
+                    50
+                ],
+                "units": "Ohms",
+                "description": "impedance of the plug"
+            }
+        },
+        "url": [
+            "https://en.wikipedia.org/wiki/MCX_connector"
+        ]
+    },
+    "SMA": {
+        "description": "SubMiniature version A coaxial connector",
+        "doptions": {
+            "impedance": {
+                "values": [
+                    50
+                ],
+                "units": "Ohms",
+                "description": "impedance of the plug"
+            }
+        },
+        "url": [
+            "https://en.wikipedia.org/wiki/SMA_connector"
+        ]
+    },
+    "Lemo00": {
+        "description": " Lemo\u00ae Type 00 (NIM/CAMAC), male ",
+        "url": "https://www.lemo.com/int_en/solutions/specialties/00-nim-camac.html",
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
     },
     "DECTRIS_pow_AC": {
         "description": "IEC-320-C14 input inlet",
@@ -43,60 +100,236 @@
             "https://en.wikipedia.org/wiki/Small_Form-factor_Pluggable"
         ]
     },
-    "RJ45_F": {
-        "description": "standard ethernet RJ45, female",
+    "optical": {
+        "description": "light coming out of a fiber",
         "specs": "",
         "url": []
     },
-    "RJ45_M": {
-        "description": "standard ethernet RJ45, male",
+    "RJ45": {
+        "description": "standard ethernet RJ45",
         "specs": "",
-        "url": []
+        "url": [],
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
+    },
+    "VHCDI": {
+        "description": "68-pin connectors, Shielded, twisted pair wiring",
+        "specs": "",
+        "url": [
+            "https://www.winford.com/products/cbvh68.php"
+        ],
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
+    },
+    "RS232": {
+        "description": "Differential, common ground, 5V, up to 20 kb/s",
+        "specs": "",
+        "url": [
+            "https://en.wikipedia.org/wiki/RS-232#:~:text=In%20telecommunications%2C%20RS%2D232%20or,serial%20communication%20transmission%20of%20data."
+        ],
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
+    },
+    "RS422": {
+        "description": "Differential, return per cable, 0.4 V, up to 10 Mb/s at 1200 m",
+        "specs": "",
+        "url": [
+            "https://en.wikipedia.org/wiki/RS-422"
+        ],
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
+    },
+    "RS485": {
+        "description": "Differential, return per cable, 0.4 V, up to 10 Mb/s at 1200 m",
+        "specs": "",
+        "url": [
+            "https://en.wikipedia.org/wiki/RS-485"
+        ],
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
+    },
+    "usb_c": {
+        "description": "USB-C",
+        "specs": "",
+        "url": [],
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
+    },
+    "MemCard": {
+        "description": "Memory card",
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
     },
     "DECTRIS_cool": {
         "description": "cooling pipes connections for DECTRIS cameras",
         "specs": "1/8 inch ISO parallel thread"
     },
-    "power_AC_US_F": {
-        "description": "standard US AC detachable power chord, female",
-        "specs": "NEMA 5-15P, IEC 60320 C-13",
+    "1phase_AC_US": {
+        "description": "standard US cable with (phase, neutrral, ground)",
+        "specs": "120/230 V, 50/60 Hz",
         "url": [
             "https://internationalconfig.com/power-cords-for-united-states-ac-power-cords.asp"
         ]
     },
-    "power_AC_US_M": {
-        "description": "standard US AC detachable power chord, male",
+    "power_AC_US": {
+        "description": "standard US AC detachable power chord",
         "specs": "NEMA 5-15P, IEC 60320 C-13",
         "url": [
             "https://internationalconfig.com/power-cords-for-united-states-ac-power-cords.asp"
-        ]
+        ],
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
     },
-    "US_A_F": {
-        "description": "standard US socket, ungrounded, female",
-        "specs": "2 pins, not grounded, female",
+    "US_A": {
+        "description": "standard US socket, ungrounded",
+        "specs": "2 pins, not grounded",
         "url": [
             "https://www.worldstandards.eu/electricity/plugs-and-sockets/"
-        ]
+        ],
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
     },
-    "US_A_M": {
-        "description": "standard US socket, male",
-        "specs": "2 pins, not grounded, ungrounded, male",
+    "US_B": {
+        "description": "standard US socket, grounded",
+        "specs": "3 pins, grounded",
         "url": [
             "https://www.worldstandards.eu/electricity/plugs-and-sockets/"
+        ],
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
+    },
+    "wire_pair_LV": {
+        "description": "standard Low-voltage pair of wires",
+        "specs": "",
+        "url": [
+            ""
         ]
     },
-    "US_B_F": {
-        "description": "standard US socket, grounded, female",
-        "specs": "3 pins, grounded, female",
-        "url": [
-            "https://www.worldstandards.eu/electricity/plugs-and-sockets/"
-        ]
+    "power_bus_24V": {
+        "description": "standard 24 V power supply bus used by PLCs"
     },
-    "US_B_M": {
-        "description": "standard US socket, grounded, male",
-        "specs": "3 pins, grounded, male",
-        "url": [
-            "https://www.worldstandards.eu/electricity/plugs-and-sockets/"
-        ]
+    "InficonPirani": {
+        "description": "Single cable bundle for Inficon's Pirani gauges"
+    },
+    "InficonColdCath": {
+        "description": "Single cable bundle for Inficon's Cold Cahtode gauges"
+    },
+    "8070-2530-02Z16-6PA": {
+        "description": "Glenair circular hermetic connector, used on VAT valves"
+    },
+    "8070-3039-01Z16-6KA": {
+        "description": "Glenair circular hermetic connector, used on VAT valves"
+    },
+    "VAT_position": {
+        "description": "7 pins round cable connection used on VAT valves"
+    },
+    "DN100CF": {
+        "description": "DN100CF"
+    },
+    "DN63CF": {
+        "description": "DN63CF"
+    },
+    "DN40CF": {
+        "description": "DN40CF"
+    },
+    "ISO_1/8": {
+        "description": "Connector for VAT valves air feeds",
+        "specs": "1/8\" ISO NPT",
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
+    },
+    "VCR_1/4": {
+        "description": "VCR fitting for 1/4\" piping",
+        "specs": "",
+        "doptions": {
+            "M/F": {
+                "values": [
+                    "M",
+                    "F"
+                ],
+                "description": "male / female connection"
+            }
+        }
+    },
+    "rail": {
+        "description": "mounting rail in a rack",
+        "specs": ""
     }
 }

@@ -57,7 +57,7 @@ def get_device_model_kwdargs():
             'types': (str, tuple, list),
             'astype': tuple,
         },
-        'type': {
+        'device_type': {
             'types': str,
             'can_be_None': False,
             'which': 'device_type',
@@ -88,7 +88,7 @@ def get_device_kwdargs():
             'types': str,
             'unique': False,
         },
-        'System': {
+        'Systems': {
             'types': (str, list, tuple),
             'astype': tuple,
         },
@@ -100,7 +100,7 @@ def get_device_kwdargs():
             'types': str,
             'astype': str,
         },
-        'model': {
+        'device_model': {
             'types': str,
             'can_be_None': False,
             'which': 'device_model',

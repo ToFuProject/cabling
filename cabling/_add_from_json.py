@@ -131,7 +131,6 @@ def _check(pfe=None, verb=None):
 
     lw = [
         'plug_type',
-        'connector_family',
         'connector_type',
         'connector_model',
         'device_type',
@@ -155,8 +154,6 @@ def _check(pfe=None, verb=None):
             if ww in ff
             and not any([wi in ff for wi in lw[:ii]])
         ]
-
-        print(f"\n{ww}\n{lf}")
 
         for jj, pp in enumerate(lf):
 

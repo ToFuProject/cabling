@@ -9,6 +9,9 @@ Created on Thu Aug  1 13:24:57 2024
 import os
 
 
+import numpy as np
+
+
 from . import _save2json
 
 
@@ -21,116 +24,15 @@ from . import _save2json
 def get(path=None):
 
     dout = {}
+    wcm = 'connector_model'
+    wplug = 'plug_type'
 
-    # -------------
-    # coax BNC cables
-    # -------------
+    # ------------------
+    # in vessel SXR
+    # ------------------
 
-    for imp in ['50Hz', '75Hz']:
-        for mf in [('M', 'F'), ('M', 'M'), ('F', 'F')]:
-            key = f"coax_BNC_{imp}_{''.join(mf)}"
-            dout[key] = {
-                'description': f'coaxial cable with {mf} connections',
-                'connections': {
-                    'ptA': {'type': f"BNC_{imp}_{mf[0]}"},
-                    'ptB': {'type': f"BNC_{imp}_{mf[1]}"},
-                },
-            }
+    _invessel_SXR(dout, wcm)
 
-    # -------------
-    # coax SHV cables
-    # -------------
-
-    for mf in [('M', 'F'), ('M', 'M'), ('F', 'F')]:
-        key = f"coax_SHV_{imp}_{''.join(mf)}"
-        dout[key] = {
-            'description': f'coaxial cable with {mf} connections',
-            'connections': {
-                'ptA': {'type': f"SHV_{mf[0]}"},
-                'ptB': {'type': f"SHV_{mf[1]}"},
-            },
-        }
-
-    # -------------
-    # MI cables
-    # -------------
-
-    dout['MI'] = {
-        'description': 'Mineral insulated cable',
-        'connections': {
-            'ptA': {'type': "MI_Term"},
-            'ptB': {'type': "MI_Term"},
-        },
-    }
-
-    dout['MI_twist'] = {
-        'description': 'Mineral insulated twisted pair',
-        'connections': {
-            'ptA': {'type': "MI_Term"},
-            'ptB': {'type': "MI_Term"},
-        },
-    }
-
-    dout['beaded_pair'] = {
-        'description': 'pair of naked wired with ceramic beads',
-        'connections': {
-            'ptA': {'type': "wire_bond"},
-            'ptB': {'type': "wire_bond"},
-        },
-    }
-
-    # -------------
-    # Lemo cables
-    # -------------
-
-
-    # DECTRIS external trigger
-    dout['coax_Lemo'] = {
-        'description': 'coaxial cable with Lemo® Type 00 (NIM/CAMAC)',
-        'connections': {
-            'ptA': {'type': "Lemo® Type 00"},
-            'ptB': {'type': "Lemo® Type 00"},
-        },
-    }
-
-    # -------------
-    # power cables
-    # -------------
-
-    # DECTRIS power
-    dout['DECTRIS_pow'] = {
-        'description': 'power cable for DECTRIS EIGER 2 S 500K',
-        'connections': {
-            'ptA': {'type': "DECTRIS_pow"},
-            'ptB': {'type': "DECTRIS_pow"},
-        },
-    }
-
-    # -------------
-    # poptics fiber
-    # -------------
-
-    # SFP+ optics fiber
-    dout['10Gb_SM']= {
-        'description': '10 GbE-LR single mode optic fiber for DECTRIS EIGER 2',
-        'connections': {
-            'ptA': {'type': "SFP+"},
-            'ptB': {'type': "SFP+"},
-        },
-    }
-
-    # -------------
-    # tubes
-    # -------------
-
-    # SFP+ optics fiber
-    dout['DECTRIS_cool'] = {
-        'description': 'cooling pipes connections for DECTRIS cameras',
-        'connections': {
-            'ptA': {'type': "DECTRIS_cool"},
-            'ptB': {'type': "DECTRIS_cool"},
-        },
-    }
 
     # ---------------
     # save to json
@@ -138,6 +40,103 @@ def get(path=None):
 
     which = os.path.split(__file__)[-1][1:-3]
     return _save2json.main(path=path, dout=dout, which=which)
+
+
+#############################################
+#############################################
+#         in-vessel SXR
+#############################################
+
+
+def _invessel_SXR(dout, wcm):
+
+    # -------------
+    # system
+    # -------------
+
+    systems = ('DIAG', 'XRAY', 'SXR-VA')
+
+    # -----------
+    # update
+    # -----------
+
+    npix = 15
+    lcam = ['OMPu', 'OMPl', 'MPPu', 'MPPl']
+
+    for pp in lcam:
+
+        key_plate = f'sxr_{pp}_plate'
+        key_cam = f'sxr_{pp}_cam'
+        key_feed = f'sxr_{pp}_feed'
+
+        # individual sensors to plate
+        for ii in range(npix):
+
+            dout[f"sxr_{pp}_microwire_{ii}"] = {
+                wcm: 'microwire_pair',
+                'Systems': systems,
+                'ptA':(f"sxr_{pp}_CVD_{ii}", 'all'),
+                'ptB': (key_plate, f'in_{ii}'),
+            }
+
+            # plate to camera
+            dout[f'sxr_{pp}_wire_{ii}'] = {
+                wcm: 'wire_pair',
+                'Systems': systems,
+                'ptA': (key_plate, f'out_{ii}'),
+                'ptB': (key_cam, f'CVD_in_{ii}'),
+            }
+
+            # camera to feedthrough
+            dout[f'sxr_{pp}_MI_{ii}'] = {
+                wcm: 'MI_twist_pair',
+                'Systems': systems,
+                'ptA': (key_cam, f'CVD_out_{ii}'),
+                'ptB': (key_feed, f'CVD_in_{ii}'),
+            }
+
+        # ---------------------------------
+        # individual thermocouple to camera
+
+        dout[f'sxr_{pp}_therm_MI'] = {
+            wcm: 'MI_single',
+            'Systems': systems,
+            'ptA': (f'sxr_{pp}_therm', 'all'),
+            'ptB': (key_cam, 'Therm_in'),
+        }
+
+        # ---------------------
+        # preamplifiers cables
+        # ---------------------
+
+        # namp = int(np.ceil(npix / 4))
+
+        # for ii in range(namp):
+
+        #     for jj in range(4):
+
+        #         # camera to preamplifier
+        #         dout[f''] = {
+        #             wcm: 'CVD_Therm',
+        #             'Systems': systems,
+        #             'ptA': (key_feed, 'CVD_out_{ii*4+jj}'),
+        #             'ptB': (f'sxr_{pp}_preamp_{ii}', 'in_{jj}'),
+        #         }
+
+    # ---------------------
+    # digitizer cables
+    # ---------------------
+
+    # preamplifier to digitizer
+    # key = f'sxr_{pp}_therm'
+    # dout[key] = {
+    #     wcm: 'CVD_preamp_digit',
+    #     'Systems': systems,
+    #     'ptA': (key_pream, 'out'),
+    #     'ptB': (key_digitizer, 'in'),
+    # }
+
+    return
 
 
 #############################################

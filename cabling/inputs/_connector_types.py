@@ -36,6 +36,9 @@ def get(path=None):
 
     dout['cable_twist'] = {
         'description': 'Twisted pair cables',
+        'url': (
+            'https://en.wikipedia.org/wiki/Twisted_pair',
+        ),
     }
 
     dout['cable_wire'] = {

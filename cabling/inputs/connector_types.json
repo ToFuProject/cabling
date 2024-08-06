@@ -6,7 +6,10 @@
         "description": "Coaxial cables"
     },
     "cable_twist": {
-        "description": "Twisted pair cables"
+        "description": "Twisted pair cables",
+        "url": [
+            "https://en.wikipedia.org/wiki/Twisted_pair"
+        ]
     },
     "cable_wire": {
         "description": "misc wire"

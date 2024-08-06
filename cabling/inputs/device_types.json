@@ -25,5 +25,8 @@
     },
     "power": {
         "description": "power source for another device"
+    },
+    "mechanical": {
+        "description": "mechanical parts"
     }
 }

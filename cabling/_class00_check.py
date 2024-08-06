@@ -25,6 +25,7 @@ from . import _class00_def_dict as _def_dict
 def plug_type(
     coll=None,
     key=None,
+    doptions=None,
     **kwdargs,
 ):
 
@@ -32,12 +33,22 @@ def plug_type(
     # check key
     # ---------------------
 
-    wcont = coll._which_plug_type
-    lout = list(coll.dobj.get(wcont, {}).keys())
+    which = coll._which_plug_type
+    lout = list(coll.dobj.get(which, {}).keys())
     key = ds._generic_check._check_var(
         key, 'key',
         types=str,
         excluded=lout,
+    )
+
+    # ---------------------
+    # options
+    # ---------------------
+
+    doptions = _options(
+        which=which,
+        key=key,
+        doptions=doptions,
     )
 
     # ---------------------
@@ -46,7 +57,7 @@ def plug_type(
 
     kwdargs = _kwdargs(
         coll=coll,
-        which=wcont,
+        which=which,
         key=key,
         kwdargs=kwdargs,
         defdict=_def_dict.get_plug_type_kwdargs(),
@@ -57,13 +68,94 @@ def plug_type(
     # ---------------------
 
     coll.add_obj(
-        which=wcont,
+        which=which,
         key=key,
+        doptions=doptions,
         harmonize=True,
         **kwdargs,
     )
 
     return
+
+
+# ####################
+# Plug type options
+# ####################
+
+
+def _options(
+    which=None,
+    key=None,
+    doptions=None,
+):
+
+    # -----------------
+    # trivial
+    # -----------------
+
+    if doptions is None:
+        dout = None
+
+    else:
+
+        # --------------
+        # conformity check
+        # --------------
+
+        c0 = (
+            isinstance(doptions, dict)
+            and all([
+                isinstance(k0, str)
+                and isinstance(v0, (list, tuple))
+                or (
+                    isinstance(v0, dict)
+                    and isinstance(v0.get('values'), (list, tuple))
+                )
+                for k0, v0 in doptions.items()
+            ])
+        )
+
+        if not c0:
+            if isinstance(doptions, dict):
+                lstr = "\n".join([
+                    f"\t- '{k0}': {v0}" for k0, v0 in doptions.items()
+                ])
+
+            else:
+                lstr = str(doptions)
+
+            msg = (
+                f"For {which} '{key}', arg doption must be a dict of:\n"
+                f"\t- 'option0': list if possible values or dict\n"
+                f"\t- ...      : list if possible values or dict\n"
+                f"\t- 'optionN': list if possible values or dict\n\n"
+                "If a dict is provided for each options, it should be:\n"
+                + "{'values': list of possible values, 'description': str}\n\n"
+                + f"Provided:\n{lstr}"
+            )
+            raise Exception(msg)
+
+        # ---------------
+        # standardization
+        # ---------------
+
+        dout = {}
+        for k0, v0 in doptions.items():
+
+            if isinstance(v0, (list, tuple)):
+                dout[k0] = {
+                    'values': tuple(v0),
+                    'description': '',
+                }
+
+            else:
+                dout[k0] = {
+                    'values': tuple(v0['values']),
+                    'description': v0.get('description'),
+                    'units': v0.get('units'),
+                }
+
+    return dout
 
 
 #############################################
@@ -72,61 +164,9 @@ def plug_type(
 #############################################
 
 
-def connector_family(
-    coll=None,
-    key=None,
-    **kwdargs,
-):
-
-    # ---------------------
-    # check key
-    # ---------------------
-
-    wcont = coll._which_connector_family
-    lout = list(coll.dobj.get(wcont, {}).keys())
-    key = ds._generic_check._check_var(
-        key, 'key',
-        types=str,
-        excluded=lout,
-    )
-
-    # ---------------------
-    # kwdargs
-    # ---------------------
-
-    kwdargs = _kwdargs(
-        coll=coll,
-        which=wcont,
-        key=key,
-        kwdargs=kwdargs,
-        defdict=_def_dict.get_connector_family_kwdargs(),
-    )
-
-    # ---------------------
-    # store
-    # ---------------------
-
-    coll.add_obj(
-        which=wcont,
-        key=key,
-        harmonize=True,
-        **kwdargs,
-    )
-
-    return
-
-
-
-#############################################
-#############################################
-#       connector type
-#############################################
-
-
 def connector_type(
     coll=None,
     key=None,
-    connections=None,
     **kwdargs,
 ):
 
@@ -155,10 +195,62 @@ def connector_type(
     )
 
     # ---------------------
+    # store
+    # ---------------------
+
+    coll.add_obj(
+        which=which,
+        key=key,
+        harmonize=True,
+        **kwdargs,
+    )
+
+    return
+
+
+
+#############################################
+#############################################
+#       connector type
+#############################################
+
+
+def connector_model(
+    coll=None,
+    key=None,
+    connections=None,
+    **kwdargs,
+):
+
+    # ---------------------
+    # check key
+    # ---------------------
+
+    which = coll._which_connector_model
+    lout = list(coll.dobj.get(which, {}).keys())
+    key = ds._generic_check._check_var(
+        key, 'key',
+        types=str,
+        excluded=lout,
+    )
+
+    # ---------------------
+    # kwdargs
+    # ---------------------
+
+    kwdargs = _kwdargs(
+        coll=coll,
+        which=which,
+        key=key,
+        kwdargs=kwdargs,
+        defdict=_def_dict.get_connector_model_kwdargs(),
+    )
+
+    # ---------------------
     # connection plug types
     # ---------------------
 
-    _check_connections_types(
+    connections = _check_connections_types(
         coll=coll,
         which=which,
         key=key,
@@ -173,6 +265,7 @@ def connector_type(
     coll.add_obj(
         which=which,
         key=key,
+        connections=connections,
         harmonize=True,
         **kwdargs,
     )
@@ -213,75 +306,97 @@ def _check_connections_types(
     lok = sorted(coll.dobj[wplug].keys())
     c0 = all([
         isinstance(connections.get(pt), dict)
-        and connections[pt].get(wplug) in lok
+        and (
+                (
+                    isinstance(connections[pt].get(wplug), str)
+                    and connections[pt][wplug] in lok
+                )
+            or (
+                isinstance(connections[pt].get(wplug), dict)
+                and connections[pt][wplug]['key'] in lok
+            )
+        )
         for pt in lcon
     ])
     if not c0:
         _err_connections(which, key, connections, wplug, lok, lcon)
 
-    return
+    # ------------
+    # plug options
+    # -------------
+
+    dout = {}
+    for pt in lcon:
+
+        dout[pt] = {
+            wplug: {},
+            **{k1: v1 for k1, v1 in connections[pt].items() if k1 != wplug}
+        }
+
+        if isinstance(connections[pt].get(wplug), str):
+            dout[pt][wplug] = {'key': connections[pt][wplug]}
+
+        else:
+            for k1, v1 in connections[pt][wplug].items():
+
+                if k1 == 'key':
+                    dout[pt][wplug]['key'] = v1
+
+                # ---------------
+                # options
+
+                else:
+
+                    plug_type = connections[pt][wplug]['key']
+                    dplug = coll.dobj[wplug][plug_type].get('doptions')
+
+                    if k1 not in dplug.keys():
+                        msg = (
+                            f"For {which} '{key}', arg connections must have "
+                            "options known to the associated {wplug}:\n"
+                            f"\t- {plug_type} has options: {sorted(dplug.keys())}\n"
+                            f"Provided:\n{k1}"
+                        )
+                        raise Exception(msg)
+
+                    if v1 not in dplug[k1]:
+                        msg = (
+                            f"For {which} '{key}', arg connections must have "
+                            "options known to the associated {wplug}:\n"
+                            f"\t- plug_type: {plug_type}\n"
+                            f"\t- option: {k1}\n"
+                            f"\t- available values: {dplug[k1]}\n"
+                            f"Provided:\n\t{v1}"
+                        )
+                        raise Exception(msg)
+
+                    dout[pt][wplug][k1] = v1
+
+    return dout
 
 
-def _err_connections(which, key, connections, wplug, lok=[], lcon=[]):
-    lstr = [f"\t- '{cc}': '{wplug}': <a known '{wplug}'>\n" for cc in lcon]
+def _err_connections(which, key, connections, wplug, lok=[], lcon=None):
+
+    # initialize msg
     msg = (
         f"{which} '{key}' must be provided with a 'connections' dict:\n"
-        + "\n".join(lstr)
     )
-    if len(lok) > 0:
-        msg += f"Available '{wplug}':\n\t{lok}\n"
-    msg += f"Provided:\n{connections}"
+
+    # add connections
+    if lcon is not None:
+        lstr = [
+            f"\t- '{cc}': '{wplug}': {connections.get(cc)}\n"
+            for cc in lcon
+            if connections.get(cc, {}).get(wplug) not in lok
+        ]
+        msg += "\n".join(lstr)
+
+        # available
+        msg += f"\nAvailable '{wplug}':\n\t{lok}\n\n"
+
+    # Provided
+    msg += f"Provided:\n\t{connections}"
     raise Exception(msg)
-
-
-#############################################
-#############################################
-#       connector model
-#############################################
-
-
-def connector_model(
-    coll=None,
-    key=None,
-    **kwdargs,
-):
-
-    # ---------------------
-    # check key
-    # ---------------------
-
-    wcont = coll._which_connector_model
-    lout = list(coll.dobj.get(wcont, {}).keys())
-    key = ds._generic_check._check_var(
-        key, 'key',
-        types=str,
-        excluded=lout,
-    )
-
-    # ---------------------
-    # kwdargs
-    # ---------------------
-
-    kwdargs = _kwdargs(
-        coll=coll,
-        which=wcont,
-        key=key,
-        kwdargs=kwdargs,
-        defdict=_def_dict.get_connector_model_kwdargs(),
-    )
-
-    # ---------------------
-    # store
-    # ---------------------
-
-    coll.add_obj(
-        which=wcont,
-        key=key,
-        harmonize=True,
-        **kwdargs,
-    )
-
-    return
 
 
 #############################################
@@ -304,8 +419,8 @@ def connector(
     # ---------------------
 
     # key
-    wcon = coll._which_connector
-    lout = list(coll.dobj.get(wcon, {}).keys())
+    which = coll._which_connector
+    lout = list(coll.dobj.get(which, {}).keys())
     key = ds._generic_check._check_var(
         key, 'key',
         types=str,
@@ -320,10 +435,22 @@ def connector(
     )
 
     # ---------------------
+    # kwdargs
+    # ---------------------
+
+    kwdargs = _kwdargs(
+        coll=coll,
+        which=which,
+        key=key,
+        kwdargs=kwdargs,
+        defdict=_def_dict.get_connector_kwdargs(),
+    )
+
+    # ---------------------
     # ptA, ptB
     # ---------------------
 
-    _ptAB(coll, key, ptA, ptB)
+    _ptAB(coll, which, key, ptA, ptB)
 
     # update connections
     wcm = coll._which_connector_model
@@ -333,27 +460,18 @@ def connector(
     connections['ptA'][wdev] = ptA
     connections['ptB'][wdev] = ptB
 
-    # ---------------------
-    # kwdargs
-    # ---------------------
-
-    kwdargs = _kwdargs(
-        coll=coll,
-        which=wcon,
-        key=key,
-        kwdargs=kwdargs,
-        defdict=_def_dict.get_connector_kwdargs(),
-    )
+    # update device connections
+    coll.dobj[wdev][ptA[0]]['connections'][ptA[1]][which] = (key, 'ptA')
+    coll.dobj[wdev][ptB[0]]['connections'][ptB[1]][which] = (key, 'ptB')
 
     # ---------------------
     # store
     # ---------------------
 
     coll.add_obj(
-        which=wcon,
+        which=which,
         key=key,
-        ptA=ptA,
-        ptB=ptB,
+        connections=connections,
         harmonize=True,
         **kwdargs,
     )
@@ -378,7 +496,7 @@ def connector(
 #############################################
 
 
-def _ptAB(coll, key, ptA, ptB):
+def _ptAB(coll, which, key, ptA, ptB):
 
     # -----------------
     # available devices
@@ -392,21 +510,43 @@ def _ptAB(coll, key, ptA, ptB):
 
         if din[pt] is not None:
 
+            # -----------------------
+            # check format
+
             c0 = (
-                isinstance(din[pt], tuple)
+                isinstance(din[pt], (list, tuple))
                 and len(din[pt]) == 2
                 and all([isinstance(ss, str) for ss in din[pt]])
             )
 
+            # raise error if needed
             if not c0:
                 msg = (
-                    "Arg 'ptA' and 'ptB' must each be tuple of the form:\n"
+                    f"For {which} '{key}', "
+                    "arg '{pt}' must be a tuple of the form:\n"
                     "(<device name>, <plug name>)\n"
                     f"Provided '{pt}': {din[pt]}"
                 )
                 raise Exception(msg)
 
-    return ptA, ptB
+            # -----------------------
+            # check existence of pts
+
+            if din[pt][0] not in lok:
+                msg = (
+                    f"For {which} '{key}', wrong first term in arg '{pt}':\n"
+                    f"\t- Unknwon {wdev}: '{din[pt][0]}'\n"
+                )
+                raise Exception(msg)
+
+            if din[pt][1] not in coll.dobj[wdev][din[pt][0]]['connections'].keys():
+                msg = (
+                    f"For {which} '{key}', wrong second term in arg '{pt}':\n"
+                    f"\t- Unknwon {wdev} connection: '{din[pt][1]}'\n"
+                )
+                raise Exception(msg)
+
+    return tuple(ptA), tuple(ptB)
 
 
 #############################################
@@ -435,6 +575,7 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
                 types=v0.get('types'),
                 default=v0.get('def'),
             )
+
         elif kwdargs.get(k0) is None:
             continue
 
@@ -503,6 +644,7 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
             for ww in w2:
                 if ww not in coll.dobj.keys():
                     msg = (
+                        "Error defining {which} '{key}':"
                         "Unknow which: {ww}\n"
                     )
                     warnings.warn(msg)

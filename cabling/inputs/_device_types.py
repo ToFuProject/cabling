@@ -54,6 +54,9 @@ def get(path=None):
         'power': {
             'description': 'power source for another device',
         },
+        'mechanical': {
+            'description': 'mechanical parts',
+        },
     }
 
     # ---------------

@@ -76,7 +76,7 @@ def get_connector_model_kwdargs():
             'types': (str, tuple, list),
             'astype': tuple,
         },
-        'type': {
+        'connector_type': {
             'types': str,
             # 'can_be_None': False,
             'which': 'connector_type',
@@ -122,7 +122,7 @@ def get_connector_kwdargs():
             'types': str,
             'astype': str,
         },
-        'model': {
+        'connector_model': {
             'types': str,
             # 'can_be_None': False,
             'which': 'connector_model',

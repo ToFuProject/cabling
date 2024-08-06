@@ -28,32 +28,27 @@ def get(path=None):
     # coax BNC cables
     # -------------
 
-    for imp in ['50Hz', '75Hz']:
-        for mf in [('M', 'F'), ('M', 'M'), ('F', 'F')]:
-            key = f"BNC_{imp}_{''.join(mf)}"
-            dout[key] = {
-                'description': f'coaxial cable with {mf} connections',
-                'connections': {
-                    'ptA': {wplug: f"BNC_{imp}_{mf[0]}"},
-                    'ptB': {wplug: f"BNC_{imp}_{mf[1]}"},
-                },
-                wtype: 'cable_coax',
-            }
+    dout['BNC'] = {
+        'description': f'coaxial cable with BNC plugs',
+        'connections': {
+            'ptA': {wplug: "BNC"},
+            'ptB': {wplug: "BNC"},
+        },
+        wtype: 'cable_coax',
+    }
 
     # -------------
     # coax SHV cables
     # -------------
 
-    for mf in [('M', 'F'), ('M', 'M'), ('F', 'F')]:
-        key = f"SHV_{imp}_{''.join(mf)}"
-        dout[key] = {
-            'description': f'coaxial cable with {mf} connections',
-            'connections': {
-                'ptA': {wplug: f"SHV_{mf[0]}"},
-                'ptB': {wplug: f"SHV_{mf[1]}"},
-            },
-            wtype: 'cable_coax',
-        }
+    dout['SHV'] = {
+        'description': f'coaxial cable with SHV plugs',
+        'connections': {
+            'ptA': {wplug: "SHV"},
+            'ptB': {wplug: "SHV"},
+        },
+        wtype: 'cable_coax',
+    }
 
     # -------------
     # MI cables
@@ -68,7 +63,7 @@ def get(path=None):
         wtype: 'cable_MI',
     }
 
-    dout['MI_twist'] = {
+    dout['MI_twist_pair'] = {
         'description': 'Mineral insulated twisted pair',
         'connections': {
             'ptA': {wplug: "MI_Term"},
@@ -77,11 +72,20 @@ def get(path=None):
         wtype: 'cable_MI',
     }
 
-    dout['beaded_pair'] = {
-        'description': 'pair of naked wired with ceramic beads',
+    dout['microwire_pair'] = {
+        'description': 'pair of naked microwires',
         'connections': {
-            'ptA': {wplug: "wire_bond"},
-            'ptB': {wplug: "wire_bond"},
+            'ptA': {wplug: "wire_bond_pair"},
+            'ptB': {wplug: "wire_bond_pair"},
+        },
+        wtype: 'cable_wire',
+    }
+
+    dout['wire_pair'] = {
+        'description': 'pair of naked wires with ceramic beads',
+        'connections': {
+            'ptA': {wplug: "wire_bond_pair"},
+            'ptB': {wplug: "wire_bond_pair"},
         },
         wtype: 'cable_wire',
     }
@@ -90,13 +94,16 @@ def get(path=None):
     # Lemo cables
     # -------------
 
-    # DECTRIS external trigger
-    dout['coax_Lemo'] = {
+    # Lemo
+    dout['Lemo00'] = {
         'description': 'coaxial cable with Lemo® Type 00 (NIM/CAMAC)',
         'connections': {
-            'ptA': {wplug: "Lemo® Type 00"},
-            'ptB': {wplug: "Lemo® Type 00"},
+            'ptA': {wplug: "Lemo00"},
+            'ptB': {wplug: "Lemo00"},
         },
+        'url': (
+            '',
+        ),
         wtype: 'cable_coax',
     }
 
@@ -105,11 +112,11 @@ def get(path=None):
     # -------------
 
     # standard power chord
-    dout['power_F'] = {
-        'description': 'power chord US F',
+    dout['power'] = {
+        'description': 'power chord US',
         'connections': {
-            'ptA': {wplug: "power_AC_US_F"},
-            'ptB': {wplug: "US_A_M"},
+            'ptA': {wplug: "power_AC_US"},
+            'ptB': {wplug: "US_A"},
         },
         wtype: 'power_chord',
     }

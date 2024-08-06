@@ -35,6 +35,17 @@ def main(
     )
 
     # --------------------------
+    # verb
+    # --------------------------
+
+    if verb is True:
+        msg = (
+            '\n\t--------------------------\n'
+            "\tOverall consistency check\n"
+        )
+        print(msg)
+
+    # --------------------------
     # consistency of connections
     # --------------------------
 
@@ -42,7 +53,6 @@ def main(
 
     dout['connections'] = _connections.main(
         coll=coll,
-        verb=verb,
     )
 
     # --------------------------

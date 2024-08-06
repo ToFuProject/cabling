@@ -6,6 +6,7 @@ Created on Thu Aug  1 09:31:37 2024
 """
 
 
+import copy
 import datastock as ds
 
 
@@ -92,12 +93,23 @@ def device_model(
     # connection plug types
     # ---------------------
 
-    _class00_check._check_connections_types(
+    connections = _class00_check._check_connections_types(
         coll=coll,
         which=which,
         key=key,
         connections=connections,
         lcon=None,
+    )
+
+    # ---------------------
+    # connection nb
+    # ---------------------
+
+    connections = _connections_nb(
+        coll=coll,
+        which=which,
+        key=key,
+        connections=connections,
     )
 
     # ---------------------
@@ -127,6 +139,50 @@ def device_model(
     return
 
 
+#######################
+#######################
+#    connections nb
+#######################
+
+
+def _connections_nb(
+    coll=None,
+    which=None,
+    key=None,
+    connections=None,
+):
+
+    # -------------
+    # prepare
+    # -------------
+
+    lcon = list(connections.keys())
+
+    # -------------
+    # derive
+    # -------------
+
+    dout = {}
+    for k0 in lcon:
+
+        dcon = connections[k0]
+        nb = dcon.get('nb')
+        if nb is None or nb == 1:
+            dout[k0] = {k1: v1 for k1, v1 in dcon.items() if k1 != 'nb'}
+
+        else:
+
+            if not (isinstance(nb, int) and nb > 1):
+                msg = "Arg nb must be a strictly positive integer"
+                raise Exception(msg)
+
+            for i1 in range(nb):
+                keyi = f"{k0}_{i1}"
+                dout[keyi] = {k1: v1 for k1, v1 in dcon.items() if k1 != 'nb'}
+
+    return dout
+
+
 #############################################
 #############################################
 #       device
@@ -136,7 +192,6 @@ def device_model(
 def device(
     coll=None,
     key=None,
-    connections=None,
     **kwdargs,
 ):
 
@@ -161,8 +216,16 @@ def device(
         which=which,
         key=key,
         kwdargs=kwdargs,
-        defdict=_def_dict.get_device_type_kwdargs(),
+        defdict=_def_dict.get_device_kwdargs(),
     )
+
+    # ---------------------
+    # connections, copy from model
+    # ---------------------
+
+    wdm = coll._which_device_model
+    key_model = kwdargs[wdm]
+    connections = copy.deepcopy(coll.dobj[wdm][key_model]['connections'])
 
     # ---------------------
     # store
@@ -177,73 +240,3 @@ def device(
     )
 
     return
-
-
-
-#############################################
-#############################################
-#       connections
-#############################################
-
-# DEPRECATED ?
-# =============================================================================
-# def _connections(coll, key, connections):
-#
-#     # --------------------
-#     # available connectors
-#     # --------------------
-#
-#     wplug = coll._which_plug_type
-#     lok = list(coll.dobj.get(wplug, {}))
-#
-#     # --------------------
-#     # available connectors
-#     # --------------------
-#
-#     if connections is None:
-#         connections = {}
-#
-#     c0 = (
-#         isinstance(connections, dict)
-#         and all([
-#             isinstance(k0, str)
-#             and (
-#                 isinstance(v0, str)
-#                 or (
-#                     isinstance(v0, dict)
-#                     and isinstance(v0.get(wcon), str)
-#                 )
-#             )
-#             for k0, v0 in connections.items()
-#         ])
-#     )
-#
-#     # ------------------------------
-#     # population with default values
-#     # ------------------------------
-#
-#     for k0, v0 in connections.items():
-#         for k1, v1 in _def_dict.get_connections().items():
-#
-#             # type checking + default
-#             connections[k0][k1] = ds._generic_check._check_var(
-#                 connections[k0].get(k1), k1,
-#                 types=v1.get('types'),
-#                 default=v1.get('def'),
-#             )
-#
-#             # as type
-#             if v1.get('astype') is not None:
-#                 connections[k0][k1] = eval(f"{v1['astype']}({connections[k0][k1]})")
-#
-#             # can be None
-#             wdev = coll._which_device
-#             if v1.get('can_be_None') is False and connections[k0][k1] is None:
-#                 msg = (
-#                     f"For {wdev} '{key}', connection '{k0}', "
-#                     f"arg '{k1}' must be provided!"
-#                 )
-#                 raise Exception(msg)
-#
-#     return connections
-# =============================================================================

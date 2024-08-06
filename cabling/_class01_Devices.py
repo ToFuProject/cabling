@@ -37,6 +37,8 @@ class Devices(Previous):
     _ddef = copy.deepcopy(Previous._ddef)
     _dshow = dict(Previous._dshow)
 
+    _dshow['device_model'] = ['device_type', 'description', 'PN_vendor', 'chassis', 'sizeU']
+
     # -------------------
     # add Device type
     # -------------------

@@ -1,108 +1,24 @@
 {
-    "BNC_50Hz_MF": {
-        "description": "coaxial cable with ('M', 'F') connections",
+    "BNC": {
+        "description": "coaxial cable with BNC plugs",
         "connections": {
             "ptA": {
-                "plug_type": "BNC_50Hz_M"
+                "plug_type": "BNC"
             },
             "ptB": {
-                "plug_type": "BNC_50Hz_F"
+                "plug_type": "BNC"
             }
         },
         "connector_type": "cable_coax"
     },
-    "BNC_50Hz_MM": {
-        "description": "coaxial cable with ('M', 'M') connections",
+    "SHV": {
+        "description": "coaxial cable with SHV plugs",
         "connections": {
             "ptA": {
-                "plug_type": "BNC_50Hz_M"
+                "plug_type": "SHV"
             },
             "ptB": {
-                "plug_type": "BNC_50Hz_M"
-            }
-        },
-        "connector_type": "cable_coax"
-    },
-    "BNC_50Hz_FF": {
-        "description": "coaxial cable with ('F', 'F') connections",
-        "connections": {
-            "ptA": {
-                "plug_type": "BNC_50Hz_F"
-            },
-            "ptB": {
-                "plug_type": "BNC_50Hz_F"
-            }
-        },
-        "connector_type": "cable_coax"
-    },
-    "BNC_75Hz_MF": {
-        "description": "coaxial cable with ('M', 'F') connections",
-        "connections": {
-            "ptA": {
-                "plug_type": "BNC_75Hz_M"
-            },
-            "ptB": {
-                "plug_type": "BNC_75Hz_F"
-            }
-        },
-        "connector_type": "cable_coax"
-    },
-    "BNC_75Hz_MM": {
-        "description": "coaxial cable with ('M', 'M') connections",
-        "connections": {
-            "ptA": {
-                "plug_type": "BNC_75Hz_M"
-            },
-            "ptB": {
-                "plug_type": "BNC_75Hz_M"
-            }
-        },
-        "connector_type": "cable_coax"
-    },
-    "BNC_75Hz_FF": {
-        "description": "coaxial cable with ('F', 'F') connections",
-        "connections": {
-            "ptA": {
-                "plug_type": "BNC_75Hz_F"
-            },
-            "ptB": {
-                "plug_type": "BNC_75Hz_F"
-            }
-        },
-        "connector_type": "cable_coax"
-    },
-    "SHV_75Hz_MF": {
-        "description": "coaxial cable with ('M', 'F') connections",
-        "connections": {
-            "ptA": {
-                "plug_type": "SHV_M"
-            },
-            "ptB": {
-                "plug_type": "SHV_F"
-            }
-        },
-        "connector_type": "cable_coax"
-    },
-    "SHV_75Hz_MM": {
-        "description": "coaxial cable with ('M', 'M') connections",
-        "connections": {
-            "ptA": {
-                "plug_type": "SHV_M"
-            },
-            "ptB": {
-                "plug_type": "SHV_M"
-            }
-        },
-        "connector_type": "cable_coax"
-    },
-    "SHV_75Hz_FF": {
-        "description": "coaxial cable with ('F', 'F') connections",
-        "connections": {
-            "ptA": {
-                "plug_type": "SHV_F"
-            },
-            "ptB": {
-                "plug_type": "SHV_F"
+                "plug_type": "SHV"
             }
         },
         "connector_type": "cable_coax"
@@ -119,7 +35,7 @@
         },
         "connector_type": "cable_MI"
     },
-    "MI_twist": {
+    "MI_twist_pair": {
         "description": "Mineral insulated twisted pair",
         "connections": {
             "ptA": {
@@ -131,38 +47,53 @@
         },
         "connector_type": "cable_MI"
     },
-    "beaded_pair": {
-        "description": "pair of naked wired with ceramic beads",
+    "microwire_pair": {
+        "description": "pair of naked microwires",
         "connections": {
             "ptA": {
-                "plug_type": "wire_bond"
+                "plug_type": "wire_bond_pair"
             },
             "ptB": {
-                "plug_type": "wire_bond"
+                "plug_type": "wire_bond_pair"
             }
         },
         "connector_type": "cable_wire"
     },
-    "coax_Lemo": {
+    "wire_pair": {
+        "description": "pair of naked wires with ceramic beads",
+        "connections": {
+            "ptA": {
+                "plug_type": "wire_bond_pair"
+            },
+            "ptB": {
+                "plug_type": "wire_bond_pair"
+            }
+        },
+        "connector_type": "cable_wire"
+    },
+    "Lemo00": {
         "description": "coaxial cable with Lemo\u00ae Type 00 (NIM/CAMAC)",
         "connections": {
             "ptA": {
-                "plug_type": "Lemo\u00ae Type 00"
+                "plug_type": "Lemo00"
             },
             "ptB": {
-                "plug_type": "Lemo\u00ae Type 00"
+                "plug_type": "Lemo00"
             }
         },
+        "url": [
+            ""
+        ],
         "connector_type": "cable_coax"
     },
-    "power_F": {
-        "description": "power chord US F",
+    "power": {
+        "description": "power chord US",
         "connections": {
             "ptA": {
-                "plug_type": "power_AC_US_F"
+                "plug_type": "power_AC_US"
             },
             "ptB": {
-                "plug_type": "US_A_M"
+                "plug_type": "US_A"
             }
         },
         "connector_type": "power_chord"

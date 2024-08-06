@@ -3,18 +3,36 @@
         "description": "CVD diamond sensor",
         "connections": {
             "all": {
-                "plug_type": "wire_bond",
-                "nb": 2
+                "plug_type": "wire_bond_pair",
+                "nb": 1
             }
         },
         "device_type": "sensor"
     },
-    "CVD_MI": {
+    "CVD_plate_15": {
         "description": "CVD cameras MI adapter plate",
         "connections": {
-            "all": {
-                "plug_type": "MI_Term",
-                "nb": 30
+            "in": {
+                "plug_type": "wire_bond_pair",
+                "nb": 15
+            },
+            "out": {
+                "plug_type": "MI_Term_pair",
+                "nb": 15
+            }
+        },
+        "device_type": "sensor"
+    },
+    "CVD_plate_3": {
+        "description": "CVD cameras MI adapter plate",
+        "connections": {
+            "in": {
+                "plug_type": "wire_bond_pair",
+                "nb": 3
+            },
+            "out": {
+                "plug_type": "MI_Term_pair",
+                "nb": 3
             }
         },
         "device_type": "sensor"
@@ -28,20 +46,20 @@
         },
         "device_type": "sensor"
     },
-    "CVD_cam_SXR": {
+    "CVD_cam_15": {
         "description": "SXR CVD camera",
         "connections": {
             "CVD_in": {
-                "plug_type": "MI_Term",
-                "nb": 30
+                "plug_type": "MI_Term_pair",
+                "nb": 15
             },
             "Therm_in": {
                 "plug_type": "MI_Term",
                 "nb": 1
             },
             "CVD_out": {
-                "plug_type": "MI_Term",
-                "nb": 30
+                "plug_type": "MI_Term_pair",
+                "nb": 15
             },
             "Therm_out": {
                 "plug_type": "MI_Term",
@@ -50,20 +68,20 @@
         },
         "device_type": "sensor"
     },
-    "CVD_cam_HXR": {
+    "CVD_cam_3": {
         "description": "HXR CVD camera",
         "connections": {
             "CVD_in": {
-                "plug_type": "MI_Term",
-                "nb": 6
+                "plug_type": "MI_Term_pair",
+                "nb": 3
             },
             "Therm_in": {
                 "plug_type": "MI_Term",
                 "nb": 1
             },
             "CVD_out": {
-                "plug_type": "MI_Term",
-                "nb": 6
+                "plug_type": "MI_Term_pair",
+                "nb": 3
             },
             "Therm_out": {
                 "plug_type": "MI_Term",
@@ -72,8 +90,23 @@
         },
         "device_type": "sensor"
     },
-    "pream_CMOD": {
+    "feed_CVD": {
+        "description": "feedthrough for CVDs",
+        "connections": {
+            "CVD_in": {
+                "plug_type": "MI_Term_pair",
+                "nb": 32
+            },
+            "CVD_out": {
+                "plug_type": "MI_Term_pair",
+                "nb": 32
+            }
+        }
+    },
+    "preamp_CMOD": {
         "description": "CMOD transimpledance preamplifier boards (x4 channels)",
+        "sizeU": 3,
+        "chassis": "Eurocard",
         "connections": {
             "input": {
                 "plug_type": "MI_Term",
@@ -90,20 +123,44 @@
         },
         "device_type": "amplifier"
     },
-    "DIAG_FC": {
-        "description": "Fast controller DIAG edition",
+    "VME": {
+        "description": "chassis for CMOD transimpledance preamplifiers",
+        "sizeU": 3,
+        "chassis": "Eurocard",
         "connections": {
             "input": {
                 "plug_type": "MI_Term",
                 "nb": 6
             },
             "power": {
-                "plug_type": "MI_Term",
+                "plug_type": "power_AC_US",
                 "nb": 1
             },
             "output": {
                 "plug_type": "MI_Term",
                 "nb": 6
+            }
+        },
+        "device_type": "amplifier"
+    },
+    "DIAG_FC": {
+        "description": "Fast controller DIAG edition",
+        "connections": {
+            "input": {
+                "plug_type": "VHCDI",
+                "nb": 4
+            },
+            "power": {
+                "plug_type": "power_AC_US",
+                "nb": 1
+            },
+            "network_10Gb": {
+                "plug_type": "SFP+",
+                "nb": 1
+            },
+            "network_2Gb": {
+                "plug_type": "RJ45",
+                "nb": 1
             }
         },
         "device_type": "digitizer"
@@ -112,19 +169,19 @@
         "description": "DECTRIS EIGER 2 S 500K",
         "connections": {
             "power": {
-                "plug_type": "power_AC_US_F",
+                "plug_type": "power_AC_US",
                 "nb": 1
             },
             "data": {
-                "type": "SFP+",
+                "plug_type": "SFP+",
                 "nb": 1
             },
             "ext_in": {
-                "plug_type": "Lemo\u00ae Type 00",
+                "plug_type": "Lemo00",
                 "nb": 1
             },
             "ext_out": {
-                "plug_type": "Lemo\u00ae Type 00",
+                "plug_type": "Lemo00",
                 "nb": 1
             },
             "cooling": {
@@ -141,7 +198,7 @@
         "description": "DECTRIS EIGER 2 S 1M",
         "connections": {
             "power": {
-                "plug_type": "power_AC_US_F",
+                "plug_type": "power_AC_US",
                 "nb": 1
             },
             "data": {
@@ -149,11 +206,11 @@
                 "nb": 2
             },
             "ext_in": {
-                "plug_type": "Lemo\u00ae Type 00",
+                "plug_type": "Lemo00",
                 "nb": 1
             },
             "ext_out": {
-                "plug_type": "Lemo\u00ae Type 00",
+                "plug_type": "Lemo00",
                 "nb": 1
             },
             "cooling": {
@@ -171,7 +228,7 @@
         "sizeU": 2,
         "connections": {
             "power": {
-                "plug_type": "power_AC_US_M",
+                "plug_type": "power_AC_US",
                 "nb": 2
             },
             "data": {
@@ -188,15 +245,15 @@
         "description": "HXR scintillators, using Hamamatsu PMT",
         "connections": {
             "data": {
-                "plug_type": "BNC_50H_M",
+                "plug_type": "BNC",
                 "nb": 1
             },
             "power": {
-                "plug_type": "SHV_M",
+                "plug_type": "SHV",
                 "nb": 1
             },
             "LED": {
-                "plug_type": "fiber optic",
+                "plug_type": "optical",
                 "nb": 1
             }
         },
@@ -204,52 +261,60 @@
     },
     "HXR_digitizer_fast": {
         "description": "spectroscopy-relevant digitizer",
+        "sizeU": 6,
+        "chassis": "VMEX64",
+        "PN_vendor": "Caen:VX2730",
         "connections": {
             "data": {
-                "plug_type": "",
+                "plug_type": "MCX",
+                "nb": 32
+            },
+            "network": {
+                "plug_type": "SFP+",
                 "nb": 1
             },
-            "power": {
-                "plug_type": "",
+            "usb": {
+                "plug_type": "usb_c",
                 "nb": 1
+            },
+            "TRG-IN": {
+                "plug_type": "Lemo00"
+            },
+            "TRG-OUT": {
+                "plug_type": "Lemo00"
+            },
+            "GPIO": {
+                "plug_type": "Lemo00"
+            },
+            "S-IN": {
+                "plug_type": "Lemo00"
             }
         },
         "url": [
-            ""
-        ],
-        "device_type": "sensor"
-    },
-    "HXR_digitizer_slow": {
-        "description": "current-mode-relevant digitizer",
-        "connections": {
-            "data": {
-                "plug_type": "",
-                "nb": 1
-            },
-            "power": {
-                "plug_type": "",
-                "nb": 1
-            }
-        },
-        "url": [
-            ""
+            "https://www.caen.it/subfamilies/2730-digitizer-family/"
         ],
         "device_type": "sensor"
     },
     "HXR_power_HV": {
         "description": "high-voltage power supply for PMT",
+        "PN_vendor": "Caen:R8033",
+        "sizeU": 3,
+        "chassis": "19\"",
         "connections": {
             "outlet": {
-                "plug_type": "",
+                "plug_type": "SHV",
+                "nb": 8
+            },
+            "network": {
+                "plug_type": "RJ45",
                 "nb": 1
             },
             "power": {
-                "plug_type": "",
-                "nb": 1
+                "plug_type": "power_AC_US"
             }
         },
         "url": [
-            ""
+            "https://www.caen.it/subfamilies/up-to-6-kv-family-r803x/"
         ],
         "device_type": "power"
     },
@@ -257,56 +322,216 @@
         "description": "LED for gain monitoring",
         "connections": {
             "outlet": {
-                "plug_type": "",
-                "nb": 1
-            },
-            "power": {
-                "plug_type": "",
+                "plug_type": "optical",
                 "nb": 1
             }
         },
         "url": [
             ""
         ],
-        "device_type": "power"
+        "device_type": "actuator"
     },
-    "HXR_pulse": {
-        "description": "Pulse generator for LED for gain monitoring",
+    "AllMetal_DN100CF": {
+        "description": "VAT all-metal gate vale DN100CF",
+        "PN": "0088528",
+        "PN_vendor": "VAT:48240-CE24-AWO1",
         "connections": {
-            "outlet": {
-                "plug_type": "",
-                "nb": 1
+            "CDA_close": {
+                "plug_type": "ISO_1/8"
             },
-            "power": {
-                "plug_type": "",
-                "nb": 1
+            "CDA_open": {
+                "plug_type": "ISO_1/8"
+            },
+            "position": {
+                "plug_type": "VAT_position"
+            },
+            "interspace_pump": {
+                "plug_type": "VCR_1/4"
+            },
+            "vacuum": {
+                "plug_type": "DN100CF"
+            }
+        },
+        "url": [
+            "https://tcprod.cfsenergy.com/#/teamcenter.search.search?searchCriteria=0088528&secondaryCriteria=*&filter=Categorization.category%3DParts"
+        ],
+        "device_type": "actuator"
+    },
+    "AllMetal_DN63CF": {
+        "description": "VAT all-metal gate vale DN63CF",
+        "PN": "0089325",
+        "PN_vendor": "VAT:48236-CE24-AW01",
+        "connections": {
+            "CDA_close": {
+                "plug_type": "ISO_1/8"
+            },
+            "CDA_open": {
+                "plug_type": "ISO_1/8"
+            },
+            "position": {
+                "plug_type": "VAT_position"
+            },
+            "interspace_pump": {
+                "plug_type": "VCR_1/4"
+            },
+            "vacuum": {
+                "plug_type": "DN63CF"
+            }
+        },
+        "url": [
+            "https://tcprod.cfsenergy.com/#/teamcenter.search.search?searchCriteria=0089325&secondaryCriteria=*&filter=Categorization.category%3DParts"
+        ],
+        "device_type": "actuator"
+    },
+    "AllMetal_DN40CF": {
+        "description": "VAT all-metal gate vale DN40CF",
+        "PN": "0088529",
+        "PN_vendor": "VAT:48132-CE24-AWO1",
+        "connections": {
+            "CDA_close": {
+                "plug_type": "ISO_1/8"
+            },
+            "CDA_open": {
+                "plug_type": "ISO_1/8"
+            },
+            "position": {
+                "plug_type": "VAT_position"
+            },
+            "interspace_pump": {
+                "plug_type": "VCR_1/4"
+            },
+            "vacuum": {
+                "plug_type": "DN40CF"
+            }
+        },
+        "url": [
+            "https://tcprod.cfsenergy.com/#/teamcenter.search.search?searchCriteria=DN%2040%20CF%20PNEUMATIC%20ALL%20METAL&secondaryCriteria=*&filter=Categorization.category%3DParts"
+        ],
+        "device_type": "actuator"
+    },
+    "UHV_DN100CF": {
+        "description": "VAT UHV gate vale DN100CF",
+        "PN": "0088559",
+        "PN_vendor": "VAT:10836-CE24-BMU1",
+        "connections": {
+            "CDA_close": {
+                "plug_type": "ISO_1/8"
+            },
+            "CDA_open": {
+                "plug_type": "ISO_1/8"
+            },
+            "position": {
+                "plug_type": "VAT_position"
+            },
+            "vacuum": {
+                "plug_type": "DN100CF"
+            }
+        },
+        "url": [
+            "https://tcprod.cfsenergy.com/#/teamcenter.search.search?searchCriteria=DN%20100%20CF%20PNEUMATIC%20UHV%20GATE&secondaryCriteria=*&filter=Categorization.category%3DParts"
+        ],
+        "device_type": "actuator"
+    },
+    "UHV_DN40CF": {
+        "description": "VAT UHV gate vale DN40CF",
+        "PN": "0088558",
+        "PN_vendor": "VAT:01032-CE24-BNL1",
+        "connections": {
+            "CDA_close": {
+                "plug_type": "ISO_1/8"
+            },
+            "CDA_open": {
+                "plug_type": "ISO_1/8"
+            },
+            "position": {
+                "plug_type": "VAT_position"
+            },
+            "vacuum": {
+                "plug_type": "DN40CF"
+            }
+        },
+        "url": [
+            "https://tcprod.cfsenergy.com/#/teamcenter.search.search?searchCriteria=DN%2040%20CF%20PNEUMATIC%20UHV%20GATE&secondaryCriteria=*&filter=Categorization.category%3DParts"
+        ],
+        "device_type": "actuator"
+    },
+    "gas_valve": {
+        "description": "regular pneumatic gas valve",
+        "PN": "0092192",
+        "PN_vendor": "APTech:AZ3540S-2PW-MV4-MV4",
+        "connections": {
+            "inlet": {
+                "plug_type": "VCR_1/4"
+            },
+            "outlet": {
+                "plug_type": "VCR_1/4"
+            },
+            "actuation": {
+                "plug_type": "ISO_1/8"
+            }
+        },
+        "url": [
+            "https://tcprod.cfsenergy.com/#/teamcenter.search.search?searchCriteria=0092192&secondaryCriteria=*&filter=Categorization.category%3DParts"
+        ],
+        "device_type": "actuator"
+    },
+    "check_valve": {
+        "description": "regular check valve",
+        "PN": "0092193",
+        "PN_vendor": "swagelok:6L-CW4FR4-VR4",
+        "connections": {
+            "inlet": {
+                "plug_type": "VCR_1/4"
+            },
+            "outlet": {
+                "plug_type": "VCR_1/4"
+            }
+        },
+        "url": [
+            "https://products.swagelok.com/en/c/fixed-pressure/p/6L-CW4FR4-VR4"
+        ],
+        "device_type": "actuator"
+    },
+    "Bellow_DP_DN100CF": {
+        "description": "Double-ply hydroformed bellow, DN 100 CF",
+        "PN": "",
+        "PN_vendor": "",
+        "connections": {
+            "in": {
+                "plug_type": "InficonPirani"
+            },
+            "out": {
+                "plug_type": "DN40CF"
             }
         },
         "url": [
             ""
         ],
-        "device_type": "power"
+        "device_type": "sensor"
     },
     "Inficon_Pirani": {
         "description": "Pirani passive gauge heads for VGC094, DN 40 CF-F",
-        "PN_vendor": "350-423",
+        "PN_vendor": "Inficon:350-423",
         "Prange": [
             0.08,
             100000.0
         ],
         "connections": {
             "all": {
-                "plug_type": "",
-                "nb": 1
+                "plug_type": "InficonPirani"
+            },
+            "vacuum": {
+                "plug_type": "DN40CF"
             }
         },
         "url": [
             "https://www.inficon.com/en/products/vacuum-gauge-and-controller/psg01x"
-        ]
+        ],
+        "device_type": "sensor"
     },
     "Inficon_ColdCathode": {
         "description": "Cold cathode gauge heads MAG084 for VGC094, DN 40 CF-F",
-        "PN_vendor": "399-850",
+        "PN_vendor": "Inficon:399-850",
         "Bmax": 0.15,
         "Prange": [
             1e-06,
@@ -314,13 +539,14 @@
         ],
         "connections": {
             "all": {
-                "plug_type": "",
+                "plug_type": "InficonColdCath",
                 "nb": 1
             }
         },
         "url": [
             "https://www.inficon.com/en/products/vacuum-gauge-and-controller/mag084"
-        ]
+        ],
+        "device_type": "sensor"
     },
     "Inficon_Control": {
         "description": "Cold cathode gauge heads MAG084 for VGC094, DN 40 CF-F",
@@ -328,37 +554,229 @@
             "CP 300 C9",
             "IF 500 PN"
         ],
-        "PN_vendor": "398-401",
-        "Bmax": 0.15,
-        "Prange": [
-            1e-06,
-            0.5
-        ],
+        "PN_vendor": "Inficon:398-401",
         "connections": {
             "board1_gauge1": {
-                "plug_type": "",
+                "plug_type": "InficonPirani",
                 "nb": 1
             },
             "board1_gauge2": {
-                "plug_type": "",
+                "plug_type": "InficonColdCath",
                 "nb": 1
             },
             "board2_gauge1": {
-                "plug_type": "",
+                "plug_type": "InficonPirani",
                 "nb": 1
             },
             "board2_gauge2": {
-                "plug_type": "",
+                "plug_type": "InficonColdCath",
                 "nb": 1
             },
-            "Interface": {
+            "network": {
                 "plug_type": "RJ45",
                 "nb": 2
             },
-            "power": {}
+            "power": {
+                "plug_type": "power_AC_US"
+            }
         },
         "url": [
             "https://www.inficon.com/en/products/vacuum-gauge-and-controller/vgc094"
-        ]
+        ],
+        "device_type": "controller"
+    },
+    "PLC_CPU": {
+        "description": "",
+        "PN": "0092665",
+        "PN_vendor": "Siemens:6ES75163AP030AB0",
+        "connections": {
+            "PROFINET": {
+                "plug_type": "RJ45",
+                "nb": 2
+            },
+            "PROFINET_RT": {
+                "plug_type": "RJ45",
+                "nb": 1
+            },
+            "PROFIBUS": {
+                "plug_type": "RS485",
+                "nb": 1,
+                "url": [
+                    "https://en.wikipedia.org/wiki/Profibus"
+                ]
+            }
+        },
+        "url": [
+            "file:///C:/Users/dvezinet/Documents/Procurement/Beamlines_IC/PLC/PLC_CPU_6ES75163AN020AB0_datasheet_en.pdf",
+            "https://mall.industry.siemens.com/mall/en/us/Catalog/Product/6ES7516-3AP03-0AB0"
+        ],
+        "device_type": "controller"
+    },
+    "PLC_PS": {
+        "description": "output: 24 V DC/3 A power supply for SIMATIC S7-1500",
+        "PN": "0092666",
+        "PN_vendor": "Siemens:6EP13324BA00",
+        "connections": {
+            "power_in": {
+                "plug_type": "1phase_AC_US",
+                "nb": 1
+            },
+            "power_out": {
+                "plug_type": "power_bus_24V",
+                "nb": 1
+            },
+            "output": {
+                "plug_type": "wire_pair_LV",
+                "nb": 2
+            }
+        },
+        "url": [
+            "https://mall.industry.siemens.com/mall/en/us/Catalog/Product/6EP13324BA00"
+        ],
+        "device_type": "controller"
+    },
+    "PLC_MemCard": {
+        "description": "Memory card",
+        "specs": "256 Mb",
+        "PN_vendor": "Siemens:6ES7954-8LL04-0AA0",
+        "connections": {
+            "mem": {
+                "plug_type": "MemCard",
+                "nb": 1
+            }
+        },
+        "url": [
+            "https://mall.industry.siemens.com/mall/en/WW/Catalog/Product/6ES7954-8LL04-0AA0"
+        ],
+        "device_type": "controller"
+    },
+    "PLC_Com": {
+        "description": "Communication module",
+        "PN": "0092667",
+        "PN_vendor": "Siemens:6ES7541-1AB00-0AB0",
+        "connections": {
+            "power_in": {
+                "plug_type": "power_bus_24V",
+                "nb": 1
+            },
+            "power_out": {
+                "plug_type": "power_bus_24V",
+                "nb": 1
+            },
+            "RS422": {
+                "plug_type": "RS422",
+                "nb": 1
+            },
+            "RS485": {
+                "plug_type": "RS485",
+                "nb": 1
+            }
+        },
+        "url": [
+            "https://mall.industry.siemens.com/mall/en/WW/Catalog/Product/6ES7541-1AB00-0AB0"
+        ],
+        "device_type": "controller"
+    },
+    "PLC_DOut": {
+        "description": "Digital output module, 16 channels",
+        "PN": "0092668",
+        "PN_vendor": "Siemens:6ES7522-1BH01-0AB0",
+        "connections": {
+            "power_in": {
+                "plug_type": "power_bus_24V",
+                "nb": 1
+            },
+            "power_out": {
+                "plug_type": "power_bus_24V",
+                "nb": 1
+            },
+            "digital_out": {
+                "plug_type": "wire_pair_LV",
+                "nb": 16,
+                "comments": "each channel is a pair of cables with 0.5 A (True) or 0.5 mA (False)"
+            }
+        },
+        "url": [
+            "https://mall.industry.siemens.com/mall/en/WW/Catalog/Product/6ES7522-1BH01-0AB0"
+        ],
+        "device_type": "controller"
+    },
+    "PLC_DIn": {
+        "description": "Digital input module, 16 channels, 24 V DC",
+        "spec": "False: -30 to +5 V, True: +11 to +30V",
+        "PN": "0092676",
+        "PN_vendor": "6ES75211BH100AA0",
+        "connections": {
+            "power_in": {
+                "plug_type": "power_bus_24V",
+                "nb": 1
+            },
+            "power_out": {
+                "plug_type": "power_bus_24V",
+                "nb": 1
+            },
+            "digital_out": {
+                "plug_type": "wire_pair_LV",
+                "nb": 16,
+                "comments": "each channel is a pair of cables with 0.5 A (True) or 0.5 mA (False)"
+            }
+        },
+        "url": [
+            "https://mall.industry.siemens.com/mall/en/WW/Catalog/Product/6ES7521-1BH10-0AA0"
+        ],
+        "device_type": "controller"
+    },
+    "PLC_AIn": {
+        "description": "Analog input module, digitizes on 16 bits on 2.5-100 ms",
+        "PN": "0092684",
+        "PN_vendor": "Siemens:6ES75317KF000AB0",
+        "connections": {
+            "power_in": {
+                "plug_type": "power_bus_24V",
+                "nb": 1
+            },
+            "power_out": {
+                "plug_type": "power_bus_24V",
+                "nb": 1
+            },
+            "analog_in_V": {
+                "plug_type": "wire_pair_LV",
+                "nb": 8,
+                "comments": "8 for voltage (up to -10/+10 V)"
+            },
+            "analog_in_I": {
+                "plug_type": "wire_pair_LV",
+                "nb": 8,
+                "comments": "8 for current (up to -20/+20 mA)"
+            }
+        },
+        "url": [
+            "https://mall.industry.siemens.com/mall/en/WW/Catalog/Product/6ES7531-7KF00-0AB0"
+        ],
+        "device_type": "controller"
+    },
+    "PLC_Rail": {
+        "description": "Mounting rail in a rack",
+        "PN_vendor": "Siemens:6ES7590-1AB60-0AA0",
+        "connections": {
+            "": {
+                "plug_type": "rail",
+                "nb": 32
+            }
+        },
+        "url": [
+            "https://mall.industry.siemens.com/mall/en/WW/Catalog/Product/6ES7590-1AB60-0AA0"
+        ],
+        "device_type": "mechanical"
+    },
+    "multi_outlet": {
+        "description": "6 outlets, US standard, grounded",
+        "connections": {
+            "plugs": {
+                "plug_type": "US_B",
+                "nb": 6
+            }
+        },
+        "device_type": "power"
     }
 }
