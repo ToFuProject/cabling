@@ -1,7 +1,7 @@
 {
     "sxr_OMPu_microwire_0": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -17,7 +17,7 @@
     },
     "sxr_OMPu_wire_0": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -33,7 +33,7 @@
     },
     "sxr_OMPu_MI_0": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -49,7 +49,7 @@
     },
     "sxr_OMPu_microwire_1": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -65,7 +65,7 @@
     },
     "sxr_OMPu_wire_1": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -81,7 +81,7 @@
     },
     "sxr_OMPu_MI_1": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -97,7 +97,7 @@
     },
     "sxr_OMPu_microwire_2": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -113,7 +113,7 @@
     },
     "sxr_OMPu_wire_2": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -129,7 +129,7 @@
     },
     "sxr_OMPu_MI_2": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -145,7 +145,7 @@
     },
     "sxr_OMPu_microwire_3": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -161,7 +161,7 @@
     },
     "sxr_OMPu_wire_3": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -177,7 +177,7 @@
     },
     "sxr_OMPu_MI_3": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -193,7 +193,7 @@
     },
     "sxr_OMPu_microwire_4": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -209,7 +209,7 @@
     },
     "sxr_OMPu_wire_4": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -225,7 +225,7 @@
     },
     "sxr_OMPu_MI_4": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -241,7 +241,7 @@
     },
     "sxr_OMPu_microwire_5": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -257,7 +257,7 @@
     },
     "sxr_OMPu_wire_5": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -273,7 +273,7 @@
     },
     "sxr_OMPu_MI_5": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -289,7 +289,7 @@
     },
     "sxr_OMPu_microwire_6": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -305,7 +305,7 @@
     },
     "sxr_OMPu_wire_6": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -321,7 +321,7 @@
     },
     "sxr_OMPu_MI_6": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -337,7 +337,7 @@
     },
     "sxr_OMPu_microwire_7": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -353,7 +353,7 @@
     },
     "sxr_OMPu_wire_7": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -369,7 +369,7 @@
     },
     "sxr_OMPu_MI_7": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -385,7 +385,7 @@
     },
     "sxr_OMPu_microwire_8": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -401,7 +401,7 @@
     },
     "sxr_OMPu_wire_8": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -417,7 +417,7 @@
     },
     "sxr_OMPu_MI_8": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -433,7 +433,7 @@
     },
     "sxr_OMPu_microwire_9": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -449,7 +449,7 @@
     },
     "sxr_OMPu_wire_9": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -465,7 +465,7 @@
     },
     "sxr_OMPu_MI_9": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -481,7 +481,7 @@
     },
     "sxr_OMPu_microwire_10": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -497,7 +497,7 @@
     },
     "sxr_OMPu_wire_10": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -513,7 +513,7 @@
     },
     "sxr_OMPu_MI_10": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -529,7 +529,7 @@
     },
     "sxr_OMPu_microwire_11": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -545,7 +545,7 @@
     },
     "sxr_OMPu_wire_11": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -561,7 +561,7 @@
     },
     "sxr_OMPu_MI_11": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -577,7 +577,7 @@
     },
     "sxr_OMPu_microwire_12": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -593,7 +593,7 @@
     },
     "sxr_OMPu_wire_12": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -609,7 +609,7 @@
     },
     "sxr_OMPu_MI_12": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -625,7 +625,7 @@
     },
     "sxr_OMPu_microwire_13": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -641,7 +641,7 @@
     },
     "sxr_OMPu_wire_13": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -657,7 +657,7 @@
     },
     "sxr_OMPu_MI_13": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -673,7 +673,7 @@
     },
     "sxr_OMPu_microwire_14": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -689,7 +689,7 @@
     },
     "sxr_OMPu_wire_14": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -705,7 +705,7 @@
     },
     "sxr_OMPu_MI_14": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -721,7 +721,7 @@
     },
     "sxr_OMPu_therm_MI": {
         "connector_model": "MI_single",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -737,7 +737,7 @@
     },
     "sxr_OMPl_microwire_0": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -753,7 +753,7 @@
     },
     "sxr_OMPl_wire_0": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -769,7 +769,7 @@
     },
     "sxr_OMPl_MI_0": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -785,7 +785,7 @@
     },
     "sxr_OMPl_microwire_1": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -801,7 +801,7 @@
     },
     "sxr_OMPl_wire_1": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -817,7 +817,7 @@
     },
     "sxr_OMPl_MI_1": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -833,7 +833,7 @@
     },
     "sxr_OMPl_microwire_2": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -849,7 +849,7 @@
     },
     "sxr_OMPl_wire_2": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -865,7 +865,7 @@
     },
     "sxr_OMPl_MI_2": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -881,7 +881,7 @@
     },
     "sxr_OMPl_microwire_3": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -897,7 +897,7 @@
     },
     "sxr_OMPl_wire_3": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -913,7 +913,7 @@
     },
     "sxr_OMPl_MI_3": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -929,7 +929,7 @@
     },
     "sxr_OMPl_microwire_4": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -945,7 +945,7 @@
     },
     "sxr_OMPl_wire_4": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -961,7 +961,7 @@
     },
     "sxr_OMPl_MI_4": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -977,7 +977,7 @@
     },
     "sxr_OMPl_microwire_5": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -993,7 +993,7 @@
     },
     "sxr_OMPl_wire_5": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1009,7 +1009,7 @@
     },
     "sxr_OMPl_MI_5": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1025,7 +1025,7 @@
     },
     "sxr_OMPl_microwire_6": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1041,7 +1041,7 @@
     },
     "sxr_OMPl_wire_6": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1057,7 +1057,7 @@
     },
     "sxr_OMPl_MI_6": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1073,7 +1073,7 @@
     },
     "sxr_OMPl_microwire_7": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1089,7 +1089,7 @@
     },
     "sxr_OMPl_wire_7": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1105,7 +1105,7 @@
     },
     "sxr_OMPl_MI_7": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1121,7 +1121,7 @@
     },
     "sxr_OMPl_microwire_8": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1137,7 +1137,7 @@
     },
     "sxr_OMPl_wire_8": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1153,7 +1153,7 @@
     },
     "sxr_OMPl_MI_8": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1169,7 +1169,7 @@
     },
     "sxr_OMPl_microwire_9": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1185,7 +1185,7 @@
     },
     "sxr_OMPl_wire_9": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1201,7 +1201,7 @@
     },
     "sxr_OMPl_MI_9": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1217,7 +1217,7 @@
     },
     "sxr_OMPl_microwire_10": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1233,7 +1233,7 @@
     },
     "sxr_OMPl_wire_10": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1249,7 +1249,7 @@
     },
     "sxr_OMPl_MI_10": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1265,7 +1265,7 @@
     },
     "sxr_OMPl_microwire_11": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1281,7 +1281,7 @@
     },
     "sxr_OMPl_wire_11": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1297,7 +1297,7 @@
     },
     "sxr_OMPl_MI_11": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1313,7 +1313,7 @@
     },
     "sxr_OMPl_microwire_12": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1329,7 +1329,7 @@
     },
     "sxr_OMPl_wire_12": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1345,7 +1345,7 @@
     },
     "sxr_OMPl_MI_12": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1361,7 +1361,7 @@
     },
     "sxr_OMPl_microwire_13": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1377,7 +1377,7 @@
     },
     "sxr_OMPl_wire_13": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1393,7 +1393,7 @@
     },
     "sxr_OMPl_MI_13": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1409,7 +1409,7 @@
     },
     "sxr_OMPl_microwire_14": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1425,7 +1425,7 @@
     },
     "sxr_OMPl_wire_14": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1441,7 +1441,7 @@
     },
     "sxr_OMPl_MI_14": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1457,7 +1457,7 @@
     },
     "sxr_OMPl_therm_MI": {
         "connector_model": "MI_single",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1473,7 +1473,7 @@
     },
     "sxr_MPPu_microwire_0": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1489,7 +1489,7 @@
     },
     "sxr_MPPu_wire_0": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1505,7 +1505,7 @@
     },
     "sxr_MPPu_MI_0": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1521,7 +1521,7 @@
     },
     "sxr_MPPu_microwire_1": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1537,7 +1537,7 @@
     },
     "sxr_MPPu_wire_1": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1553,7 +1553,7 @@
     },
     "sxr_MPPu_MI_1": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1569,7 +1569,7 @@
     },
     "sxr_MPPu_microwire_2": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1585,7 +1585,7 @@
     },
     "sxr_MPPu_wire_2": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1601,7 +1601,7 @@
     },
     "sxr_MPPu_MI_2": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1617,7 +1617,7 @@
     },
     "sxr_MPPu_microwire_3": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1633,7 +1633,7 @@
     },
     "sxr_MPPu_wire_3": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1649,7 +1649,7 @@
     },
     "sxr_MPPu_MI_3": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1665,7 +1665,7 @@
     },
     "sxr_MPPu_microwire_4": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1681,7 +1681,7 @@
     },
     "sxr_MPPu_wire_4": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1697,7 +1697,7 @@
     },
     "sxr_MPPu_MI_4": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1713,7 +1713,7 @@
     },
     "sxr_MPPu_microwire_5": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1729,7 +1729,7 @@
     },
     "sxr_MPPu_wire_5": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1745,7 +1745,7 @@
     },
     "sxr_MPPu_MI_5": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1761,7 +1761,7 @@
     },
     "sxr_MPPu_microwire_6": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1777,7 +1777,7 @@
     },
     "sxr_MPPu_wire_6": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1793,7 +1793,7 @@
     },
     "sxr_MPPu_MI_6": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1809,7 +1809,7 @@
     },
     "sxr_MPPu_microwire_7": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1825,7 +1825,7 @@
     },
     "sxr_MPPu_wire_7": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1841,7 +1841,7 @@
     },
     "sxr_MPPu_MI_7": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1857,7 +1857,7 @@
     },
     "sxr_MPPu_microwire_8": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1873,7 +1873,7 @@
     },
     "sxr_MPPu_wire_8": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1889,7 +1889,7 @@
     },
     "sxr_MPPu_MI_8": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1905,7 +1905,7 @@
     },
     "sxr_MPPu_microwire_9": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1921,7 +1921,7 @@
     },
     "sxr_MPPu_wire_9": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1937,7 +1937,7 @@
     },
     "sxr_MPPu_MI_9": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1953,7 +1953,7 @@
     },
     "sxr_MPPu_microwire_10": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1969,7 +1969,7 @@
     },
     "sxr_MPPu_wire_10": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -1985,7 +1985,7 @@
     },
     "sxr_MPPu_MI_10": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2001,7 +2001,7 @@
     },
     "sxr_MPPu_microwire_11": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2017,7 +2017,7 @@
     },
     "sxr_MPPu_wire_11": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2033,7 +2033,7 @@
     },
     "sxr_MPPu_MI_11": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2049,7 +2049,7 @@
     },
     "sxr_MPPu_microwire_12": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2065,7 +2065,7 @@
     },
     "sxr_MPPu_wire_12": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2081,7 +2081,7 @@
     },
     "sxr_MPPu_MI_12": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2097,7 +2097,7 @@
     },
     "sxr_MPPu_microwire_13": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2113,7 +2113,7 @@
     },
     "sxr_MPPu_wire_13": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2129,7 +2129,7 @@
     },
     "sxr_MPPu_MI_13": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2145,7 +2145,7 @@
     },
     "sxr_MPPu_microwire_14": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2161,7 +2161,7 @@
     },
     "sxr_MPPu_wire_14": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2177,7 +2177,7 @@
     },
     "sxr_MPPu_MI_14": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2193,7 +2193,7 @@
     },
     "sxr_MPPu_therm_MI": {
         "connector_model": "MI_single",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2209,7 +2209,7 @@
     },
     "sxr_MPPl_microwire_0": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2225,7 +2225,7 @@
     },
     "sxr_MPPl_wire_0": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2241,7 +2241,7 @@
     },
     "sxr_MPPl_MI_0": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2257,7 +2257,7 @@
     },
     "sxr_MPPl_microwire_1": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2273,7 +2273,7 @@
     },
     "sxr_MPPl_wire_1": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2289,7 +2289,7 @@
     },
     "sxr_MPPl_MI_1": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2305,7 +2305,7 @@
     },
     "sxr_MPPl_microwire_2": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2321,7 +2321,7 @@
     },
     "sxr_MPPl_wire_2": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2337,7 +2337,7 @@
     },
     "sxr_MPPl_MI_2": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2353,7 +2353,7 @@
     },
     "sxr_MPPl_microwire_3": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2369,7 +2369,7 @@
     },
     "sxr_MPPl_wire_3": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2385,7 +2385,7 @@
     },
     "sxr_MPPl_MI_3": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2401,7 +2401,7 @@
     },
     "sxr_MPPl_microwire_4": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2417,7 +2417,7 @@
     },
     "sxr_MPPl_wire_4": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2433,7 +2433,7 @@
     },
     "sxr_MPPl_MI_4": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2449,7 +2449,7 @@
     },
     "sxr_MPPl_microwire_5": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2465,7 +2465,7 @@
     },
     "sxr_MPPl_wire_5": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2481,7 +2481,7 @@
     },
     "sxr_MPPl_MI_5": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2497,7 +2497,7 @@
     },
     "sxr_MPPl_microwire_6": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2513,7 +2513,7 @@
     },
     "sxr_MPPl_wire_6": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2529,7 +2529,7 @@
     },
     "sxr_MPPl_MI_6": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2545,7 +2545,7 @@
     },
     "sxr_MPPl_microwire_7": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2561,7 +2561,7 @@
     },
     "sxr_MPPl_wire_7": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2577,7 +2577,7 @@
     },
     "sxr_MPPl_MI_7": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2593,7 +2593,7 @@
     },
     "sxr_MPPl_microwire_8": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2609,7 +2609,7 @@
     },
     "sxr_MPPl_wire_8": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2625,7 +2625,7 @@
     },
     "sxr_MPPl_MI_8": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2641,7 +2641,7 @@
     },
     "sxr_MPPl_microwire_9": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2657,7 +2657,7 @@
     },
     "sxr_MPPl_wire_9": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2673,7 +2673,7 @@
     },
     "sxr_MPPl_MI_9": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2689,7 +2689,7 @@
     },
     "sxr_MPPl_microwire_10": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2705,7 +2705,7 @@
     },
     "sxr_MPPl_wire_10": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2721,7 +2721,7 @@
     },
     "sxr_MPPl_MI_10": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2737,7 +2737,7 @@
     },
     "sxr_MPPl_microwire_11": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2753,7 +2753,7 @@
     },
     "sxr_MPPl_wire_11": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2769,7 +2769,7 @@
     },
     "sxr_MPPl_MI_11": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2785,7 +2785,7 @@
     },
     "sxr_MPPl_microwire_12": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2801,7 +2801,7 @@
     },
     "sxr_MPPl_wire_12": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2817,7 +2817,7 @@
     },
     "sxr_MPPl_MI_12": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2833,7 +2833,7 @@
     },
     "sxr_MPPl_microwire_13": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2849,7 +2849,7 @@
     },
     "sxr_MPPl_wire_13": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2865,7 +2865,7 @@
     },
     "sxr_MPPl_MI_13": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2881,7 +2881,7 @@
     },
     "sxr_MPPl_microwire_14": {
         "connector_model": "microwire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2897,7 +2897,7 @@
     },
     "sxr_MPPl_wire_14": {
         "connector_model": "wire_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2913,7 +2913,7 @@
     },
     "sxr_MPPl_MI_14": {
         "connector_model": "MI_twist_pair",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -2929,7 +2929,7 @@
     },
     "sxr_MPPl_therm_MI": {
         "connector_model": "MI_single",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"

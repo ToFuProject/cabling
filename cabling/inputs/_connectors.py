@@ -74,7 +74,7 @@ def _invessel_SXR(dout, wcm):
 
             dout[f"sxr_{pp}_microwire_{ii}"] = {
                 wcm: 'microwire_pair',
-                'Systems': systems,
+                'systems': systems,
                 'ptA':(f"sxr_{pp}_CVD_{ii}", 'all'),
                 'ptB': (key_plate, f'in_{ii}'),
             }
@@ -82,7 +82,7 @@ def _invessel_SXR(dout, wcm):
             # plate to camera
             dout[f'sxr_{pp}_wire_{ii}'] = {
                 wcm: 'wire_pair',
-                'Systems': systems,
+                'systems': systems,
                 'ptA': (key_plate, f'out_{ii}'),
                 'ptB': (key_cam, f'CVD_in_{ii}'),
             }
@@ -90,7 +90,7 @@ def _invessel_SXR(dout, wcm):
             # camera to feedthrough
             dout[f'sxr_{pp}_MI_{ii}'] = {
                 wcm: 'MI_twist_pair',
-                'Systems': systems,
+                'systems': systems,
                 'ptA': (key_cam, f'CVD_out_{ii}'),
                 'ptB': (key_feed, f'CVD_in_{ii}'),
             }
@@ -100,7 +100,7 @@ def _invessel_SXR(dout, wcm):
 
         dout[f'sxr_{pp}_therm_MI'] = {
             wcm: 'MI_single',
-            'Systems': systems,
+            'systems': systems,
             'ptA': (f'sxr_{pp}_therm', 'all'),
             'ptB': (key_cam, 'Therm_in'),
         }
@@ -118,7 +118,7 @@ def _invessel_SXR(dout, wcm):
         #         # camera to preamplifier
         #         dout[f''] = {
         #             wcm: 'CVD_Therm',
-        #             'Systems': systems,
+        #             'systems': systems,
         #             'ptA': (key_feed, 'CVD_out_{ii*4+jj}'),
         #             'ptB': (f'sxr_{pp}_preamp_{ii}', 'in_{jj}'),
         #         }
@@ -131,7 +131,7 @@ def _invessel_SXR(dout, wcm):
     # key = f'sxr_{pp}_therm'
     # dout[key] = {
     #     wcm: 'CVD_preamp_digit',
-    #     'Systems': systems,
+    #     'systems': systems,
     #     'ptA': (key_pream, 'out'),
     #     'ptB': (key_digitizer, 'in'),
     # }

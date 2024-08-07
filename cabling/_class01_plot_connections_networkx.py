@@ -18,6 +18,7 @@ import networkx as nx
 
 def main(
     coll=None,
+    layout=None,
 ):
 
     # ---------------
@@ -43,6 +44,7 @@ def main(
     _plot(
         coll=coll,
         graph=graph,
+        layout=layout,
     )
 
     return graph
@@ -132,6 +134,7 @@ def _create_graph(
 def _plot(
     coll=None,
     graph=None,
+    layout=None,
 ):
 
     # --------------

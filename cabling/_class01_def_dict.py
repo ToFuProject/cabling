@@ -88,7 +88,7 @@ def get_device_kwdargs():
             'types': str,
             'unique': False,
         },
-        'Systems': {
+        'systems': {
             'types': (str, list, tuple),
             'astype': tuple,
         },

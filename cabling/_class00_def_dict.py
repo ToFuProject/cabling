@@ -110,7 +110,7 @@ def get_connector_kwdargs():
             'types': (int, float),
             'astype': float,
         },
-        'System': {
+        'systems': {
             'types': (str, list, tuple),
             'astype': tuple,
         },

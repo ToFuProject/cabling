@@ -13,6 +13,8 @@ import datastock as ds
 
 
 from . import _class00_check as _check
+from. import _class00_show as _show
+# from. import _class00_show_details as _show_details
 
 
 __all__ = ['Connectors']
@@ -109,3 +111,23 @@ class Connectors(ds.DataStock):
             consistency,
             **kwdargs,
         )
+
+    # -------------------
+    # show
+    # -------------------
+
+    def _get_show_obj(self, which=None):
+        if which == self._which_plug_type:
+            return _show._plug_type
+        elif which == self._which_connector_model:
+            return _show._connector_model
+        elif which == self._which_connector:
+            return _show._connector
+        else:
+            return super()._get_show_obj(which)
+
+    # def _get_show_details(self, which=None):
+    #     if which == self._which_connector:
+    #         return _show_details._connector
+    #     else:
+    #         super()._get_show_details(which)

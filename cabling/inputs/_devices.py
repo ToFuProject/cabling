@@ -99,19 +99,19 @@ def _invessel_SXR(dout, wdm):
             key = f"sxr_{pp}_CVD_{ii}"
             dout[key] = {
                 wdm: 'CVD',
-                'Systems': systems,
+                'systems': systems,
             }
 
         # individual thermocouple
         dout[f'sxr_{pp}_therm'] = {
             wdm: 'CVD_Therm',
-            'Systems': systems,
+            'systems': systems,
         }
 
         # support plate
         dout[key_plate] = {
             wdm: 'CVD_plate_15',
-            'Systems': systems,
+            'systems': systems,
         }
 
         # --------------
@@ -119,7 +119,7 @@ def _invessel_SXR(dout, wdm):
 
         dout[key_cam] = {
             wdm: 'CVD_cam_15',
-            'Systems': systems,
+            'systems': systems,
         }
 
         # ----------------
@@ -127,7 +127,7 @@ def _invessel_SXR(dout, wdm):
 
         dout[key_feed] = {
             wdm: 'feed_CVD',
-            'Systems': systems,
+            'systems': systems,
         }
 
 
@@ -139,7 +139,7 @@ def _invessel_SXR(dout, wdm):
         key = f'sxr_preamp{ii}'
         dout[key] = {
             wdm: 'preamp_CMOD',
-            'Systems': systems,
+            'systems': systems,
         }
 
     # -------------
@@ -150,7 +150,7 @@ def _invessel_SXR(dout, wdm):
         key = f'sxr_digit{ii}'
         dout[key] = {
             wdm: 'DIAG_FC',
-            'Systems': systems,
+            'systems': systems,
         }
 
     return
@@ -183,19 +183,19 @@ def _invessel_HXR(dout, wdm):
             key = f"hxr_{pp}_CVD_{ii}"
             dout[key] = {
                 wdm: 'CVD',
-                'Systems': systems,
+                'systems': systems,
             }
 
         # individual thrmocouple
         dout[f'hxr_{pp}_therm'] = {
             wdm: 'CVD_Therm',
-            'Systems': systems,
+            'systems': systems,
         }
 
         # support plate
         dout[f'hxr_{pp}_plate'] = {
             wdm: 'CVD_plate_3',
-            'Systems': systems,
+            'systems': systems,
         }
 
     # ------------
@@ -208,11 +208,11 @@ def _invessel_HXR(dout, wdm):
 
         'hxr_cw': {
             wdm: 'CVD_cam_3',
-            'Systems': systems,
+            'systems': systems,
         },
         'hxr_ccw': {
             wdm: 'CVD_cam_3',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # --------------------------
@@ -220,7 +220,7 @@ def _invessel_HXR(dout, wdm):
 
         'hxr_amp': {
             wdm: 'preamp_CMOD',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # ---------------------
@@ -228,7 +228,7 @@ def _invessel_HXR(dout, wdm):
 
         'hxr_digitizer': {
             wdm: 'DIAG_FC',
-            'Systems': systems,
+            'systems': systems,
         },
 
     })
@@ -262,19 +262,19 @@ def _collaborator(dout, wdm):
         # camera
         'collab_cam': {
             wdm: 'EIGER_2S_500K',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # Basement
         'collab_server': {
             wdm: 'EIGER_2S_1M_serv',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # power supply
         'collab_power': {
             wdm: 'multi_outlet',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # --------------------
@@ -283,25 +283,25 @@ def _collaborator(dout, wdm):
         # pirani
         'collab_press_pirani': {
             wdm: 'Inficon_Pirani',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # cold cathode
         'collab_press_cathode': {
             wdm: 'Inficon_ColdCathode',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # control
         'collab_press_control': {
             wdm: 'Inficon_ColdCathode',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # Feedthrough
         # 'feedthrough': {
         #     'model': 'Feed_EIGER_2S_500K',
-        #     'Systems': systems,
+        #     'systems': systems,
         # },
 
         # ----------
@@ -310,13 +310,13 @@ def _collaborator(dout, wdm):
         # main
         'collab_gate': {
             wdm: 'AllMetal_DN63CF',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # pressure
         'collab_gate': {
             wdm: 'AllMetal_DN40CF',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # --------
@@ -328,13 +328,13 @@ def _collaborator(dout, wdm):
         # Power supply
         'collab_PLC_PS': {
             wdm: 'PLC_PS',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # CPU
         'collab_PLC_CPU': {
             wdm: 'PLC_CPU',
-            'Systems': systems,
+            'systems': systems,
         },
 
     })
@@ -367,12 +367,12 @@ def _scintillators(dout, wdm):
 
         'hxr_scintillator_north': {
             wdm: 'HXR_scintillator',
-            'Systems': systems,
+            'systems': systems,
         },
 
         'hxr_scintillator_south': {
             wdm: 'HXR_scintillator',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # ------------------
@@ -380,7 +380,7 @@ def _scintillators(dout, wdm):
 
         'hxr_power_HV': {
             wdm: 'HXR_power_HV',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # -----------------
@@ -388,12 +388,12 @@ def _scintillators(dout, wdm):
 
         'hxr_digitizer_fast': {
             wdm: 'HXR_digitizer_fast',
-            'Systems': systems,
+            'systems': systems,
         },
 
         'hxr_digitizer_current': {
             wdm: 'DIAG_FC',
-            'Systems': systems,
+            'systems': systems,
         },
 
         # -----------------
@@ -401,12 +401,12 @@ def _scintillators(dout, wdm):
 
         'hxr_LED_north': {
             wdm: 'HXR_LED',
-            'Systems': systems,
+            'systems': systems,
         },
 
         'hxr_LED_south': {
             wdm: 'HXR_LED',
-            'Systems': systems,
+            'systems': systems,
         },
 
     })
@@ -452,7 +452,7 @@ def _beamlines(dout, wdm):
             key = f"{keyb}_GV{jj}"
             dout[key] = {
                 wdm: gv,
-                'Systems': systems,
+                'systems': systems,
             }
 
         # ------------
@@ -462,7 +462,7 @@ def _beamlines(dout, wdm):
             key = f"{keyb}_Bellow{jj}"
             dout[key] = {
                 wdm: gv,
-                'Systems': systems,
+                'systems': systems,
             }
 
         # ---------------
@@ -474,21 +474,21 @@ def _beamlines(dout, wdm):
                 key = f"{keyb}_Press_{gv}{jj}"
                 dout[key] = {
                     wdm: gv,
-                    'Systems': systems,
+                    'systems': systems,
                 }
 
             # check valve
             key = f"{keyb}_GAS_check{jj}"
             dout[key] = {
                 wdm: 'check_valve',
-                'Systems': systems,
+                'systems': systems,
             }
 
             # gate valve
             key = f"{keyb}_GAS_GV"
             dout[key] = {
                 wdm: 'AllMetal_DN40CF',
-                'Systems': systems,
+                'systems': systems,
             }
 
     # ----------------------
@@ -499,7 +499,7 @@ def _beamlines(dout, wdm):
         key = f"{keyb}_Press_control{jj}"
         dout[key] = {
             wdm: 'Inficon_Control',
-            'Systems': systems,
+            'systems': systems,
         }
 
     # -----------------
@@ -507,7 +507,7 @@ def _beamlines(dout, wdm):
 
     dout[f'xrb_manifold_GV'] = {
         wdm: 'UHV_DN100CF',
-        'Systems': systems,
+        'systems': systems,
     }
 
     return

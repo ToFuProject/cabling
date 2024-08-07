@@ -450,7 +450,7 @@ def connector(
     # ptA, ptB
     # ---------------------
 
-    _ptAB(coll, which, key, ptA, ptB)
+    ptA, ptB = _ptAB(coll, which, key, ptA, ptB)
 
     # update connections
     wcm = coll._which_connector_model
@@ -583,7 +583,7 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
         # as type
 
         if v0.get('astype') is not None:
-            kwdargs[k0] = v0['astype'].__class__(kwdargs[k0])
+            kwdargs[k0] = v0['astype'](kwdargs[k0])
 
         # -----------------
         # can be None ?

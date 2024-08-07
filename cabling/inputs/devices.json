@@ -1,7 +1,7 @@
 {
     "sxr_OMPu_CVD_0": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -9,7 +9,7 @@
     },
     "sxr_OMPu_CVD_1": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -17,7 +17,7 @@
     },
     "sxr_OMPu_CVD_2": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -25,7 +25,7 @@
     },
     "sxr_OMPu_CVD_3": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -33,7 +33,7 @@
     },
     "sxr_OMPu_CVD_4": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -41,7 +41,7 @@
     },
     "sxr_OMPu_CVD_5": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -49,7 +49,7 @@
     },
     "sxr_OMPu_CVD_6": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -57,7 +57,7 @@
     },
     "sxr_OMPu_CVD_7": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -65,7 +65,7 @@
     },
     "sxr_OMPu_CVD_8": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -73,7 +73,7 @@
     },
     "sxr_OMPu_CVD_9": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -81,7 +81,7 @@
     },
     "sxr_OMPu_CVD_10": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -89,7 +89,7 @@
     },
     "sxr_OMPu_CVD_11": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -97,7 +97,7 @@
     },
     "sxr_OMPu_CVD_12": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -105,7 +105,7 @@
     },
     "sxr_OMPu_CVD_13": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -113,7 +113,7 @@
     },
     "sxr_OMPu_CVD_14": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -121,7 +121,7 @@
     },
     "sxr_OMPu_therm": {
         "device_model": "CVD_Therm",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -129,7 +129,7 @@
     },
     "sxr_OMPu_plate": {
         "device_model": "CVD_plate_15",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -137,7 +137,7 @@
     },
     "sxr_OMPu_cam": {
         "device_model": "CVD_cam_15",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -145,7 +145,7 @@
     },
     "sxr_OMPu_feed": {
         "device_model": "feed_CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -153,7 +153,7 @@
     },
     "sxr_OMPl_CVD_0": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -161,7 +161,7 @@
     },
     "sxr_OMPl_CVD_1": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -169,7 +169,7 @@
     },
     "sxr_OMPl_CVD_2": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -177,7 +177,7 @@
     },
     "sxr_OMPl_CVD_3": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -185,7 +185,7 @@
     },
     "sxr_OMPl_CVD_4": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -193,7 +193,7 @@
     },
     "sxr_OMPl_CVD_5": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -201,7 +201,7 @@
     },
     "sxr_OMPl_CVD_6": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -209,7 +209,7 @@
     },
     "sxr_OMPl_CVD_7": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -217,7 +217,7 @@
     },
     "sxr_OMPl_CVD_8": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -225,7 +225,7 @@
     },
     "sxr_OMPl_CVD_9": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -233,7 +233,7 @@
     },
     "sxr_OMPl_CVD_10": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -241,7 +241,7 @@
     },
     "sxr_OMPl_CVD_11": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -249,7 +249,7 @@
     },
     "sxr_OMPl_CVD_12": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -257,7 +257,7 @@
     },
     "sxr_OMPl_CVD_13": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -265,7 +265,7 @@
     },
     "sxr_OMPl_CVD_14": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -273,7 +273,7 @@
     },
     "sxr_OMPl_therm": {
         "device_model": "CVD_Therm",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -281,7 +281,7 @@
     },
     "sxr_OMPl_plate": {
         "device_model": "CVD_plate_15",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -289,7 +289,7 @@
     },
     "sxr_OMPl_cam": {
         "device_model": "CVD_cam_15",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -297,7 +297,7 @@
     },
     "sxr_OMPl_feed": {
         "device_model": "feed_CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -305,7 +305,7 @@
     },
     "sxr_MPPu_CVD_0": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -313,7 +313,7 @@
     },
     "sxr_MPPu_CVD_1": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -321,7 +321,7 @@
     },
     "sxr_MPPu_CVD_2": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -329,7 +329,7 @@
     },
     "sxr_MPPu_CVD_3": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -337,7 +337,7 @@
     },
     "sxr_MPPu_CVD_4": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -345,7 +345,7 @@
     },
     "sxr_MPPu_CVD_5": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -353,7 +353,7 @@
     },
     "sxr_MPPu_CVD_6": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -361,7 +361,7 @@
     },
     "sxr_MPPu_CVD_7": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -369,7 +369,7 @@
     },
     "sxr_MPPu_CVD_8": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -377,7 +377,7 @@
     },
     "sxr_MPPu_CVD_9": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -385,7 +385,7 @@
     },
     "sxr_MPPu_CVD_10": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -393,7 +393,7 @@
     },
     "sxr_MPPu_CVD_11": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -401,7 +401,7 @@
     },
     "sxr_MPPu_CVD_12": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -409,7 +409,7 @@
     },
     "sxr_MPPu_CVD_13": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -417,7 +417,7 @@
     },
     "sxr_MPPu_CVD_14": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -425,7 +425,7 @@
     },
     "sxr_MPPu_therm": {
         "device_model": "CVD_Therm",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -433,7 +433,7 @@
     },
     "sxr_MPPu_plate": {
         "device_model": "CVD_plate_15",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -441,7 +441,7 @@
     },
     "sxr_MPPu_cam": {
         "device_model": "CVD_cam_15",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -449,7 +449,7 @@
     },
     "sxr_MPPu_feed": {
         "device_model": "feed_CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -457,7 +457,7 @@
     },
     "sxr_MPPl_CVD_0": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -465,7 +465,7 @@
     },
     "sxr_MPPl_CVD_1": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -473,7 +473,7 @@
     },
     "sxr_MPPl_CVD_2": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -481,7 +481,7 @@
     },
     "sxr_MPPl_CVD_3": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -489,7 +489,7 @@
     },
     "sxr_MPPl_CVD_4": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -497,7 +497,7 @@
     },
     "sxr_MPPl_CVD_5": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -505,7 +505,7 @@
     },
     "sxr_MPPl_CVD_6": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -513,7 +513,7 @@
     },
     "sxr_MPPl_CVD_7": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -521,7 +521,7 @@
     },
     "sxr_MPPl_CVD_8": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -529,7 +529,7 @@
     },
     "sxr_MPPl_CVD_9": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -537,7 +537,7 @@
     },
     "sxr_MPPl_CVD_10": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -545,7 +545,7 @@
     },
     "sxr_MPPl_CVD_11": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -553,7 +553,7 @@
     },
     "sxr_MPPl_CVD_12": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -561,7 +561,7 @@
     },
     "sxr_MPPl_CVD_13": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -569,7 +569,7 @@
     },
     "sxr_MPPl_CVD_14": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -577,7 +577,7 @@
     },
     "sxr_MPPl_therm": {
         "device_model": "CVD_Therm",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -585,7 +585,7 @@
     },
     "sxr_MPPl_plate": {
         "device_model": "CVD_plate_15",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -593,7 +593,7 @@
     },
     "sxr_MPPl_cam": {
         "device_model": "CVD_cam_15",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -601,7 +601,7 @@
     },
     "sxr_MPPl_feed": {
         "device_model": "feed_CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -609,7 +609,7 @@
     },
     "sxr_preamp0": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -617,7 +617,7 @@
     },
     "sxr_preamp1": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -625,7 +625,7 @@
     },
     "sxr_preamp2": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -633,7 +633,7 @@
     },
     "sxr_preamp3": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -641,7 +641,7 @@
     },
     "sxr_preamp4": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -649,7 +649,7 @@
     },
     "sxr_preamp5": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -657,7 +657,7 @@
     },
     "sxr_preamp6": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -665,7 +665,7 @@
     },
     "sxr_preamp7": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -673,7 +673,7 @@
     },
     "sxr_preamp8": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -681,7 +681,7 @@
     },
     "sxr_preamp9": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -689,7 +689,7 @@
     },
     "sxr_preamp10": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -697,7 +697,7 @@
     },
     "sxr_preamp11": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -705,7 +705,7 @@
     },
     "sxr_preamp12": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -713,7 +713,7 @@
     },
     "sxr_preamp13": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -721,7 +721,7 @@
     },
     "sxr_preamp14": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -729,7 +729,7 @@
     },
     "sxr_digit0": {
         "device_model": "DIAG_FC",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -737,7 +737,7 @@
     },
     "sxr_digit1": {
         "device_model": "DIAG_FC",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "SXR-VA"
@@ -745,7 +745,7 @@
     },
     "hxr_cw_CVD_0": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -753,7 +753,7 @@
     },
     "hxr_cw_CVD_1": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -761,7 +761,7 @@
     },
     "hxr_cw_CVD_2": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -769,7 +769,7 @@
     },
     "hxr_cw_therm": {
         "device_model": "CVD_Therm",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -777,7 +777,7 @@
     },
     "hxr_cw_plate": {
         "device_model": "CVD_plate_3",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -785,7 +785,7 @@
     },
     "hxr_ccw_CVD_0": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -793,7 +793,7 @@
     },
     "hxr_ccw_CVD_1": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -801,7 +801,7 @@
     },
     "hxr_ccw_CVD_2": {
         "device_model": "CVD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -809,7 +809,7 @@
     },
     "hxr_ccw_therm": {
         "device_model": "CVD_Therm",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -817,7 +817,7 @@
     },
     "hxr_ccw_plate": {
         "device_model": "CVD_plate_3",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -825,7 +825,7 @@
     },
     "hxr_cw": {
         "device_model": "CVD_cam_3",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -833,7 +833,7 @@
     },
     "hxr_ccw": {
         "device_model": "CVD_cam_3",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -841,7 +841,7 @@
     },
     "hxr_amp": {
         "device_model": "preamp_CMOD",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -849,7 +849,7 @@
     },
     "hxr_digitizer": {
         "device_model": "DIAG_FC",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-VA"
@@ -857,7 +857,7 @@
     },
     "collab_cam": {
         "device_model": "EIGER_2S_500K",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "Collab"
@@ -865,7 +865,7 @@
     },
     "collab_server": {
         "device_model": "EIGER_2S_1M_serv",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "Collab"
@@ -873,7 +873,7 @@
     },
     "collab_power": {
         "device_model": "multi_outlet",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "Collab"
@@ -881,7 +881,7 @@
     },
     "collab_press_pirani": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "Collab"
@@ -889,7 +889,7 @@
     },
     "collab_press_cathode": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "Collab"
@@ -897,7 +897,7 @@
     },
     "collab_press_control": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "Collab"
@@ -905,7 +905,7 @@
     },
     "collab_gate": {
         "device_model": "AllMetal_DN40CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "Collab"
@@ -913,7 +913,7 @@
     },
     "collab_PLC_PS": {
         "device_model": "PLC_PS",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "Collab"
@@ -921,7 +921,7 @@
     },
     "collab_PLC_CPU": {
         "device_model": "PLC_CPU",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "Collab"
@@ -929,7 +929,7 @@
     },
     "hxr_scintillator_north": {
         "device_model": "HXR_scintillator",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-TS"
@@ -937,7 +937,7 @@
     },
     "hxr_scintillator_south": {
         "device_model": "HXR_scintillator",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-TS"
@@ -945,7 +945,7 @@
     },
     "hxr_power_HV": {
         "device_model": "HXR_power_HV",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-TS"
@@ -953,7 +953,7 @@
     },
     "hxr_digitizer_fast": {
         "device_model": "HXR_digitizer_fast",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-TS"
@@ -961,7 +961,7 @@
     },
     "hxr_digitizer_current": {
         "device_model": "DIAG_FC",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-TS"
@@ -969,7 +969,7 @@
     },
     "hxr_LED_north": {
         "device_model": "HXR_LED",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-TS"
@@ -977,7 +977,7 @@
     },
     "hxr_LED_south": {
         "device_model": "HXR_LED",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "HXR-TS"
@@ -985,7 +985,7 @@
     },
     "xrb_neg0490_GV0": {
         "device_model": "AllMetal_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -993,7 +993,7 @@
     },
     "xrb_neg0490_GV1": {
         "device_model": "AllMetal_DN63CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1001,7 +1001,7 @@
     },
     "xrb_neg0490_GV2": {
         "device_model": "UHV_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1009,7 +1009,7 @@
     },
     "xrb_neg0490_Bellow0": {
         "device_model": "AllMetal_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1017,7 +1017,7 @@
     },
     "xrb_neg0490_Bellow1": {
         "device_model": "AllMetal_DN63CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1025,7 +1025,7 @@
     },
     "xrb_neg0490_Bellow2": {
         "device_model": "UHV_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1033,7 +1033,7 @@
     },
     "xrb_neg0490_Press_Inficon_Pirani0": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1041,7 +1041,7 @@
     },
     "xrb_neg0490_Press_Inficon_ColdCathode0": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1049,7 +1049,7 @@
     },
     "xrb_neg0490_GAS_check0": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1057,7 +1057,7 @@
     },
     "xrb_neg0490_GAS_GV": {
         "device_model": "AllMetal_DN40CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1065,7 +1065,7 @@
     },
     "xrb_neg0490_Press_Inficon_Pirani1": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1073,7 +1073,7 @@
     },
     "xrb_neg0490_Press_Inficon_ColdCathode1": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1081,7 +1081,7 @@
     },
     "xrb_neg0490_GAS_check1": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1089,7 +1089,7 @@
     },
     "xrb_neg0490_Press_Inficon_Pirani2": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1097,7 +1097,7 @@
     },
     "xrb_neg0490_Press_Inficon_ColdCathode2": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1105,7 +1105,7 @@
     },
     "xrb_neg0490_GAS_check2": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1113,7 +1113,7 @@
     },
     "xrb_neg0260_GV0": {
         "device_model": "AllMetal_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1121,7 +1121,7 @@
     },
     "xrb_neg0260_GV1": {
         "device_model": "AllMetal_DN63CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1129,7 +1129,7 @@
     },
     "xrb_neg0260_GV2": {
         "device_model": "UHV_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1137,7 +1137,7 @@
     },
     "xrb_neg0260_Bellow0": {
         "device_model": "AllMetal_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1145,7 +1145,7 @@
     },
     "xrb_neg0260_Bellow1": {
         "device_model": "AllMetal_DN63CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1153,7 +1153,7 @@
     },
     "xrb_neg0260_Bellow2": {
         "device_model": "UHV_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1161,7 +1161,7 @@
     },
     "xrb_neg0260_Press_Inficon_Pirani0": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1169,7 +1169,7 @@
     },
     "xrb_neg0260_Press_Inficon_ColdCathode0": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1177,7 +1177,7 @@
     },
     "xrb_neg0260_GAS_check0": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1185,7 +1185,7 @@
     },
     "xrb_neg0260_GAS_GV": {
         "device_model": "AllMetal_DN40CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1193,7 +1193,7 @@
     },
     "xrb_neg0260_Press_Inficon_Pirani1": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1201,7 +1201,7 @@
     },
     "xrb_neg0260_Press_Inficon_ColdCathode1": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1209,7 +1209,7 @@
     },
     "xrb_neg0260_GAS_check1": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1217,7 +1217,7 @@
     },
     "xrb_neg0260_Press_Inficon_Pirani2": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1225,7 +1225,7 @@
     },
     "xrb_neg0260_Press_Inficon_ColdCathode2": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1233,7 +1233,7 @@
     },
     "xrb_neg0260_GAS_check2": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1241,7 +1241,7 @@
     },
     "xrb_neg0040_GV0": {
         "device_model": "AllMetal_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1249,7 +1249,7 @@
     },
     "xrb_neg0040_GV1": {
         "device_model": "AllMetal_DN63CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1257,7 +1257,7 @@
     },
     "xrb_neg0040_GV2": {
         "device_model": "UHV_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1265,7 +1265,7 @@
     },
     "xrb_neg0040_Bellow0": {
         "device_model": "AllMetal_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1273,7 +1273,7 @@
     },
     "xrb_neg0040_Bellow1": {
         "device_model": "AllMetal_DN63CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1281,7 +1281,7 @@
     },
     "xrb_neg0040_Bellow2": {
         "device_model": "UHV_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1289,7 +1289,7 @@
     },
     "xrb_neg0040_Press_Inficon_Pirani0": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1297,7 +1297,7 @@
     },
     "xrb_neg0040_Press_Inficon_ColdCathode0": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1305,7 +1305,7 @@
     },
     "xrb_neg0040_GAS_check0": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1313,7 +1313,7 @@
     },
     "xrb_neg0040_GAS_GV": {
         "device_model": "AllMetal_DN40CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1321,7 +1321,7 @@
     },
     "xrb_neg0040_Press_Inficon_Pirani1": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1329,7 +1329,7 @@
     },
     "xrb_neg0040_Press_Inficon_ColdCathode1": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1337,7 +1337,7 @@
     },
     "xrb_neg0040_GAS_check1": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1345,7 +1345,7 @@
     },
     "xrb_neg0040_Press_Inficon_Pirani2": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1353,7 +1353,7 @@
     },
     "xrb_neg0040_Press_Inficon_ColdCathode2": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1361,7 +1361,7 @@
     },
     "xrb_neg0040_GAS_check2": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1369,7 +1369,7 @@
     },
     "xrb_pos0160_GV0": {
         "device_model": "AllMetal_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1377,7 +1377,7 @@
     },
     "xrb_pos0160_GV1": {
         "device_model": "AllMetal_DN63CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1385,7 +1385,7 @@
     },
     "xrb_pos0160_GV2": {
         "device_model": "UHV_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1393,7 +1393,7 @@
     },
     "xrb_pos0160_Bellow0": {
         "device_model": "AllMetal_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1401,7 +1401,7 @@
     },
     "xrb_pos0160_Bellow1": {
         "device_model": "AllMetal_DN63CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1409,7 +1409,7 @@
     },
     "xrb_pos0160_Bellow2": {
         "device_model": "UHV_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1417,7 +1417,7 @@
     },
     "xrb_pos0160_Press_Inficon_Pirani0": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1425,7 +1425,7 @@
     },
     "xrb_pos0160_Press_Inficon_ColdCathode0": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1433,7 +1433,7 @@
     },
     "xrb_pos0160_GAS_check0": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1441,7 +1441,7 @@
     },
     "xrb_pos0160_GAS_GV": {
         "device_model": "AllMetal_DN40CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1449,7 +1449,7 @@
     },
     "xrb_pos0160_Press_Inficon_Pirani1": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1457,7 +1457,7 @@
     },
     "xrb_pos0160_Press_Inficon_ColdCathode1": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1465,7 +1465,7 @@
     },
     "xrb_pos0160_GAS_check1": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1473,7 +1473,7 @@
     },
     "xrb_pos0160_Press_Inficon_Pirani2": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1481,7 +1481,7 @@
     },
     "xrb_pos0160_Press_Inficon_ColdCathode2": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1489,7 +1489,7 @@
     },
     "xrb_pos0160_GAS_check2": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1497,7 +1497,7 @@
     },
     "xrb_pos0380_GV0": {
         "device_model": "AllMetal_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1505,7 +1505,7 @@
     },
     "xrb_pos0380_GV1": {
         "device_model": "AllMetal_DN63CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1513,7 +1513,7 @@
     },
     "xrb_pos0380_GV2": {
         "device_model": "UHV_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1521,7 +1521,7 @@
     },
     "xrb_pos0380_Bellow0": {
         "device_model": "AllMetal_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1529,7 +1529,7 @@
     },
     "xrb_pos0380_Bellow1": {
         "device_model": "AllMetal_DN63CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1537,7 +1537,7 @@
     },
     "xrb_pos0380_Bellow2": {
         "device_model": "UHV_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1545,7 +1545,7 @@
     },
     "xrb_pos0380_Press_Inficon_Pirani0": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1553,7 +1553,7 @@
     },
     "xrb_pos0380_Press_Inficon_ColdCathode0": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1561,7 +1561,7 @@
     },
     "xrb_pos0380_GAS_check0": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1569,7 +1569,7 @@
     },
     "xrb_pos0380_GAS_GV": {
         "device_model": "AllMetal_DN40CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1577,7 +1577,7 @@
     },
     "xrb_pos0380_Press_Inficon_Pirani1": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1585,7 +1585,7 @@
     },
     "xrb_pos0380_Press_Inficon_ColdCathode1": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1593,7 +1593,7 @@
     },
     "xrb_pos0380_GAS_check1": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1601,7 +1601,7 @@
     },
     "xrb_pos0380_Press_Inficon_Pirani2": {
         "device_model": "Inficon_Pirani",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1609,7 +1609,7 @@
     },
     "xrb_pos0380_Press_Inficon_ColdCathode2": {
         "device_model": "Inficon_ColdCathode",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1617,7 +1617,7 @@
     },
     "xrb_pos0380_GAS_check2": {
         "device_model": "check_valve",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1625,7 +1625,7 @@
     },
     "xrb_pos0380_Press_control2": {
         "device_model": "Inficon_Control",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
@@ -1633,7 +1633,7 @@
     },
     "xrb_manifold_GV": {
         "device_model": "UHV_DN100CF",
-        "Systems": [
+        "systems": [
             "DIAG",
             "XRAY",
             "XRB"
