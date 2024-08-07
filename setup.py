@@ -124,6 +124,7 @@ setup(
         "pandas",
         "requests",
         "networkx",
+        "pygraphviz",
         "datastock>=0.0.39",
     ],
     python_requires=">=3.6",

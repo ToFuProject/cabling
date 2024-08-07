@@ -5,4 +5,5 @@ matplotlib
 pandas
 requests
 networkx
+pygraphviz
 datastock>=0.0.39
