@@ -12,6 +12,8 @@ from ._class00_Connectors import Connectors as Previous
 from . import _class01_check as _check
 from . import _add_from_json
 from . import _consistency
+from . import _class01_show as _show
+from . import _class01_export_spreadsheet as _export_spreadsheet
 from . import _class01_plot_connections_networkx as _plot_connections_networkx
 
 
@@ -103,6 +105,27 @@ class Devices(Previous):
             verb=verb,
             returnas=returnas,
         )
+
+    # -------------------
+    # show
+    # -------------------
+
+    def _get_show_obj(self, which=None):
+        if which == self._which_device_type:
+            return _show._device_type
+        elif which == self._which_device_model:
+            return _show._device_model
+        elif which == self._which_device:
+            return _show._device
+        else:
+            return super()._get_show_obj(which)
+
+    # -------------------
+    # export
+    # -------------------
+
+    def export_to_spreadsheet(self):
+        return _export_spreadsheet.main(coll)
 
     # -------------------
     # plot
