@@ -12,9 +12,11 @@ from ._class00_Connectors import Connectors as Previous
 from . import _class01_check as _check
 from . import _add_from_json
 from . import _consistency
+from . import _class01_select as _select
 from . import _class01_show as _show
+from . import _class01_export_to_graph as _export_to_graph
 from . import _class01_export_spreadsheet as _export_spreadsheet
-from . import _class01_plot_connections_networkx as _plot_connections_networkx
+from . import _class01_plot_graph as _plot_graph
 
 
 __all__ = ['Devices']
@@ -81,10 +83,10 @@ class Devices(Previous):
     # -------------------
 
     def check_consistency(
-            self,
-            verb=None,
-            returnas=None,
-        ):
+        self,
+        verb=None,
+        returnas=None,
+    ):
         """ Check overall consistency and print a report
 
 
@@ -105,6 +107,26 @@ class Devices(Previous):
             verb=verb,
             returnas=returnas,
         )
+
+    # -------------------
+    # select system
+    # -------------------
+
+    def select_systems(self, include=None, exclude=None):
+        """ Return list of Devices / Connectors matching desired subsystems
+
+        Parameters
+        ----------
+
+        Returns
+        -------
+        dout: dict
+            dict with keys
+                - 'device': list of device keys matching selection
+                - 'connector': list of connector keys matching selection
+
+        """
+        return _select.main(coll=self, include=include, exclude=exclude)
 
     # -------------------
     # show
@@ -128,12 +150,67 @@ class Devices(Previous):
         return _export_spreadsheet.main(coll)
 
     # -------------------
+    # export to graph
+    # -------------------
+
+    def to_graph(
+        self,
+        # select
+        devices=None,
+        # naming
+        name_device=None,
+        name_connector=None,
+    ):
+        """
+
+
+        Parameters
+        ----------
+        devices: list, optional
+            list of devices to include in the export
+            systems-based selection can be done using self.select_systems()
+        name_device : str, optional
+            DESCRIPTION. The default is None.
+        name_connector : str, optional
+            DESCRIPTION. The default is None.
+
+        Returns
+        -------
+        graph
+            a networkx graph with selected nodes (devices) and edges (connectors)
+
+        """
+        return _export_to_graph.main(
+            coll=self,
+            # select
+            devices=devices,
+            # naming
+            name_device=name_device,
+            name_connector=name_connector,
+        )
+
+    # -------------------
     # plot
     # -------------------
 
-    def plot_connections(
-        self
+    def plot_graph(
+        self,
+        # which devices to plot
+        devices=None,
+        name_device=None,
+        name_connector=None,
+        # plotting options
+        layout=None,
+        name_by=None,
     ):
-        return _plot_connections_networkx.main(
+
+        return _plot_graph.main(
             coll=self,
+            # which devices to plot
+            devices=devices,
+            name_device=name_device,
+            name_connector=name_connector,
+            # plotting options
+            layout=layout,
+            name_by=name_by,
         )

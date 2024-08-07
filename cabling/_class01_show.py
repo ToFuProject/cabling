@@ -84,10 +84,15 @@ def _device_model(coll=None, which=None, lcol=None, lar=None, show=None):
     for k0 in lkey:
 
         # initialize with key
-        arr = [k0, coll.dobj[wdm][k0][wdt]]
+        arr = [k0]
+
+        # type
+        dtype = coll.dobj[wdm][k0].get(wdt)
+        arr.append('' if dtype is None else dtype)
 
         # description
-        arr.append(coll.dobj[wdm][k0].get('description', ''))
+        des = coll.dobj[wdm][k0].get('description')
+        arr.append('' if des is None else des)
 
         # add nb of connections
         dcon = coll.dobj[wdm][k0]['connections']
@@ -99,6 +104,7 @@ def _device_model(coll=None, which=None, lcol=None, lar=None, show=None):
         else:
             nn = coll.dobj[wdm][k0].get('PN')
         arr.append(nn)
+
         lar0.append(arr)
 
     lar.append(lar0)
