@@ -117,7 +117,8 @@ def _check(
 def _select(
     coll=None,
     devices=None,
- ):
+    connectors='graph',
+):
 
     # ---------------
     # devices
@@ -140,14 +141,26 @@ def _select(
     # connectors
     # ---------------
 
-    lcon = []
     wcon = coll._which_connector
-    for kcon, vcon in coll.dobj.get(wcon, {}).items():
+    if connectors == 'graph':
+        lcon = []
+        for kcon, vcon in coll.dobj.get(wcon, {}).items():
+            dcon = coll.dobj[wcon][kcon]['connections']
+            c0 = all([vv[wdev][0] in ldev for vv in dcon.values()])
+            if c0 is True:
+                lcon.append(kcon)
 
-        dcon = coll.dobj[wcon][kcon]['connections']
-        c0 = all([vv[wdev][0] in ldev for vv in dcon.values()])
-        if c0 is True:
-            lcon.append(kcon)
+    else:
+        if isinstance(connectors, str):
+            connectors = [connectors]
+        lok = list(coll.dobj[wcon].keys())
+        lcon = ds._generic_check._check_var(
+            connectors, 'connectors',
+            types=list,
+            types_iter=str,
+            allowed=lok,
+            default=lok,
+        )
 
     return ldev, lcon
 

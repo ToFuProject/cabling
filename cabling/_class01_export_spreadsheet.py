@@ -14,6 +14,9 @@ import pandas as pd
 import datastock as ds
 
 
+from . import _class01_export_to_graph as _to_graph
+
+
 #############################################
 #############################################
 #       main
@@ -41,11 +44,25 @@ def main(
         verb=verb
     )
 
+    # ---------------
+    # select devices and connectors
+    # ---------------
+
+    ldev, lcon = _to_graph._select(
+        coll=coll,
+        devices=devices,
+        connectors=connectors,
+     )
+
     # --------------
     # to DataFrames
     # ---------------
 
-    dout = _DataFrames(coll)
+    dout = _DataFrames(
+        coll,
+        ldev=ldev,
+        lcon=lcon,
+    )
 
     # --------------
     # write to spreadsheet
@@ -121,22 +138,63 @@ def _check(
 
 def _DataFrames(
     coll=None,
+    ldev=None,
+    lcon=None,
+    # options
     startrow=None,
     startcol=None,
 ):
 
     # --------------
-    #
+    # prepare
     # --------------
 
+    wpt = coll._which_plug_type,
+    wct = coll._which_connector_type,
+    wcm = coll._which_connector_model,
+    wcon = coll._which_connector,
+    wdt = coll._which_device_type,
+    wdm = coll._which_device_model,
+    wdev = coll._which_device,
+
+    # models
+    ldm = sorted(set([
+        coll.dobj[wdev][k0][wdm] for k0 in ldev
+        if coll.dobj[wdev][k0].get(wdm) is not None
+    ]))
+    lcm = sorted(set([
+        coll.dobj[wcon][k0][wcm] for k0 in lcon
+        if coll.dobj[wcon][k0].get(wcm) is not None
+    ]))
+
+    # types
+    ldt = sorted(set([
+        coll.dobj[wdm][k0][wdt] for k0 in ldm
+        if coll.dobj[wdm][k0].get(wdt) is not None
+    ]))
+    lct = sorted(set([
+        coll.dobj[wcm][k0][wct] for k0 in lcm
+        if coll.dobj[wcm][k0].get(wct) is not None
+    ]))
+
+    # plug types
+    lpt = sorted(set([
+        coll.dobj[wct][k0][wpt] for k0 in lct
+        if coll.dobj[wct][k0].get(wpt) is not None
+    ]))
+
     dwhich = {
-        coll._which_plug_type,
-        coll._which_connector_type,
-        coll._which_connector_model,
-        coll._which_connector,
-        coll._which_device_type,
-        coll._which_device_model,
-        coll._which_device,
+        # device connectors
+        wdev: ldev,
+        wcon: lcon,
+        # models
+        wdm: ldm,
+        wcm: lcm,
+        # types
+        wdt: ldt,
+        wct: lct,
+        # plugs
+        wpt: lpt,
     }
 
     # --------------
@@ -146,7 +204,7 @@ def _DataFrames(
     dout = {}
     for k0, v0 in dwhich.items():
 
-        df = coll.to_DataFrame(which=k0)
+        df = coll.to_DataFrame(which=k0, keys=dwhich[k0])
 
         dout[k0] = {
             'DataFrame': df,

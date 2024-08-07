@@ -14,7 +14,8 @@ from . import _add_from_json
 from . import _consistency
 from . import _class01_select as _select
 from . import _class01_show as _show
-from . import _class01_export_to_graph as _export_to_graph
+from . import _class01_export_to_graph as _to_graph
+from . import _class01_to_DataFrame as _to_DataFrame
 from . import _class01_export_spreadsheet as _export_spreadsheet
 from . import _class01_plot_graph as _plot_graph
 
@@ -143,7 +144,18 @@ class Devices(Previous):
             return super()._get_show_obj(which)
 
     # -------------------
-    # export to Dataframes and spreadsheet
+    # to Dataframes
+    # -------------------
+
+    def to_DataFrame(self, which=None, keys=None):
+        lok = []
+        if which in lok:
+            return _to_DataFrame.main(self, which=which, keys=keys)
+        else:
+            super().to_DataFrame(which=which, keys=keys)
+
+    # -------------------
+    # export to spreadsheet
     # -------------------
 
     def save_to_spreadsheet(
@@ -202,7 +214,7 @@ class Devices(Previous):
             a networkx graph with selected nodes (devices) and edges (connectors)
 
         """
-        return _export_to_graph.main(
+        return _to_graph.main(
             coll=self,
             # select
             devices=devices,
