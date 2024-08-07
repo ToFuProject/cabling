@@ -6,6 +6,7 @@ Created on Tue Aug  6 18:24:45 2024
 """
 
 
+import numpy as np
 import networkx as nx
 import datastock as ds
 
@@ -24,12 +25,13 @@ def main(
     name_connector=None,
     # plotting options
     layout=None,
+    layers=None,
     name_by=None,
     # -----------
     # parameters
     # edges
     arrows=None,
-    arrowsize=None,
+    # arrowsize=None,
     # nodes
     node_size=None,
     node_color=None,
@@ -66,7 +68,12 @@ def main(
     # layout
     # ---------------
 
-    pos = _layout(graph, layout)
+    pos = _layout(
+        coll=coll,
+        graph=graph,
+        layout=layout,
+        layers=layers,
+    )
 
     # ---------------
     # plot
@@ -97,7 +104,7 @@ def _check(
     color_by=None,
     # edges
     arrows=None,
-    arrowsize=None,
+    # arrowsize=None,
     # nodes
     node_size=None,
     node_color=None,
@@ -114,14 +121,18 @@ def _check(
     **kwds,
 ):
 
-    lout = ['coll', 'kwds', 'lout', 'size_by', 'color_by']
-    kwdargs = {k0: v0 for k0, v0 in locals().items() if k0 not in lout}
+    lout = ['coll', 'kwds', 'lout', 'size_by', 'color_by', 'layers']
+    kwdargs = {
+        k0: v0 for k0, v0 in locals().items()
+        if k0 not in lout
+        and k0 not in kwds.keys()
+    }
 
+    kwdargs['arrows'] = True
 
     # -------------
     # size_by
     # -------------
-
 
     return kwdargs
 
@@ -133,16 +144,40 @@ def _check(
 
 
 def _layout(
+    coll=None,
     graph=None,
     layout=None,
+    layers=None,
 ):
 
     # -------------
     # layout
     # -------------
 
+    if layout is None and layers is not None:
+        layout = 'multipartite'
+
     if isinstance(layout, dict):
         pos = layout
+
+    elif layout == 'multipartite':
+
+        if layers is None:
+            wdev = coll._which_device
+            dnsys = {k0: len(coll.dobj[wdev][k0]['systems']) for k0 in graph.nodes}
+            nsys = np.unique([v0 for v0 in dnsys.values()])
+            layers = {
+                nn: [k1 for k1 in graph.nodes if dnsys[k1] == nn]
+                for nn in nsys
+            }
+
+        pos = nx.multipartite_layout(
+            graph,
+            subset_key=layers,
+            align='vertical',
+            scale=1,
+            center=None,
+        )
 
     else:
         lout = ['bfs', 'bipartite', 'multipartite', 'rescale', 'spectral']
@@ -196,7 +231,7 @@ def _plot_mpl(
         # layout
         pos=pos,
         # edges
-        **kwdargs
+        # **kwdargs
     )
 
     return

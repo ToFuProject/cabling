@@ -146,8 +146,30 @@ class Devices(Previous):
     # export to Dataframes and spreadsheet
     # -------------------
 
-    def to_spreadsheet(self):
-        return _export_spreadsheet.main(coll)
+    def save_to_spreadsheet(
+        self,
+        # selection
+        devices=None,
+        connectors=None,
+        # options
+        startrow=None,
+        startcol=None,
+        # pfe
+        pfe=None,
+        verb=None,
+    ):
+        return _export_spreadsheet.main(
+            coll=self,
+            # selection
+            devices=devices,
+            connectors=connectors,
+            # options
+            startrow=startrow,
+            startcol=startcol,
+            # pfe
+            pfe=pfe,
+            verb=verb,
+        )
 
     # -------------------
     # export to graph
@@ -201,6 +223,7 @@ class Devices(Previous):
         name_connector=None,
         # plotting options
         layout=None,
+        layers=None,
         name_by=None,
     ):
 
@@ -212,5 +235,6 @@ class Devices(Previous):
             name_connector=name_connector,
             # plotting options
             layout=layout,
+            layers=layers,
             name_by=name_by,
         )

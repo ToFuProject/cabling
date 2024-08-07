@@ -24,6 +24,9 @@ def main(
     coll=None,
     devices=None,
     connectors=None,
+    # options
+    startrow=None,
+    startcol=None,
     # pfe
     pfe=None,
     verb=None,
@@ -116,13 +119,40 @@ def _check(
 #############################################
 
 
-def _DataFrames(coll):
+def _DataFrames(
+    coll=None,
+    startrow=None,
+    startcol=None,
+):
 
     # --------------
     #
     # --------------
 
+    dwhich = {
+        coll._which_plug_type,
+        coll._which_connector_type,
+        coll._which_connector_model,
+        coll._which_connector,
+        coll._which_device_type,
+        coll._which_device_model,
+        coll._which_device,
+    }
 
+    # --------------
+    # loop
+    # --------------
+
+    dout = {}
+    for k0, v0 in dwhich.items():
+
+        df = coll.to_DataFrame(which=k0)
+
+        dout[k0] = {
+            'DataFrame': df,
+            'columns': None,
+            'freeze_panes': (1 + startrow, 1 + startcol),
+        }
 
     return dout
 
