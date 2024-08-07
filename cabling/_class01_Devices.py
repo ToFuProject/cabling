@@ -143,10 +143,10 @@ class Devices(Previous):
             return super()._get_show_obj(which)
 
     # -------------------
-    # export
+    # export to Dataframes and spreadsheet
     # -------------------
 
-    def export_to_spreadsheet(self):
+    def to_spreadsheet(self):
         return _export_spreadsheet.main(coll)
 
     # -------------------
