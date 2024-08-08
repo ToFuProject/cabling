@@ -566,6 +566,13 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
 
     for k0, v0 in defdict.items():
 
+        # --------------
+        # special cases
+
+        if k0 == 'systems':
+            kwdargs[k0] = _systems(kwdargs.get(k0), which, key)
+            continue
+
         # -----------------------
         # type checking + default
 
@@ -660,3 +667,28 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
                             raise Exception(msg)
 
     return kwdargs
+
+
+def _systems(systems, which, key):
+
+    if systems is not None:
+
+        c0 = (
+            isinstance(systems, dict)
+            and all([
+                isinstance(k0, str)
+                and isinstance(v0, str)
+                for k0, v0 in systems.items()
+            ])
+        )
+
+        if not c0:
+            msg = (
+                f"{which} '{key}' arg 'systems' must be a dict of:\n"
+                f"\t- str (system level): str (value)\n"
+                "e.g.: {'L1': 'DIAG', 'L2': 'XRAY', ...}n"
+                f"Provided:\n{systems}\n"
+            )
+            raise Exception(msg)
+
+    return systems

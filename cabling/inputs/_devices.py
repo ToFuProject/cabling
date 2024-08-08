@@ -79,7 +79,7 @@ def _invessel_SXR(dout, wdm):
     # system
     # -------------
 
-    systems = ('DIAG', 'XRAY', 'SXR-VA')
+    systems = {'L1': 'DIAG', 'L2': 'XRAY', 'L3': 'SXR-VA'}
 
     # -----------
     # update
@@ -167,7 +167,7 @@ def _invessel_HXR(dout, wdm):
     # system
     # -------------
 
-    systems = ('DIAG', 'XRAY', 'HXR-VA')
+    systems = {'L1': 'DIAG', 'L2': 'XRAY', 'L3': 'HXR-VA'}
 
     # -----------
     # update
@@ -248,7 +248,7 @@ def _collaborator(dout, wdm):
     # system
     # -------------
 
-    systems = ('DIAG', 'XRAY', 'Collab')
+    systems = {'L1': 'DIAG', 'L2': 'XRAY', 'L3': 'Collab'}
 
     # -----------
     # update
@@ -354,7 +354,7 @@ def _scintillators(dout, wdm):
     # system
     # -------------
 
-    systems = ('DIAG', 'XRAY', 'HXR-TS')
+    systems = {'L1': 'DIAG', 'L2': 'XRAY', 'L3': 'HXR-TS'}
 
     # -----------
     # update
@@ -426,7 +426,7 @@ def _beamlines(dout, wdm):
     # system
     # -------------
 
-    systems = ('DIAG', 'XRAY', 'XRB')
+    systems = {'L1': 'DIAG', 'L2': 'XRAY', 'L3': 'XRB'}
 
     lkeyb = [
         'neg_0490',

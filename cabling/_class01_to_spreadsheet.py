@@ -202,12 +202,12 @@ def _DataFrames(
     # --------------
 
     dout = {}
-    for k0, v0 in dwhich.items():
+    for which, keys in dwhich.items():
 
-        df = coll.to_DataFrame(which=k0, keys=dwhich[k0])
+        dout = coll.to_DataFrame(which=which, keys=keys)
 
         dout[k0] = {
-            'DataFrame': df,
+            'DataFrame': None,
             'columns': None,
             'freeze_panes': (1 + startrow, 1 + startcol),
         }

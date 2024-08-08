@@ -25,14 +25,12 @@ def get(path=None):
 
     dout = {}
     wcm = 'connector_model'
-    wplug = 'plug_type'
 
     # ------------------
     # in vessel SXR
     # ------------------
 
     _invessel_SXR(dout, wcm)
-
 
     # ---------------
     # save to json
@@ -54,7 +52,7 @@ def _invessel_SXR(dout, wcm):
     # system
     # -------------
 
-    systems = ('DIAG', 'XRAY', 'SXR-VA')
+    systems = {'L1': 'DIAG', 'L2': 'XRAY', 'L3': 'SXR-VA'}
 
     # -----------
     # update
