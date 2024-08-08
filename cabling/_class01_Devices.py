@@ -14,9 +14,9 @@ from . import _add_from_json
 from . import _consistency
 from . import _class01_select as _select
 from . import _class01_show as _show
-from . import _class01_export_to_graph as _to_graph
+from . import _class01_to_graph as _to_graph
 from . import _class01_to_DataFrame as _to_DataFrame
-from . import _class01_export_spreadsheet as _export_spreadsheet
+from . import _class01_to_spreadsheet as _to_spreadsheet
 from . import _class01_plot_graph as _plot_graph
 
 
@@ -148,7 +148,15 @@ class Devices(Previous):
     # -------------------
 
     def to_DataFrame(self, which=None, keys=None):
-        lok = []
+        lok = [
+            self._which_plug_type,
+            self._which_connector_type,
+            self._which_connector_model,
+            self._which_connector,
+            self._which_device_type,
+            self._which_device_model,
+            self._which_device,
+        ]
         if which in lok:
             return _to_DataFrame.main(self, which=which, keys=keys)
         else:
@@ -170,7 +178,7 @@ class Devices(Previous):
         pfe=None,
         verb=None,
     ):
-        return _export_spreadsheet.main(
+        return _to_spreadsheet.main(
             coll=self,
             # selection
             devices=devices,

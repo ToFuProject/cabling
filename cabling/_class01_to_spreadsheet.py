@@ -14,7 +14,7 @@ import pandas as pd
 import datastock as ds
 
 
-from . import _class01_export_to_graph as _to_graph
+from . import _class01_to_graph as _to_graph
 
 
 #############################################
@@ -149,13 +149,13 @@ def _DataFrames(
     # prepare
     # --------------
 
-    wpt = coll._which_plug_type,
-    wct = coll._which_connector_type,
-    wcm = coll._which_connector_model,
-    wcon = coll._which_connector,
-    wdt = coll._which_device_type,
-    wdm = coll._which_device_model,
-    wdev = coll._which_device,
+    wpt = coll._which_plug_type
+    wct = coll._which_connector_type
+    wcm = coll._which_connector_model
+    wcon = coll._which_connector
+    wdt = coll._which_device_type
+    wdm = coll._which_device_model
+    wdev = coll._which_device
 
     # models
     ldm = sorted(set([

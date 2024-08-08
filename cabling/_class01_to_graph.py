@@ -154,7 +154,7 @@ def _select(
         if isinstance(connectors, str):
             connectors = [connectors]
         lok = list(coll.dobj[wcon].keys())
-        lcon = ds._generic_check._check_var(
+        lcon = ds._generic_check._check_var_iter(
             connectors, 'connectors',
             types=list,
             types_iter=str,
