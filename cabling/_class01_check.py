@@ -192,6 +192,8 @@ def _connections_nb(
 def device(
     coll=None,
     key=None,
+    systems=None,
+    label=None,
     **kwdargs,
 ):
 
@@ -200,12 +202,28 @@ def device(
     # ---------------------
 
     which = coll._which_device
+    systems, keysys, label = _class00_check._systems(systems, which, label)
+
+    # key
     lout = list(coll.dobj.get(which, {}).keys())
-    key = ds._generic_check._check_var(
-        key, 'key',
-        types=str,
-        excluded=lout,
-    )
+    if key is None:
+        if key in lout:
+            msg = (
+                f"For {which} '{label}', the generated key already exists!\n"
+                f"\t- systems: {systems}\n"
+                f"\t- label: {label}\n"
+                f"\t- generated key: {key}\n"
+                "=> change label?\n"
+            )
+            raise Exception(msg)
+        key = keysys
+
+    else:
+        key = ds._generic_check._check_var(
+            key, 'key',
+            types=str,
+            excluded=lout,
+        )
 
     # ---------------------
     # kwdargs
@@ -234,6 +252,8 @@ def device(
     coll.add_obj(
         which=which,
         key=key,
+        label=label,
+        systems=systems,
         connections=connections,
         harmonize=True,
         **kwdargs,

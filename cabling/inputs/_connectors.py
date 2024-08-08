@@ -17,6 +17,17 @@ from . import _save2json
 
 #############################################
 #############################################
+#    utility
+#############################################
+
+
+def keysys(systems):
+    lk = sorted(systems.keys())
+    return '_'.join([systems[kk] for kk in lk])
+
+
+#############################################
+#############################################
 #    Connection types
 #############################################
 
@@ -31,6 +42,13 @@ def get(path=None):
     # ------------------
 
     _invessel_SXR(dout, wcm)
+
+    # ---------------
+    # add labels if needed
+    # ---------------
+
+    for k0, v0 in dout.items():
+        dout[k0]['label'] = v0.get('label', k0)
 
     # ---------------
     # save to json
@@ -52,7 +70,7 @@ def _invessel_SXR(dout, wcm):
     # system
     # -------------
 
-    systems = {'L1': 'DIAG', 'L2': 'XRAY', 'L3': 'SXR-VA'}
+    systems0 = {'L1': 'DIAG', 'L2': 'XRAY', 'L3': 'SXRVA'}
 
     # -----------
     # update
@@ -63,23 +81,28 @@ def _invessel_SXR(dout, wcm):
 
     for pp in lcam:
 
-        key_plate = f'sxr_{pp}_plate'
-        key_cam = f'sxr_{pp}_cam'
-        key_feed = f'sxr_{pp}_feed'
+        systems = dict(systems0, L4=pp)
+        keyS = keysys(systems)
+
+        key_plate = f'{keyS}_plate'
+        key_cam = f'{keyS}_cam'
+        key_feed = f'{keyS}_feed'
 
         # individual sensors to plate
         for ii in range(npix):
 
-            dout[f"sxr_{pp}_microwire_{ii}"] = {
+            dout[f"{keyS}_microwire_{ii:02.0f}"] = {
                 wcm: 'microwire_pair',
+                'label': f'microwire_{ii:02.0f}',
                 'systems': systems,
-                'ptA':(f"sxr_{pp}_CVD_{ii}", 'all'),
+                'ptA':(f"{keyS}_CVD_{ii:02.0f}", 'all'),
                 'ptB': (key_plate, f'in_{ii}'),
             }
 
             # plate to camera
-            dout[f'sxr_{pp}_wire_{ii}'] = {
+            dout[f'{keyS}_wire_{ii}'] = {
                 wcm: 'wire_pair',
+                'label': f'wire_{ii:02.0f}',
                 'systems': systems,
                 'ptA': (key_plate, f'out_{ii}'),
                 'ptB': (key_cam, f'CVD_in_{ii}'),
@@ -88,6 +111,7 @@ def _invessel_SXR(dout, wcm):
             # camera to feedthrough
             dout[f'sxr_{pp}_MI_{ii}'] = {
                 wcm: 'MI_twist_pair',
+                'label': f'MI_{ii:02.0f}',
                 'systems': systems,
                 'ptA': (key_cam, f'CVD_out_{ii}'),
                 'ptB': (key_feed, f'CVD_in_{ii}'),
@@ -96,10 +120,11 @@ def _invessel_SXR(dout, wcm):
         # ---------------------------------
         # individual thermocouple to camera
 
-        dout[f'sxr_{pp}_therm_MI'] = {
+        dout[f'{keyS}_therm_MI'] = {
             wcm: 'MI_single',
+            'label': f'therm_MI_{ii:02.0f}',
             'systems': systems,
-            'ptA': (f'sxr_{pp}_therm', 'all'),
+            'ptA': (f'{keyS}_therm', 'all'),
             'ptB': (key_cam, 'Therm_in'),
         }
 

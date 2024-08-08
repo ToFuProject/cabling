@@ -150,10 +150,7 @@ def _DataFrame(
     # ---------------
 
     for k0, v0 in dout.items():
-        print()
-        print(k0)
         dout[k0] = pd.DataFrame.from_dict(v0, orient='index')
-        print(dout[k0])
 
     return dout
 
@@ -409,7 +406,10 @@ def _get_device(coll, which, keys):
         dcon = dobj[key]['connections']
         lcon = sorted(dcon.keys())
         for ii, kcon in enumerate(lcon):
-            dout[which][key][f'con{ii}'] = dcon[kcon][wcon]
+            out = dcon[kcon].get(wcon)
+            if out is None:
+                out = dcon[kcon]['flag']
+            dout[which][key][f'con{ii}'] = str(out)
 
         for ii in range(dncon[key], nconmax):
             dout[which][key][f'con{ii}'] = ''
@@ -443,9 +443,9 @@ def _generic_fields(dout, dobj, which, keys, lparam, lout):
 
     if 'systems' in lparam:
 
-        LNu = set(itt.chain.from_iterable([
+        LNu = sorted(set(itt.chain.from_iterable([
             list(dobj[key]['systems'].keys()) for key in keys
-        ]))
+        ])))
 
         for key in keys:
             for sys in LNu:

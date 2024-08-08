@@ -226,6 +226,7 @@ def connector_model(
     # check key
     # ---------------------
 
+    # key
     which = coll._which_connector_model
     lout = list(coll.dobj.get(which, {}).keys())
     key = ds._generic_check._check_var(
@@ -407,7 +408,9 @@ def _err_connections(which, key, connections, wplug, lok=[], lcon=None):
 
 def connector(
     coll=None,
+    systems=None,
     key=None,
+    label=None,
     ptA=None,
     ptB=None,
     consistency=None,
@@ -418,16 +421,34 @@ def connector(
     # check key
     # ---------------------
 
-    # key
     which = coll._which_connector
-    lout = list(coll.dobj.get(which, {}).keys())
-    key = ds._generic_check._check_var(
-        key, 'key',
-        types=str,
-        excluded=lout,
-    )
+    systems, keysys, label = _systems(systems, which, label)
 
+    # key
+    lout = list(coll.dobj.get(which, {}).keys())
+    if key is None:
+        if key in lout:
+            msg = (
+                f"For {which} '{label}', the generated key already exists!\n"
+                f"\t- systems: {systems}\n"
+                f"\t- label: {label}\n"
+                f"\t- generated key: {key}\n"
+                "=> change label?\n"
+            )
+            raise Exception(msg)
+        key = keysys
+
+    else:
+        key = ds._generic_check._check_var(
+            key, 'key',
+            types=str,
+            excluded=lout,
+        )
+
+    # -------------
     # consistency
+    # -------------
+
     consistency = ds._generic_check._check_var(
         consistency, 'consistency',
         types=bool,
@@ -450,7 +471,7 @@ def connector(
     # ptA, ptB
     # ---------------------
 
-    ptA, ptB = _ptAB(coll, which, key, ptA, ptB)
+    ptA, ptB = _ptAB(coll, which, key, ptA, ptB, systems)
 
     # update connections
     wcm = coll._which_connector_model
@@ -471,6 +492,8 @@ def connector(
     coll.add_obj(
         which=which,
         key=key,
+        systems=systems,
+        label=label,
         connections=connections,
         harmonize=True,
         **kwdargs,
@@ -496,7 +519,7 @@ def connector(
 #############################################
 
 
-def _ptAB(coll, which, key, ptA, ptB):
+def _ptAB(coll, which, key, ptA, ptB, systems):
 
     # -----------------
     # available devices
@@ -507,6 +530,12 @@ def _ptAB(coll, which, key, ptA, ptB):
 
     din = {'ptA': ptA, 'ptB': ptB}
     for pt in ['ptA', 'ptB']:
+
+        if din[pt] is None:
+            msg = (
+                f"For {which} '{key}', arg '{pt}' must be provided!"
+            )
+            raise Exception(msg)
 
         if din[pt] is not None:
 
@@ -535,18 +564,23 @@ def _ptAB(coll, which, key, ptA, ptB):
             if din[pt][0] not in lok:
                 msg = (
                     f"For {which} '{key}', wrong first term in arg '{pt}':\n"
-                    f"\t- Unknwon {wdev}: '{din[pt][0]}'\n"
+                    "Should be either:\n"
+                    f"\t- a known unique key to a {wdev}\n"
+                    f"\t- a known label to a {wdev} in the same systems\n"
+                    "Available:\n"
+                    f"\t- keys: {lok}\n"
+                    f"Provided:\n\t'{din[pt][0]}'\n"
                 )
                 raise Exception(msg)
 
             if din[pt][1] not in coll.dobj[wdev][din[pt][0]]['connections'].keys():
                 msg = (
                     f"For {which} '{key}', wrong second term in arg '{pt}':\n"
-                    f"\t- Unknwon {wdev} connection: '{din[pt][1]}'\n"
+                    f"\t- Unknown {wdev} connection: '{din[pt][1]}'\n"
                 )
                 raise Exception(msg)
 
-    return tuple(ptA), tuple(ptB)
+    return tuple(din['ptA']), tuple(din['ptB'])
 
 
 #############################################
@@ -566,13 +600,6 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
 
     for k0, v0 in defdict.items():
 
-        # --------------
-        # special cases
-
-        if k0 == 'systems':
-            kwdargs[k0] = _systems(kwdargs.get(k0), which, key)
-            continue
-
         # -----------------------
         # type checking + default
 
@@ -581,6 +608,7 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
                 kwdargs.get(k0), k0,
                 types=v0.get('types'),
                 default=v0.get('def'),
+                extra_msg=f"For {which} '{key}', arg '{k0}' must be provided!",
             )
 
         elif kwdargs.get(k0) is None:
@@ -591,16 +619,6 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
 
         if v0.get('astype') is not None:
             kwdargs[k0] = v0['astype'](kwdargs[k0])
-
-        # -----------------
-        # can be None ?
-
-        wcon = coll._which_connector
-        if v0.get('can_be_None') is False and kwdargs[k0] is None:
-            msg = (
-                f"For {wcon} '{key}', arg '{k0}' must be provided!"
-            )
-            raise Exception(msg)
 
         # ----------
         # unique
@@ -669,26 +687,48 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
     return kwdargs
 
 
-def _systems(systems, which, key):
+# ###########################################################
+# ###########################################################
+#                 Systems
+# ###########################################################
 
-    if systems is not None:
 
-        c0 = (
-            isinstance(systems, dict)
-            and all([
-                isinstance(k0, str)
-                and isinstance(v0, str)
-                for k0, v0 in systems.items()
-            ])
+def _systems(systems, which, label):
+
+    # ----------------
+    # check systems
+    # ----------------
+
+    c0 = (
+        isinstance(systems, dict)
+        and all([
+            isinstance(k0, str)
+            and isinstance(v0, str)
+            for k0, v0 in systems.items()
+        ])
+    )
+
+    if not c0:
+        msg = (
+            f"{which} '{label}' arg 'systems' must be a dict of:\n"
+            f"\t- str (system level): str (value)\n"
+            "e.g.: {'L1': 'DIAG', 'L2': 'XRAY', ...}n"
+            f"Provided:\n{systems}\n"
         )
+        raise Exception(msg)
 
-        if not c0:
-            msg = (
-                f"{which} '{key}' arg 'systems' must be a dict of:\n"
-                f"\t- str (system level): str (value)\n"
-                "e.g.: {'L1': 'DIAG', 'L2': 'XRAY', ...}n"
-                f"Provided:\n{systems}\n"
-            )
-            raise Exception(msg)
+    # ----------------
+    # make key
+    # ----------------
 
-    return systems
+    label = ds._generic_check._check_var(
+        label, 'label',
+        types=str,
+    )
+
+    # derive key
+    lsys = sorted(systems.keys())
+    lsys = [systems[ksys] for ksys in lsys]
+    key = "_".join(lsys + [label])
+
+    return systems, key, label

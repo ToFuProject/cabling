@@ -14,6 +14,7 @@ from . import _add_from_json
 from . import _consistency
 from . import _class01_select as _select
 from . import _class01_show as _show
+from . import _class01_utils as _utils
 from . import _class01_to_graph as _to_graph
 from . import _class01_to_DataFrame as _to_DataFrame
 from . import _class01_to_spreadsheet as _to_spreadsheet
@@ -42,8 +43,7 @@ class Devices(Previous):
 
     _ddef = copy.deepcopy(Previous._ddef)
     _dshow = dict(Previous._dshow)
-
-    _dshow['device_model'] = ['device_type', 'description', 'PN_vendor', 'chassis', 'sizeU']
+    _dshow['device'] = None # to avoid nbug at add_obj()
 
     # -------------------
     # add Device type
@@ -68,9 +68,19 @@ class Devices(Previous):
     # add Device
     # -------------------
 
-    def add_device(self, key=None, **kwdargs):
+    def add_device(
+        self,
+        systems=None,
+        label=None,
+        **kwdargs,
+    ):
         # add obj
-        _check.device(self, key=key, **kwdargs)
+        _check.device(
+            self,
+            systems=systems,
+            label=label,
+            **kwdargs,
+        )
 
     # ----------------------
     # add from json

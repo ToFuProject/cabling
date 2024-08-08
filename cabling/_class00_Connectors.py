@@ -39,6 +39,7 @@ class Connectors(ds.DataStock):
 
     _ddef = copy.deepcopy(ds.DataStock._ddef)
     _dshow = dict(ds.DataStock._dshow)
+    _dshow['connector'] = None # to avoid nbug at add_obj()
 
     _ddef['params']['dobj'] = {
         # 'lines': {
@@ -95,7 +96,8 @@ class Connectors(ds.DataStock):
 
     def add_connector(
         self,
-        key=None,
+        systems=None,
+        label=None,
         ptA=None,
         ptB=None,
         consistency=None,
@@ -105,10 +107,11 @@ class Connectors(ds.DataStock):
         # add obj
         return _check.connector(
             self,
-            key,
-            ptA,
-            ptB,
-            consistency,
+            systems=systems,
+            label=label,
+            ptA=ptA,
+            ptB=ptB,
+            consistency=consistency,
             **kwdargs,
         )
 

@@ -7,7 +7,10 @@ Created on Tue Aug  6 23:58:44 2024
 
 
 import os
+import getpass
+import itertools as itt
 import datetime as dtm
+from openpyxl import Workbook
 
 
 import pandas as pd
@@ -39,7 +42,7 @@ def main(
     # check inputs
     # ---------------
 
-    pfe, verb = _check(
+    startrow, startcol, pfe, verb = _check(
         pfe=pfe,
         verb=verb
     )
@@ -62,13 +65,22 @@ def main(
         coll,
         ldev=ldev,
         lcon=lcon,
+        # options
+        startrow=startrow,
+        startcol=startcol,
     )
 
     # --------------
     # write to spreadsheet
     # ---------------
 
-    _spreadsheet(dout)
+    _spreadsheet(
+        dout=dout,
+        startrow=startrow,
+        startcol=startcol,
+        pfe=pfe,
+        verb=verb,
+    )
 
     return
 
@@ -80,9 +92,31 @@ def main(
 
 
 def _check(
+    # options
+    startrow=None,
+    startcol=None,
+    # pfe
     pfe=None,
     verb=None
 ):
+
+    # -----------
+    # startrow, startcol
+    # -----------
+
+    startrow = int(ds._generic_check._check_var(
+        startrow, 'startrow',
+        types=(int, float),
+        default=1,
+        sign='>=0',
+    ))
+
+    startcol = int(ds._generic_check._check_var(
+        startcol, 'startcol',
+        types=(int, float),
+        default=1,
+        sign='>=0',
+    ))
 
     # -----------
     # pfe
@@ -90,7 +124,7 @@ def _check(
 
     if pfe is None:
         time = dtm.datetime.now().strftime('%Y%m%d_%H%M%S')
-        name = f"cabling_getpass.user()_{time}.xlsx"
+        name = f"cabling_{getpass.getuser()}_{time}.xlsx"
         path = os.path.abspath('.')
         pfe = os.path.join(path, name)
 
@@ -127,7 +161,7 @@ def _check(
         default=True,
     )
 
-    return pfe, verb
+    return startrow, startcol, pfe, verb
 
 
 #############################################
@@ -178,10 +212,14 @@ def _DataFrames(
     ]))
 
     # plug types
-    lpt = sorted(set([
-        coll.dobj[wct][k0][wpt] for k0 in lct
-        if coll.dobj[wct][k0].get(wpt) is not None
-    ]))
+    lpt = sorted(set(itt.chain.from_iterable([
+        [
+            vcon[wpt]['key']
+            for vcon in coll.dobj[wcm][k0]['connections'].values()
+            if vcon[wpt]['key'] is not None
+        ]
+        for k0 in lcm
+    ])))
 
     dwhich = {
         # device connectors
@@ -204,12 +242,23 @@ def _DataFrames(
     dout = {}
     for which, keys in dwhich.items():
 
-        dout = coll.to_DataFrame(which=which, keys=keys)
+        dout.update(coll.to_DataFrame(which=which, keys=keys))
 
+    for k0, v0 in dout.items():
+
+        # customize columns
+        if k0 in [wdev, wcon]:
+            columns = v0.columns[::-1]
+            freeze_panes = (1 + startrow, 4 + startcol)
+        else:
+            columns = None
+            freeze_panes = (1 + startrow, 1 + startcol)
+
+        # store
         dout[k0] = {
-            'DataFrame': None,
-            'columns': None,
-            'freeze_panes': (1 + startrow, 1 + startcol),
+            'DataFrame': v0,
+            'columns': columns,
+            'freeze_panes': freeze_panes,
         }
 
     return dout
@@ -223,6 +272,8 @@ def _DataFrames(
 
 def _spreadsheet(
     dout=None,
+    startrow=None,
+    startcol=None,
     pfe=None,
     verb=None,
 ):
@@ -233,12 +284,12 @@ def _spreadsheet(
 
     excel_writer = pd.ExcelWriter(
         path=pfe,
-        engine=None,
+        engine='openpyxl',
         date_format='YYYY-MM-DD',
         datetime_format='YYYY-MM-DD',
         mode='w',
         storage_options=None,
-        if_sheet_exists='overlay',
+        if_sheet_exists=None,
         engine_kwargs=None,
     )
 
@@ -247,8 +298,8 @@ def _spreadsheet(
     # ------------
 
     with excel_writer as writer:
-        for k0, v0 in dout.items():
-            v0['df'].to_excel(
+        for ii, (k0, v0) in enumerate(dout.items()):
+            v0['DataFrame'].to_excel(
                 writer,
                 sheet_name=k0,
                 na_rep='',
@@ -257,9 +308,9 @@ def _spreadsheet(
                 header=True,
                 index=True,
                 index_label=None,
-                startrow=1,
-                startcol=1,
-                merge_cells=True,
+                startrow=startrow,
+                startcol=startcol,
+                merge_cells=False,
                 inf_rep='inf',
                 freeze_panes=v0['freeze_panes'],
             )
@@ -270,7 +321,7 @@ def _spreadsheet(
 
     if verb is True:
         msg = (
-            "Saved in:\n\t{pfe}"
+            f"Saved in:\n\t{pfe}"
         )
         print(msg)
 

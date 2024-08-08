@@ -5,6 +5,7 @@ Created on Thu Aug  1 17:40:55 2024
 @author: dvezinet
 """
 
+
 import os
 import json
 
@@ -50,7 +51,6 @@ def main(coll=None, pfe=None, verb=None):
     # loop on files
     # --------------
 
-    consistency = False
     for k0, v0 in dpfe.items():
 
         # ----------
@@ -85,10 +85,11 @@ def main(coll=None, pfe=None, verb=None):
                 # add to Collection
                 if v0['which'] == 'connector':
                     coll.add_connector(
-                        k1,
                         consistency=(ii==ntot-1),
                         **v1,
                     )
+                elif v0['which'] == 'device':
+                    coll.add_device(**v1)
                 else:
                     getattr(coll, f"add_{v0['which']}")(k1, **v1)
 

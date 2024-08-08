@@ -17,6 +17,17 @@ from . import _save2json
 
 #############################################
 #############################################
+#    utility
+#############################################
+
+
+def keysys(systems):
+    lk = sorted(systems.keys())
+    return '_'.join([systems[kk] for kk in lk])
+
+
+#############################################
+#############################################
 #    Connection types
 #############################################
 
@@ -26,33 +37,42 @@ def get(path=None):
     dout = {}
     wdm = 'device_model'
 
+    systems0 = {'L1': 'DIAG', 'L2': 'XRAY'}
+
     # --------------------
     # CVD diamonds cameras
     # --------------------
 
     # sxr
-    _invessel_SXR(dout, wdm)
+    _invessel_SXR(dout, wdm, systems0)
 
     # hxr
-    _invessel_HXR(dout, wdm)
+    # _invessel_HXR(dout, wdm)
 
-    # --------------------
-    # Collaborator camera
-    # --------------------
+    # # --------------------
+    # # Collaborator camera
+    # # --------------------
 
-    _collaborator(dout, wdm)
+    # _collaborator(dout, wdm)
 
-    # -----------------
-    # HXR scintillators
-    # -----------------
+    # # -----------------
+    # # HXR scintillators
+    # # -----------------
 
-    _scintillators(dout, wdm)
+    # _scintillators(dout, wdm)
 
-    # -------------
-    # Beamlines
-    # -------------
+    # # -------------
+    # # Beamlines
+    # # -------------
 
-    _beamlines(dout, wdm)
+    # _beamlines(dout, wdm)
+
+    # ---------------
+    # add labels if needed
+    # ---------------
+
+    for k0, v0 in dout.items():
+        dout[k0]['label'] = v0.get('label', k0)
 
     # ---------------
     # save to json
@@ -73,13 +93,13 @@ def get(path=None):
 # ##########
 
 
-def _invessel_SXR(dout, wdm):
+def _invessel_SXR(dout, wdm, systems0):
 
     # -------------
     # system
     # -------------
 
-    systems = {'L1': 'DIAG', 'L2': 'XRAY', 'L3': 'SXR-VA'}
+    systems0 = dict(systems0, L3='SXRVA')
 
     # -----------
     # update
@@ -90,27 +110,35 @@ def _invessel_SXR(dout, wdm):
 
     for pp in ['OMPu', 'OMPl', 'MPPu', 'MPPl']:
 
-        key_plate = f'sxr_{pp}_plate'
-        key_cam = f'sxr_{pp}_cam'
-        key_feed = f"sxr_{pp}_feed"
+        systems = dict(systems0, L4=pp)
+
+        systems = dict(systems0, L4=pp)
+        keyS = keysys(systems)
+
+        key_plate = f'{keyS}_plate'
+        key_cam = f'{keyS}_cam'
+        key_feed = f"{keyS}_feed"
 
         # individual sensors
         for ii in range(15):
-            key = f"sxr_{pp}_CVD_{ii}"
+            key = f"{keyS}_CVD_{ii:02.0f}"
             dout[key] = {
+                'label': f'CVD_{ii:02.0f}',
                 wdm: 'CVD',
                 'systems': systems,
             }
 
         # individual thermocouple
-        dout[f'sxr_{pp}_therm'] = {
+        dout[f'{keyS}_therm'] = {
             wdm: 'CVD_Therm',
+            'label': 'therm',
             'systems': systems,
         }
 
         # support plate
         dout[key_plate] = {
             wdm: 'CVD_plate_15',
+            'label': 'plate',
             'systems': systems,
         }
 
@@ -119,6 +147,7 @@ def _invessel_SXR(dout, wdm):
 
         dout[key_cam] = {
             wdm: 'CVD_cam_15',
+            'label': 'cam',
             'systems': systems,
         }
 
@@ -127,18 +156,22 @@ def _invessel_SXR(dout, wdm):
 
         dout[key_feed] = {
             wdm: 'feed_CVD',
+            'label': 'feed',
             'systems': systems,
         }
-
 
     # -------------
     # preamplifiers
 
+    systems = dict(systems0, L4='ACQ')
+    keyS = keysys(systems)
+
     for ii in range(int(np.ceil((15*4)/4))):
 
-        key = f'sxr_preamp{ii}'
+        key = f'sxr_preamp_{ii:02.0f}'
         dout[key] = {
             wdm: 'preamp_CMOD',
+            'label': f'preamp_{ii:02.0f}',
             'systems': systems,
         }
 
@@ -147,9 +180,10 @@ def _invessel_SXR(dout, wdm):
 
     for ii in range(int(np.ceil((15*4)/32))):
 
-        key = f'sxr_digit{ii}'
+        key = f'sxr_digit_{ii:02.0f}'
         dout[key] = {
             wdm: 'DIAG_FC',
+            'label': f'digit_{ii:02.0f}',
             'systems': systems,
         }
 
@@ -161,7 +195,9 @@ def _invessel_SXR(dout, wdm):
 # ##########
 
 
-def _invessel_HXR(dout, wdm):
+def _invessel_HXR(dout, wdm, systems0):
+
+    systems0 = dict(systems0, L3='HXRVA')
 
     # -------------
     # system
