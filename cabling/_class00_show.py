@@ -134,7 +134,7 @@ def _connector(coll=None, which=None, lcol=None, lar=None, show=None):
     # ---------------------------
 
     wcm = coll._which_connector_model
-    lcol.append(['systems', which] + [wcm, 'ptA', 'ptB'])
+    lcol.append([which] + [wcm, 'ptA', 'ptB'])
 
     # ---------------------------
     # data array
@@ -145,19 +145,17 @@ def _connector(coll=None, which=None, lcol=None, lar=None, show=None):
     wdev = coll._which_device
     for k0 in lkey:
 
-        arr = []
+        # initialize with key
+        arr = [k0, coll.dobj[wcon][k0][wcm]]
 
         # add systems
-        dsys = coll.dobj[wcon][k0].get('systems')
-        if dsys is None:
-            nn = ''
-        else:
-            ln = sorted(dsys.keys())
-            nn = ':'.join([dsys[k0] for k0 in ln])
-        arr.append(nn)
-
-        # initialize with key
-        arr += [k0, coll.dobj[wcon][k0][wcm]]
+        # dsys = coll.dobj[wcon][k0].get('systems')
+        # if dsys is None:
+        #     nn = ''
+        # else:
+        #     ln = sorted(dsys.keys())
+        #     nn = ':'.join([dsys[k0] for k0 in ln])
+        # arr.append(nn)
 
         # add ptA and ptB
         dcon = coll.dobj[wcon][k0]['connections']

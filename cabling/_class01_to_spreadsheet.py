@@ -248,7 +248,7 @@ def _DataFrames(
 
         # customize columns
         if k0 in [wdev, wcon]:
-            columns = v0.columns[::-1]
+            columns = None
             freeze_panes = (1 + startrow, 4 + startcol)
         else:
             columns = None

@@ -1,37 +1,37 @@
 {
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_00": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_00": {
         "connector_model": "microwire_pair",
         "label": "microwire_00",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_00",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_00",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_0"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_0": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_0": {
         "connector_model": "wire_pair",
         "label": "wire_00",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_0"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_0"
         ]
     },
@@ -41,51 +41,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_0"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_0"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_01": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_01": {
         "connector_model": "microwire_pair",
         "label": "microwire_01",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_01",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_01",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_1"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_1": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_1": {
         "connector_model": "wire_pair",
         "label": "wire_01",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_1"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_1"
         ]
     },
@@ -95,51 +95,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_1"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_1"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_02": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_02": {
         "connector_model": "microwire_pair",
         "label": "microwire_02",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_02",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_02",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_2"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_2": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_2": {
         "connector_model": "wire_pair",
         "label": "wire_02",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_2"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_2"
         ]
     },
@@ -149,51 +149,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_2"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_2"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_03": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_03": {
         "connector_model": "microwire_pair",
         "label": "microwire_03",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_03",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_03",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_3"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_3": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_3": {
         "connector_model": "wire_pair",
         "label": "wire_03",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_3"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_3"
         ]
     },
@@ -203,51 +203,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_3"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_3"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_04": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_04": {
         "connector_model": "microwire_pair",
         "label": "microwire_04",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_04",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_04",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_4"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_4": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_4": {
         "connector_model": "wire_pair",
         "label": "wire_04",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_4"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_4"
         ]
     },
@@ -257,51 +257,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_4"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_4"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_05": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_05": {
         "connector_model": "microwire_pair",
         "label": "microwire_05",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_05",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_05",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_5"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_5": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_5": {
         "connector_model": "wire_pair",
         "label": "wire_05",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_5"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_5"
         ]
     },
@@ -311,51 +311,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_5"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_5"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_06": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_06": {
         "connector_model": "microwire_pair",
         "label": "microwire_06",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_06",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_06",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_6"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_6": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_6": {
         "connector_model": "wire_pair",
         "label": "wire_06",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_6"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_6"
         ]
     },
@@ -365,51 +365,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_6"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_6"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_07": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_07": {
         "connector_model": "microwire_pair",
         "label": "microwire_07",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_07",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_07",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_7"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_7": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_7": {
         "connector_model": "wire_pair",
         "label": "wire_07",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_7"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_7"
         ]
     },
@@ -419,51 +419,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_7"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_7"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_08": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_08": {
         "connector_model": "microwire_pair",
         "label": "microwire_08",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_08",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_08",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_8"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_8": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_8": {
         "connector_model": "wire_pair",
         "label": "wire_08",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_8"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_8"
         ]
     },
@@ -473,51 +473,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_8"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_8"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_09": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_09": {
         "connector_model": "microwire_pair",
         "label": "microwire_09",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_09",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_09",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_9"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_9": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_9": {
         "connector_model": "wire_pair",
         "label": "wire_09",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_9"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_9"
         ]
     },
@@ -527,51 +527,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_9"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_9"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_10": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_10": {
         "connector_model": "microwire_pair",
         "label": "microwire_10",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_10",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_10",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_10"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_10": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_10": {
         "connector_model": "wire_pair",
         "label": "wire_10",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_10"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_10"
         ]
     },
@@ -581,51 +581,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_10"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_10"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_11": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_11": {
         "connector_model": "microwire_pair",
         "label": "microwire_11",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_11",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_11",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_11"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_11": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_11": {
         "connector_model": "wire_pair",
         "label": "wire_11",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_11"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_11"
         ]
     },
@@ -635,51 +635,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_11"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_11"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_12": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_12": {
         "connector_model": "microwire_pair",
         "label": "microwire_12",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_12",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_12",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_12"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_12": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_12": {
         "connector_model": "wire_pair",
         "label": "wire_12",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_12"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_12"
         ]
     },
@@ -689,51 +689,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_12"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_12"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_13": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_13": {
         "connector_model": "microwire_pair",
         "label": "microwire_13",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_13",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_13",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_13"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_13": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_13": {
         "connector_model": "wire_pair",
         "label": "wire_13",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_13"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_13"
         ]
     },
@@ -743,51 +743,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_13"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_13"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_microwire_14": {
+    "DIAG_XRAY_SXRVA_OMPu_microwire_14": {
         "connector_model": "microwire_pair",
         "label": "microwire_14",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_CVD_14",
+            "DIAG_XRAY_SXRVA_OMPu_CVD_14",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "in_14"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_wire_14": {
+    "DIAG_XRAY_SXRVA_OMPu_wire_14": {
         "connector_model": "wire_pair",
         "label": "wire_14",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_plate",
+            "DIAG_XRAY_SXRVA_OMPu_plate",
             "out_14"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_in_14"
         ]
     },
@@ -797,69 +797,69 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "CVD_out_14"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_feed",
+            "DIAG_XRAY_SXRVA_OMPu_feed",
             "CVD_in_14"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPu_therm_MI": {
+    "DIAG_XRAY_SXRVA_OMPu_therm_MI": {
         "connector_model": "MI_single",
         "label": "therm_MI_14",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPu_therm",
+            "DIAG_XRAY_SXRVA_OMPu_therm",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPu_cam",
+            "DIAG_XRAY_SXRVA_OMPu_cam",
             "Therm_in"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_00": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_00": {
         "connector_model": "microwire_pair",
         "label": "microwire_00",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_00",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_00",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_0"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_0": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_0": {
         "connector_model": "wire_pair",
         "label": "wire_00",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_0"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_0"
         ]
     },
@@ -869,51 +869,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_0"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_0"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_01": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_01": {
         "connector_model": "microwire_pair",
         "label": "microwire_01",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_01",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_01",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_1"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_1": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_1": {
         "connector_model": "wire_pair",
         "label": "wire_01",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_1"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_1"
         ]
     },
@@ -923,51 +923,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_1"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_1"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_02": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_02": {
         "connector_model": "microwire_pair",
         "label": "microwire_02",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_02",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_02",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_2"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_2": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_2": {
         "connector_model": "wire_pair",
         "label": "wire_02",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_2"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_2"
         ]
     },
@@ -977,51 +977,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_2"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_2"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_03": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_03": {
         "connector_model": "microwire_pair",
         "label": "microwire_03",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_03",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_03",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_3"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_3": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_3": {
         "connector_model": "wire_pair",
         "label": "wire_03",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_3"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_3"
         ]
     },
@@ -1031,51 +1031,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_3"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_3"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_04": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_04": {
         "connector_model": "microwire_pair",
         "label": "microwire_04",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_04",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_04",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_4"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_4": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_4": {
         "connector_model": "wire_pair",
         "label": "wire_04",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_4"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_4"
         ]
     },
@@ -1085,51 +1085,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_4"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_4"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_05": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_05": {
         "connector_model": "microwire_pair",
         "label": "microwire_05",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_05",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_05",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_5"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_5": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_5": {
         "connector_model": "wire_pair",
         "label": "wire_05",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_5"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_5"
         ]
     },
@@ -1139,51 +1139,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_5"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_5"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_06": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_06": {
         "connector_model": "microwire_pair",
         "label": "microwire_06",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_06",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_06",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_6"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_6": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_6": {
         "connector_model": "wire_pair",
         "label": "wire_06",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_6"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_6"
         ]
     },
@@ -1193,51 +1193,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_6"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_6"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_07": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_07": {
         "connector_model": "microwire_pair",
         "label": "microwire_07",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_07",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_07",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_7"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_7": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_7": {
         "connector_model": "wire_pair",
         "label": "wire_07",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_7"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_7"
         ]
     },
@@ -1247,51 +1247,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_7"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_7"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_08": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_08": {
         "connector_model": "microwire_pair",
         "label": "microwire_08",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_08",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_08",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_8"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_8": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_8": {
         "connector_model": "wire_pair",
         "label": "wire_08",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_8"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_8"
         ]
     },
@@ -1301,51 +1301,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_8"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_8"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_09": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_09": {
         "connector_model": "microwire_pair",
         "label": "microwire_09",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_09",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_09",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_9"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_9": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_9": {
         "connector_model": "wire_pair",
         "label": "wire_09",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_9"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_9"
         ]
     },
@@ -1355,51 +1355,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_9"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_9"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_10": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_10": {
         "connector_model": "microwire_pair",
         "label": "microwire_10",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_10",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_10",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_10"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_10": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_10": {
         "connector_model": "wire_pair",
         "label": "wire_10",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_10"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_10"
         ]
     },
@@ -1409,51 +1409,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_10"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_10"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_11": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_11": {
         "connector_model": "microwire_pair",
         "label": "microwire_11",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_11",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_11",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_11"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_11": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_11": {
         "connector_model": "wire_pair",
         "label": "wire_11",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_11"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_11"
         ]
     },
@@ -1463,51 +1463,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_11"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_11"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_12": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_12": {
         "connector_model": "microwire_pair",
         "label": "microwire_12",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_12",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_12",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_12"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_12": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_12": {
         "connector_model": "wire_pair",
         "label": "wire_12",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_12"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_12"
         ]
     },
@@ -1517,51 +1517,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_12"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_12"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_13": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_13": {
         "connector_model": "microwire_pair",
         "label": "microwire_13",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_13",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_13",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_13"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_13": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_13": {
         "connector_model": "wire_pair",
         "label": "wire_13",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_13"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_13"
         ]
     },
@@ -1571,51 +1571,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_13"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_13"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_microwire_14": {
+    "DIAG_XRAY_SXRVA_OMPl_microwire_14": {
         "connector_model": "microwire_pair",
         "label": "microwire_14",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_CVD_14",
+            "DIAG_XRAY_SXRVA_OMPl_CVD_14",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "in_14"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_wire_14": {
+    "DIAG_XRAY_SXRVA_OMPl_wire_14": {
         "connector_model": "wire_pair",
         "label": "wire_14",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_plate",
+            "DIAG_XRAY_SXRVA_OMPl_plate",
             "out_14"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_in_14"
         ]
     },
@@ -1625,69 +1625,69 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "CVD_out_14"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_feed",
+            "DIAG_XRAY_SXRVA_OMPl_feed",
             "CVD_in_14"
         ]
     },
-    "DIAG_XRAY_SXR-VA_OMPl_therm_MI": {
+    "DIAG_XRAY_SXRVA_OMPl_therm_MI": {
         "connector_model": "MI_single",
         "label": "therm_MI_14",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_OMPl_therm",
+            "DIAG_XRAY_SXRVA_OMPl_therm",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_OMPl_cam",
+            "DIAG_XRAY_SXRVA_OMPl_cam",
             "Therm_in"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_00": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_00": {
         "connector_model": "microwire_pair",
         "label": "microwire_00",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_00",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_00",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_0"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_0": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_0": {
         "connector_model": "wire_pair",
         "label": "wire_00",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_0"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_0"
         ]
     },
@@ -1697,51 +1697,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_0"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_0"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_01": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_01": {
         "connector_model": "microwire_pair",
         "label": "microwire_01",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_01",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_01",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_1"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_1": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_1": {
         "connector_model": "wire_pair",
         "label": "wire_01",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_1"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_1"
         ]
     },
@@ -1751,51 +1751,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_1"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_1"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_02": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_02": {
         "connector_model": "microwire_pair",
         "label": "microwire_02",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_02",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_02",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_2"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_2": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_2": {
         "connector_model": "wire_pair",
         "label": "wire_02",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_2"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_2"
         ]
     },
@@ -1805,51 +1805,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_2"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_2"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_03": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_03": {
         "connector_model": "microwire_pair",
         "label": "microwire_03",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_03",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_03",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_3"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_3": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_3": {
         "connector_model": "wire_pair",
         "label": "wire_03",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_3"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_3"
         ]
     },
@@ -1859,51 +1859,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_3"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_3"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_04": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_04": {
         "connector_model": "microwire_pair",
         "label": "microwire_04",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_04",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_04",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_4"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_4": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_4": {
         "connector_model": "wire_pair",
         "label": "wire_04",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_4"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_4"
         ]
     },
@@ -1913,51 +1913,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_4"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_4"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_05": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_05": {
         "connector_model": "microwire_pair",
         "label": "microwire_05",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_05",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_05",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_5"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_5": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_5": {
         "connector_model": "wire_pair",
         "label": "wire_05",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_5"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_5"
         ]
     },
@@ -1967,51 +1967,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_5"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_5"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_06": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_06": {
         "connector_model": "microwire_pair",
         "label": "microwire_06",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_06",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_06",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_6"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_6": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_6": {
         "connector_model": "wire_pair",
         "label": "wire_06",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_6"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_6"
         ]
     },
@@ -2021,51 +2021,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_6"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_6"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_07": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_07": {
         "connector_model": "microwire_pair",
         "label": "microwire_07",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_07",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_07",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_7"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_7": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_7": {
         "connector_model": "wire_pair",
         "label": "wire_07",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_7"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_7"
         ]
     },
@@ -2075,51 +2075,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_7"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_7"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_08": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_08": {
         "connector_model": "microwire_pair",
         "label": "microwire_08",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_08",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_08",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_8"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_8": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_8": {
         "connector_model": "wire_pair",
         "label": "wire_08",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_8"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_8"
         ]
     },
@@ -2129,51 +2129,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_8"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_8"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_09": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_09": {
         "connector_model": "microwire_pair",
         "label": "microwire_09",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_09",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_09",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_9"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_9": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_9": {
         "connector_model": "wire_pair",
         "label": "wire_09",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_9"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_9"
         ]
     },
@@ -2183,51 +2183,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_9"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_9"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_10": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_10": {
         "connector_model": "microwire_pair",
         "label": "microwire_10",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_10",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_10",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_10"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_10": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_10": {
         "connector_model": "wire_pair",
         "label": "wire_10",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_10"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_10"
         ]
     },
@@ -2237,51 +2237,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_10"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_10"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_11": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_11": {
         "connector_model": "microwire_pair",
         "label": "microwire_11",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_11",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_11",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_11"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_11": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_11": {
         "connector_model": "wire_pair",
         "label": "wire_11",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_11"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_11"
         ]
     },
@@ -2291,51 +2291,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_11"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_11"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_12": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_12": {
         "connector_model": "microwire_pair",
         "label": "microwire_12",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_12",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_12",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_12"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_12": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_12": {
         "connector_model": "wire_pair",
         "label": "wire_12",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_12"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_12"
         ]
     },
@@ -2345,51 +2345,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_12"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_12"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_13": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_13": {
         "connector_model": "microwire_pair",
         "label": "microwire_13",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_13",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_13",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_13"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_13": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_13": {
         "connector_model": "wire_pair",
         "label": "wire_13",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_13"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_13"
         ]
     },
@@ -2399,51 +2399,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_13"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_13"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_microwire_14": {
+    "DIAG_XRAY_SXRVA_MPPu_microwire_14": {
         "connector_model": "microwire_pair",
         "label": "microwire_14",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_CVD_14",
+            "DIAG_XRAY_SXRVA_MPPu_CVD_14",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "in_14"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_wire_14": {
+    "DIAG_XRAY_SXRVA_MPPu_wire_14": {
         "connector_model": "wire_pair",
         "label": "wire_14",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_plate",
+            "DIAG_XRAY_SXRVA_MPPu_plate",
             "out_14"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_in_14"
         ]
     },
@@ -2453,69 +2453,69 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "CVD_out_14"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_feed",
+            "DIAG_XRAY_SXRVA_MPPu_feed",
             "CVD_in_14"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPu_therm_MI": {
+    "DIAG_XRAY_SXRVA_MPPu_therm_MI": {
         "connector_model": "MI_single",
         "label": "therm_MI_14",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPu_therm",
+            "DIAG_XRAY_SXRVA_MPPu_therm",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPu_cam",
+            "DIAG_XRAY_SXRVA_MPPu_cam",
             "Therm_in"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_00": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_00": {
         "connector_model": "microwire_pair",
         "label": "microwire_00",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_00",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_00",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_0"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_0": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_0": {
         "connector_model": "wire_pair",
         "label": "wire_00",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_0"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_0"
         ]
     },
@@ -2525,51 +2525,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_0"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_0"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_01": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_01": {
         "connector_model": "microwire_pair",
         "label": "microwire_01",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_01",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_01",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_1"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_1": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_1": {
         "connector_model": "wire_pair",
         "label": "wire_01",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_1"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_1"
         ]
     },
@@ -2579,51 +2579,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_1"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_1"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_02": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_02": {
         "connector_model": "microwire_pair",
         "label": "microwire_02",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_02",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_02",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_2"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_2": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_2": {
         "connector_model": "wire_pair",
         "label": "wire_02",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_2"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_2"
         ]
     },
@@ -2633,51 +2633,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_2"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_2"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_03": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_03": {
         "connector_model": "microwire_pair",
         "label": "microwire_03",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_03",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_03",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_3"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_3": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_3": {
         "connector_model": "wire_pair",
         "label": "wire_03",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_3"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_3"
         ]
     },
@@ -2687,51 +2687,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_3"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_3"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_04": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_04": {
         "connector_model": "microwire_pair",
         "label": "microwire_04",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_04",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_04",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_4"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_4": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_4": {
         "connector_model": "wire_pair",
         "label": "wire_04",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_4"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_4"
         ]
     },
@@ -2741,51 +2741,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_4"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_4"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_05": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_05": {
         "connector_model": "microwire_pair",
         "label": "microwire_05",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_05",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_05",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_5"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_5": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_5": {
         "connector_model": "wire_pair",
         "label": "wire_05",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_5"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_5"
         ]
     },
@@ -2795,51 +2795,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_5"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_5"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_06": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_06": {
         "connector_model": "microwire_pair",
         "label": "microwire_06",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_06",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_06",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_6"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_6": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_6": {
         "connector_model": "wire_pair",
         "label": "wire_06",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_6"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_6"
         ]
     },
@@ -2849,51 +2849,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_6"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_6"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_07": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_07": {
         "connector_model": "microwire_pair",
         "label": "microwire_07",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_07",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_07",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_7"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_7": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_7": {
         "connector_model": "wire_pair",
         "label": "wire_07",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_7"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_7"
         ]
     },
@@ -2903,51 +2903,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_7"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_7"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_08": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_08": {
         "connector_model": "microwire_pair",
         "label": "microwire_08",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_08",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_08",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_8"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_8": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_8": {
         "connector_model": "wire_pair",
         "label": "wire_08",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_8"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_8"
         ]
     },
@@ -2957,51 +2957,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_8"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_8"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_09": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_09": {
         "connector_model": "microwire_pair",
         "label": "microwire_09",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_09",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_09",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_9"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_9": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_9": {
         "connector_model": "wire_pair",
         "label": "wire_09",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_9"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_9"
         ]
     },
@@ -3011,51 +3011,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_9"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_9"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_10": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_10": {
         "connector_model": "microwire_pair",
         "label": "microwire_10",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_10",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_10",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_10"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_10": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_10": {
         "connector_model": "wire_pair",
         "label": "wire_10",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_10"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_10"
         ]
     },
@@ -3065,51 +3065,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_10"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_10"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_11": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_11": {
         "connector_model": "microwire_pair",
         "label": "microwire_11",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_11",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_11",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_11"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_11": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_11": {
         "connector_model": "wire_pair",
         "label": "wire_11",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_11"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_11"
         ]
     },
@@ -3119,51 +3119,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_11"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_11"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_12": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_12": {
         "connector_model": "microwire_pair",
         "label": "microwire_12",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_12",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_12",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_12"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_12": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_12": {
         "connector_model": "wire_pair",
         "label": "wire_12",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_12"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_12"
         ]
     },
@@ -3173,51 +3173,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_12"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_12"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_13": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_13": {
         "connector_model": "microwire_pair",
         "label": "microwire_13",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_13",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_13",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_13"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_13": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_13": {
         "connector_model": "wire_pair",
         "label": "wire_13",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_13"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_13"
         ]
     },
@@ -3227,51 +3227,51 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_13"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_13"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_microwire_14": {
+    "DIAG_XRAY_SXRVA_MPPl_microwire_14": {
         "connector_model": "microwire_pair",
         "label": "microwire_14",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_CVD_14",
+            "DIAG_XRAY_SXRVA_MPPl_CVD_14",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "in_14"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_wire_14": {
+    "DIAG_XRAY_SXRVA_MPPl_wire_14": {
         "connector_model": "wire_pair",
         "label": "wire_14",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_plate",
+            "DIAG_XRAY_SXRVA_MPPl_plate",
             "out_14"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_in_14"
         ]
     },
@@ -3281,33 +3281,33 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "CVD_out_14"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_feed",
+            "DIAG_XRAY_SXRVA_MPPl_feed",
             "CVD_in_14"
         ]
     },
-    "DIAG_XRAY_SXR-VA_MPPl_therm_MI": {
+    "DIAG_XRAY_SXRVA_MPPl_therm_MI": {
         "connector_model": "MI_single",
         "label": "therm_MI_14",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         },
         "ptA": [
-            "DIAG_XRAY_SXR-VA_MPPl_therm",
+            "DIAG_XRAY_SXRVA_MPPl_therm",
             "all"
         ],
         "ptB": [
-            "DIAG_XRAY_SXR-VA_MPPl_cam",
+            "DIAG_XRAY_SXRVA_MPPl_cam",
             "Therm_in"
         ]
     }

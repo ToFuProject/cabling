@@ -12,6 +12,7 @@ import numpy as np
 import datastock as ds
 
 
+from . import _config
 from . import _class00_check as _check
 from. import _class00_show as _show
 # from. import _class00_show_details as _show_details
@@ -37,6 +38,8 @@ __all__ = ['Connectors']
 
 class Connectors(ds.DataStock):
 
+    _systems = _config._SYSTEMS
+    _systems_key = _config._SYSTEMS_KEY
     _ddef = copy.deepcopy(ds.DataStock._ddef)
     _dshow = dict(ds.DataStock._dshow)
     _dshow['connector'] = None # to avoid nbug at add_obj()

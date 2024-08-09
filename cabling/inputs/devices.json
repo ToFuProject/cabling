@@ -1,761 +1,761 @@
 {
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_00": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_00": {
         "label": "CVD_00",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_01": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_01": {
         "label": "CVD_01",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_02": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_02": {
         "label": "CVD_02",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_03": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_03": {
         "label": "CVD_03",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_04": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_04": {
         "label": "CVD_04",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_05": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_05": {
         "label": "CVD_05",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_06": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_06": {
         "label": "CVD_06",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_07": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_07": {
         "label": "CVD_07",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_08": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_08": {
         "label": "CVD_08",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_09": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_09": {
         "label": "CVD_09",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_10": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_10": {
         "label": "CVD_10",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_11": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_11": {
         "label": "CVD_11",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_12": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_12": {
         "label": "CVD_12",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_13": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_13": {
         "label": "CVD_13",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_CVD_14": {
+    "DIAG_XRAY_SXRVA_OMPu_CVD_14": {
         "label": "CVD_14",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_therm": {
+    "DIAG_XRAY_SXRVA_OMPu_therm": {
         "device_model": "CVD_Therm",
         "label": "therm",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_plate": {
+    "DIAG_XRAY_SXRVA_OMPu_plate": {
         "device_model": "CVD_plate_15",
         "label": "plate",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_cam": {
+    "DIAG_XRAY_SXRVA_OMPu_cam": {
         "device_model": "CVD_cam_15",
         "label": "cam",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPu_feed": {
+    "DIAG_XRAY_SXRVA_OMPu_feed": {
         "device_model": "feed_CVD",
         "label": "feed",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_00": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_00": {
         "label": "CVD_00",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_01": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_01": {
         "label": "CVD_01",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_02": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_02": {
         "label": "CVD_02",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_03": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_03": {
         "label": "CVD_03",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_04": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_04": {
         "label": "CVD_04",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_05": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_05": {
         "label": "CVD_05",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_06": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_06": {
         "label": "CVD_06",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_07": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_07": {
         "label": "CVD_07",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_08": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_08": {
         "label": "CVD_08",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_09": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_09": {
         "label": "CVD_09",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_10": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_10": {
         "label": "CVD_10",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_11": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_11": {
         "label": "CVD_11",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_12": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_12": {
         "label": "CVD_12",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_13": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_13": {
         "label": "CVD_13",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_CVD_14": {
+    "DIAG_XRAY_SXRVA_OMPl_CVD_14": {
         "label": "CVD_14",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_therm": {
+    "DIAG_XRAY_SXRVA_OMPl_therm": {
         "device_model": "CVD_Therm",
         "label": "therm",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_plate": {
+    "DIAG_XRAY_SXRVA_OMPl_plate": {
         "device_model": "CVD_plate_15",
         "label": "plate",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_cam": {
+    "DIAG_XRAY_SXRVA_OMPl_cam": {
         "device_model": "CVD_cam_15",
         "label": "cam",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_OMPl_feed": {
+    "DIAG_XRAY_SXRVA_OMPl_feed": {
         "device_model": "feed_CVD",
         "label": "feed",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_00": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_00": {
         "label": "CVD_00",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_01": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_01": {
         "label": "CVD_01",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_02": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_02": {
         "label": "CVD_02",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_03": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_03": {
         "label": "CVD_03",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_04": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_04": {
         "label": "CVD_04",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_05": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_05": {
         "label": "CVD_05",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_06": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_06": {
         "label": "CVD_06",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_07": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_07": {
         "label": "CVD_07",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_08": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_08": {
         "label": "CVD_08",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_09": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_09": {
         "label": "CVD_09",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_10": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_10": {
         "label": "CVD_10",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_11": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_11": {
         "label": "CVD_11",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_12": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_12": {
         "label": "CVD_12",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_13": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_13": {
         "label": "CVD_13",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_CVD_14": {
+    "DIAG_XRAY_SXRVA_MPPu_CVD_14": {
         "label": "CVD_14",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_therm": {
+    "DIAG_XRAY_SXRVA_MPPu_therm": {
         "device_model": "CVD_Therm",
         "label": "therm",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_plate": {
+    "DIAG_XRAY_SXRVA_MPPu_plate": {
         "device_model": "CVD_plate_15",
         "label": "plate",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_cam": {
+    "DIAG_XRAY_SXRVA_MPPu_cam": {
         "device_model": "CVD_cam_15",
         "label": "cam",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPu_feed": {
+    "DIAG_XRAY_SXRVA_MPPu_feed": {
         "device_model": "feed_CVD",
         "label": "feed",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_00": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_00": {
         "label": "CVD_00",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_01": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_01": {
         "label": "CVD_01",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_02": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_02": {
         "label": "CVD_02",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_03": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_03": {
         "label": "CVD_03",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_04": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_04": {
         "label": "CVD_04",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_05": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_05": {
         "label": "CVD_05",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_06": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_06": {
         "label": "CVD_06",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_07": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_07": {
         "label": "CVD_07",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_08": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_08": {
         "label": "CVD_08",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_09": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_09": {
         "label": "CVD_09",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_10": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_10": {
         "label": "CVD_10",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_11": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_11": {
         "label": "CVD_11",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_12": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_12": {
         "label": "CVD_12",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_13": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_13": {
         "label": "CVD_13",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_CVD_14": {
+    "DIAG_XRAY_SXRVA_MPPl_CVD_14": {
         "label": "CVD_14",
         "device_model": "CVD",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_therm": {
+    "DIAG_XRAY_SXRVA_MPPl_therm": {
         "device_model": "CVD_Therm",
         "label": "therm",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_plate": {
+    "DIAG_XRAY_SXRVA_MPPl_plate": {
         "device_model": "CVD_plate_15",
         "label": "plate",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_cam": {
+    "DIAG_XRAY_SXRVA_MPPl_cam": {
         "device_model": "CVD_cam_15",
         "label": "cam",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXR-VA_MPPl_feed": {
+    "DIAG_XRAY_SXRVA_MPPl_feed": {
         "device_model": "feed_CVD",
         "label": "feed",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "MPPl"
         }
     },
@@ -765,7 +765,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -775,7 +775,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -785,7 +785,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -795,7 +795,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -805,7 +805,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -815,7 +815,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -825,7 +825,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -835,7 +835,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -845,7 +845,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -855,7 +855,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -865,7 +865,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -875,7 +875,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -885,7 +885,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -895,7 +895,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -905,7 +905,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -915,7 +915,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     },
@@ -925,7 +925,7 @@
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXR-VA",
+            "L3": "SXRVA",
             "L4": "ACQ"
         }
     }

@@ -422,28 +422,7 @@ def connector(
     # ---------------------
 
     which = coll._which_connector
-    systems, keysys, label = _systems(systems, which, label)
-
-    # key
-    lout = list(coll.dobj.get(which, {}).keys())
-    if key is None:
-        if key in lout:
-            msg = (
-                f"For {which} '{label}', the generated key already exists!\n"
-                f"\t- systems: {systems}\n"
-                f"\t- label: {label}\n"
-                f"\t- generated key: {key}\n"
-                "=> change label?\n"
-            )
-            raise Exception(msg)
-        key = keysys
-
-    else:
-        key = ds._generic_check._check_var(
-            key, 'key',
-            types=str,
-            excluded=lout,
-        )
+    systems, key, label = _systems(coll, systems, which, label, key)
 
     # -------------
     # consistency
@@ -693,7 +672,7 @@ def _kwdargs(coll, which=None, key=None, kwdargs=None, defdict=None):
 # ###########################################################
 
 
-def _systems(systems, which, label):
+def _systems(coll, systems, which, label, key):
 
     # ----------------
     # check systems
@@ -718,7 +697,7 @@ def _systems(systems, which, label):
         raise Exception(msg)
 
     # ----------------
-    # make key
+    # make key_sys (from sys+label)
     # ----------------
 
     label = ds._generic_check._check_var(
@@ -727,8 +706,34 @@ def _systems(systems, which, label):
     )
 
     # derive key
-    lsys = sorted(systems.keys())
-    lsys = [systems[ksys] for ksys in lsys]
-    key = "_".join(lsys + [label])
+    lsys = [
+        systems[ksys] for ksys in coll._systems_key
+        if systems.get(ksys) is not None
+    ]
+    key_sys = "_".join(lsys + [label])
+
+    # -----------------
+    # key
+    # ----------------
+
+    lout = list(coll.dobj.get(which, {}).keys())
+    if key is None:
+        if key in lout:
+            msg = (
+                f"For {which} '{label}', the generated key already exists!\n"
+                f"\t- systems: {systems}\n"
+                f"\t- label: {label}\n"
+                f"\t- generated key: {key}\n"
+                "=> change label?\n"
+            )
+            raise Exception(msg)
+        key = key_sys
+
+    else:
+        key = ds._generic_check._check_var(
+            key, 'key',
+            types=str,
+            excluded=lout,
+        )
 
     return systems, key, label

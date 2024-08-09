@@ -9,9 +9,7 @@ Created on Thu Aug  1 13:24:57 2024
 import os
 
 
-import numpy as np
-
-
+from . import _config
 from . import _save2json
 
 
