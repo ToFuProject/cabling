@@ -350,8 +350,8 @@ def _get_device_model(coll, which, keys):
     #  prepare
     # -----------------
 
+    wplug = coll._which_plug_type
     dobj = coll.dobj[which]
-    wdt = coll._which_device_type
     wdev = coll._which_device
     dout = {which: {}}
 
@@ -364,6 +364,25 @@ def _get_device_model(coll, which, keys):
         lparam=coll.get_lparam(which),
         lout=[f'nb {wdev}', 'connections'],
     )
+
+    # --------------
+    # connections
+    # --------------
+
+    dncon = {key: len(dobj[key]['connections']) for key in keys}
+    nconmax = np.max([vv for vv in dncon.values()])
+
+    for key in keys:
+
+        dcon = dobj[key]['connections']
+        for kcon in sorted(dcon.keys()):
+            out = (dcon[kcon]['name'], dcon[kcon][wplug]['key'])
+            if out is None:
+                out = dcon[kcon]['flag']
+            dout[which][key][kcon] = str(out)
+
+        for ii in range(dncon[key], nconmax):
+            dout[which][key][f'con{ii}'] = ''
 
     return dout
 
@@ -404,12 +423,11 @@ def _get_device(coll, which, keys):
     for key in keys:
 
         dcon = dobj[key]['connections']
-        lcon = sorted(dcon.keys())
-        for ii, kcon in enumerate(lcon):
+        for kcon in sorted(dcon.keys()):
             out = dcon[kcon].get(wcon)
             if out is None:
                 out = dcon[kcon]['flag']
-            dout[which][key][f'con{ii}'] = str(out)
+            dout[which][key][kcon] = str(out)
 
         for ii in range(dncon[key], nconmax):
             dout[which][key][f'con{ii}'] = ''

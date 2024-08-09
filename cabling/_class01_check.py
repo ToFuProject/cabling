@@ -102,17 +102,6 @@ def device_model(
     )
 
     # ---------------------
-    # connection nb
-    # ---------------------
-
-    connections = _connections_nb(
-        coll=coll,
-        which=which,
-        key=key,
-        connections=connections,
-    )
-
-    # ---------------------
     # kwdargs
     # ---------------------
 
@@ -137,50 +126,6 @@ def device_model(
     )
 
     return
-
-
-#######################
-#######################
-#    connections nb
-#######################
-
-
-def _connections_nb(
-    coll=None,
-    which=None,
-    key=None,
-    connections=None,
-):
-
-    # -------------
-    # prepare
-    # -------------
-
-    lcon = list(connections.keys())
-
-    # -------------
-    # derive
-    # -------------
-
-    dout = {}
-    for k0 in lcon:
-
-        dcon = connections[k0]
-        nb = dcon.get('nb')
-        if nb is None or nb == 1:
-            dout[k0] = {k1: v1 for k1, v1 in dcon.items() if k1 != 'nb'}
-
-        else:
-
-            if not (isinstance(nb, int) and nb > 1):
-                msg = "Arg nb must be a strictly positive integer"
-                raise Exception(msg)
-
-            for i1 in range(nb):
-                keyi = f"{k0}_{i1}"
-                dout[keyi] = {k1: v1 for k1, v1 in dcon.items() if k1 != 'nb'}
-
-    return dout
 
 
 #############################################

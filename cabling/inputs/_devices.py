@@ -12,6 +12,7 @@ import os
 import numpy as np
 
 
+from . import _config
 from . import _save2json
 
 
@@ -21,9 +22,11 @@ from . import _save2json
 #############################################
 
 
-def keysys(systems):
-    lk = sorted(systems.keys())
-    return '_'.join([systems[kk] for kk in lk])
+def keysys(systems, systems_key=_config._SYSTEMS_KEY):
+    return '_'.join([
+        systems[kk] for kk in systems_key
+        if systems.get(kk) is not None
+    ])
 
 
 #############################################

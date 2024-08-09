@@ -248,15 +248,21 @@ def _DataFrames(
 
         # customize columns
         if k0 in [wdev, wcon]:
-            columns = None
-            freeze_panes = (1 + startrow, 4 + startcol)
+            index = False
+            sysu = [ll for ll in coll._systems if ll in v0.columns]
+            columns_start = sysu + ['label']
+            colother = [ss for ss in v0.columns if ss not in columns_start]
+            columns = columns_start + colother
+            freeze_panes = (1 + startrow, 1 + len(sysu) + startcol)
         else:
+            index = True
             columns = None
             freeze_panes = (1 + startrow, 1 + startcol)
 
         # store
         dout[k0] = {
             'DataFrame': v0,
+            'index': index,
             'columns': columns,
             'freeze_panes': freeze_panes,
         }
@@ -306,7 +312,7 @@ def _spreadsheet(
                 float_format="%.3e",
                 columns=v0['columns'],
                 header=True,
-                index=True,
+                index=v0['index'],
                 index_label=None,
                 startrow=startrow,
                 startcol=startcol,

@@ -135,7 +135,7 @@ def _device(coll=None, which=None, lcol=None, lar=None, show=None):
     # ---------------------------
 
     wdm = coll._which_device_model
-    lcol.append(['systems', which] + [wdm, 'connections ok'])
+    lcol.append([which] + [wdm, 'connections ok'])
 
     # ---------------------------
     # data array
@@ -145,27 +145,24 @@ def _device(coll=None, which=None, lcol=None, lar=None, show=None):
     wdev = coll._which_device
     for k0 in lkey:
 
-        arr = []
+        # initialize with key
+        arr = [k0, coll.dobj[wdev][k0][wdm]]
 
         # add systems
-        dsys = coll.dobj[wdev][k0].get('systems')
-        if dsys is None:
-            nn = ''
-        else:
-            ln = sorted(dsys.keys())
-            nn = ':'.join([dsys[k0] for k0 in ln])
-        arr.append(nn)
+        # dsys = coll.dobj[wdev][k0].get('systems')
+        # if dsys is None:
+        #     nn = ''
+        # else:
+        #     ln = sorted(dsys.keys())
+        #     nn = ':'.join([dsys[k0] for k0 in ln])
+        # arr.append(nn)
 
-        # initialize with key
-        arr += [k0, coll.dobj[wdev][k0][wdm]]
 
         # add ptA and ptB
         dcon = coll.dobj[wdev][k0]['connections']
         nok = np.sum([v0['flag'] == 'ok' for v0 in dcon.values()])
         nn = f"{nok} / {len(dcon)}"
         arr.append(nn)
-
-
 
         lar0.append(arr)
 

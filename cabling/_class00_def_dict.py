@@ -93,6 +93,10 @@ def get_connector_model_kwdargs():
 def get_connector_kwdargs():
 
     return {
+        'typ. signal': {
+            'types': str,
+            'astype': str,
+        },
         'tag': {
             'types': (int, str),
             'astype': str,

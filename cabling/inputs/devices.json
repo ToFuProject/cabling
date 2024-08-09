@@ -1,5 +1,5 @@
 {
-    "DIAG_XRAY_SXRVA_OMPu_CVD_00": {
+    "XRAY_SXRVA_OMPu_CVD_00": {
         "label": "CVD_00",
         "device_model": "CVD",
         "systems": {
@@ -9,7 +9,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_01": {
+    "XRAY_SXRVA_OMPu_CVD_01": {
         "label": "CVD_01",
         "device_model": "CVD",
         "systems": {
@@ -19,7 +19,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_02": {
+    "XRAY_SXRVA_OMPu_CVD_02": {
         "label": "CVD_02",
         "device_model": "CVD",
         "systems": {
@@ -29,7 +29,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_03": {
+    "XRAY_SXRVA_OMPu_CVD_03": {
         "label": "CVD_03",
         "device_model": "CVD",
         "systems": {
@@ -39,7 +39,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_04": {
+    "XRAY_SXRVA_OMPu_CVD_04": {
         "label": "CVD_04",
         "device_model": "CVD",
         "systems": {
@@ -49,7 +49,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_05": {
+    "XRAY_SXRVA_OMPu_CVD_05": {
         "label": "CVD_05",
         "device_model": "CVD",
         "systems": {
@@ -59,7 +59,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_06": {
+    "XRAY_SXRVA_OMPu_CVD_06": {
         "label": "CVD_06",
         "device_model": "CVD",
         "systems": {
@@ -69,7 +69,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_07": {
+    "XRAY_SXRVA_OMPu_CVD_07": {
         "label": "CVD_07",
         "device_model": "CVD",
         "systems": {
@@ -79,7 +79,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_08": {
+    "XRAY_SXRVA_OMPu_CVD_08": {
         "label": "CVD_08",
         "device_model": "CVD",
         "systems": {
@@ -89,7 +89,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_09": {
+    "XRAY_SXRVA_OMPu_CVD_09": {
         "label": "CVD_09",
         "device_model": "CVD",
         "systems": {
@@ -99,7 +99,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_10": {
+    "XRAY_SXRVA_OMPu_CVD_10": {
         "label": "CVD_10",
         "device_model": "CVD",
         "systems": {
@@ -109,7 +109,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_11": {
+    "XRAY_SXRVA_OMPu_CVD_11": {
         "label": "CVD_11",
         "device_model": "CVD",
         "systems": {
@@ -119,7 +119,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_12": {
+    "XRAY_SXRVA_OMPu_CVD_12": {
         "label": "CVD_12",
         "device_model": "CVD",
         "systems": {
@@ -129,7 +129,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_13": {
+    "XRAY_SXRVA_OMPu_CVD_13": {
         "label": "CVD_13",
         "device_model": "CVD",
         "systems": {
@@ -139,7 +139,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_CVD_14": {
+    "XRAY_SXRVA_OMPu_CVD_14": {
         "label": "CVD_14",
         "device_model": "CVD",
         "systems": {
@@ -149,7 +149,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_therm": {
+    "XRAY_SXRVA_OMPu_therm": {
         "device_model": "CVD_Therm",
         "label": "therm",
         "systems": {
@@ -159,7 +159,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_plate": {
+    "XRAY_SXRVA_OMPu_plate": {
         "device_model": "CVD_plate_15",
         "label": "plate",
         "systems": {
@@ -169,7 +169,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_cam": {
+    "XRAY_SXRVA_OMPu_cam": {
         "device_model": "CVD_cam_15",
         "label": "cam",
         "systems": {
@@ -179,7 +179,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPu_feed": {
+    "XRAY_SXRVA_OMPu_feed": {
         "device_model": "feed_CVD",
         "label": "feed",
         "systems": {
@@ -189,7 +189,7 @@
             "L4": "OMPu"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_00": {
+    "XRAY_SXRVA_OMPl_CVD_00": {
         "label": "CVD_00",
         "device_model": "CVD",
         "systems": {
@@ -199,7 +199,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_01": {
+    "XRAY_SXRVA_OMPl_CVD_01": {
         "label": "CVD_01",
         "device_model": "CVD",
         "systems": {
@@ -209,7 +209,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_02": {
+    "XRAY_SXRVA_OMPl_CVD_02": {
         "label": "CVD_02",
         "device_model": "CVD",
         "systems": {
@@ -219,7 +219,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_03": {
+    "XRAY_SXRVA_OMPl_CVD_03": {
         "label": "CVD_03",
         "device_model": "CVD",
         "systems": {
@@ -229,7 +229,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_04": {
+    "XRAY_SXRVA_OMPl_CVD_04": {
         "label": "CVD_04",
         "device_model": "CVD",
         "systems": {
@@ -239,7 +239,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_05": {
+    "XRAY_SXRVA_OMPl_CVD_05": {
         "label": "CVD_05",
         "device_model": "CVD",
         "systems": {
@@ -249,7 +249,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_06": {
+    "XRAY_SXRVA_OMPl_CVD_06": {
         "label": "CVD_06",
         "device_model": "CVD",
         "systems": {
@@ -259,7 +259,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_07": {
+    "XRAY_SXRVA_OMPl_CVD_07": {
         "label": "CVD_07",
         "device_model": "CVD",
         "systems": {
@@ -269,7 +269,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_08": {
+    "XRAY_SXRVA_OMPl_CVD_08": {
         "label": "CVD_08",
         "device_model": "CVD",
         "systems": {
@@ -279,7 +279,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_09": {
+    "XRAY_SXRVA_OMPl_CVD_09": {
         "label": "CVD_09",
         "device_model": "CVD",
         "systems": {
@@ -289,7 +289,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_10": {
+    "XRAY_SXRVA_OMPl_CVD_10": {
         "label": "CVD_10",
         "device_model": "CVD",
         "systems": {
@@ -299,7 +299,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_11": {
+    "XRAY_SXRVA_OMPl_CVD_11": {
         "label": "CVD_11",
         "device_model": "CVD",
         "systems": {
@@ -309,7 +309,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_12": {
+    "XRAY_SXRVA_OMPl_CVD_12": {
         "label": "CVD_12",
         "device_model": "CVD",
         "systems": {
@@ -319,7 +319,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_13": {
+    "XRAY_SXRVA_OMPl_CVD_13": {
         "label": "CVD_13",
         "device_model": "CVD",
         "systems": {
@@ -329,7 +329,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_CVD_14": {
+    "XRAY_SXRVA_OMPl_CVD_14": {
         "label": "CVD_14",
         "device_model": "CVD",
         "systems": {
@@ -339,7 +339,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_therm": {
+    "XRAY_SXRVA_OMPl_therm": {
         "device_model": "CVD_Therm",
         "label": "therm",
         "systems": {
@@ -349,7 +349,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_plate": {
+    "XRAY_SXRVA_OMPl_plate": {
         "device_model": "CVD_plate_15",
         "label": "plate",
         "systems": {
@@ -359,7 +359,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_cam": {
+    "XRAY_SXRVA_OMPl_cam": {
         "device_model": "CVD_cam_15",
         "label": "cam",
         "systems": {
@@ -369,7 +369,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_OMPl_feed": {
+    "XRAY_SXRVA_OMPl_feed": {
         "device_model": "feed_CVD",
         "label": "feed",
         "systems": {
@@ -379,7 +379,7 @@
             "L4": "OMPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_00": {
+    "XRAY_SXRVA_MPPu_CVD_00": {
         "label": "CVD_00",
         "device_model": "CVD",
         "systems": {
@@ -389,7 +389,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_01": {
+    "XRAY_SXRVA_MPPu_CVD_01": {
         "label": "CVD_01",
         "device_model": "CVD",
         "systems": {
@@ -399,7 +399,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_02": {
+    "XRAY_SXRVA_MPPu_CVD_02": {
         "label": "CVD_02",
         "device_model": "CVD",
         "systems": {
@@ -409,7 +409,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_03": {
+    "XRAY_SXRVA_MPPu_CVD_03": {
         "label": "CVD_03",
         "device_model": "CVD",
         "systems": {
@@ -419,7 +419,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_04": {
+    "XRAY_SXRVA_MPPu_CVD_04": {
         "label": "CVD_04",
         "device_model": "CVD",
         "systems": {
@@ -429,7 +429,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_05": {
+    "XRAY_SXRVA_MPPu_CVD_05": {
         "label": "CVD_05",
         "device_model": "CVD",
         "systems": {
@@ -439,7 +439,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_06": {
+    "XRAY_SXRVA_MPPu_CVD_06": {
         "label": "CVD_06",
         "device_model": "CVD",
         "systems": {
@@ -449,7 +449,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_07": {
+    "XRAY_SXRVA_MPPu_CVD_07": {
         "label": "CVD_07",
         "device_model": "CVD",
         "systems": {
@@ -459,7 +459,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_08": {
+    "XRAY_SXRVA_MPPu_CVD_08": {
         "label": "CVD_08",
         "device_model": "CVD",
         "systems": {
@@ -469,7 +469,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_09": {
+    "XRAY_SXRVA_MPPu_CVD_09": {
         "label": "CVD_09",
         "device_model": "CVD",
         "systems": {
@@ -479,7 +479,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_10": {
+    "XRAY_SXRVA_MPPu_CVD_10": {
         "label": "CVD_10",
         "device_model": "CVD",
         "systems": {
@@ -489,7 +489,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_11": {
+    "XRAY_SXRVA_MPPu_CVD_11": {
         "label": "CVD_11",
         "device_model": "CVD",
         "systems": {
@@ -499,7 +499,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_12": {
+    "XRAY_SXRVA_MPPu_CVD_12": {
         "label": "CVD_12",
         "device_model": "CVD",
         "systems": {
@@ -509,7 +509,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_13": {
+    "XRAY_SXRVA_MPPu_CVD_13": {
         "label": "CVD_13",
         "device_model": "CVD",
         "systems": {
@@ -519,7 +519,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_CVD_14": {
+    "XRAY_SXRVA_MPPu_CVD_14": {
         "label": "CVD_14",
         "device_model": "CVD",
         "systems": {
@@ -529,7 +529,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_therm": {
+    "XRAY_SXRVA_MPPu_therm": {
         "device_model": "CVD_Therm",
         "label": "therm",
         "systems": {
@@ -539,7 +539,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_plate": {
+    "XRAY_SXRVA_MPPu_plate": {
         "device_model": "CVD_plate_15",
         "label": "plate",
         "systems": {
@@ -549,7 +549,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_cam": {
+    "XRAY_SXRVA_MPPu_cam": {
         "device_model": "CVD_cam_15",
         "label": "cam",
         "systems": {
@@ -559,7 +559,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPu_feed": {
+    "XRAY_SXRVA_MPPu_feed": {
         "device_model": "feed_CVD",
         "label": "feed",
         "systems": {
@@ -569,7 +569,7 @@
             "L4": "MPPu"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_00": {
+    "XRAY_SXRVA_MPPl_CVD_00": {
         "label": "CVD_00",
         "device_model": "CVD",
         "systems": {
@@ -579,7 +579,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_01": {
+    "XRAY_SXRVA_MPPl_CVD_01": {
         "label": "CVD_01",
         "device_model": "CVD",
         "systems": {
@@ -589,7 +589,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_02": {
+    "XRAY_SXRVA_MPPl_CVD_02": {
         "label": "CVD_02",
         "device_model": "CVD",
         "systems": {
@@ -599,7 +599,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_03": {
+    "XRAY_SXRVA_MPPl_CVD_03": {
         "label": "CVD_03",
         "device_model": "CVD",
         "systems": {
@@ -609,7 +609,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_04": {
+    "XRAY_SXRVA_MPPl_CVD_04": {
         "label": "CVD_04",
         "device_model": "CVD",
         "systems": {
@@ -619,7 +619,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_05": {
+    "XRAY_SXRVA_MPPl_CVD_05": {
         "label": "CVD_05",
         "device_model": "CVD",
         "systems": {
@@ -629,7 +629,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_06": {
+    "XRAY_SXRVA_MPPl_CVD_06": {
         "label": "CVD_06",
         "device_model": "CVD",
         "systems": {
@@ -639,7 +639,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_07": {
+    "XRAY_SXRVA_MPPl_CVD_07": {
         "label": "CVD_07",
         "device_model": "CVD",
         "systems": {
@@ -649,7 +649,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_08": {
+    "XRAY_SXRVA_MPPl_CVD_08": {
         "label": "CVD_08",
         "device_model": "CVD",
         "systems": {
@@ -659,7 +659,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_09": {
+    "XRAY_SXRVA_MPPl_CVD_09": {
         "label": "CVD_09",
         "device_model": "CVD",
         "systems": {
@@ -669,7 +669,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_10": {
+    "XRAY_SXRVA_MPPl_CVD_10": {
         "label": "CVD_10",
         "device_model": "CVD",
         "systems": {
@@ -679,7 +679,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_11": {
+    "XRAY_SXRVA_MPPl_CVD_11": {
         "label": "CVD_11",
         "device_model": "CVD",
         "systems": {
@@ -689,7 +689,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_12": {
+    "XRAY_SXRVA_MPPl_CVD_12": {
         "label": "CVD_12",
         "device_model": "CVD",
         "systems": {
@@ -699,7 +699,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_13": {
+    "XRAY_SXRVA_MPPl_CVD_13": {
         "label": "CVD_13",
         "device_model": "CVD",
         "systems": {
@@ -709,7 +709,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_CVD_14": {
+    "XRAY_SXRVA_MPPl_CVD_14": {
         "label": "CVD_14",
         "device_model": "CVD",
         "systems": {
@@ -719,7 +719,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_therm": {
+    "XRAY_SXRVA_MPPl_therm": {
         "device_model": "CVD_Therm",
         "label": "therm",
         "systems": {
@@ -729,7 +729,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_plate": {
+    "XRAY_SXRVA_MPPl_plate": {
         "device_model": "CVD_plate_15",
         "label": "plate",
         "systems": {
@@ -739,7 +739,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_cam": {
+    "XRAY_SXRVA_MPPl_cam": {
         "device_model": "CVD_cam_15",
         "label": "cam",
         "systems": {
@@ -749,7 +749,7 @@
             "L4": "MPPl"
         }
     },
-    "DIAG_XRAY_SXRVA_MPPl_feed": {
+    "XRAY_SXRVA_MPPl_feed": {
         "device_model": "feed_CVD",
         "label": "feed",
         "systems": {

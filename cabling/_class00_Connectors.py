@@ -12,7 +12,7 @@ import numpy as np
 import datastock as ds
 
 
-from . import _config
+from .inputs import _config
 from . import _class00_check as _check
 from. import _class00_show as _show
 # from. import _class00_show_details as _show_details

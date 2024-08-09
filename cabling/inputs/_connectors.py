@@ -19,9 +19,12 @@ from . import _save2json
 #############################################
 
 
-def keysys(systems):
+def keysys(systems, systems_key=_config._SYSTEMS_KEY):
     lk = sorted(systems.keys())
-    return '_'.join([systems[kk] for kk in lk])
+    return '_'.join([
+        systems[kk] for kk in systems_key
+        if systems.get(kk) is not None
+    ])
 
 
 #############################################
@@ -95,6 +98,7 @@ def _invessel_SXR(dout, wcm):
                 'systems': systems,
                 'ptA':(f"{keyS}_CVD_{ii:02.0f}", 'all'),
                 'ptB': (key_plate, f'in_{ii}'),
+                'typ. signal': '< mA, < 5 V',
             }
 
             # plate to camera
@@ -104,15 +108,17 @@ def _invessel_SXR(dout, wcm):
                 'systems': systems,
                 'ptA': (key_plate, f'out_{ii}'),
                 'ptB': (key_cam, f'CVD_in_{ii}'),
+                'typ. signal': '< mA, < 5 V',
             }
 
             # camera to feedthrough
-            dout[f'sxr_{pp}_MI_{ii}'] = {
+            dout[f'{keyS}_MI_{ii}'] = {
                 wcm: 'MI_twist_pair',
                 'label': f'MI_{ii:02.0f}',
                 'systems': systems,
                 'ptA': (key_cam, f'CVD_out_{ii}'),
                 'ptB': (key_feed, f'CVD_in_{ii}'),
+                'typ. signal': '< mA, < 5 V',
             }
 
         # ---------------------------------
@@ -124,6 +130,7 @@ def _invessel_SXR(dout, wcm):
             'systems': systems,
             'ptA': (f'{keyS}_therm', 'all'),
             'ptB': (key_cam, 'Therm_in'),
+            'typ. signal': '?',
         }
 
         # ---------------------

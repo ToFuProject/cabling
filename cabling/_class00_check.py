@@ -292,19 +292,22 @@ def _check_connections_types(
     # preliminary
     # ----------------
 
-    # list of keys
+    # check is dict
     wplug = coll._which_plug_type
     if not isinstance(connections, dict):
         _err_connections(which, key, connections, wplug)
 
-    if lcon is None:
-        lcon = list(connections.keys())
+    # check keys if provided
+    lk = sorted(connections.keys())
+    lok = sorted(coll.dobj[wplug].keys())
+    if lcon is not None:
+        if lk != sorted(lcon):
+            _err_connections(which, key, connections, wplug, lok, lcon)
 
     # ----------------
     # plug types
     # ----------------
 
-    lok = sorted(coll.dobj[wplug].keys())
     c0 = all([
         isinstance(connections.get(pt), dict)
         and (
@@ -317,63 +320,111 @@ def _check_connections_types(
                 and connections[pt][wplug]['key'] in lok
             )
         )
-        for pt in lcon
+        for pt in lk
     ])
     if not c0:
-        _err_connections(which, key, connections, wplug, lok, lcon)
+        _err_connections(which, key, connections, wplug, lok, lk)
 
     # ------------
     # plug options
     # -------------
 
     dout = {}
-    for pt in lcon:
+    inc = 0
+    for ii, pt in enumerate(lk):
 
-        dout[pt] = {
-            wplug: {},
-            **{k1: v1 for k1, v1 in connections[pt].items() if k1 != wplug}
-        }
+        # ------------
+        # check for nb
 
-        if isinstance(connections[pt].get(wplug), str):
-            dout[pt][wplug] = {'key': connections[pt][wplug]}
+        dcon = connections[pt]
+        nb = dcon.get('nb')
+        if nb is None or nb == 1:
+            kcon = pt if lcon is not None else f'con{inc}'
+            name = dcon.get('name', pt)
+            _individual_connection(
+                coll, dout, pt, kcon, name, wplug, dcon, which, key,
+            )
+            inc += 1
 
         else:
-            for k1, v1 in connections[pt][wplug].items():
 
-                if k1 == 'key':
-                    dout[pt][wplug]['key'] = v1
+            if lcon is not None:
+                msg = "lcon cannot be provided if nb is provided!"
+                raise Exception(msg)
 
-                # ---------------
-                # options
+            if not (isinstance(nb, int) and nb > 1):
+                msg = "Arg nb must be a strictly positive integer"
+                raise Exception(msg)
 
-                else:
-
-                    plug_type = connections[pt][wplug]['key']
-                    dplug = coll.dobj[wplug][plug_type].get('doptions')
-
-                    if k1 not in dplug.keys():
-                        msg = (
-                            f"For {which} '{key}', arg connections must have "
-                            "options known to the associated {wplug}:\n"
-                            f"\t- {plug_type} has options: {sorted(dplug.keys())}\n"
-                            f"Provided:\n{k1}"
-                        )
-                        raise Exception(msg)
-
-                    if v1 not in dplug[k1]:
-                        msg = (
-                            f"For {which} '{key}', arg connections must have "
-                            "options known to the associated {wplug}:\n"
-                            f"\t- plug_type: {plug_type}\n"
-                            f"\t- option: {k1}\n"
-                            f"\t- available values: {dplug[k1]}\n"
-                            f"Provided:\n\t{v1}"
-                        )
-                        raise Exception(msg)
-
-                    dout[pt][wplug][k1] = v1
+            for i1 in range(nb):
+                kcon = f'con{inc}'
+                name = f"{dcon.get('name', pt)}_{i1}"
+                _individual_connection(
+                    coll, dout, pt, kcon, name, wplug, dcon, which, key,
+                )
+                inc += 1
 
     return dout
+
+
+def _individual_connection(
+    coll=None,
+    dout=None,
+    pt=None,
+    kcon=None,
+    name=None,
+    wplug=None,
+    dcon=None,
+    which=None,
+    key=None,
+):
+
+    dout[kcon] = {
+        'name': name,
+        wplug: {},
+        **{k1: v1 for k1, v1 in dcon.items() if k1 != wplug and k1 != 'nb'}
+    }
+
+    if isinstance(dcon.get(wplug), str):
+        dout[kcon][wplug] = {'key': dcon[wplug]}
+
+    else:
+        for k1, v1 in dcon[wplug].items():
+
+            if k1 == 'key':
+                dout[kcon][wplug]['key'] = v1
+
+            # ---------------
+            # options
+
+            else:
+
+                plug_type = dcon[wplug]['key']
+                dplug = coll.dobj[wplug][plug_type].get('doptions')
+
+                if k1 not in dplug.keys():
+                    msg = (
+                        f"For {which} '{key}', arg connections must have "
+                        "options known to the associated {wplug}:\n"
+                        f"\t- {plug_type} has options: {sorted(dplug.keys())}\n"
+                        f"Provided:\n{k1}"
+                    )
+                    raise Exception(msg)
+
+                if v1 not in dplug[k1]:
+                    msg = (
+                        f"For {which} '{key}', arg connections must have "
+                        "options known to the associated {wplug}:\n"
+                        f"\t- plug_type: {plug_type}\n"
+                        f"\t- option: {k1}\n"
+                        f"\t- available values: {dplug[k1]}\n"
+                        f"Provided:\n\t{v1}"
+                    )
+                    raise Exception(msg)
+
+                dout[kcon][wplug][k1] = v1
+
+    return
 
 
 def _err_connections(which, key, connections, wplug, lok=[], lcon=None):
@@ -538,7 +589,7 @@ def _ptAB(coll, which, key, ptA, ptB, systems):
                 raise Exception(msg)
 
             # -----------------------
-            # check existence of pts
+            # check existence of device
 
             if din[pt][0] not in lok:
                 msg = (
@@ -552,10 +603,23 @@ def _ptAB(coll, which, key, ptA, ptB, systems):
                 )
                 raise Exception(msg)
 
-            if din[pt][1] not in coll.dobj[wdev][din[pt][0]]['connections'].keys():
+            # -----------------------
+            # check existence of pts
+
+            dcon = coll.dobj[wdev][din[pt][0]]['connections']
+            lok_keys = list(dcon.keys())
+            lok_names = [dcon[kk]['name'] for kk in lok_keys]
+
+            if din[pt][1] in lok_names:
+                din[pt] = (din[pt][0], lok_keys[lok_names.index(din[pt][1])])
+
+            elif din[pt][1] not in lok_keys:
                 msg = (
                     f"For {which} '{key}', wrong second term in arg '{pt}':\n"
-                    f"\t- Unknown {wdev} connection: '{din[pt][1]}'\n"
+                    f"For {wdev} '{din[pt][0]}' connections:\n"
+                    f"\t- available connection keys: {lok_keys}\n"
+                    f"\t- available connection names: {lok_names}\n"
+                    f"Provided:\n\t'{din[pt][1]}'\n"
                 )
                 raise Exception(msg)
 
