@@ -78,6 +78,14 @@ def get(path=None):
         dout[k0]['label'] = v0.get('label', k0)
 
     # ---------------
+    # convert arrays to tuples
+    # ---------------
+
+    for k0, v0 in dout.items():
+        for k1, v1 in v0.get('dcoords', {}).items():
+            dout[k0]['dcoords'][k1] = tuple(np.array(v1).astype(float))
+
+    # ---------------
     # save to json
     # ---------------
 
@@ -99,10 +107,64 @@ def get(path=None):
 def _invessel_SXR(dout, wdm, systems0):
 
     # -------------
-    # system
+    # prepare
     # -------------
 
     systems0 = dict(systems0, L3='SXRVA')
+
+    # coordinates
+    dcoords = {
+        'OMPu': np.r_[
+            np.cos(340*np.pi/180) * 2,
+            np.sin(340*np.pi/180) * 2,
+            0.8,
+        ],
+        'OMPl': np.r_[
+            np.cos(340*np.pi/180) * 2,
+            np.sin(340*np.pi/180) * 2,
+            -0.8,
+        ],
+        'MPPu': np.r_[
+            np.cos(340*np.pi/180) * 2,
+            np.sin(340*np.pi/180) * 2,
+            0.2,
+        ],
+        'MPPl': np.r_[
+            np.cos(340*np.pi/180) * 2,
+            np.sin(340*np.pi/180) * 2,
+            -0.2,
+        ],
+        'feed_OMPu': np.r_[
+            np.cos(340*np.pi/180) * 4.5,
+            np.sin(340*np.pi/180) * 4.5,
+            1.2,
+        ],
+        'feed_OMPl': np.r_[
+            np.cos(340*np.pi/180) * 4.5,
+            np.sin(340*np.pi/180) * 4.5,
+            -1.2,
+        ],
+        'feed_MPPu': np.r_[
+            np.cos(340*np.pi/180) * 4.5,
+            np.sin(340*np.pi/180) * 4.5,
+            0,
+        ],
+        'feed_MPPl': np.r_[
+            np.cos(340*np.pi/180) * 4.5,
+            np.sin(340*np.pi/180) * 4.5,
+            0,
+        ],
+        'preamp': np.r_[
+            np.cos(340*np.pi/180) * 5,
+            np.sin(340*np.pi/180) * 5,
+            -5,
+        ],
+        'digit': np.r_[
+            25,
+            -1,
+            0,
+        ],
+    }
 
     # -----------
     # update
@@ -129,6 +191,9 @@ def _invessel_SXR(dout, wdm, systems0):
                 'label': f'CVD_{ii:02.0f}',
                 wdm: 'CVD',
                 'systems': systems,
+                'dcoords': {
+                    '3d': dcoords[pp],
+                },
             }
 
         # individual thermocouple
@@ -136,6 +201,9 @@ def _invessel_SXR(dout, wdm, systems0):
             wdm: 'CVD_Therm',
             'label': 'therm',
             'systems': systems,
+            'dcoords': {
+                '3d': dcoords[pp],
+            },
         }
 
         # support plate
@@ -143,6 +211,9 @@ def _invessel_SXR(dout, wdm, systems0):
             wdm: 'CVD_plate_15',
             'label': 'plate',
             'systems': systems,
+            'dcoords': {
+                '3d': dcoords[pp],
+            },
         }
 
         # --------------
@@ -152,6 +223,9 @@ def _invessel_SXR(dout, wdm, systems0):
             wdm: 'CVD_cam_15',
             'label': 'cam',
             'systems': systems,
+            'dcoords': {
+                '3d': dcoords[pp],
+            },
         }
 
         # ----------------
@@ -161,6 +235,9 @@ def _invessel_SXR(dout, wdm, systems0):
             wdm: 'feed_CVD',
             'label': 'feed',
             'systems': systems,
+            'dcoords': {
+                '3d': dcoords[f'feed_{pp}'],
+            },
         }
 
     # -------------
@@ -176,6 +253,10 @@ def _invessel_SXR(dout, wdm, systems0):
             wdm: 'preamp_CMOD',
             'label': f'preamp_{ii:02.0f}',
             'systems': systems,
+            'dcoords': {
+                '3d': dcoords['preamp'],
+            },
+
         }
 
     # -------------
@@ -188,6 +269,9 @@ def _invessel_SXR(dout, wdm, systems0):
             wdm: 'DIAG_FC',
             'label': f'digit_{ii:02.0f}',
             'systems': systems,
+            'dcoords': {
+                '3d': dcoords['digit'],
+            },
         }
 
     return

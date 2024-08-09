@@ -135,7 +135,7 @@ def _device(coll=None, which=None, lcol=None, lar=None, show=None):
     # ---------------------------
 
     wdm = coll._which_device_model
-    lcol.append([which] + [wdm, 'connections ok'])
+    lcol.append([which] + [wdm, 'connections ok', 'coords'])
 
     # ---------------------------
     # data array
@@ -157,11 +157,15 @@ def _device(coll=None, which=None, lcol=None, lar=None, show=None):
         #     nn = ':'.join([dsys[k0] for k0 in ln])
         # arr.append(nn)
 
-
         # add ptA and ptB
         dcon = coll.dobj[wdev][k0]['connections']
         nok = np.sum([v0['flag'] == 'ok' for v0 in dcon.values()])
         nn = f"{nok} / {len(dcon)}"
+        arr.append(nn)
+
+        # coordinates
+        dcoords = coll.dobj[wdev][k0].get('dcoords')
+        nn = '' if dcoords is None else str(sorted(dcoords.keys()))
         arr.append(nn)
 
         lar0.append(arr)
