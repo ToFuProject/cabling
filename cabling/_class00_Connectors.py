@@ -56,6 +56,7 @@ class Connectors(ds.DataStock):
         # },
     }
 
+    _which_plug_option = 'plug_option'
     _which_plug_type = 'plug_type'
     _which_connector_type = 'connector_type'
     _which_connector_model = 'connector_model'
@@ -63,6 +64,14 @@ class Connectors(ds.DataStock):
     _which_device_type = 'device_type'
     _which_device_model = 'device_model'
     _which_device = 'device'
+
+    # -------------------
+    # add plug options
+    # -------------------
+
+    def add_plug_option(self, key, **kwdargs):
+        # add obj
+        _check.plug_options(self, key, **kwdargs)
 
     # -------------------
     # add connection type

@@ -5,9 +5,28 @@ Created on Thu Aug  1 09:41:53 2024
 @author: dvezinet
 """
 
+
 #############################################
 #############################################
-#       DEFAULT KWDARGS for Connectors types
+#       DEFAULT KWDARGS for plug options
+#############################################
+
+
+def get_plug_options_kwdargs():
+
+    return {
+        'description': {
+            'types': str,
+        },
+        'values': {
+            'types': (list, tuple, type),
+        },
+    }
+
+
+#############################################
+#############################################
+#       DEFAULT KWDARGS for plug types
 #############################################
 
 

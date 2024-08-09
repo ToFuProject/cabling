@@ -1,36 +1,10 @@
 {
     "BNC": {
         "description": "BNC plug",
-        "url": "https://en.wikipedia.org/wiki/BNC_connector",
-        "doptions": {
-            "impedance": {
-                "values": [
-                    50,
-                    75
-                ],
-                "units": "Ohms",
-                "description": "impedance of the plug"
-            },
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        "url": "https://en.wikipedia.org/wiki/BNC_connector"
     },
     "SHV": {
-        "description": "Safe High Voltage",
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        "description": "Safe High Voltage"
     },
     "MI_Term": {
         "description": "Termination for MI cables"
@@ -43,46 +17,19 @@
     },
     "MCX": {
         "description": "micro coaxial connector, CECC 22220",
-        "doptions": {
-            "impedance": {
-                "values": [
-                    50
-                ],
-                "units": "Ohms",
-                "description": "impedance of the plug"
-            }
-        },
         "url": [
             "https://en.wikipedia.org/wiki/MCX_connector"
         ]
     },
     "SMA": {
         "description": "SubMiniature version A coaxial connector",
-        "doptions": {
-            "impedance": {
-                "values": [
-                    50
-                ],
-                "units": "Ohms",
-                "description": "impedance of the plug"
-            }
-        },
         "url": [
             "https://en.wikipedia.org/wiki/SMA_connector"
         ]
     },
     "Lemo00": {
         "description": " Lemo\u00ae Type 00 (NIM/CAMAC), male ",
-        "url": "https://www.lemo.com/int_en/solutions/specialties/00-nim-camac.html",
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        "url": "https://www.lemo.com/int_en/solutions/specialties/00-nim-camac.html"
     },
     "DECTRIS_pow_AC": {
         "description": "IEC-320-C14 input inlet",
@@ -108,106 +55,43 @@
     "RJ45": {
         "description": "standard ethernet RJ45",
         "specs": "",
-        "url": [],
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        "url": []
     },
     "VHCDI": {
         "description": "68-pin connectors, Shielded, twisted pair wiring",
         "specs": "",
         "url": [
             "https://www.winford.com/products/cbvh68.php"
-        ],
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        ]
     },
     "RS232": {
         "description": "Differential, common ground, 5V, up to 20 kb/s",
         "specs": "",
         "url": [
             "https://en.wikipedia.org/wiki/RS-232#:~:text=In%20telecommunications%2C%20RS%2D232%20or,serial%20communication%20transmission%20of%20data."
-        ],
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        ]
     },
     "RS422": {
         "description": "Differential, return per cable, 0.4 V, up to 10 Mb/s at 1200 m",
         "specs": "",
         "url": [
             "https://en.wikipedia.org/wiki/RS-422"
-        ],
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        ]
     },
     "RS485": {
         "description": "Differential, return per cable, 0.4 V, up to 10 Mb/s at 1200 m",
         "specs": "",
         "url": [
             "https://en.wikipedia.org/wiki/RS-485"
-        ],
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        ]
     },
     "usb_c": {
         "description": "USB-C",
         "specs": "",
-        "url": [],
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        "url": []
     },
     "MemCard": {
-        "description": "Memory card",
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        "description": "Memory card"
     },
     "DECTRIS_cool": {
         "description": "cooling pipes connections for DECTRIS cameras",
@@ -225,48 +109,21 @@
         "specs": "NEMA 5-15P, IEC 60320 C-13",
         "url": [
             "https://internationalconfig.com/power-cords-for-united-states-ac-power-cords.asp"
-        ],
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        ]
     },
     "US_A": {
         "description": "standard US socket, ungrounded",
         "specs": "2 pins, not grounded",
         "url": [
             "https://www.worldstandards.eu/electricity/plugs-and-sockets/"
-        ],
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        ]
     },
     "US_B": {
         "description": "standard US socket, grounded",
         "specs": "3 pins, grounded",
         "url": [
             "https://www.worldstandards.eu/electricity/plugs-and-sockets/"
-        ],
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        ]
     },
     "wire_pair_LV": {
         "description": "standard Low-voltage pair of wires",
@@ -304,29 +161,11 @@
     },
     "ISO_1/8": {
         "description": "Connector for VAT valves air feeds",
-        "specs": "1/8\" ISO NPT",
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        "specs": "1/8\" ISO NPT"
     },
     "VCR_1/4": {
         "description": "VCR fitting for 1/4\" piping",
-        "specs": "",
-        "doptions": {
-            "M/F": {
-                "values": [
-                    "M",
-                    "F"
-                ],
-                "description": "male / female connection"
-            }
-        }
+        "specs": ""
     },
     "rail": {
         "description": "mounting rail in a rack",

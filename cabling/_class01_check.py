@@ -10,6 +10,7 @@ import copy
 import datastock as ds
 
 
+from . import _class00_connections
 from . import _class00_check
 from . import _class01_def_dict as _def_dict
 
@@ -93,7 +94,7 @@ def device_model(
     # connection plug types
     # ---------------------
 
-    connections = _class00_check._check_connections_types(
+    connections = _class00_connections._check_connections_types(
         coll=coll,
         which=which,
         key=key,

@@ -29,13 +29,6 @@ def get(path=None):
     dout['BNC'] = {
         'description': 'BNC plug',
         'url': 'https://en.wikipedia.org/wiki/BNC_connector',
-        'doptions': {
-            'impedance': {
-                'values': [50, 75],
-                'units': 'Ohms',
-                'description': 'impedance of the plug',
-            },
-        },
     }
 
     # -------------
@@ -43,7 +36,7 @@ def get(path=None):
     # -------------
 
     dout['SHV'] = {
-        'description': 'Safe High Voltage'
+        'description': 'Safe High Voltage',
     }
 
     # -------------
@@ -73,26 +66,12 @@ def get(path=None):
     dout.update({
         'MCX': {
             'description': 'micro coaxial connector, CECC 22220',
-            'doptions': {
-                'impedance': {
-                    'values': [50],
-                    'units': 'Ohms',
-                    'description': 'impedance of the plug',
-                },
-            },
             'url': (
                 'https://en.wikipedia.org/wiki/MCX_connector',
             ),
         },
         'SMA': {
             'description': 'SubMiniature version A coaxial connector',
-            'doptions': {
-                'impedance': {
-                    'values': [50],
-                    'units': 'Ohms',
-                    'description': 'impedance of the plug',
-                },
-            },
             'url': (
                 'https://en.wikipedia.org/wiki/SMA_connector',
             ),
@@ -381,6 +360,8 @@ def get(path=None):
 
 def _common_options(dout):
 
+    wpo = 'plug_option'
+
     # -------------
     # plug types
     # -------------
@@ -402,23 +383,19 @@ def _common_options(dout):
     # -------------
 
     dcommon = {
-        'M/F': {
-            'values': ['M', 'F'],
-            'description': 'male / female connection',
-        },
+        'M/F': lptype,
     }
 
     # ------------
     # Implement
     # -------------
 
-    for ktype in lptype:
+    # for kopt, lk in dcommon.items():
 
-        if dout[ktype].get('doptions') is None:
-            dout[ktype]['doptions'] = {}
-
-        for k1, v1 in dcommon.items():
-            dout[ktype]['doptions'][k1] = dict(v1)
+    #     for ktype in lk:
+    #         if dout[ktype].get('doptions') is None:
+    #             dout[ktype]['doptions'] = {}
+    #         dout[ktype]['doptions'][kopt]
 
     return
 

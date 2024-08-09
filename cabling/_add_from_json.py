@@ -131,6 +131,7 @@ def _check(pfe=None, verb=None):
     # which testing order
 
     lw = [
+        'plug_option',
         'plug_type',
         'connector_type',
         'connector_model',

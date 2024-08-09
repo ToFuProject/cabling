@@ -1,0 +1,13 @@
+{
+    "M/F": {
+        "description": "male or female",
+        "values": [
+            "M",
+            "F"
+        ]
+    },
+    "impedance": {
+        "description": "impedance [Ohms]",
+        "values": "float"
+    }
+}
