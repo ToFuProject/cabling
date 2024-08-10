@@ -1291,7 +1291,7 @@
             ]
         }
     },
-    "sxr_preamp_00": {
+    "XRAY_SXRVA_ACQ_preamp_00": {
         "device_model": "preamp_CMOD",
         "label": "preamp_00",
         "systems": {
@@ -1308,7 +1308,7 @@
             ]
         }
     },
-    "sxr_preamp_01": {
+    "XRAY_SXRVA_ACQ_preamp_01": {
         "device_model": "preamp_CMOD",
         "label": "preamp_01",
         "systems": {
@@ -1325,7 +1325,7 @@
             ]
         }
     },
-    "sxr_preamp_02": {
+    "XRAY_SXRVA_ACQ_preamp_02": {
         "device_model": "preamp_CMOD",
         "label": "preamp_02",
         "systems": {
@@ -1342,7 +1342,7 @@
             ]
         }
     },
-    "sxr_preamp_03": {
+    "XRAY_SXRVA_ACQ_preamp_03": {
         "device_model": "preamp_CMOD",
         "label": "preamp_03",
         "systems": {
@@ -1359,7 +1359,7 @@
             ]
         }
     },
-    "sxr_preamp_04": {
+    "XRAY_SXRVA_ACQ_preamp_04": {
         "device_model": "preamp_CMOD",
         "label": "preamp_04",
         "systems": {
@@ -1376,7 +1376,7 @@
             ]
         }
     },
-    "sxr_preamp_05": {
+    "XRAY_SXRVA_ACQ_preamp_05": {
         "device_model": "preamp_CMOD",
         "label": "preamp_05",
         "systems": {
@@ -1393,7 +1393,7 @@
             ]
         }
     },
-    "sxr_preamp_06": {
+    "XRAY_SXRVA_ACQ_preamp_06": {
         "device_model": "preamp_CMOD",
         "label": "preamp_06",
         "systems": {
@@ -1410,7 +1410,7 @@
             ]
         }
     },
-    "sxr_preamp_07": {
+    "XRAY_SXRVA_ACQ_preamp_07": {
         "device_model": "preamp_CMOD",
         "label": "preamp_07",
         "systems": {
@@ -1427,7 +1427,7 @@
             ]
         }
     },
-    "sxr_preamp_08": {
+    "XRAY_SXRVA_ACQ_preamp_08": {
         "device_model": "preamp_CMOD",
         "label": "preamp_08",
         "systems": {
@@ -1444,7 +1444,7 @@
             ]
         }
     },
-    "sxr_preamp_09": {
+    "XRAY_SXRVA_ACQ_preamp_09": {
         "device_model": "preamp_CMOD",
         "label": "preamp_09",
         "systems": {
@@ -1461,7 +1461,7 @@
             ]
         }
     },
-    "sxr_preamp_10": {
+    "XRAY_SXRVA_ACQ_preamp_10": {
         "device_model": "preamp_CMOD",
         "label": "preamp_10",
         "systems": {
@@ -1478,7 +1478,7 @@
             ]
         }
     },
-    "sxr_preamp_11": {
+    "XRAY_SXRVA_ACQ_preamp_11": {
         "device_model": "preamp_CMOD",
         "label": "preamp_11",
         "systems": {
@@ -1495,7 +1495,7 @@
             ]
         }
     },
-    "sxr_preamp_12": {
+    "XRAY_SXRVA_ACQ_preamp_12": {
         "device_model": "preamp_CMOD",
         "label": "preamp_12",
         "systems": {
@@ -1512,7 +1512,7 @@
             ]
         }
     },
-    "sxr_preamp_13": {
+    "XRAY_SXRVA_ACQ_preamp_13": {
         "device_model": "preamp_CMOD",
         "label": "preamp_13",
         "systems": {
@@ -1529,7 +1529,7 @@
             ]
         }
     },
-    "sxr_preamp_14": {
+    "XRAY_SXRVA_ACQ_preamp_14": {
         "device_model": "preamp_CMOD",
         "label": "preamp_14",
         "systems": {

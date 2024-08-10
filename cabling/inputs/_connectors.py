@@ -80,6 +80,8 @@ def _invessel_SXR(dout, wcm):
     npix = 15
     lcam = ['OMPu', 'OMPl', 'MPPu', 'MPPl']
 
+    preamp_nb = 0
+    ind_preamp = 0
     for pp in lcam:
 
         systems = dict(systems0, L4=pp)
@@ -120,6 +122,22 @@ def _invessel_SXR(dout, wcm):
                 'ptB': (key_feed, f'CVD_in_{ii}'),
                 'typ. signal': '< mA, < 5 V',
             }
+
+            # feedthrough to preamplifier
+            key_preamp = f"{keyS}_preamp_{preamp_nb:02.0f}"
+            dout[f'{keyS}_twist_{ii}'] = {
+                wcm: 'MI_twist_pair',
+                'label': f'MI_{ii:02.0f}',
+                'systems': systems,
+                'ptA': (key_feed, f'CVD_in_{ii}'),
+                'ptB': (key_preamp, f'input_{ind_preamp}'),
+                'typ. signal': '< mA, < 5 V',
+            }
+            if ind_preamp == 3:
+                ind_preamp = 0
+                preamp_nb += 1
+            else:
+                ind_preamp += 1
 
         # ---------------------------------
         # individual thermocouple to camera

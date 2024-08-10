@@ -252,7 +252,7 @@ def _invessel_SXR(dout, wdm, systems0):
 
     for ii in range(int(np.ceil((15*4)/4))):
 
-        key = f'sxr_preamp_{ii:02.0f}'
+        key = f"{keyS}_preamp_{ii:02.0f}"
         dout[key] = {
             wdm: 'preamp_CMOD',
             'label': f'preamp_{ii:02.0f}',
@@ -260,7 +260,6 @@ def _invessel_SXR(dout, wdm, systems0):
             'dcoords': {
                 '3d': dcoords['preamp'],
             },
-
         }
 
     # -------------

@@ -110,7 +110,7 @@
         "connections": {
             "input": {
                 "plug_type": "MI_Term",
-                "nb": 6
+                "nb": 4
             },
             "power": {
                 "plug_type": "MI_Term",

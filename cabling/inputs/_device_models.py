@@ -241,7 +241,7 @@ def _cvd(dout, wplug, wtype):
         'connections': {
             'input': {
                 wplug: "MI_Term",
-                'nb': 6,
+                'nb': 4,
             },
             'power': {
                 wplug: "MI_Term",

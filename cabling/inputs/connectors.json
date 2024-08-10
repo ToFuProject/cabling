@@ -56,6 +56,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPu_twist_0": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_00",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_00",
+            "input_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPu_microwire_01": {
         "connector_model": "microwire_pair",
         "label": "microwire_01",
@@ -110,6 +129,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPu_feed",
             "CVD_in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist_1": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_01",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_00",
+            "input_1"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -170,6 +208,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPu_twist_2": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_02",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_00",
+            "input_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPu_microwire_03": {
         "connector_model": "microwire_pair",
         "label": "microwire_03",
@@ -224,6 +281,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPu_feed",
             "CVD_in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist_3": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_03",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_00",
+            "input_3"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -284,6 +360,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPu_twist_4": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_04",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_4"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_01",
+            "input_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPu_microwire_05": {
         "connector_model": "microwire_pair",
         "label": "microwire_05",
@@ -338,6 +433,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPu_feed",
             "CVD_in_5"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist_5": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_05",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_5"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_01",
+            "input_1"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -398,6 +512,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPu_twist_6": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_06",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_6"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_01",
+            "input_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPu_microwire_07": {
         "connector_model": "microwire_pair",
         "label": "microwire_07",
@@ -452,6 +585,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPu_feed",
             "CVD_in_7"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist_7": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_07",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_7"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_01",
+            "input_3"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -512,6 +664,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPu_twist_8": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_08",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_8"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_02",
+            "input_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPu_microwire_09": {
         "connector_model": "microwire_pair",
         "label": "microwire_09",
@@ -566,6 +737,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPu_feed",
             "CVD_in_9"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist_9": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_09",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_9"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_02",
+            "input_1"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -626,6 +816,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPu_twist_10": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_10",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_10"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_02",
+            "input_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPu_microwire_11": {
         "connector_model": "microwire_pair",
         "label": "microwire_11",
@@ -680,6 +889,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPu_feed",
             "CVD_in_11"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist_11": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_11",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_11"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_02",
+            "input_3"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -740,6 +968,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPu_twist_12": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_12",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_12"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_03",
+            "input_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPu_microwire_13": {
         "connector_model": "microwire_pair",
         "label": "microwire_13",
@@ -797,6 +1044,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPu_twist_13": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_13",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_13"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_03",
+            "input_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPu_microwire_14": {
         "connector_model": "microwire_pair",
         "label": "microwire_14",
@@ -851,6 +1117,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPu_feed",
             "CVD_in_14"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist_14": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_14",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPu_feed",
+            "CVD_in_14"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPu_preamp_03",
+            "input_2"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -930,6 +1215,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPl_twist_0": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_00",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_03",
+            "input_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPl_microwire_01": {
         "connector_model": "microwire_pair",
         "label": "microwire_01",
@@ -984,6 +1288,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPl_feed",
             "CVD_in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist_1": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_01",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_04",
+            "input_0"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1044,6 +1367,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPl_twist_2": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_02",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_04",
+            "input_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPl_microwire_03": {
         "connector_model": "microwire_pair",
         "label": "microwire_03",
@@ -1098,6 +1440,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPl_feed",
             "CVD_in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist_3": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_03",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_04",
+            "input_2"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1158,6 +1519,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPl_twist_4": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_04",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_4"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_04",
+            "input_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPl_microwire_05": {
         "connector_model": "microwire_pair",
         "label": "microwire_05",
@@ -1212,6 +1592,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPl_feed",
             "CVD_in_5"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist_5": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_05",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_5"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_05",
+            "input_0"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1272,6 +1671,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPl_twist_6": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_06",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_6"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_05",
+            "input_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPl_microwire_07": {
         "connector_model": "microwire_pair",
         "label": "microwire_07",
@@ -1326,6 +1744,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPl_feed",
             "CVD_in_7"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist_7": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_07",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_7"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_05",
+            "input_2"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1386,6 +1823,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPl_twist_8": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_08",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_8"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_05",
+            "input_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPl_microwire_09": {
         "connector_model": "microwire_pair",
         "label": "microwire_09",
@@ -1440,6 +1896,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPl_feed",
             "CVD_in_9"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist_9": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_09",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_9"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_06",
+            "input_0"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1500,6 +1975,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPl_twist_10": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_10",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_10"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_06",
+            "input_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPl_microwire_11": {
         "connector_model": "microwire_pair",
         "label": "microwire_11",
@@ -1554,6 +2048,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPl_feed",
             "CVD_in_11"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist_11": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_11",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_11"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_06",
+            "input_2"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1614,6 +2127,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPl_twist_12": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_12",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_12"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_06",
+            "input_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPl_microwire_13": {
         "connector_model": "microwire_pair",
         "label": "microwire_13",
@@ -1671,6 +2203,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_OMPl_twist_13": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_13",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_13"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_07",
+            "input_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_OMPl_microwire_14": {
         "connector_model": "microwire_pair",
         "label": "microwire_14",
@@ -1725,6 +2276,25 @@
         "ptB": [
             "XRAY_SXRVA_OMPl_feed",
             "CVD_in_14"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist_14": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_14",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "OMPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_OMPl_feed",
+            "CVD_in_14"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_OMPl_preamp_07",
+            "input_1"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1804,6 +2374,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPu_twist_0": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_00",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_07",
+            "input_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPu_microwire_01": {
         "connector_model": "microwire_pair",
         "label": "microwire_01",
@@ -1858,6 +2447,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPu_feed",
             "CVD_in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist_1": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_01",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_07",
+            "input_3"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1918,6 +2526,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPu_twist_2": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_02",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_08",
+            "input_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPu_microwire_03": {
         "connector_model": "microwire_pair",
         "label": "microwire_03",
@@ -1972,6 +2599,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPu_feed",
             "CVD_in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist_3": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_03",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_08",
+            "input_1"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2032,6 +2678,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPu_twist_4": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_04",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_4"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_08",
+            "input_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPu_microwire_05": {
         "connector_model": "microwire_pair",
         "label": "microwire_05",
@@ -2086,6 +2751,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPu_feed",
             "CVD_in_5"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist_5": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_05",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_5"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_08",
+            "input_3"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2146,6 +2830,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPu_twist_6": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_06",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_6"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_09",
+            "input_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPu_microwire_07": {
         "connector_model": "microwire_pair",
         "label": "microwire_07",
@@ -2200,6 +2903,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPu_feed",
             "CVD_in_7"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist_7": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_07",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_7"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_09",
+            "input_1"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2260,6 +2982,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPu_twist_8": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_08",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_8"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_09",
+            "input_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPu_microwire_09": {
         "connector_model": "microwire_pair",
         "label": "microwire_09",
@@ -2314,6 +3055,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPu_feed",
             "CVD_in_9"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist_9": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_09",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_9"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_09",
+            "input_3"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2374,6 +3134,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPu_twist_10": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_10",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_10"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_10",
+            "input_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPu_microwire_11": {
         "connector_model": "microwire_pair",
         "label": "microwire_11",
@@ -2428,6 +3207,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPu_feed",
             "CVD_in_11"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist_11": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_11",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_11"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_10",
+            "input_1"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2488,6 +3286,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPu_twist_12": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_12",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_12"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_10",
+            "input_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPu_microwire_13": {
         "connector_model": "microwire_pair",
         "label": "microwire_13",
@@ -2545,6 +3362,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPu_twist_13": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_13",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_13"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_10",
+            "input_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPu_microwire_14": {
         "connector_model": "microwire_pair",
         "label": "microwire_14",
@@ -2599,6 +3435,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPu_feed",
             "CVD_in_14"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist_14": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_14",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPu"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPu_feed",
+            "CVD_in_14"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPu_preamp_11",
+            "input_0"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2678,6 +3533,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPl_twist_0": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_00",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_11",
+            "input_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPl_microwire_01": {
         "connector_model": "microwire_pair",
         "label": "microwire_01",
@@ -2732,6 +3606,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPl_feed",
             "CVD_in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist_1": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_01",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_11",
+            "input_2"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2792,6 +3685,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPl_twist_2": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_02",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_11",
+            "input_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPl_microwire_03": {
         "connector_model": "microwire_pair",
         "label": "microwire_03",
@@ -2846,6 +3758,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPl_feed",
             "CVD_in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist_3": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_03",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_12",
+            "input_0"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2906,6 +3837,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPl_twist_4": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_04",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_4"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_12",
+            "input_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPl_microwire_05": {
         "connector_model": "microwire_pair",
         "label": "microwire_05",
@@ -2960,6 +3910,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPl_feed",
             "CVD_in_5"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist_5": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_05",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_5"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_12",
+            "input_2"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3020,6 +3989,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPl_twist_6": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_06",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_6"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_12",
+            "input_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPl_microwire_07": {
         "connector_model": "microwire_pair",
         "label": "microwire_07",
@@ -3074,6 +4062,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPl_feed",
             "CVD_in_7"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist_7": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_07",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_7"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_13",
+            "input_0"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3134,6 +4141,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPl_twist_8": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_08",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_8"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_13",
+            "input_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPl_microwire_09": {
         "connector_model": "microwire_pair",
         "label": "microwire_09",
@@ -3188,6 +4214,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPl_feed",
             "CVD_in_9"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist_9": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_09",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_9"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_13",
+            "input_2"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3248,6 +4293,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPl_twist_10": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_10",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_10"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_13",
+            "input_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPl_microwire_11": {
         "connector_model": "microwire_pair",
         "label": "microwire_11",
@@ -3302,6 +4366,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPl_feed",
             "CVD_in_11"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist_11": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_11",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_11"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_14",
+            "input_0"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3362,6 +4445,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPl_twist_12": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_12",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_12"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_14",
+            "input_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPl_microwire_13": {
         "connector_model": "microwire_pair",
         "label": "microwire_13",
@@ -3419,6 +4521,25 @@
         ],
         "typ. signal": "< mA, < 5 V"
     },
+    "XRAY_SXRVA_MPPl_twist_13": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_13",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_13"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_14",
+            "input_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
     "XRAY_SXRVA_MPPl_microwire_14": {
         "connector_model": "microwire_pair",
         "label": "microwire_14",
@@ -3473,6 +4594,25 @@
         "ptB": [
             "XRAY_SXRVA_MPPl_feed",
             "CVD_in_14"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist_14": {
+        "connector_model": "MI_twist_pair",
+        "label": "MI_14",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "MPPl"
+        },
+        "ptA": [
+            "XRAY_SXRVA_MPPl_feed",
+            "CVD_in_14"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_MPPl_preamp_14",
+            "input_3"
         ],
         "typ. signal": "< mA, < 5 V"
     },
