@@ -15,6 +15,7 @@ from . import _consistency
 from . import _class01_select as _select
 from . import _class01_show as _show
 from . import _class01_utils as _utils
+from . import _class00_connections
 from . import _class01_to_graph as _to_graph
 from . import _class01_to_DataFrame as _to_DataFrame
 from . import _class01_to_spreadsheet as _to_spreadsheet
@@ -153,6 +154,26 @@ class Devices(Previous):
             return _show._device
         else:
             return super()._get_show_obj(which)
+
+    # -------------------
+    # get connections reports
+    # -------------------
+
+    def get_connections_report(
+        self,
+        which=None,
+        # output
+        verb=None,
+        returnas=None,
+
+    ):
+        return _class00_connections.get_report(
+            coll=self,
+            which=which,
+            # output
+            verb=verb,
+            returnas=returnas,
+        )
 
     # -------------------
     # to Dataframes

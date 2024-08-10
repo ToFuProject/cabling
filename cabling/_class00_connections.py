@@ -6,6 +6,7 @@ Created on Fri Aug  9 10:53:23 2024
 """
 
 
+import datastock as ds
 
 
 #############################################
@@ -278,3 +279,178 @@ def _ptAB(coll, which, key, ptA, ptB, systems):
                 raise Exception(msg)
 
     return tuple(din['ptA']), tuple(din['ptB'])
+
+
+###########################################################
+###########################################################
+#      Connection report
+###########################################################
+
+
+def get_report(
+    coll=None,
+    which=None,
+    returnas=None,
+    verb=None,
+):
+
+    # ------------
+    # check inputs
+    # ------------
+
+    lwhich, verb, returnas = _check(
+        coll=coll,
+        which=which,
+        returnas=returnas,
+        verb=verb,
+    )
+
+    # ------------
+    # connectors
+    # ------------
+
+    dout = {}
+    lwhich0 = [coll._which_connector, coll._which_device]
+    for ii, ww in enumerate(lwhich0):
+        if ww in lwhich:
+            dout[ww] = _get_report(coll, ww, lwhich0[1-ii])
+
+    # ------------
+    # return
+    # ------------
+
+    if returnas is dict:
+        return dout
+
+    dmsg = {}
+    for ii, ww in enumerate(lwhich0):
+        if ww in lwhich:
+            dmsg[ww] = _to_msg(coll, dout, ww, lwhich0[1-ii])
+
+    if verb is True:
+        print("\n\n".join(list(dmsg.values())))
+
+    return
+
+
+#############################################
+#############################################
+#      check
+#############################################
+
+
+def _check(
+    coll=None,
+    which=None,
+    verb=None,
+    returnas=None,
+):
+
+    # -----------------
+    # which
+    # -----------------
+
+    if isinstance(which, str):
+        which = [which]
+    lok = [coll._which_device, coll._which_connector]
+    which = ds._generic_check._check_var_iter(
+        which, 'which',
+        types=(list, tuple),
+        allowed=lok,
+    )
+
+    # -----------------
+    # verb
+    # -----------------
+
+    verb = ds._generic_check._check_var(
+        verb, 'verb',
+        types=bool,
+        default=True,
+    )
+
+    # -----------------
+    # verb
+    # -----------------
+
+    returnas = ds._generic_check._check_var(
+        returnas, 'returnas',
+        types=bool,
+        default=(not verb),
+    )
+
+    return which, verb, returnas
+
+
+#############################################
+#############################################
+#      report for which
+#############################################
+
+
+def _get_report(coll=None, which0=None, which1=None):
+
+    dout = {}
+    wplug = coll._which_plug_type
+    for k0, v0 in coll.dobj.get(which0, {}).items():
+        dout[k0] = {}
+        for kcon, vcon in v0['connections'].items():
+            dout[k0][kcon] = {
+                'name': vcon['name'],
+                wplug: vcon[wplug]['key'],
+                which1: vcon.get(which1),
+                'flag': vcon['flag'],
+            }
+
+    return dout
+
+
+#############################################
+#############################################
+#      to msg
+#############################################
+
+
+def _to_msg(coll, dout, which0, which1):
+
+    # -------------
+    # lcol
+    # --------------
+
+    wplug = coll._which_plug_type
+    lcol = [[which0, '|', 'kcon', 'name', wplug, '|', f'({which1}, kcon)', 'flag']]
+
+    # -------------
+    # larr
+    # --------------
+
+    larr = []
+    for k0, v0 in coll.dobj.get(which0, {}).items():
+        for ii, (kcon, vcon) in enumerate(v0['connections'].items()):
+
+            arr = [
+                k0 if ii == 0 else  '',
+                '|',
+                kcon,
+                str(dout[which0][k0][kcon]['name']),
+                str(dout[which0][k0][kcon][wplug]),
+                '|',
+                str(dout[which0][k0][kcon][which1]),
+                str(dout[which0][k0][kcon]['flag']),
+            ]
+            larr.append(arr)
+
+    # ----------------
+    # msg
+    # ----------------
+
+    return ds._generic_utils.pretty_print(
+        headers=lcol,
+        content=[larr],
+        sep=None,
+        line=None,
+        justify=None,
+        table_sep=None,
+        verb=False,
+        returnas=str,
+    )
