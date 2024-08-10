@@ -347,7 +347,6 @@ def _get_dcolorby(coll, which=None, keys=None, color_by=None):
 
 def _colorby_keys(coll, which, keys, color_by):
 
-    dcolorby = {}
     if color_by == 'key':
         dout = {k0: [k0] for k0 in keys}
 

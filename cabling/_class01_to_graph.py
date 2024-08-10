@@ -162,6 +162,17 @@ def _select(
             default=lok,
         )
 
+    # ------------------------------------------------
+    # restrict to connectors that have ok connections
+
+    lcon  = [
+        k0 for k0 in lcon
+        if all([
+            v0['flag'] == 'ok'
+            for v0 in coll.dobj[wcon][k0]['connections'].values()
+        ])
+    ]
+
     return ldev, lcon
 
 
