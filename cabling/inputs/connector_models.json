@@ -39,10 +39,10 @@
         "description": "Mineral insulated twisted pair",
         "connections": {
             "ptA": {
-                "plug_type": "MI_Term"
+                "plug_type": "MI_Term_pair"
             },
             "ptB": {
-                "plug_type": "MI_Term"
+                "plug_type": "MI_Term_pair"
             }
         },
         "connector_type": "cable_MI"
@@ -63,10 +63,10 @@
         "description": "pair of naked wires with ceramic beads",
         "connections": {
             "ptA": {
-                "plug_type": "wire_bond_pair"
+                "plug_type": "MI_Term_pair"
             },
             "ptB": {
-                "plug_type": "wire_bond_pair"
+                "plug_type": "MI_Term_pair"
             }
         },
         "connector_type": "cable_wire"

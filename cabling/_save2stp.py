@@ -103,9 +103,9 @@ def main(
 
     # scaling factor
     for k0, v0 in dptsx_con.items():
-        dptsx_con[k0] = factor * v0
-        dptsy_con[k0] = factor * v0
-        dptsz_con[k0] = factor * v0
+        dptsx_con[k0]['data'] *= factor
+        dptsy_con[k0]['data'] *= factor
+        dptsz_con[k0]['data'] *= factor
 
     # -----------------------
     # loop on groups of color
@@ -187,6 +187,10 @@ def _check(
         k0 for k0 in connectors
         if coll.dobj[wcon][k0].get('dcoords') is not None
         and coll.dobj[wcon][k0]['dcoords'].get(kco) is not None
+        and np.all([
+            np.all(np.isfinite(v1))
+            for v1 in coll.dobj[wcon][k0]['dcoords'][kco].values()
+        ])
     ]
 
     # ---------------
@@ -320,7 +324,7 @@ def _get_dcolorby(coll, which=None, keys=None, color_by=None):
         dcolorby = {
             k0: {
                 'keys': v0,
-                'color': mcolors.to_hex(color_by.get(k0, next(color))),
+                'color': mcolors.to_rgb(color_by.get(k0, next(color))),
             }
             for ii, (k0, v0) in enumerate(dout.items())
         }
@@ -333,7 +337,7 @@ def _get_dcolorby(coll, which=None, keys=None, color_by=None):
         dcolorby = {
             k0: {
                 'keys': v0,
-                'color': mcolors.to_hex(next(color)),
+                'color': mcolors.to_rgb(next(color)),
             }
             for ii, (k0, v0) in enumerate(dout.items())
         }
@@ -398,19 +402,19 @@ def _extract(
     kco = '3d'
     wcon = coll._which_connector
     for k0, v0 in dcolorby_con.items():
-        lnpts = [
-            coll.dobj[wcon][k1]['dcoords'][kco]['x'].size
-            for k1 in v0['keys']
-        ]
-        npts_max = np.max(lnpts)
-
-        dptsx[k0] = np.full((npts_max, len(v0['keys'])), np.nan)
-        dptsy[k0] = np.full((npts_max, len(v0['keys'])), np.nan)
-        dptsz[k0] = np.full((npts_max, len(v0['keys'])), np.nan)
         for ii, k1 in enumerate(v0['keys']):
-            dptsx[k0][:lnpts[ii], ii] = coll.dobj[wcon][k1]['dcoords'][kco]['x']
-            dptsy[k0][:lnpts[ii], ii] = coll.dobj[wcon][k1]['dcoords'][kco]['y']
-            dptsz[k0][:lnpts[ii], ii] = coll.dobj[wcon][k1]['dcoords'][kco]['z']
+            dptsx[k1] = {
+                'data': np.copy(coll.dobj[wcon][k1]['dcoords'][kco]['x']),
+                'color': v0['color'],
+            }
+            dptsy[k1] = {
+                'data': np.copy(coll.dobj[wcon][k1]['dcoords'][kco]['y']),
+                'color': v0['color'],
+            }
+            dptsz[k1] = {
+                'data': np.copy(coll.dobj[wcon][k1]['dcoords'][kco]['z']),
+                'color': v0['color'],
+            }
 
     return dptsx, dptsy, dptsz
 
@@ -494,9 +498,9 @@ def _get_data(
     # -----------
 
     # vectors
-    dvx = {k0: np.diff(v0, axis=0) for k0, v0 in dptsx.items()}
-    dvy = {k0: np.diff(v0, axis=0) for k0, v0 in dptsy.items()}
-    dvz = {k0: np.diff(v0, axis=0) for k0, v0 in dptsz.items()}
+    dvx = {k0: np.diff(v0['data']) for k0, v0 in dptsx.items()}
+    dvy = {k0: np.diff(v0['data']) for k0, v0 in dptsy.items()}
+    dvz = {k0: np.diff(v0['data']) for k0, v0 in dptsz.items()}
 
     # dok
     dok = {k0: np.isfinite(v0) for k0, v0 in dvx.items()}
@@ -512,21 +516,9 @@ def _get_data(
     ddy = {k0: dvy[k0] / dlength[k0] for k0 in dptsx.keys()}
     ddz = {k0: dvz[k0] / dlength[k0] for k0 in dptsx.keys()}
 
-    # shapes
-    # dshape_vect = {k0: dvx[k0].shape for k0 in dptsx.keys()}
-
+    # nrays
     dnrays = {k0: v0.sum() for k0, v0 in dok.items()}
     nrays = np.sum([v0 for v0 in dnrays.values()])
-
-    # --------------
-    # order of kcam
-
-    lkcam = sorted(dptsx.keys())
-    k0ind = _get_k0ind(
-        dind_ok={k0: v0.nonzero() for k0, v0 in dok.items()},
-        ncum=np.cumsum([dnrays[kcam] for kcam in lkcam]),
-        lkcam=lkcam,
-    )
 
     # -----------
     # colors
@@ -534,6 +526,17 @@ def _get_data(
 
     colors = sorted(set([v0['color'] for v0 in dcolor.values()]))
     ncol = len(colors)
+
+    # --------------
+    # order of connectors
+
+    lkcon = sorted(dptsx.keys())
+    k0ind = _get_k0ind(
+        dind_ok={k0: v0.nonzero() for k0, v0 in dok.items()},
+        ncum=np.cumsum([dnrays[kcon] for kcon in lkcon]),
+        lkcon=lkcon,
+    )
+
 
     # -----------------
     # get index
@@ -624,10 +627,6 @@ def _get_data(
         lines.append(f"#{ni}={k0}('color {ii}',{colors[ii][0]},{colors[ii][1]},{colors[ii][2]});")
     dind[k0]['msg'] = "\n".join(lines)
 
-    # ni = dind[k0]['ind'][0]
-    # dind[k0]['msg'] = f"#{ni}={k0}('Medium Royal',{color[0]},{color[1]},{color[2]});"
-    # dind[k0]['msg'] = f"#{ni}={k0}('Medium Royal',0.301960784313725,0.427450980392157,0.701960784313725);"
-
     # -----------------
     # CARTESIAN_POINT
     # -----------------
@@ -635,8 +634,8 @@ def _get_data(
     k0 = 'CARTESIAN_POINT'
     lines = []
     for ii, ni in enumerate(dind[k0]['ind']):
-        kcam, ind = k0ind(ii)
-        lines.append(f"#{ni}={k0}('{kcam}_{ind}',({dptsx[kcam][ind]},{dptsy[kcam][ind]},{dptsz[kcam][ind]}));")
+        kcon, ind = k0ind(ii)
+        lines.append(f"#{ni}={k0}('{kcon}',({dptsx[kcon]['data'][ind]},{dptsy[kcon]['data'][ind]},{dptsz[kcon]['data'][ind]}));")
     dind[k0]['msg'] = "\n".join(lines)
 
     # -----------------
@@ -646,8 +645,8 @@ def _get_data(
     k0 = 'DIRECTION'
     lines = []
     for ii, ni in enumerate(dind[k0]['ind']):
-        kcam, ind = k0ind(ii)
-        lines.append(f"#{ni}={k0}('{kcam}_{ind}',({ddx[kcam][ind]},{ddy[kcam][ind]},{ddz[kcam][ind]}));")
+        kcon, ind = k0ind(ii)
+        lines.append(f"#{ni}={k0}('{kcon}',({ddx[kcon][ind]},{ddy[kcon][ind]},{ddz[kcon][ind]}));")
     dind[k0]['msg'] = "\n".join(lines)
 
     # -----------------
@@ -657,8 +656,8 @@ def _get_data(
     k0 = 'VECTOR'
     lines = []
     for ii, ni in enumerate(dind[k0]['ind']):
-        kcam, ind = k0ind(ii)
-        lines.append(f"#{ni}={k0}('{kcam}_{ind}',#{dind['DIRECTION']['ind'][ii]},{dlength[kcam][ind]});")
+        kcon, ind = k0ind(ii)
+        lines.append(f"#{ni}={k0}('{kcon}',#{dind['DIRECTION']['ind'][ii]},{dlength[kcon][ind]});")
     dind[k0]['msg'] = "\n".join(lines)
 
     # -----------------
@@ -677,8 +676,8 @@ def _get_data(
     k0 = 'LINE'
     lines = []
     for ii, ni in enumerate(dind[k0]['ind']):
-        kcam, ind = k0ind(ii)
-        lines.append(f"#{ni}={k0}('{kcam}_{ind}',#{dind['CARTESIAN_POINT']['ind'][ii]},#{dind['VECTOR']['ind'][ii]});")
+        kcon, ind = k0ind(ii)
+        lines.append(f"#{ni}={k0}('{kcon}',#{dind['CARTESIAN_POINT']['ind'][ii]},#{dind['VECTOR']['ind'][ii]});")
     dind[k0]['msg'] = "\n".join(lines)
 
     # -----------------
@@ -688,8 +687,8 @@ def _get_data(
     k0 = 'TRIMMED_CURVE'
     lines = []
     for ii, ni in enumerate(dind[k0]['ind']):
-        kcam, ind = k0ind(ii)
-        lines.append(f"#{ni}={k0}('{kcam}_{ind}',#{dind['LINE']['ind'][ii]},(PARAMETER_VALUE(0.)),(PARAMETER_VALUE(1.)),.T.,.PARAMETER.);")
+        kcon, ind = k0ind(ii)
+        lines.append(f"#{ni}={k0}('{kcon}',#{dind['LINE']['ind'][ii]},(PARAMETER_VALUE(0.)),(PARAMETER_VALUE(1.)),.T.,.PARAMETER.);")
     dind[k0]['msg'] = "\n".join(lines)
 
     # ----------------
@@ -729,9 +728,9 @@ def _get_data(
     k0 = 'STYLED_ITEM'
     lines = []
     for ii, ni in enumerate(dind[k0]['ind']):
-        kcam, ind = k0ind(ii)
-        jj = colors.index(dcolor[kcam]['color'])
-        lines.append(f"#{ni}={k0}('{kcam}_{ind}',(#{dind['PRESENTATION_STYLE_ASSIGNMENT']['ind'][jj]}),#{dind['TRIMMED_CURVE']['ind'][ii]});")
+        kcon, ind = k0ind(ii)
+        jj = colors.index(dptsx[kcon]['color'])
+        lines.append(f"#{ni}={k0}('{kcon}',(#{dind['PRESENTATION_STYLE_ASSIGNMENT']['ind'][jj]}),#{dind['TRIMMED_CURVE']['ind'][ii]});")
     dind[k0]['msg'] = "\n".join(lines)
 
     # -----------------
@@ -862,19 +861,19 @@ END-{iso};"""
 # #################################################################
 
 
-def _get_k0ind(dind_ok=None, ncum=None, lkcam=None):
+def _get_k0ind(dind_ok=None, ncum=None, lkcon=None):
 
     def k0ind(
             ii,
             dind_ok=dind_ok,
             ncum=ncum,
-            lkcam=lkcam,
+            lkcon=lkcon,
         ):
 
-        icam = np.searchsorted(ncum-1, ii)
-        inew = ii - ncum[icam-1] if icam>0 else ii
+        icon = np.searchsorted(ncum-1, ii)
+        inew = ii - ncum[icon-1] if icon>0 else ii
 
-        return lkcam[icam], tuple([tt[inew] for tt in dind_ok[lkcam[icam]]])
+        return lkcon[icon], tuple([tt[inew] for tt in dind_ok[lkcon[icon]]])
 
     return k0ind
 

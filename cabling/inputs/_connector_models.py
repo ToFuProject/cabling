@@ -66,8 +66,8 @@ def get(path=None):
     dout['MI_twist_pair'] = {
         'description': 'Mineral insulated twisted pair',
         'connections': {
-            'ptA': {wplug: "MI_Term"},
-            'ptB': {wplug: "MI_Term"},
+            'ptA': {wplug: "MI_Term_pair"},
+            'ptB': {wplug: "MI_Term_pair"},
         },
         wtype: 'cable_MI',
     }
@@ -84,8 +84,8 @@ def get(path=None):
     dout['wire_pair'] = {
         'description': 'pair of naked wires with ceramic beads',
         'connections': {
-            'ptA': {wplug: "wire_bond_pair"},
-            'ptB': {wplug: "wire_bond_pair"},
+            'ptA': {wplug: "MI_Term_pair"},
+            'ptB': {wplug: "MI_Term_pair"},
         },
         wtype: 'cable_wire',
     }
