@@ -19,6 +19,7 @@ from . import _class01_to_graph as _to_graph
 from . import _class01_to_DataFrame as _to_DataFrame
 from . import _class01_to_spreadsheet as _to_spreadsheet
 from . import _class01_plot_graph as _plot_graph
+from . import _save2stp
 
 
 __all__ = ['Devices']
@@ -267,4 +268,35 @@ class Devices(Previous):
             layout=layout,
             layers=layers,
             name_by=name_by,
+        )
+
+    # -------------------
+    # save2step
+    # -------------------
+
+    def save_to_stp(
+        # input from tofu
+        self,
+        devices=None,
+        connectors=None,
+        # options
+        factor=None,
+        color_by=None,
+        # saving
+        pfe_save=None,
+        verb=None,
+        overwrite=None,
+    ):
+        return _save2stp.main(
+            coll=self,
+            # input from tofu
+            devices=devices,
+            connectors=connectors,
+            # options
+            factor=factor,
+            color_by=color_by,
+            # saving
+            pfe_save=pfe_save,
+            verb=verb,
+            overwrite=overwrite,
         )

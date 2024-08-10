@@ -206,13 +206,17 @@ def _invessel_SXR(dout, wdm, systems0):
             },
         }
 
+        # diff
+        psi = np.arctan2(dcoords[pp][1], dcoords[pp][0])
+        diff = 0.1 * np.r_[np.cos(psi), np.sin(psi), 0]
+
         # support plate
         dout[key_plate] = {
             wdm: 'CVD_plate_15',
             'label': 'plate',
             'systems': systems,
             'dcoords': {
-                '3d': dcoords[pp],
+                '3d': dcoords[pp] + diff,
             },
         }
 
@@ -224,7 +228,7 @@ def _invessel_SXR(dout, wdm, systems0):
             'label': 'cam',
             'systems': systems,
             'dcoords': {
-                '3d': dcoords[pp],
+                '3d': dcoords[pp] + 2 * diff,
             },
         }
 
