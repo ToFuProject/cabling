@@ -10,6 +10,7 @@ import datastock as ds
 
 
 from . import _consistency_connections as _connections
+from . import _class00_check_coords as _check_coords
 
 
 #############################################
@@ -54,6 +55,18 @@ def main(
     dout['connections'] = _connections.main(
         coll=coll,
     )
+
+    # ---------------------
+    # consistency of coords
+    # ---------------------
+
+    wcon = coll._which_connector
+    for k0, v0 in coll.dobj.get(wcon, {}).items():
+        coll.dobj[wcon][k0]['dcoords'] = _check_coords._dcoords_connector(
+            coll, wcon, k0,
+            dcon=coll.dobj[wcon][k0]['connections'],
+            dcoords=coll.dobj[wcon][k0].get('dcoords'),
+        )
 
     # --------------------------
     # verb

@@ -9,12 +9,12 @@ Created on Thu Aug  1 09:31:37 2024
 import copy
 
 
-import numpy as np
 import datastock as ds
 
 
 from . import _class00_connections
-from . import _class00_check
+from . import _class00_check_utils
+from . import _class00_check_coords
 from . import _class01_def_dict as _def_dict
 
 
@@ -46,7 +46,7 @@ def device_type(
     # kwdargs
     # ---------------------
 
-    kwdargs = _class00_check._kwdargs(
+    kwdargs = _class00_check_utils._kwdargs(
         coll=coll,
         which=which,
         key=key,
@@ -109,7 +109,7 @@ def device_model(
     # kwdargs
     # ---------------------
 
-    kwdargs = _class00_check._kwdargs(
+    kwdargs = _class00_check_utils._kwdargs(
         coll=coll,
         which=which,
         key=key,
@@ -152,7 +152,7 @@ def device(
     # ---------------------
 
     which = coll._which_device
-    systems, key, label = _class00_check._systems(
+    systems, key, label = _class00_check_utils._systems(
         coll, systems, which, label, key,
     )
 
@@ -160,13 +160,13 @@ def device(
     # dcoords
     # ---------------------
 
-    dcoords = _dcoords(coll, which, key, dcoords)
+    dcoords = _class00_check_coords._dcoords(coll, which, key, dcoords)
 
     # ---------------------
     # kwdargs
     # ---------------------
 
-    kwdargs = _class00_check._kwdargs(
+    kwdargs = _class00_check_utils._kwdargs(
         coll=coll,
         which=which,
         key=key,
@@ -198,84 +198,3 @@ def device(
     )
 
     return
-
-
-#############################################
-#############################################
-#       coordinates
-#############################################
-
-
-def _dcoords(coll, which, key, dcoords):
-
-    # --------------
-    # trivial
-    # -------------
-
-    if dcoords is None:
-        return
-
-    # ------------
-    # error
-    # -------------
-
-    elif not isinstance(dcoords, dict):
-        _dcoords_err(which, key, dcoords)
-
-    # ---------------
-    # conformity
-    # ---------------
-
-    else:
-
-        # -----------------
-        # known cases
-
-        dok = {
-            '3d': ['x', 'y', 'z'],
-        }
-
-
-        for k0, v0 in dcoords.items():
-
-            # -----------------
-            # preliminary check
-
-            c0 = (
-                isinstance(k0, str)
-                and isinstance(v0, (dict, tuple, list, np.ndarray))
-            )
-
-            if not c0:
-                _dcoords_err(which, key, dcoords)
-
-            # -----------
-            # known cases
-
-            lok = dok.get(k0, ['x', 'y'])
-            if not isinstance(v0, dict):
-                if len(v0) == len(lok):
-                    dcoords[k0] = {ok: v0[ii] for ii, ok in enumerate(lok)}
-
-            if sorted(dcoords[k0].keys()) != lok:
-                _dcoords_err(which, key, dcoords, k0, lok)
-
-    return dcoords
-
-
-def _dcoords_err(which, key, dcoords, k0=None, lok=None):
-    if lok is None:
-        gap = (
-            "\t- '3d': {'x': float, 'y': float, 'z': float}\n"
-            "\t- 'key0': {'x': float, 'y': float}\n"
-            "\t- 'key1': {'x': float, 'y': float}\n"
-        )
-    else:
-        lstr = "{" + ", ".join([f"{kk}: float" for kk in lok]) + "}"
-        gap = f"\t- '{k0}': {lstr}\n"
-    msg = (
-        f"For {which} '{key}', arg 'dcoords' must be a dict of the form:\n"
-        f"{gap}"
-        f"Provided:\n\t{dcoords}"
-    )
-    raise Exception(msg)
