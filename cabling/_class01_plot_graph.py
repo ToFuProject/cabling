@@ -7,6 +7,7 @@ Created on Tue Aug  6 18:24:45 2024
 
 
 import numpy as np
+import matplotlib.pyplot as plt
 import networkx as nx
 import datastock as ds
 
@@ -44,6 +45,8 @@ def main(
     font_weight=None,
     # others
     hide_ticks=None,
+    # figure
+    ax=None,
 ):
 
     # ---------------
@@ -83,6 +86,7 @@ def main(
         graph=graph,
         # layout
         pos=pos,
+        ax=ax,
         # options
         **kwdargs,
     )
@@ -212,6 +216,8 @@ def _plot_mpl(
     graph=None,
     # layout
     pos=None,
+    # figure
+    ax=None,
     # options
     **kwdargs,
 ):
@@ -220,6 +226,10 @@ def _plot_mpl(
     # figure
     # --------------
 
+    if ax is None:
+        fig = plt.figure()
+        ax = fig.add_axes([0.1, 0.1, 0.8, 0.8])
+
     # --------------
     # plot
     # --------------
@@ -227,7 +237,7 @@ def _plot_mpl(
     nx.draw_networkx(
         graph,
         # ax
-        ax=None,
+        ax=ax,
         # layout
         pos=pos,
         # edges
