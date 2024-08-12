@@ -224,7 +224,7 @@ def _cvd(dout, wplug, wtype):
                 'nb': 32,
             },
             'CVD_out': {
-                wplug: "MI_Term_pair",
+                wplug: "twist_pair",
                 'nb': 32,
             },
         },
@@ -240,7 +240,7 @@ def _cvd(dout, wplug, wtype):
         'chassis': 'Eurocard',
         'connections': {
             'input': {
-                wplug: "MI_Term",
+                wplug: "twist_pair",
                 'nb': 4,
             },
             'power': {

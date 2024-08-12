@@ -57,6 +57,11 @@ def get(path=None):
         'wire_bond_pair': {
             'description': 'micro-wires bonded with ultrasounds',
         },
+
+        # wire-bonding
+        'twist_pair': {
+            'description': 'standard twisted pair',
+        },
     })
 
     # ------------------

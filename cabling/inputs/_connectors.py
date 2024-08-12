@@ -80,6 +80,8 @@ def _invessel_SXR(dout, wcm):
     npix = 15
     lcam = ['OMPu', 'OMPl', 'MPPu', 'MPPl']
 
+    keySacq = keysys(dict(systems0, L4='ACQ'))
+
     preamp_nb = 0
     ind_preamp = 0
     for pp in lcam:
@@ -124,12 +126,12 @@ def _invessel_SXR(dout, wcm):
             }
 
             # feedthrough to preamplifier
-            key_preamp = f"{keyS}_preamp_{preamp_nb:02.0f}"
+            key_preamp = f"{keySacq}_preamp_{preamp_nb:02.0f}"
             dout[f'{keyS}_twist_{ii}'] = {
-                wcm: 'MI_twist_pair',
-                'label': f'MI_{ii:02.0f}',
+                wcm: 'twist_pair',
+                'label': f'twist_{ii:02.0f}',
                 'systems': systems,
-                'ptA': (key_feed, f'CVD_in_{ii}'),
+                'ptA': (key_feed, f'CVD_out_{ii}'),
                 'ptB': (key_preamp, f'input_{ind_preamp}'),
                 'typ. signal': '< mA, < 5 V',
             }
@@ -150,24 +152,6 @@ def _invessel_SXR(dout, wcm):
             'ptB': (key_cam, 'Therm_in'),
             'typ. signal': '?',
         }
-
-        # ---------------------
-        # preamplifiers cables
-        # ---------------------
-
-        # namp = int(np.ceil(npix / 4))
-
-        # for ii in range(namp):
-
-        #     for jj in range(4):
-
-        #         # camera to preamplifier
-        #         dout[f''] = {
-        #             wcm: 'CVD_Therm',
-        #             'systems': systems,
-        #             'ptA': (key_feed, 'CVD_out_{ii*4+jj}'),
-        #             'ptB': (f'sxr_{pp}_preamp_{ii}', 'in_{jj}'),
-        #         }
 
     # ---------------------
     # digitizer cables

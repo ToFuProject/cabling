@@ -6,10 +6,10 @@ Created on Wed Aug  7 07:50:00 2024
 """
 
 
-import itertools as itt
-
-
 import numpy as np
+
+
+from .inputs import _config
 
 
 # ###########################################################
@@ -20,18 +20,16 @@ import numpy as np
 
 def main(
     coll=None,
-    include=None,
-    exclude=None,
+    dsystems=None,
 ):
 
     # -------------
     # check inputs
     # -------------
 
-    dinex = _check(
+    dsystems = _check(
         coll=coll,
-        include=include,
-        exclude=exclude,
+        dsystems=dsystems,
     )
 
     # -------------
@@ -43,7 +41,7 @@ def main(
         dout[which] = _select(
             coll=coll,
             which=which,
-            dinex=dinex,
+            dsystems=dsystems,
         )
 
     return dout
@@ -57,91 +55,58 @@ def main(
 
 def _check(
     coll=None,
-    include=None,
-    exclude=None,
+    dsystems=None,
 ):
 
     # -----------------------
-    # prepare unique systems
+    # trivial
     # -----------------------
 
-    dsystems = {}
+    if dsystems is None:
+        return {}
 
-    # from devices
-    wdev = coll._which_device
-    dsystems[wdev] = {
-        'unique': list(set(itt.chain.from_iterable([
-            v0['systems'] for v0 in coll.dobj[wdev].values()
-            if v0.get('systems') is not None
-        ])))
-    }
+    # -----------------------
+    # trivial
+    # -----------------------
 
-    # from connectors
-    wcon = coll._which_connector
-    dsystems[wcon] = {
-        'unique': list(set(itt.chain.from_iterable([
-            v0['systems'] for v0 in coll.dobj[wcon].values()
-            if v0.get('systems') is not None
-        ])))
-    }
+    c0 = (
+        isinstance(dsystems, dict)
+        and all([
+            k0 in _config._SYSTEMS
+            and isinstance(v0, (str, list, tuple))
+            for k0, v0 in dsystems.items()
+        ])
+    )
+    if not c0:
+        _err_dsystems(dsystems)
 
-    systems_all_parts = list(set(dsystems[wdev]['unique'] + dsystems[wcon]['unique']))
-    systems_all = list(set(
-        [
-            v0['systems'] for v0 in coll.dobj[wdev].values()
-            if v0.get('systems') is not None
-        ]
-        + [
-            v0['systems'] for v0 in coll.dobj[wcon].values()
-            if v0.get('systems') is not None
-        ]
-    ))
+    # -----------------------
+    # check each key / value pair
+    # -----------------------
 
-    # --------------
-    # prepare
-    # --------------
+    lk = list(dsystems.keys())
+    for k0 in lk:
+        if isinstance(dsystems[k0], str):
+            dsystems[k0] = [dsystems[k0]]
 
-    dinex = {'include': include, 'exclude': exclude}
-    for k0, v0 in dinex.items():
+        c0 = all([isinstance(ss, str) for ss in dsystems[k0]])
+        if not c0:
+           _err_dsystems(dsystems)
 
-        if v0 is None:
-            continue
+    return dsystems
 
-        if isinstance(v0, str):
-            if v0 not in systems_all_parts:
-                msg = (
-                    "In arg '{k0}' is a str, it must be a valid system level\n"
-                    f"\t- provided: {v0}\n\n"
-                    f"Available system levels:\n{systems_all_parts}"
-                )
-                raise Exception(msg)
-            dinex[k0] = [v0]
 
-        elif isinstance(v0, tuple):
-            if v0 not in systems_all:
-                msg = (
-                    "In arg '{k0}' is a tuple, it must be a valid system\n"
-                    f"\t- provided: {v0}\n\n"
-                    f"Available system levels:\n{systems_all}"
-                )
-                raise Exception(msg)
-
-        elif isinstance(v0, list):
-            lout = [
-                ss for ss in v0 if not (
-                    isinstance(ss, str)
-                    and ss in systems_all_parts
-                )
-            ]
-            if len(lout) > 0:
-                msg = (
-                    "In arg '{k0}' is a list, it must be a list of valid system level\n"
-                    f"\t- provided: {v0}\n\n"
-                    f"Available system levels:\n{systems_all_parts}"
-                )
-                raise Exception(msg)
-
-    return dinex
+def _err_dsystems(dsystems):
+    lstr = [
+        f"\t- '{k0}': None, str, list (include) or tuple (exclude) of str"
+        for k0 in _config._SYSTEMS
+    ]
+    msg = (
+        "Arg dsystems must be a dict with keys:\n"
+        + "\n".join(lstr)
+        + f"\nProvided:\n\t{dsystems}"
+    )
+    raise Exception(msg)
 
 
 # ###########################################################
@@ -153,7 +118,7 @@ def _check(
 def _select(
     coll=None,
     which=None,
-    dinex=None,
+    dsystems=None,
 ):
 
     # -------------
@@ -161,42 +126,23 @@ def _select(
     # -------------
 
     lkeys = list(coll.dobj[which].keys())
-    lsystems = [coll.dobj[which][k0]['systems'] for k0 in lkeys]
-
     ind = np.ones((len(lkeys),), dtype=bool)
-    for k0, v0 in dinex.items():
+    for k0, v0 in dsystems.items():
 
         if v0 is None:
             continue
 
-        for ss in v0:
+        indi = np.array([
+            coll.dobj[which][key]['systems'].get(k0) in v0
+            for ii, key in enumerate(lkeys)
+        ], dtype=bool)
 
-            if isinstance(ss, str):
-                indi = np.array(
-                    [
-                        isinstance(sys, tuple)
-                        and ss in sys
-                        for sys in lsystems
-                    ],
-                    dtype=bool,
-                )
+        # -------------
+        # effect on ind
 
-            else:
-                indi = np.array(
-                    [
-                        isinstance(sys, tuple)
-                        and sys == ss
-                        for sys in lsystems
-                    ],
-                    dtype=bool,
-                )
-
-            # -------------
-            # effect on ind
-
-            if k0 == 'include':
-                ind &= indi
-            else:
-                ind &= (~indi)
+        if isinstance(v0, list):
+            ind &= indi
+        else:
+            ind &= (~indi)
 
     return np.array(lkeys)[ind].tolist()

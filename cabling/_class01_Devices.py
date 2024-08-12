@@ -125,7 +125,7 @@ class Devices(Previous):
     # select system
     # -------------------
 
-    def select_systems(self, include=None, exclude=None):
+    def select_systems(self, dsystems=None):
         """ Return list of Devices / Connectors matching desired subsystems
 
         Parameters
@@ -139,7 +139,7 @@ class Devices(Previous):
                 - 'connector': list of connector keys matching selection
 
         """
-        return _select.main(coll=self, include=include, exclude=exclude)
+        return _select.main(coll=self, dsystems=dsystems)
 
     # -------------------
     # show

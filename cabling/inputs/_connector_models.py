@@ -90,6 +90,15 @@ def get(path=None):
         wtype: 'cable_wire',
     }
 
+    dout['twist_pair'] = {
+        'description': 'shielded twisted pair',
+        'connections': {
+            'ptA': {wplug: "twist_pair"},
+            'ptB': {wplug: "twist_pair"},
+        },
+        wtype: 'cable_MI',
+    }
+
     # -------------
     # Lemo cables
     # -------------

@@ -98,7 +98,7 @@
                 "nb": 32
             },
             "CVD_out": {
-                "plug_type": "MI_Term_pair",
+                "plug_type": "twist_pair",
                 "nb": 32
             }
         }
@@ -109,7 +109,7 @@
         "chassis": "Eurocard",
         "connections": {
             "input": {
-                "plug_type": "MI_Term",
+                "plug_type": "twist_pair",
                 "nb": 4
             },
             "power": {

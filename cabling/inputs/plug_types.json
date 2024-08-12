@@ -15,6 +15,9 @@
     "wire_bond_pair": {
         "description": "micro-wires bonded with ultrasounds"
     },
+    "twist_pair": {
+        "description": "standard twisted pair"
+    },
     "MCX": {
         "description": "micro coaxial connector, CECC 22220",
         "url": [

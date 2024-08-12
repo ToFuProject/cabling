@@ -71,6 +71,18 @@
         },
         "connector_type": "cable_wire"
     },
+    "twist_pair": {
+        "description": "shielded twisted pair",
+        "connections": {
+            "ptA": {
+                "plug_type": "twist_pair"
+            },
+            "ptB": {
+                "plug_type": "twist_pair"
+            }
+        },
+        "connector_type": "cable_MI"
+    },
     "Lemo00": {
         "description": "coaxial cable with Lemo\u00ae Type 00 (NIM/CAMAC)",
         "connections": {
