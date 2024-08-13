@@ -25,6 +25,19 @@ def get(path=None):
     dout = {}
 
     # -------------
+    # generic
+    # -------------
+
+    dout['generic'] = {
+        'description': f'generic connector, for anything',
+        'connections': {
+            'ptA': {wplug: "generic"},
+            'ptB': {wplug: "generic"},
+        },
+        # wtype: 'generic',
+    }
+
+    # -------------
     # coax BNC cables
     # -------------
 
@@ -97,6 +110,19 @@ def get(path=None):
             'ptB': {wplug: "twist_pair"},
         },
         wtype: 'cable_MI',
+    }
+
+    # -------------
+    # MI cables
+    # -------------
+
+    dout['VHCDI'] = {
+        'description': 'VHCDI cable',
+        'connections': {
+            'ptA': {wplug: "VHCDI"},
+            'ptB': {wplug: "VHCDI"},
+        },
+        wtype: 'cable_twist',
     }
 
     # -------------

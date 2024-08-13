@@ -71,7 +71,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_00",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_0_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_0_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_00",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_0"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -147,7 +166,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_00",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_0_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_0_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_00",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_1"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -223,7 +261,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_00",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_0_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_0_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_00",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_2"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -299,7 +356,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_00",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_0_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_0_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_00",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_3"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -375,7 +451,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_01",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_1_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_1_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_01",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_4"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -451,7 +546,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_01",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_1_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_1_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_01",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_5"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -527,7 +641,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_01",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_1_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_1_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_01",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_6"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -603,7 +736,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_01",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_1_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_1_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_01",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_7"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -679,7 +831,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_02",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_2_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_2_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_02",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_8"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -755,7 +926,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_02",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_2_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_2_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_02",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_9"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -831,7 +1021,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_02",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_2_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_2_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_02",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_10"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -907,7 +1116,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_02",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_2_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_2_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_02",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_11"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -983,7 +1211,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_03",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_3_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_3_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_03",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_12"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1059,7 +1306,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_03",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_3_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_3_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_03",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_13"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1135,7 +1401,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_03",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPu_twist2_3_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_3_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_03",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_14"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1230,7 +1515,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_03",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_3_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_3_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_03",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_15"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1306,7 +1610,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_04",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_4_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_4_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_04",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_16"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1382,7 +1705,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_04",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_4_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_4_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_04",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_17"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1458,7 +1800,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_04",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_4_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_4_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_04",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_18"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1534,7 +1895,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_04",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_4_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_4_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_04",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_19"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1610,7 +1990,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_05",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_5_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_5_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_05",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_20"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1686,7 +2085,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_05",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_5_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_5_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_05",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_21"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1762,7 +2180,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_05",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_5_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_5_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_05",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_22"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1838,7 +2275,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_05",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_5_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_5_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_05",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_23"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1914,7 +2370,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_06",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_6_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_6_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_06",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_24"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -1990,7 +2465,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_06",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_6_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_6_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_06",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_25"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2066,7 +2560,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_06",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_6_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_6_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_06",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_26"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2142,7 +2655,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_06",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_6_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_6_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_06",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_27"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2218,7 +2750,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_07",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_7_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_7_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_07",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_28"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2294,7 +2845,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_07",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_OMPl_twist2_7_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_7_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_07",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_29"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2389,7 +2959,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_07",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_7_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_7_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_07",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_30"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2465,7 +3054,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_07",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_7_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_7_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_07",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "in_31"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2541,7 +3149,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_08",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_8_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_8_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_08",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_0"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2617,7 +3244,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_08",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_8_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_8_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_08",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_1"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2693,7 +3339,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_08",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_8_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_8_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_08",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_2"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2769,7 +3434,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_08",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_8_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_8_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_08",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_3"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2845,7 +3529,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_09",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_9_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_9_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_09",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_4"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2921,7 +3624,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_09",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_9_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_9_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_09",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_5"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -2997,7 +3719,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_09",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_9_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_9_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_09",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_6"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3073,7 +3814,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_09",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_9_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_9_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_09",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_7"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3149,7 +3909,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_10",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_10_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_10_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_10",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_8"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3225,7 +4004,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_10",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_10_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_10_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_10",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_9"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3301,7 +4099,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_10",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_10_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_10_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_10",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_10"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3377,7 +4194,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_10",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_10_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_10_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_10",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_11"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3453,7 +4289,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_11",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPu_twist2_11_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_11_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_11",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_12"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3548,7 +4403,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_11",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_11_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_11_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_11",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_13"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3624,7 +4498,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_11",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_11_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_11_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_11",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_14"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3700,7 +4593,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_11",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_11_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_11_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_11",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_15"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3776,7 +4688,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_12",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_12_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_12_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_12",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_16"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3852,7 +4783,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_12",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_12_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_12_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_12",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_17"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -3928,7 +4878,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_12",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_12_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_12_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_12",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_18"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -4004,7 +4973,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_12",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_12_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_12_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_12",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_19"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -4080,7 +5068,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_13",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_13_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_13_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_13",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_20"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -4156,7 +5163,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_13",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_13_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_13_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_13",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_21"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -4232,7 +5258,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_13",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_13_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_13_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_13",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_22"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -4308,7 +5353,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_13",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_13_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_13_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_13",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_23"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -4384,7 +5448,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_14",
-            "input_0"
+            "in_0"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_14_0": {
+        "connector_model": "twist_pair",
+        "label": "twist2_14_0",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_14",
+            "out_0"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_24"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -4460,7 +5543,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_14",
-            "input_1"
+            "in_1"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_14_1": {
+        "connector_model": "twist_pair",
+        "label": "twist2_14_1",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_14",
+            "out_1"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_25"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -4536,7 +5638,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_14",
-            "input_2"
+            "in_2"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_14_2": {
+        "connector_model": "twist_pair",
+        "label": "twist2_14_2",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_14",
+            "out_2"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_26"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -4612,7 +5733,26 @@
         ],
         "ptB": [
             "XRAY_SXRVA_ACQ_preamp_14",
-            "input_3"
+            "in_3"
+        ],
+        "typ. signal": "< mA, < 5 V"
+    },
+    "XRAY_SXRVA_MPPl_twist2_14_3": {
+        "connector_model": "twist_pair",
+        "label": "twist2_14_3",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_preamp_14",
+            "out_3"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "in_27"
         ],
         "typ. signal": "< mA, < 5 V"
     },
@@ -4634,5 +5774,79 @@
             "Therm_in"
         ],
         "typ. signal": "?"
+    },
+    "XRAY_SXRVA_ACQ_digit_00": {
+        "connector_model": "VHCDI",
+        "label": "digit_00",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_breakout_00",
+            "out"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_digit_00",
+            "in_0"
+        ]
+    },
+    "XRAY_SXRVA_ACQ_digit_01": {
+        "connector_model": "VHCDI",
+        "label": "digit_01",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "ptA": [
+            "XRAY_SXRVA_ACQ_breakout_01",
+            "out"
+        ],
+        "ptB": [
+            "XRAY_SXRVA_ACQ_digit_00",
+            "in_1"
+        ]
+    },
+    "XRAY_HXRTS_North_HV": {
+        "connector_model": "SHV",
+        "label": "HV",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "HXRTS",
+            "L4": "North"
+        },
+        "ptA": [
+            "XRAY_HXRTS_North_scintillator",
+            "power"
+        ],
+        "ptB": [
+            "XRAY_HXRTS_North_power",
+            "out_0"
+        ],
+        "typ. signal": "0.1-1 kV"
+    },
+    "XRAY_HXRTS_South_HV": {
+        "connector_model": "SHV",
+        "label": "HV",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "HXRTS",
+            "L4": "South"
+        },
+        "ptA": [
+            "XRAY_HXRTS_South_scintillator",
+            "power"
+        ],
+        "ptB": [
+            "XRAY_HXRTS_South_power",
+            "out_1"
+        ],
+        "typ. signal": "0.1-1 kV"
     }
 }

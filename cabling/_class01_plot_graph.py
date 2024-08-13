@@ -21,7 +21,8 @@ import datastock as ds
 def main(
     coll=None,
     # which devices to plot
-    devices=None,
+    graph=None,
+    # labels
     name_device=None,
     name_connector=None,
     # plotting options
@@ -55,14 +56,13 @@ def main(
 
     kwdargs = _check(**locals())
 
-    # ---------------
-    # select devices and connectors
-    # ---------------
+    # -----------------
+    # labels
+    # -----------------
 
-    graph = coll.to_graph(
-        # select
-        devices=devices,
-        # naming
+    dname_device, dname_connector = _labels(
+        coll=coll,
+        graph=graph,
         name_device=name_device,
         name_connector=name_connector,
     )
@@ -82,8 +82,11 @@ def main(
     # plot
     # ---------------
 
-    _plot_mpl(
+    ax = _plot_mpl(
         graph=graph,
+        # labels
+        dname_device=dname_device,
+        dname_connector=dname_connector,
         # layout
         pos=pos,
         ax=ax,
@@ -91,7 +94,7 @@ def main(
         **kwdargs,
     )
 
-    return graph
+    return ax
 
 
 # ############################################################
@@ -103,6 +106,7 @@ def main(
 def _check(
     # resources
     coll=None,
+    graph=None,
     # automatic sizing / coloring
     size_by=None,
     color_by=None,
@@ -125,7 +129,22 @@ def _check(
     **kwds,
 ):
 
-    lout = ['coll', 'kwds', 'lout', 'size_by', 'color_by', 'layers']
+    # -------------
+    # graph
+    # -------------
+
+    if not isinstance(graph, nx.Graph):
+        msg = (
+            "Arg graph must be a nx.Graph instance!\n"
+            f"Provided:\n{graph}"
+        )
+        raise Exception(msg)
+
+    # -------------
+    # kwdargs for plot
+    # -------------
+
+    lout = ['coll', 'kwds', 'lout', 'size_by', 'color_by', 'layers', 'graph']
     kwdargs = {
         k0: v0 for k0, v0 in locals().items()
         if k0 not in lout
@@ -139,6 +158,49 @@ def _check(
     # -------------
 
     return kwdargs
+
+
+# ############################################################
+# ############################################################
+#              labels
+# ############################################################
+
+
+def _labels(
+    coll=None,
+    # selection
+    graph=None,
+    # naming
+    name_device=None,
+    name_connector=None,
+):
+
+    # ---------------
+    # extract
+    # ---------------
+
+    ldev = list(graph.nodes)
+    wcon = coll._which_connector
+
+    # ---------------
+    # name_device
+    # ---------------
+
+    which = coll._which_device
+    dname_device = coll.get_display_key_from_systems(
+        which,
+        keys=ldev,
+        include=name_device,
+    )
+
+    # ---------------
+    # name_connector
+    # ---------------
+
+    which = coll._which_connector
+    dname_connector = None
+
+    return dname_device, dname_connector
 
 
 # ############################################################
@@ -214,6 +276,9 @@ def _layout(
 
 def _plot_mpl(
     graph=None,
+    # labels
+    dname_device=None,
+    dname_connector=None,
     # layout
     pos=None,
     # figure
@@ -236,6 +301,9 @@ def _plot_mpl(
 
     nx.draw_networkx(
         graph,
+        # labels
+        labels=dname_device,
+        with_labels=True,
         # ax
         ax=ax,
         # layout
@@ -244,4 +312,4 @@ def _plot_mpl(
         # **kwdargs
     )
 
-    return
+    return ax

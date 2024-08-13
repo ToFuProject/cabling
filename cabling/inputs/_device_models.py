@@ -239,7 +239,7 @@ def _cvd(dout, wplug, wtype):
         'sizeU': 3,
         'chassis': 'Eurocard',
         'connections': {
-            'input': {
+            'in': {
                 wplug: "twist_pair",
                 'nb': 4,
             },
@@ -247,9 +247,30 @@ def _cvd(dout, wplug, wtype):
                 wplug: "MI_Term",
                 'nb': 1,
             },
-            'output': {
-                wplug: "MI_Term",
+            'out': {
+                wplug: "twist_pair",
                 'nb': 6,
+            },
+        },
+        wtype: 'amplifier',
+    }
+
+    dout['breakout_Lemo2VHCDI'] = {
+        'description': 'Breakout board converting twisted pair to VHCDI',
+        'sizeU': 3,
+        'chassis': 'Eurocard',
+        'connections': {
+            'in': {
+                wplug: "twist_pair",
+                'nb': 32,
+            },
+            'power': {
+                wplug: "MI_Term",
+                'nb': 1,
+            },
+            'out': {
+                wplug: "VHCDI",
+                'nb': 1,
             },
         },
         wtype: 'amplifier',
@@ -283,7 +304,7 @@ def _cvd(dout, wplug, wtype):
     dout['DIAG_FC'] = {
         'description': 'Fast controller DIAG edition',
         'connections': {
-            'input': {
+            'in': {
                 wplug: "VHCDI",
                 'nb': 4,
             },
@@ -478,7 +499,7 @@ def _scintillators(dout, wplug, wtype):
         'sizeU': 3,
         'chassis': '19"',
         'connections': {
-            'outlet': {
+            'out': {
                 wplug: "SHV",
                 'nb': 8,
             },

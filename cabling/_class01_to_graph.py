@@ -29,16 +29,6 @@ def main(
 ):
 
     # ---------------
-    # check
-    # ---------------
-
-    name_device, name_connector = _check(
-        coll=coll,
-        name_device=name_device,
-        name_connector=name_connector,
-    )
-
-    # ---------------
     # select devices and connectors
     # ---------------
 
@@ -55,8 +45,6 @@ def main(
         coll=coll,
         ldev=ldev,
         lcon=lcon,
-        name_device=name_device,
-        name_connector=name_connector,
     )
 
     return graph
@@ -70,6 +58,9 @@ def main(
 
 def _check(
     coll=None,
+    # selection
+    ldev=None,
+    lcon=None,
     # naming
     name_device=None,
     name_connector=None,
@@ -79,33 +70,25 @@ def _check(
     # name_device
     # ---------------
 
-    wdt = coll._which_device_type
-    wdm = coll._which_device_model
-    lok = ['key', 'tag', 'label', wdm, wdt, 'systems']
-
-    name_device = ds._generic_check._check_var(
-        name_device, 'name_device',
-        types=str,
-        allowed=lok,
-        default='key',
+    which = coll._which_device
+    dname_device = coll.get_display_key_from_systems(
+        which,
+        keys=ldev,
+        include=name_device,
     )
 
     # ---------------
     # name_connector
     # ---------------
 
-    wct = coll._which_connector_type
-    wcm = coll._which_connector_model
-    lok = ['key', 'tag', 'label', wcm, wct, 'systems']
-
-    name_connector = ds._generic_check._check_var(
-        name_connector, 'name_connector',
-        types=str,
-        allowed=lok,
-        default='key',
+    which = coll._which_connector
+    dname_connector = coll.get_display_key_from_systems(
+        which,
+        keys=lcon,
+        include=name_connector,
     )
 
-    return name_device, name_connector
+    return dname_device, dname_connector
 
 # ############################################################
 # ############################################################
@@ -185,9 +168,6 @@ def _create_graph(
     coll=None,
     ldev=None,
     lcon=None,
-    # naming
-    name_device=None,
-    name_connector=None,
 ):
 
     # -----------------
@@ -202,7 +182,6 @@ def _create_graph(
 
     wdev = coll._which_device
     for k0 in ldev:
-        v0 = coll.dobj[wdev][k0]
         graph.add_node(k0)
 
     # -----------------

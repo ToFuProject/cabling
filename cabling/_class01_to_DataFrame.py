@@ -410,7 +410,7 @@ def _get_device(coll, which, keys):
     _generic_fields(
         dout, dobj, which, keys,
         lparam=coll.get_lparam(which),
-        lout=['connections'],
+        lout=['connections', 'dcoords'],
     )
 
     # --------------

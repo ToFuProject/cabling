@@ -108,7 +108,7 @@
         "sizeU": 3,
         "chassis": "Eurocard",
         "connections": {
-            "input": {
+            "in": {
                 "plug_type": "twist_pair",
                 "nb": 4
             },
@@ -116,9 +116,29 @@
                 "plug_type": "MI_Term",
                 "nb": 1
             },
-            "output": {
-                "plug_type": "MI_Term",
+            "out": {
+                "plug_type": "twist_pair",
                 "nb": 6
+            }
+        },
+        "device_type": "amplifier"
+    },
+    "breakout_Lemo2VHCDI": {
+        "description": "Breakout board converting twisted pair to VHCDI",
+        "sizeU": 3,
+        "chassis": "Eurocard",
+        "connections": {
+            "in": {
+                "plug_type": "twist_pair",
+                "nb": 32
+            },
+            "power": {
+                "plug_type": "MI_Term",
+                "nb": 1
+            },
+            "out": {
+                "plug_type": "VHCDI",
+                "nb": 1
             }
         },
         "device_type": "amplifier"
@@ -146,7 +166,7 @@
     "DIAG_FC": {
         "description": "Fast controller DIAG edition",
         "connections": {
-            "input": {
+            "in": {
                 "plug_type": "VHCDI",
                 "nb": 4
             },
@@ -301,7 +321,7 @@
         "sizeU": 3,
         "chassis": "19\"",
         "connections": {
-            "outlet": {
+            "out": {
                 "plug_type": "SHV",
                 "nb": 8
             },

@@ -14,7 +14,7 @@ from . import _add_from_json
 from . import _consistency
 from . import _class01_select as _select
 from . import _class01_show as _show
-from . import _class01_utils as _utils
+from . import _class01_display_keys as _display_keys
 from . import _class00_connections
 from . import _class01_to_graph as _to_graph
 from . import _class01_to_DataFrame as _to_DataFrame
@@ -142,6 +142,43 @@ class Devices(Previous):
         return _select.main(coll=self, dsystems=dsystems)
 
     # -------------------
+    # get display keys from system, label
+    # -------------------
+
+    def get_display_key_from_systems(
+        self,
+        which=None,
+        keys=None,
+        include=None,
+    ):
+        """ Return a dict of display keys for each desired item
+
+        Parameters
+        ----------
+        which : str
+            'device' or 'connector'
+        keys : str, list
+            Which devices or connectors to get display keys for (all by def.)
+        include : str / list
+            which components to include in the keys (all by default), e.g.:
+                - ['L3', 'L4', 'label']
+                - ['L1', 'L2', 'L3']
+
+        Returns
+        -------
+        dout:     dict
+            DESCRIPTION.
+
+        """
+
+        return _display_keys.main(
+            coll=self,
+            which=which,
+            keys=keys,
+            include=include,
+        )
+
+    # -------------------
     # show
     # -------------------
 
@@ -231,9 +268,6 @@ class Devices(Previous):
         self,
         # select
         devices=None,
-        # naming
-        name_device=None,
-        name_connector=None,
     ):
         """
 
@@ -258,9 +292,6 @@ class Devices(Previous):
             coll=self,
             # select
             devices=devices,
-            # naming
-            name_device=name_device,
-            name_connector=name_connector,
         )
 
     # -------------------
@@ -270,7 +301,8 @@ class Devices(Previous):
     def plot_graph(
         self,
         # which devices to plot
-        devices=None,
+        graph=None,
+        # labels
         name_device=None,
         name_connector=None,
         # plotting options
@@ -281,8 +313,8 @@ class Devices(Previous):
 
         return _plot_graph.main(
             coll=self,
-            # which devices to plot
-            devices=devices,
+            graph=graph,
+            # labels
             name_device=name_device,
             name_connector=name_connector,
             # plotting options

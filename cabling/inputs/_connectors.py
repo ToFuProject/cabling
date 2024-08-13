@@ -38,11 +38,19 @@ def get(path=None):
     dout = {}
     wcm = 'connector_model'
 
+    systems0 = {'L1': 'DIAG', 'L2': 'XRAY'}
+
     # ------------------
     # in vessel SXR
     # ------------------
 
-    _invessel_SXR(dout, wcm)
+    _invessel_SXR(dout, wcm, systems0)
+
+    # ------------------
+    # HXR scintillators
+    # ------------------
+
+    _exvessel_HXR_scintillators(dout, wcm, systems0)
 
     # ---------------
     # add labels if needed
@@ -65,13 +73,13 @@ def get(path=None):
 #############################################
 
 
-def _invessel_SXR(dout, wcm):
+def _invessel_SXR(dout, wcm, systems0):
 
     # -------------
     # system
     # -------------
 
-    systems0 = {'L1': 'DIAG', 'L2': 'XRAY', 'L3': 'SXRVA'}
+    systems0 = dict(systems0, L3='SXRVA')
 
     # -----------
     # update
@@ -80,10 +88,13 @@ def _invessel_SXR(dout, wcm):
     npix = 15
     lcam = ['OMPu', 'OMPl', 'MPPu', 'MPPl']
 
-    keySacq = keysys(dict(systems0, L4='ACQ'))
+    sysAcq = dict(systems0, L4='ACQ')
+    keySacq = keysys(sysAcq)
 
-    preamp_nb = 0
-    ind_preamp = 0
+    preamp_nb, breakout_nb = 0, 0
+    ind_preamp, ind_breakout = 0, 0
+    ind_twist2 = 0
+
     for pp in lcam:
 
         systems = dict(systems0, L4=pp)
@@ -132,14 +143,32 @@ def _invessel_SXR(dout, wcm):
                 'label': f'twist_{ii:02.0f}',
                 'systems': systems,
                 'ptA': (key_feed, f'CVD_out_{ii}'),
-                'ptB': (key_preamp, f'input_{ind_preamp}'),
+                'ptB': (key_preamp, f'in_{ind_preamp}'),
                 'typ. signal': '< mA, < 5 V',
             }
+
+            # preamplifier to breakout board
+            key_break = f"{keySacq}_breakout_{breakout_nb:02.0f}"
+            dout[f'{keyS}_twist2_{preamp_nb}_{ind_preamp}'] = {
+                wcm: 'twist_pair',
+                'label': f'twist2_{preamp_nb}_{ind_preamp}',
+                'systems': sysAcq,
+                'ptA': (key_preamp, f'out_{ind_preamp}'),
+                'ptB': (key_break, f'in_{ind_breakout}'),
+                'typ. signal': '< mA, < 5 V',
+            }
+
+            # increment
             if ind_preamp == 3:
                 ind_preamp = 0
                 preamp_nb += 1
             else:
                 ind_preamp += 1
+            if ind_breakout == 31:
+                ind_breakout = 0
+                breakout_nb += 1
+            else:
+                ind_breakout += 1
 
         # ---------------------------------
         # individual thermocouple to camera
@@ -157,14 +186,56 @@ def _invessel_SXR(dout, wcm):
     # digitizer cables
     # ---------------------
 
-    # preamplifier to digitizer
-    # key = f'sxr_{pp}_therm'
-    # dout[key] = {
-    #     wcm: 'CVD_preamp_digit',
-    #     'systems': systems,
-    #     'ptA': (key_pream, 'out'),
-    #     'ptB': (key_digitizer, 'in'),
-    # }
+    # breakout to digitizer
+    for ii in range(breakout_nb+1):
+        key_break = f"{keySacq}_breakout_{ii:02.0f}"
+        key = f"{keySacq}_digit_{ii:02.0f}"
+        dout[key] = {
+            wcm: 'VHCDI',
+            'label': f'digit_{ii:02.0f}',
+            'systems': sysAcq,
+            'ptA': (key_break, 'out'),
+            'ptB': (f'{keySacq}_digit_{0:02.0f}', f'in_{ii}'),
+        }
+
+    return
+
+
+#############################################
+#############################################
+#         ex-vessel SXR scintillators
+#############################################
+
+
+def _exvessel_HXR_scintillators(dout, wcm, systems0):
+
+    # -------------
+    # system
+    # -------------
+
+    systems0 = dict(systems0, L3='HXRTS')
+
+    # -----------
+    # update
+    # -----------
+
+    # -----------
+    # update
+    # -----------
+
+    for ii, ss in enumerate(['North', 'South']):
+
+        systems = dict(systems0, L4=ss)
+        keyS = keysys(systems)
+
+        dout[f"{keyS}_HV"] = {
+            wcm: 'SHV',
+            'label': f'HV',
+            'systems': systems,
+            'ptA':(f"{keyS}_scintillator", 'power'),
+            'ptB': (f"{keyS}_power", f'out_{ii}'),
+            'typ. signal': '0.1-1 kV',
+        }
 
     return
 

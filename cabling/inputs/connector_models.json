@@ -1,4 +1,15 @@
 {
+    "generic": {
+        "description": "generic connector, for anything",
+        "connections": {
+            "ptA": {
+                "plug_type": "generic"
+            },
+            "ptB": {
+                "plug_type": "generic"
+            }
+        }
+    },
     "BNC": {
         "description": "coaxial cable with BNC plugs",
         "connections": {
@@ -82,6 +93,18 @@
             }
         },
         "connector_type": "cable_MI"
+    },
+    "VHCDI": {
+        "description": "VHCDI cable",
+        "connections": {
+            "ptA": {
+                "plug_type": "VHCDI"
+            },
+            "ptB": {
+                "plug_type": "VHCDI"
+            }
+        },
+        "connector_type": "cable_twist"
     },
     "Lemo00": {
         "description": "coaxial cable with Lemo\u00ae Type 00 (NIM/CAMAC)",

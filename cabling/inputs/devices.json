@@ -1546,7 +1546,41 @@
             ]
         }
     },
-    "sxr_digit_00": {
+    "XRAY_SXRVA_ACQ_breakout_00": {
+        "device_model": "breakout_Lemo2VHCDI",
+        "label": "breakout_00",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "dcoords": {
+            "3d": [
+                4.698463103929543,
+                -1.710100716628343,
+                -5.0
+            ]
+        }
+    },
+    "XRAY_SXRVA_ACQ_breakout_01": {
+        "device_model": "breakout_Lemo2VHCDI",
+        "label": "breakout_01",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "SXRVA",
+            "L4": "ACQ"
+        },
+        "dcoords": {
+            "3d": [
+                4.698463103929543,
+                -1.710100716628343,
+                -5.0
+            ]
+        }
+    },
+    "XRAY_SXRVA_ACQ_digit_00": {
         "device_model": "DIAG_FC",
         "label": "digit_00",
         "systems": {
@@ -1563,20 +1597,173 @@
             ]
         }
     },
-    "sxr_digit_01": {
-        "device_model": "DIAG_FC",
-        "label": "digit_01",
+    "scintillator0": {
+        "label": "scintillator",
+        "device_model": "HXR_scintillator",
         "systems": {
             "L1": "DIAG",
             "L2": "XRAY",
-            "L3": "SXRVA",
-            "L4": "ACQ"
+            "L3": "HXRTS",
+            "L4": "North"
         },
         "dcoords": {
             "3d": [
-                25.0,
-                -1.0,
-                0.0
+                15.021,
+                5.461,
+                0.98
+            ]
+        }
+    },
+    "digit0": {
+        "label": "digitizer",
+        "device_model": "HXR_digitizer_fast",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "HXRTS",
+            "L4": "North"
+        },
+        "dcoords": {
+            "3d": [
+                17.25,
+                10.111,
+                -2.736
+            ]
+        }
+    },
+    "power0": {
+        "label": "power",
+        "device_model": "HXR_power_HV",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "HXRTS",
+            "L4": "North"
+        },
+        "dcoords": {
+            "3d": [
+                17.25,
+                10.111,
+                -2.736
+            ]
+        }
+    },
+    "pulse0": {
+        "label": "pulse",
+        "device_model": "HXR_power_HV",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "HXRTS",
+            "L4": "North"
+        },
+        "dcoords": {
+            "3d": [
+                17.25,
+                10.111,
+                -2.736
+            ]
+        }
+    },
+    "LED0": {
+        "label": "LED",
+        "device_model": "HXR_LED",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "HXRTS",
+            "L4": "North"
+        },
+        "dcoords": {
+            "3d": [
+                17.25,
+                10.111,
+                -2.736
+            ]
+        }
+    },
+    "scintillator1": {
+        "label": "scintillator",
+        "device_model": "HXR_scintillator",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "HXRTS",
+            "L4": "South"
+        },
+        "dcoords": {
+            "3d": [
+                15.021,
+                -5.493,
+                1.0
+            ]
+        }
+    },
+    "digit1": {
+        "label": "digitizer",
+        "device_model": "DIAG_FC",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "HXRTS",
+            "L4": "South"
+        },
+        "dcoords": {
+            "3d": [
+                22.196,
+                -10.217,
+                -2.736
+            ]
+        }
+    },
+    "power1": {
+        "label": "power",
+        "device_model": "HXR_power_HV",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "HXRTS",
+            "L4": "South"
+        },
+        "dcoords": {
+            "3d": [
+                22.196,
+                -10.217,
+                -2.736
+            ]
+        }
+    },
+    "pulse1": {
+        "label": "pulse",
+        "device_model": "HXR_power_HV",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "HXRTS",
+            "L4": "South"
+        },
+        "dcoords": {
+            "3d": [
+                22.196,
+                -10.217,
+                -2.736
+            ]
+        }
+    },
+    "LED1": {
+        "label": "LED",
+        "device_model": "HXR_LED",
+        "systems": {
+            "L1": "DIAG",
+            "L2": "XRAY",
+            "L3": "HXRTS",
+            "L4": "South"
+        },
+        "dcoords": {
+            "3d": [
+                22.196,
+                -10.217,
+                -2.736
             ]
         }
     }

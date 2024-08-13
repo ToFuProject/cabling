@@ -1,4 +1,7 @@
 {
+    "generic": {
+        "description": "generic, accomodates everything"
+    },
     "BNC": {
         "description": "BNC plug",
         "url": "https://en.wikipedia.org/wiki/BNC_connector"

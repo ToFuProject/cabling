@@ -14,13 +14,21 @@ from . import _save2json
 
 #############################################
 #############################################
-#    Connection types
+#    Plug types
 #############################################
 
 
 def get(path=None):
 
     dout = {}
+
+    # -------------
+    # generic
+    # -------------
+
+    dout['generic'] = {
+        'description': 'generic, accomodates everything',
+    }
 
     # -------------
     # BNC

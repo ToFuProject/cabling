@@ -39,15 +39,15 @@ def _plug_type(coll=None, which=None, lcol=None, lar=None, show=None):
     for k0 in lkey:
 
         # initialize with key
-        arr = [k0, coll.dobj[wplug][k0].get('description', '')]
+        arr = [k0]
+
+        # description
+        des = coll.dobj[wplug][k0].get('description')
+        arr.append('' if des is None else des)
 
         # options
         dopt = coll.dobj[wplug][k0].get('doptions')
-        if dopt is None:
-            nn = ''
-        else:
-            nn = str(sorted(dopt.keys()))
-        arr.append(nn)
+        arr.append('' if dopt is None else str(sorted(dopt.keys())))
 
         lar0.append(arr)
 
@@ -91,10 +91,15 @@ def _connector_model(coll=None, which=None, lcol=None, lar=None, show=None):
     for k0 in lkey:
 
         # initialize with key
-        arr = [k0, coll.dobj[wcm][k0][wct]]
+        arr = [k0]
+
+        # type
+        typ = coll.dobj[wcm][k0].get(wct)
+        arr.append('' if typ is None else typ)
 
         # description
-        arr.append(coll.dobj[wcm][k0].get('description', ''))
+        des = coll.dobj[wcm][k0].get('description')
+        arr.append('' if des is None else des)
 
         # add ptA and ptB
         dcon = coll.dobj[wcm][k0]['connections']
@@ -146,7 +151,11 @@ def _connector(coll=None, which=None, lcol=None, lar=None, show=None):
     for k0 in lkey:
 
         # initialize with key
-        arr = [k0, coll.dobj[wcon][k0][wcm]]
+        arr = [k0]
+
+        # model
+        mod = coll.dobj[wcon][k0].get(wcm)
+        arr.append('' if mod is None else mod)
 
         # add systems
         # dsys = coll.dobj[wcon][k0].get('systems')

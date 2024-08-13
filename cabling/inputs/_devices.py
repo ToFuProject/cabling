@@ -62,7 +62,7 @@ def get(path=None):
     # # HXR scintillators
     # # -----------------
 
-    # _scintillators(dout, wdm)
+    _scintillators(dout, wdm, systems0)
 
     # # -------------
     # # Beamlines
@@ -263,11 +263,26 @@ def _invessel_SXR(dout, wdm, systems0):
         }
 
     # -------------
-    # digitizers
+    # breakout boards
 
     for ii in range(int(np.ceil((15*4)/32))):
 
-        key = f'sxr_digit_{ii:02.0f}'
+        key = f"{keyS}_breakout_{ii:02.0f}"
+        dout[key] = {
+            wdm: 'breakout_Lemo2VHCDI',
+            'label': f'breakout_{ii:02.0f}',
+            'systems': systems,
+            'dcoords': {
+                '3d': dcoords['preamp'],
+            },
+        }
+
+    # -------------
+    # digitizers
+
+    for ii in range(int(np.ceil((15*4)/(32*4)))):
+
+        key = f'{keyS}_digit_{ii:02.0f}'
         dout[key] = {
             wdm: 'DIAG_FC',
             'label': f'digit_{ii:02.0f}',
@@ -287,13 +302,11 @@ def _invessel_SXR(dout, wdm, systems0):
 
 def _invessel_HXR(dout, wdm, systems0):
 
-    systems0 = dict(systems0, L3='HXRVA')
-
     # -------------
     # system
     # -------------
 
-    systems = {'L1': 'DIAG', 'L2': 'XRAY', 'L3': 'HXR-VA'}
+    systems0 = dict(systems0, L3='HXRVA')
 
     # -----------
     # update
@@ -474,68 +487,109 @@ def _collaborator(dout, wdm):
 #############################################
 
 
-def _scintillators(dout, wdm):
+def _scintillators(dout, wdm, systems0):
 
     # -------------
-    # system
+    # prepare
     # -------------
 
-    systems = {'L1': 'DIAG', 'L2': 'XRAY', 'L3': 'HXR-TS'}
+    systems0 = dict(systems0, L3='HXRTS')
+
+
+    # coordinates
+    dcoords = {
+        # North
+        'scintillator0': np.r_[
+            15.021,
+            5.461,
+            0.980,
+        ],
+        'cabinet0': np.r_[
+            17.250,
+            10.111,
+            -2.736,
+        ],
+        # South
+        'scintillator1': np.r_[
+            15.021,
+            -5.493,
+            1.000,
+        ],
+        'cabinet1': np.r_[
+            22.196,
+            -10.217,
+            -2.736,
+        ],
+    }
 
     # -----------
     # update
     # -----------
 
-    dout.update({
+    for ii, ss in enumerate(['North', 'South']):
 
-        # ----------------
-        # scintillators
+        systems = dict(systems0, L4=ss)
 
-        'hxr_scintillator_north': {
+        # --------------
+        # scintillator
+
+        key = f"scintillator{ii}"
+        dout[key] = {
+            'label': f'scintillator',
             wdm: 'HXR_scintillator',
             'systems': systems,
-        },
+            'dcoords': {
+                '3d': dcoords[key],
+            },
+        }
 
-        'hxr_scintillator_south': {
-            wdm: 'HXR_scintillator',
+        # ------------------------------
+        # digitizers and power supplies
+
+        dout[f'digit{ii}'] = {
+            'label': 'digitizer',
+            wdm: ['HXR_digitizer_fast', 'DIAG_FC'][ii],
             'systems': systems,
-        },
+            'dcoords': {
+                '3d': dcoords[f'cabinet{ii}'],
+            },
+        }
 
-        # ------------------
-        # HV power supply
+        # -----------------
+        # power supply
 
-        'hxr_power_HV': {
+        dout[f'power{ii}'] = {
+            'label': f'power',
             wdm: 'HXR_power_HV',
             'systems': systems,
-        },
+            'dcoords': {
+                '3d': dcoords[f'cabinet{ii}'],
+            },
+        }
 
-        # -----------------
-        # HXR digitizers
+        # ----------------
+        # pulse generator
 
-        'hxr_digitizer_fast': {
-            wdm: 'HXR_digitizer_fast',
+        dout[f'pulse{ii}'] = {
+            'label': f'pulse',
+            wdm: 'HXR_power_HV',
             'systems': systems,
-        },
+            'dcoords': {
+                '3d': dcoords[f'cabinet{ii}'],
+            },
+        }
 
-        'hxr_digitizer_current': {
-            wdm: 'DIAG_FC',
-            'systems': systems,
-        },
+        # -----------
+        # LED
 
-        # -----------------
-        # HXR LED
-
-        'hxr_LED_north': {
+        dout[f'LED{ii}'] = {
+            'label': f'LED',
             wdm: 'HXR_LED',
             'systems': systems,
-        },
-
-        'hxr_LED_south': {
-            wdm: 'HXR_LED',
-            'systems': systems,
-        },
-
-    })
+            'dcoords': {
+                '3d': dcoords[f'cabinet{ii}'],
+            },
+        }
 
     return
 
